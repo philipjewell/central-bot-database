@@ -1,0 +1,270 @@
+"""
+Utility functions for working with the bot database
+"""
+import json
+import sys
+from pathlib import Path
+from typing import List, Dict
+
+def load_bots() -> List[Dict]:
+    """Load the bot database"""
+    db_file = Path("data/bots.json")
+    if not db_file.exists():
+        print("❌ Bot database not found. Run the pipeline first.")
+        sys.exit(1)
+    
+    with open(db_file, 'r') as f:
+        data = json.load(f)
+    
+    return data['bots']
+
+def search_bot(query: str):
+    """Search for a bot by name or operator"""
+    bots = load_bots()
+    query_lower = query.lower()
+    
+    results = [
+        bot for bot in bots
+        if query_lower in bot.get('user_agent', '').lower()
+        or query_lower in bot.get('operator', '').lower()
+    ]
+    
+    if not results:
+        print(f"No bots found matching: {query}")
+        return
+    
+    print(f"Found {len(results)} bot(s):\n")
+    for bot in results:
+        print(f"🤖 {bot['user_agent']}")
+        print(f"   Operator: {bot['operator']}")
+        print(f"   Purpose: {bot.get('purpose', 'N/A')}")
+        print(f"   Sources: {', '.join(bot.get('sources', []))}")
+        print()
+
+def list_operators():
+    """List all bot operators"""
+    bots = load_bots()
+    operators = {}
+    
+    for bot in bots:
+        operator = bot.get('operator', 'Unknown')
+        operators[operator] = operators.get(operator, 0) + 1
+    
+    print(f"Total operators: {len(operators)}\n")
+    for operator, count in sorted(operators.items(), key=lambda x: x[1], reverse=True):
+        print(f"{operator}: {count} bot(s)")
+
+def get_recommendations(site_type: str, rating: str = 'beneficial'):
+    """Get bot recommendations for a site type"""
+    valid_types = [
+        "ecommerce", "news", "media", "blog", "saas",
+        "corporate", "documentation", "social", "portfolio", "government"
+    ]
+    
+    if site_type not in valid_types:
+        print(f"❌ Invalid site type. Choose from: {', '.join(valid_types)}")
+        return
+    
+    valid_ratings = ['beneficial', 'neutral', 'harmful', 'not_applicable']
+    if rating not in valid_ratings:
+        print(f"❌ Invalid rating. Choose from: {', '.join(valid_ratings)}")
+        return
+    
+    bots = load_bots()
+    
+    matching_bots = [
+        bot for bot in bots
+        if bot.get('categories', {}).get(site_type) == rating
+    ]
+    
+    if not matching_bots:
+        print(f"No bots found with '{rating}' rating for '{site_type}' sites.")
+        return
+    
+    print(f"Bots rated '{rating}' for '{site_type}' sites ({len(matching_bots)}):\n")
+    
+    for bot in matching_bots:
+        print(f"🤖 {bot['user_agent']} ({bot['operator']})")
+        if bot.get('purpose'):
+            print(f"   {bot['purpose'][:100]}...")
+        print()
+
+def show_bot_details(user_agent: str):
+    """Show detailed information about a specific bot"""
+    bots = load_bots()
+    
+    bot = next((b for b in bots if b['user_agent'].lower() == user_agent.lower()), None)
+    
+    if not bot:
+        print(f"❌ Bot not found: {user_agent}")
+        return
+    
+    print(f"🤖 {bot['user_agent']}")
+    print("=" * 60)
+    print(f"\nOperator: {bot.get('operator', 'Unknown')}")
+    print(f"\nPurpose:\n{bot.get('purpose', 'N/A')}")
+    print(f"\nImpact of Blocking:\n{bot.get('impact_of_blocking', 'N/A')}")
+    
+    if bot.get('website'):
+        print(f"\nWebsite: {bot['website']}")
+    
+    # Technical details
+    raw_data = bot.get('raw_data', {})
+    if raw_data.get('ip_ranges'):
+        print(f"\nIP Ranges: {', '.join(raw_data['ip_ranges'])}")
+    
+    if raw_data.get('asn'):
+        print(f"ASN: {raw_data['asn']}")
+    
+    if raw_data.get('verification_method'):
+        print(f"Verification: {raw_data['verification_method']}")
+    
+    # Categories
+    categories = bot.get('categories', {})
+    if categories:
+        print("\nRecommendations by Site Type:")
+        for category, rating in sorted(categories.items()):
+            emoji = {
+                'beneficial': '✅',
+                'neutral': '⚪',
+                'harmful': '❌',
+                'not_applicable': '➖'
+            }.get(rating, '❓')
+            print(f"  {emoji} {category}: {rating}")
+    
+    print(f"\nSources: {', '.join(bot.get('sources', []))}")
+    print(f"Last Updated: {bot.get('last_updated', 'N/A')}")
+
+def generate_robots_txt(site_type: str, allow_beneficial: bool = True, 
+                       block_harmful: bool = True):
+    """Generate a robots.txt snippet for a site type"""
+    bots = load_bots()
+    
+    valid_types = [
+        "ecommerce", "news", "media", "blog", "saas",
+        "corporate", "documentation", "social", "portfolio", "government"
+    ]
+    
+    if site_type not in valid_types:
+        print(f"❌ Invalid site type. Choose from: {', '.join(valid_types)}")
+        return
+    
+    print(f"# robots.txt for {site_type} site")
+    print(f"# Generated by Bot Database\n")
+    
+    if allow_beneficial:
+        beneficial = [b for b in bots if b.get('categories', {}).get(site_type) == 'beneficial']
+        if beneficial:
+            print("# Beneficial bots - explicitly allowed")
+            for bot in beneficial:
+                print(f"\n# {bot['operator']}: {bot.get('purpose', '')[:80]}")
+                print(f"User-agent: {bot['user_agent']}")
+                print("Allow: /")
+    
+    if block_harmful:
+        harmful = [b for b in bots if b.get('categories', {}).get(site_type) == 'harmful']
+        if harmful:
+            print("\n# Harmful bots - blocked")
+            for bot in harmful:
+                print(f"\n# {bot['operator']}: {bot.get('impact_of_blocking', '')[:80]}")
+                print(f"User-agent: {bot['user_agent']}")
+                print("Disallow: /")
+    
+    print("\n# Default rule for all other bots")
+    print("User-agent: *")
+    print("Disallow:")
+
+def show_stats():
+    """Show database statistics"""
+    bots = load_bots()
+    
+    print("📊 Bot Database Statistics")
+    print("=" * 60)
+    print(f"\nTotal Bots: {len(bots)}")
+    
+    # By source
+    sources = {}
+    for bot in bots:
+        for source in bot.get('sources', []):
+            sources[source] = sources.get(source, 0) + 1
+    
+    print("\nBy Source:")
+    for source, count in sorted(sources.items()):
+        print(f"  {source}: {count}")
+    
+    # By operator (top 10)
+    operators = {}
+    for bot in bots:
+        op = bot.get('operator', 'Unknown')
+        operators[op] = operators.get(op, 0) + 1
+    
+    print("\nTop 10 Operators:")
+    for op, count in sorted(operators.items(), key=lambda x: x[1], reverse=True)[:10]:
+        print(f"  {op}: {count}")
+    
+    # Enrichment status
+    enriched = sum(1 for b in bots if b.get('purpose') and b.get('categories'))
+    print(f"\nEnrichment Status:")
+    print(f"  Enriched: {enriched}/{len(bots)} ({enriched*100//len(bots)}%)")
+    
+    # Technical details
+    with_ips = sum(1 for b in bots if b.get('raw_data', {}).get('ip_ranges'))
+    with_asn = sum(1 for b in bots if b.get('raw_data', {}).get('asn'))
+    
+    print(f"\nTechnical Details:")
+    print(f"  With IP ranges: {with_ips}")
+    print(f"  With ASN: {with_asn}")
+
+if __name__ == "__main__":
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Bot Database Utilities')
+    subparsers = parser.add_subparsers(dest='command', help='Commands')
+    
+    # Search command
+    search_parser = subparsers.add_parser('search', help='Search for a bot')
+    search_parser.add_argument('query', help='Search query')
+    
+    # List operators
+    subparsers.add_parser('operators', help='List all operators')
+    
+    # Recommendations
+    rec_parser = subparsers.add_parser('recommend', help='Get recommendations for site type')
+    rec_parser.add_argument('site_type', help='Site type (ecommerce, news, etc.)')
+    rec_parser.add_argument('--rating', default='beneficial', 
+                           help='Rating filter (beneficial, neutral, harmful)')
+    
+    # Bot details
+    details_parser = subparsers.add_parser('details', help='Show bot details')
+    details_parser.add_argument('user_agent', help='Bot user agent')
+    
+    # Generate robots.txt
+    robots_parser = subparsers.add_parser('robots', help='Generate robots.txt')
+    robots_parser.add_argument('site_type', help='Site type')
+    robots_parser.add_argument('--no-allow', action='store_false', dest='allow_beneficial',
+                              help='Don\'t explicitly allow beneficial bots')
+    robots_parser.add_argument('--no-block', action='store_false', dest='block_harmful',
+                              help='Don\'t block harmful bots')
+    
+    # Stats
+    subparsers.add_parser('stats', help='Show database statistics')
+    
+    args = parser.parse_args()
+    
+    if not args.command:
+        parser.print_help()
+        sys.exit(1)
+    
+    # Execute command
+    if args.command == 'search':
+        search_bot(args.query)
+    elif args.command == 'operators':
+        list_operators()
+    elif args.command == 'recommend':
+        get_recommendations(args.site_type, args.rating)
+    elif args.command == 'details':
+        show_bot_details(args.user_agent)
+    elif args.command == 'robots':
+        generate_robots_txt(args.site_type, args.allow_beneficial, args.block_harmful)
+    elif args.command == 'stats':
+        show_stats()

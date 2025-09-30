@@ -1,0 +1,13 @@
+# Bot Database Dependencies
+
+# HTTP requests
+requests>=2.31.0
+
+# JSON schema validation
+jsonschema>=4.19.0
+
+# For potential future enhancements
+# Uncomment if needed:
+# pandas>=2.0.0          # For data analysis
+# pyyaml>=6.0            # For YAML configuration
+# python-dotenv>=1.0.0   # For environment variables

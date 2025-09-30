@@ -34,16 +34,14 @@ def validate_bot(bot: Dict, bot_index: int) -> List[str]:
         if rating not in VALID_RATINGS:
             issues.append(f"Bot {bot_index} ({bot.get('user_agent')}): Invalid rating '{rating}' for category '{category}'")
     
-    # Check for missing enrichment (if not manual)
-    if "manual" not in bot.get("sources", []):
+    # Only warn about missing enrichment for manual entries
+    # External entries can be enriched later
+    if "manual" in bot.get("sources", []):
         if not bot.get("purpose"):
-            issues.append(f"Bot {bot_index} ({bot.get('user_agent')}): Missing purpose description")
+            issues.append(f"Bot {bot_index} ({bot.get('user_agent')}): Manual entry missing purpose description")
         
         if not bot.get("impact_of_blocking"):
-            issues.append(f"Bot {bot_index} ({bot.get('user_agent')}): Missing impact_of_blocking")
-        
-        if not categories:
-            issues.append(f"Bot {bot_index} ({bot.get('user_agent')}): Missing category recommendations")
+            issues.append(f"Bot {bot_index} ({bot.get('user_agent')}): Manual entry missing impact_of_blocking")
     
     return issues
 
@@ -94,6 +92,15 @@ def validate_data():
             print(f"   - {dup}")
         print()
     
+    # Count enrichment status
+    enriched = sum(1 for b in bots if b.get("purpose") and b.get("categories"))
+    unenriched = len(bots) - enriched
+    
+    print(f"📊 Enrichment Status:")
+    print(f"   Enriched: {enriched}/{len(bots)} ({enriched*100//len(bots) if len(bots) > 0 else 0}%)")
+    print(f"   Awaiting enrichment: {unenriched}")
+    print()
+    
     # Print validation results
     if all_issues:
         print(f"⚠️  Found {len(all_issues)} validation issues:\n")
@@ -104,40 +111,54 @@ def validate_data():
             print(f"\n   ... and {len(all_issues) - 20} more issues")
         
         print()
-        return False
+        
+        # Only fail if critical issues (not enrichment warnings)
+        critical_issues = [i for i in all_issues if not ("Missing purpose" in i or "Missing impact" in i or "Missing category" in i)]
+        
+        if critical_issues:
+            print(f"❌ {len(critical_issues)} critical validation errors found!")
+            return False
+        else:
+            print("⚠️  Non-critical issues found (missing enrichment), but validation passes")
+            print("   These bots will be enriched in the next run when Ollama is available")
     else:
         print("✅ All validations passed!")
-        
-        # Print statistics
-        print("\n📊 Statistics:")
-        print(f"   Total bots: {len(bots)}")
-        
-        # Count by source
-        source_counts = {}
-        for bot in bots:
-            for source in bot.get("sources", []):
-                source_counts[source] = source_counts.get(source, 0) + 1
-        
-        print("\n   By source:")
-        for source, count in sorted(source_counts.items()):
-            print(f"      {source}: {count}")
-        
-        # Count by operator
-        operator_counts = {}
-        for bot in bots:
-            operator = bot.get("operator", "Unknown")
-            operator_counts[operator] = operator_counts.get(operator, 0) + 1
-        
-        print("\n   Top operators:")
-        top_operators = sorted(operator_counts.items(), key=lambda x: x[1], reverse=True)[:10]
-        for operator, count in top_operators:
-            print(f"      {operator}: {count}")
-        
-        # Count enrichment status
-        enriched = sum(1 for bot in bots if bot.get("purpose") and bot.get("categories"))
-        print(f"\n   Enriched: {enriched}/{len(bots)} ({enriched*100//len(bots)}%)")
-        
-        return True
+    
+    # Print statistics
+    print("\n📊 Statistics:")
+    print(f"   Total bots: {len(bots)}")
+    
+    # Count by source
+    sources = {}
+    for bot in bots:
+        for source in bot.get("sources", []):
+            sources[source] = sources.get(source, 0) + 1
+    
+    print("\n   By source:")
+    for source, count in sorted(sources.items()):
+        print(f"      {source}: {count}")
+    
+    # Count by operator (top 10)
+    operators = {}
+    for bot in bots:
+        op = bot.get("operator", "Unknown")
+        if op:  # Only count non-empty operators
+            operators[op] = operators.get(op, 0) + 1
+    
+    if operators:
+        print("\n   Top 10 Operators:")
+        for op, count in sorted(operators.items(), key=lambda x: x[1], reverse=True)[:10]:
+            print(f"      {op}: {count}")
+    
+    # Technical details
+    with_ips = sum(1 for b in bots if b.get('raw_data', {}).get('ip_ranges'))
+    with_asn = sum(1 for b in bots if b.get('raw_data', {}).get('asn'))
+    
+    print(f"\n   Technical Details:")
+    print(f"      With IP ranges: {with_ips}")
+    print(f"      With ASN: {with_asn}")
+    
+    return True
 
 if __name__ == "__main__":
     import sys

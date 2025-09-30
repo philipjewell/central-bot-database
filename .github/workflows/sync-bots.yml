@@ -29,6 +29,25 @@ jobs:
         run: |
           pip install -r requirements.txt
       
+      - name: Install Ollama
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          
+      - name: Start Ollama service
+        run: |
+          ollama serve &
+          sleep 5
+          
+      - name: Pull Ollama model
+        run: |
+          ollama pull llama3.2
+          
+      - name: Verify Ollama is running
+        run: |
+          curl http://localhost:11434/api/tags || echo "Ollama not ready yet"
+          sleep 5
+          curl http://localhost:11434/api/tags
+      
       - name: Pull from ai.robots.txt
         run: |
           python scripts/fetch_ai_robots.py

@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Bot Database Schema",
+  "description": "Schema for bot entries in the database",
+  "type": "object",
+  "required": ["meta", "bots"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["generated_at", "version", "total_bots"],
+      "properties": {
+        "generated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of generation"
+        },
+        "version": {
+          "type": "string",
+          "description": "Schema version"
+        },
+        "total_bots": {
+          "type": "integer",
+          "description": "Total number of bots in database"
+        },
+        "description": {
+          "type": "string",
+          "description": "Database description"
+        }
+      }
+    },
+    "bots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["user_agent", "operator", "sources"],
+        "properties": {
+          "user_agent": {
+            "type": "string",
+            "description": "Bot user agent string"
+          },
+          "operator": {
+            "type": "string",
+            "description": "Company or entity operating the bot"
+          },
+          "purpose": {
+            "type": "string",
+            "description": "What the bot does and why it exists"
+          },
+          "description": {
+            "type": "string",
+            "description": "Additional description from source"
+          },
+          "impact_of_blocking": {
+            "type": "string",
+            "description": "Consequences of blocking this bot"
+          },
+          "website": {
+            "type": "string",
+            "format": "uri",
+            "description": "Operator's website"
+          },
+          "categories": {
+            "type": "object",
+            "description": "Recommendations by site type",
+            "properties": {
+              "ecommerce": {
+                "type": "string",
+                "enum": ["beneficial", "neutral", "harmful", "not_applicable"]
+              },
+              "news": {
+                "type": "string",
+                "enum": ["beneficial", "neutral", "harmful", "not_applicable"]
+              },
+              "media": {
+                "type": "string",
+                "enum": ["beneficial", "neutral", "harmful", "not_applicable"]
+              },
+              "blog": {
+                "type": "string",
+                "enum": ["beneficial", "neutral", "harmful", "not_applicable"]
+              },
+              "saas": {
+                "type": "string",
+                "enum": ["beneficial", "neutral", "harmful", "not_applicable"]
+              },
+              "corporate": {
+                "type": "string",
+                "enum": ["beneficial", "neutral", "harmful", "not_applicable"]
+              },
+              "documentation": {
+                "type": "string",
+                "enum": ["beneficial", "neutral", "harmful", "not_applicable"]
+              },
+              "social": {
+                "type": "string",
+                "enum": ["beneficial", "neutral", "harmful", "not_applicable"]
+              },
+              "portfolio": {
+                "type": "string",
+                "enum": ["beneficial", "neutral", "harmful", "not_applicable"]
+              },
+              "government": {
+                "type": "string",
+                "enum": ["beneficial", "neutral", "harmful", "not_applicable"]
+              }
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["ai-robots-txt", "cloudflare-radar", "manual"]
+            },
+            "description": "Data sources for this bot"
+          },
+          "raw_data": {
+            "type": "object",
+            "description": "Technical details from source APIs",
+            "properties": {
+              "ip_ranges": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "IP ranges associated with this bot"
+              },
+              "asn": {
+                "type": "string",
+                "description": "Autonomous System Number"
+              },
+              "asn_list": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of ASNs if multiple"
+              },
+              "verification_method": {
+                "type": "string",
+                "description": "How the bot is verified"
+              },
+              "rank": {
+                "type": ["string", "integer"],
+                "description": "Bot ranking if available"
+              }
+            }
+          },
+          "last_updated": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last update timestamp"
+          }
+        }
+      }
+    }
+  }
+}

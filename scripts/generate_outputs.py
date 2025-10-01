@@ -39,6 +39,10 @@ def format_category_badge(rating):
     }
     return badges.get(rating, "❓")
 
+def format_category_text(rating):
+    """Format category rating as text"""
+    return rating.replace('_', ' ').title()
+
 def generate_markdown_output(bots):
     """Generate human-readable Markdown documentation"""
     
@@ -101,6 +105,7 @@ def generate_markdown_output(bots):
             categories = bot.get("categories", {})
             sources = bot.get("sources", [])
             website = bot.get("website", "")
+            last_updated = bot.get("last_updated", "")
             
             # Technical details from raw_data
             raw_data = bot.get("raw_data", {})
@@ -110,6 +115,22 @@ def generate_markdown_output(bots):
             verification_method = raw_data.get("verification_method", "")
             
             md_lines.append(f"### {user_agent}")
+            md_lines.append("")
+            
+            # Bot details table
+            md_lines.append("| Bot Category | User Agent | Verification | Sources |")
+            md_lines.append("|--------------|------------|--------------|---------|")
+            
+            # Determine category
+            bot_category = operator if operator and operator != "Unknown" else "Uncategorized"
+            
+            # Format verification
+            verification_display = verification_method if verification_method else "Not specified"
+            
+            # Format sources
+            sources_display = ", ".join(sources) if sources else "Unknown"
+            
+            md_lines.append(f"| {bot_category} | `{user_agent}` | {verification_display} | {sources_display} |")
             md_lines.append("")
             
             # Purpose
@@ -128,8 +149,6 @@ def generate_markdown_output(bots):
                 tech_details.append(f"**ASN:** `{asn}`")
             if asn_list:
                 tech_details.append(f"**ASN:** `{', '.join(map(str, asn_list))}`")
-            if verification_method:
-                tech_details.append(f"**Verification:** {verification_method}")
             
             if tech_details:
                 md_lines.extend(tech_details)
@@ -140,24 +159,45 @@ def generate_markdown_output(bots):
                 md_lines.append(f"**Website:** [{website}]({website})")
                 md_lines.append("")
             
-            # Category recommendations
+            # Category recommendations - HORIZONTAL TABLE
             if categories:
                 md_lines.append("**Recommendations by Site Type:**")
                 md_lines.append("")
-                md_lines.append("| Category | Rating |")
-                md_lines.append("|----------|--------|")
                 
+                # Header row with categories
+                header = "| Category |"
+                separator = "|----------|"
+                for category in ["ecommerce", "news", "media", "blog", "saas", 
+                                "corporate", "documentation", "social", "portfolio", "government"]:
+                    header += f" {category.capitalize()} |"
+                    separator += "----------|"
+                
+                md_lines.append(header)
+                md_lines.append(separator)
+                
+                # Rating row
+                rating_row = "| Rating |"
                 for category in ["ecommerce", "news", "media", "blog", "saas", 
                                 "corporate", "documentation", "social", "portfolio", "government"]:
                     rating = categories.get(category, "neutral")
                     badge = format_category_badge(rating)
-                    md_lines.append(f"| {category.capitalize()} | {badge} {rating.replace('_', ' ').title()} |")
+                    text = format_category_text(rating)
+                    rating_row += f" {badge} {text} |"
                 
+                md_lines.append(rating_row)
                 md_lines.append("")
             
-            # Sources
-            md_lines.append(f"**Sources:** {', '.join(sources)}")
-            md_lines.append("")
+            # Last updated
+            if last_updated:
+                try:
+                    # Parse and format the timestamp
+                    dt = datetime.fromisoformat(last_updated.replace('Z', '+00:00'))
+                    formatted_date = dt.strftime('%Y-%m-%d')
+                    md_lines.append(f"*Last updated: {formatted_date}*")
+                    md_lines.append("")
+                except:
+                    pass
+            
             md_lines.append("---")
             md_lines.append("")
     

@@ -33,7 +33,7 @@ def fetch_cloudflare_bots():
         (
             "https://api.cloudflare.com/client/v4/radar/verified_bots/top/bots",
             {
-                "limit": 100,
+                "limit": 200,
                 "dateStart": date_from,
                 "dateEnd": date_to,
                 "format": "json"
@@ -42,14 +42,14 @@ def fetch_cloudflare_bots():
         (
             "https://api.cloudflare.com/client/v4/radar/verified_bots/top/bots",
             {
-                "limit": 100,
+                "limit": 200,
                 "dateRange": "7d"
             }
         ),
         (
             "https://api.cloudflare.com/client/v4/radar/verified_bots/top/bots",
             {
-                "limit": 100,
+                "limit": 200,
                 "range": "7d"
             }
         ),

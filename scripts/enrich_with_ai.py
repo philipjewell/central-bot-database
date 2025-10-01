@@ -71,6 +71,9 @@ def enrich_bot(bot: Dict, bot_num: int, total: int) -> Dict:
         print(f"  [{bot_num}/{total}] ⊙ Skipping {user_agent} (already enriched, {source_type})")
         return bot
     
+    # Bot needs enrichment - will update timestamp
+    was_enriched = False
+    
     # Only enrich what's missing
     print(f"  [{bot_num}/{total}] → Enriching {user_agent}...")
     needs_enrichment = []
@@ -97,6 +100,7 @@ Focus on what the bot does and why it exists. Be factual and concise."""
         purpose = get_ollama_response(purpose_prompt)
         if purpose:
             bot["purpose"] = purpose.strip()
+            was_enriched = True
             print(f"      ✓ Generated purpose")
     
     # Generate impact of blocking
@@ -112,6 +116,7 @@ Focus on what functionality or visibility would be lost. Be specific and practic
         impact = get_ollama_response(impact_prompt)
         if impact:
             bot["impact_of_blocking"] = impact.strip()
+            was_enriched = True
             print(f"      ✓ Generated impact")
     
     # Generate category recommendations
@@ -172,11 +177,17 @@ Your JSON response (use exact category names):"""
                         normalized_categories[cat] = "neutral"
                 
                 bot["categories"] = normalized_categories
+                was_enriched = True
                 print(f"      ✓ Generated categories")
         except Exception as e:
             print(f"      ✗ Error parsing categories: {e}")
             # Default to neutral for all categories
             bot["categories"] = {cat: "neutral" for cat in SITE_CATEGORIES}
+            was_enriched = True
+    
+    # Update timestamp only if we enriched the bot
+    if was_enriched:
+        bot["last_updated"] = datetime.utcnow().isoformat() + "Z"
     
     return bot
 

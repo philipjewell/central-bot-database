@@ -69,11 +69,15 @@ def load_staging_bots() -> List[Dict]:
 def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = False) -> Dict:
     """Merge two bot entries, preferring manual data, then newer data"""
     merged = existing.copy()
+    was_updated = False
     
     # Merge sources
     existing_sources = set(existing.get("sources", []))
     new_sources = set(new.get("sources", []))
-    merged["sources"] = sorted(list(existing_sources | new_sources))
+    merged_sources = sorted(list(existing_sources | new_sources))
+    if merged_sources != merged["sources"]:
+        merged["sources"] = merged_sources
+        was_updated = True
     
     # If preserve_enrichment is True, keep existing enrichment data
     if preserve_enrichment:
@@ -81,25 +85,31 @@ def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = Fal
         for key in ["description", "website"]:
             if key in new and new[key] and not existing.get(key):
                 merged[key] = new[key]
+                was_updated = True
         
         # Keep existing enrichment if present
         if not existing.get("purpose") and new.get("purpose"):
             merged["purpose"] = new["purpose"]
+            was_updated = True
         if not existing.get("impact_of_blocking") and new.get("impact_of_blocking"):
             merged["impact_of_blocking"] = new["impact_of_blocking"]
+            was_updated = True
         if not existing.get("categories") and new.get("categories"):
             merged["categories"] = new["categories"]
+            was_updated = True
     else:
         # If new entry has manual source, prefer its data
         if "manual" in new.get("sources", []):
             for key in ["description", "operator", "purpose", "impact_of_blocking", "categories"]:
-                if key in new and new[key]:
+                if key in new and new[key] and new[key] != existing.get(key):
                     merged[key] = new[key]
+                    was_updated = True
         else:
             # Otherwise, prefer non-empty values from new entry
             for key in ["description", "operator", "website"]:
                 if key in new and new[key] and not existing.get(key):
                     merged[key] = new[key]
+                    was_updated = True
     
     # Merge raw_data (always update technical details)
     existing_raw = existing.get("raw_data", {})
@@ -109,13 +119,21 @@ def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = Fal
     for key, value in new_raw.items():
         if key not in merged_raw or not merged_raw[key]:
             merged_raw[key] = value
+            was_updated = True
         elif key == "ip_ranges" and isinstance(value, list):
             # Merge IP ranges
             existing_ips = set(merged_raw.get("ip_ranges", []))
             new_ips = set(value)
-            merged_raw["ip_ranges"] = sorted(list(existing_ips | new_ips))
+            merged_ips = sorted(list(existing_ips | new_ips))
+            if merged_ips != merged_raw.get("ip_ranges", []):
+                merged_raw["ip_ranges"] = merged_ips
+                was_updated = True
     
     merged["raw_data"] = merged_raw
+    
+    # Only update timestamp if data actually changed
+    if was_updated:
+        merged["last_updated"] = datetime.utcnow().isoformat() + "Z"
     
     return merged
 
@@ -169,17 +187,15 @@ def merge_sources():
             preserve = normalized_ua in existing_bot_uas
             bot_map[normalized_ua] = merge_bot_entries(bot_map[normalized_ua], bot, preserve_enrichment=preserve)
         else:
-            # New bot
+            # New bot - set timestamp
+            bot["last_updated"] = datetime.utcnow().isoformat() + "Z"
             bot_map[normalized_ua] = bot
     
     # Convert back to list and sort
     merged_bots = sorted(bot_map.values(), key=lambda x: x.get("user_agent", "").lower())
     
-    # Add metadata
+    # Ensure all required fields exist (but don't update timestamp)
     for bot in merged_bots:
-        bot["last_updated"] = datetime.utcnow().isoformat() + "Z"
-        
-        # Ensure all required fields exist
         bot.setdefault("description", "")
         bot.setdefault("operator", "")
         bot.setdefault("purpose", "")
@@ -187,6 +203,7 @@ def merge_sources():
         bot.setdefault("categories", {})
         bot.setdefault("sources", [])
         bot.setdefault("raw_data", {})
+        bot.setdefault("last_updated", datetime.utcnow().isoformat() + "Z")  # Only if not set
     
     # Save merged data
     output_dir = Path("staging")

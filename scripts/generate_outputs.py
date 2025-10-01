@@ -45,7 +45,7 @@ def generate_markdown_output(bots):
     md_lines = [
         "# Bot Database",
         "",
-        f"Last updated: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
+        f"Last generated: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
         "",
         f"Total bots: **{len(bots)}**",
         "",

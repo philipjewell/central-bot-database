@@ -30,7 +30,7 @@ def get_ollama_response(prompt: str, model: str = "llama3.2") -> str:
                 "prompt": prompt,
                 "stream": False
             },
-            timeout=60
+            timeout=120  # Increased timeout
         )
         response.raise_for_status()
         return response.json().get("response", "")
@@ -38,20 +38,35 @@ def get_ollama_response(prompt: str, model: str = "llama3.2") -> str:
         print(f"✗ Error calling Ollama: {e}")
         return ""
 
-def enrich_bot(bot: Dict) -> Dict:
+def normalize_category_name(category: str) -> str:
+    """Normalize category names to handle typos"""
+    # Fix common typos
+    typo_map = {
+        'sas': 'saas',
+        'e-commerce': 'ecommerce',
+        'ecommerce': 'ecommerce',
+        'tech-docs': 'documentation',
+        'docs': 'documentation',
+        'doc': 'documentation',
+        'govt': 'government',
+        'gov': 'government',
+    }
+    return typo_map.get(category.lower().strip(), category.lower().strip())
+
+def enrich_bot(bot: Dict, bot_num: int, total: int) -> Dict:
     """Enrich a single bot with AI-generated content"""
     
     # Skip if already has manual data
     if "manual" in bot.get("sources", []):
         if bot.get("purpose") and bot.get("categories"):
-            print(f"  ⊙ Skipping {bot['user_agent']} (manual entry)")
+            print(f"  [{bot_num}/{total}] ⊙ Skipping {bot['user_agent']} (manual entry)")
             return bot
     
     user_agent = bot.get("user_agent", "")
     operator = bot.get("operator", "")
     existing_desc = bot.get("description", "")
     
-    print(f"  → Enriching {user_agent}...")
+    print(f"  [{bot_num}/{total}] → Enriching {user_agent}...")
     
     # Generate purpose description
     if not bot.get("purpose"):
@@ -66,6 +81,7 @@ Focus on what the bot does and why it exists. Be factual and concise."""
         purpose = get_ollama_response(purpose_prompt)
         if purpose:
             bot["purpose"] = purpose.strip()
+            print(f"      ✓ Generated purpose")
     
     # Generate impact of blocking
     if not bot.get("impact_of_blocking"):
@@ -80,6 +96,7 @@ Focus on what functionality or visibility would be lost. Be specific and practic
         impact = get_ollama_response(impact_prompt)
         if impact:
             bot["impact_of_blocking"] = impact.strip()
+            print(f"      ✓ Generated impact")
     
     # Generate category recommendations
     if not bot.get("categories"):
@@ -90,12 +107,22 @@ Bot Name: {user_agent}
 Operator: {operator}
 Purpose: {bot.get('purpose', existing_desc)}
 
-Categories: {', '.join(SITE_CATEGORIES)}
+Categories (USE THESE EXACT NAMES):
+- ecommerce (NOT "sas" or "e-commerce")
+- news
+- media
+- blog
+- saas (spell it "saas" with TWO a's)
+- corporate
+- documentation
+- social
+- portfolio
+- government
 
 Example format:
-{{"ecommerce": "beneficial", "news": "beneficial", "media": "neutral"}}
+{{"ecommerce": "beneficial", "news": "beneficial", "saas": "neutral", "media": "neutral"}}
 
-Your JSON response:"""
+Your JSON response (use exact category names):"""
 
         categories_response = get_ollama_response(categories_prompt)
         try:
@@ -105,9 +132,25 @@ Your JSON response:"""
             if start >= 0 and end > start:
                 categories_json = categories_response[start:end]
                 categories = json.loads(categories_json)
-                bot["categories"] = categories
+                
+                # Normalize any typos in category names
+                normalized_categories = {}
+                for cat, rating in categories.items():
+                    normalized_cat = normalize_category_name(cat)
+                    if normalized_cat in SITE_CATEGORIES:
+                        normalized_categories[normalized_cat] = rating
+                    else:
+                        print(f"      ⚠️  Ignoring invalid category: {cat}")
+                
+                # Fill in any missing categories with neutral
+                for cat in SITE_CATEGORIES:
+                    if cat not in normalized_categories:
+                        normalized_categories[cat] = "neutral"
+                
+                bot["categories"] = normalized_categories
+                print(f"      ✓ Generated categories")
         except Exception as e:
-            print(f"    ✗ Error parsing categories: {e}")
+            print(f"      ✗ Error parsing categories: {e}")
             # Default to neutral for all categories
             bot["categories"] = {cat: "neutral" for cat in SITE_CATEGORIES}
     
@@ -143,19 +186,25 @@ def enrich_with_ai():
     with open(merged_file, 'r') as f:
         bots = json.load(f)
     
-    print(f"\nEnriching {len(bots)} bots with AI-generated content...\n")
+    total = len(bots)
+    print(f"\n🤖 Enriching {total} bots with AI-generated content...")
+    print(f"   This may take a while (approximately {total * 2} minutes)\n")
     
     # Enrich each bot
     for i, bot in enumerate(bots, 1):
-        print(f"[{i}/{len(bots)}]", end=" ")
-        bots[i-1] = enrich_bot(bot)
+        bots[i-1] = enrich_bot(bot, i, total)
+        
+        # Progress update every 10 bots
+        if i % 10 == 0:
+            print(f"\n   Progress: {i}/{total} bots enriched ({i*100//total}%)\n")
     
     # Save enriched data
     output_file = Path("staging/enriched_bots.json")
     with open(output_file, 'w') as f:
         json.dump(bots, f, indent=2)
     
-    print(f"\n✓ Enrichment complete, saved to {output_file}")
+    print(f"\n✅ Enrichment complete! Saved to {output_file}")
+    print(f"   Total bots enriched: {total}")
 
 if __name__ == "__main__":
     enrich_with_ai()

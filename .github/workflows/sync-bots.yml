@@ -11,7 +11,8 @@ permissions:
   pull-requests: write
 
 jobs:
-  sync-and-process:
+  fetch-and-merge:
+    name: Phase 1 - Fetch and Merge
     runs-on: ubuntu-latest
     
     steps:
@@ -29,25 +30,6 @@ jobs:
         run: |
           pip install -r requirements.txt
       
-      - name: Install Ollama
-        run: |
-          curl -fsSL https://ollama.com/install.sh | sh
-          
-      - name: Start Ollama service
-        run: |
-          ollama serve &
-          sleep 5
-          
-      - name: Pull Ollama model
-        run: |
-          ollama pull llama3.2
-          
-      - name: Verify Ollama is running
-        run: |
-          curl http://localhost:11434/api/tags || echo "Ollama not ready yet"
-          sleep 5
-          curl http://localhost:11434/api/tags
-      
       - name: Pull from ai.robots.txt
         run: |
           python scripts/fetch_ai_robots.py
@@ -64,9 +46,101 @@ jobs:
         run: |
           python scripts/merge_sources.py
       
+      - name: Upload staging artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: staging-merged
+          path: staging/
+          retention-days: 1
+
+  enrich-with-ai:
+    name: Phase 2 - AI Enrichment
+    needs: fetch-and-merge
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Download staging artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: staging-merged
+          path: staging/
+      
+      - name: Install Ollama
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          
+      - name: Start Ollama service
+        run: |
+          ollama serve &
+          sleep 10
+          
+      - name: Pull Ollama model
+        run: |
+          ollama pull llama3.2
+          echo "Model pulled successfully"
+          
+      - name: Verify Ollama is running
+        run: |
+          for i in {1..10}; do
+            if curl -s http://localhost:11434/api/tags > /dev/null; then
+              echo "Ollama is ready!"
+              break
+            fi
+            echo "Waiting for Ollama... attempt $i/10"
+            sleep 5
+          done
+          curl http://localhost:11434/api/tags
+      
       - name: Enrich with AI descriptions
         run: |
+          echo "Starting AI enrichment..."
           python scripts/enrich_with_ai.py
+          echo "AI enrichment completed!"
+      
+      - name: Upload enriched artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: staging-enriched
+          path: staging/
+          retention-days: 1
+
+  generate-and-validate:
+    name: Phase 3 - Generate Outputs
+    needs: enrich-with-ai
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Download enriched artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: staging-enriched
+          path: staging/
       
       - name: Generate outputs
         run: |
@@ -76,21 +150,27 @@ jobs:
         run: |
           python scripts/validate_data.py
       
-      - name: Check for changes
-        id: check_changes
+      - name: Configure Git
         run: |
-          if git diff --quiet data/bots.json docs/BOTS.md; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+      
+      - name: Commit generated outputs
+        run: |
+          git add data/bots.json docs/BOTS.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            echo "has_changes=false" >> $GITHUB_ENV
           else
-            echo "has_changes=true" >> $GITHUB_OUTPUT
+            git commit -m "chore: update bot database [skip ci]"
+            echo "has_changes=true" >> $GITHUB_ENV
           fi
       
       - name: Create Pull Request
-        if: steps.check_changes.outputs.has_changes == 'true'
+        if: env.has_changes == 'true'
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'chore: update bot database'
           branch: bot-sync-${{ github.run_number }}
           delete-branch: true
           title: 'Weekly Bot Database Update'
@@ -99,24 +179,42 @@ jobs:
             
             This PR contains updates to the bot database from:
             - ai.robots.txt repository
-            - Cloudflare Radar API
+            - Cloudflare Radar API (if available)
             - Local manual entries
             
-            ### Changes
-            - Updated bot definitions
-            - AI-generated descriptions and impact assessments
-            - Category recommendations for different site types
+            ### What Changed
+            - ✅ Fetched latest bot data
+            - ✅ Merged and deduplicated entries
+            - ✅ AI-enriched descriptions and recommendations
+            - ✅ Generated JSON and Markdown outputs
+            - ✅ Validated all data
             
             ### Review Checklist
             - [ ] Verify new bots have accurate descriptions
             - [ ] Check category recommendations make sense
-            - [ ] Ensure no sensitive information leaked
-            - [ ] Validate JSON structure is correct
+            - [ ] Review any new operators
+            - [ ] Ensure technical details are present
             
             **Auto-generated by GitHub Actions**
+            
+            Run number: ${{ github.run_number }}
+            Workflow: ${{ github.workflow }}
           labels: |
             automated
             bot-database
-          reviewers: |
-            # Add your GitHub username or team here
           draft: false
+      
+      - name: Workflow Summary
+        if: always()
+        run: |
+          echo "## Workflow Complete! 🎉" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ env.has_changes }}" == "true" ]; then
+            echo "✅ Changes detected and PR created" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ No changes detected" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Files Generated" >> $GITHUB_STEP_SUMMARY
+          echo "- \`data/bots.json\`" >> $GITHUB_STEP_SUMMARY
+          echo "- \`docs/BOTS.md\`" >> $GITHUB_STEP_SUMMARY

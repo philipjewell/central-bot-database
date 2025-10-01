@@ -149,12 +149,20 @@ Your JSON response (use exact category names):"""
                 categories_json = categories_response[start:end]
                 categories = json.loads(categories_json)
                 
-                # Normalize any typos in category names
+                # Normalize any typos in category names and strip whitespace from ratings
                 normalized_categories = {}
                 for cat, rating in categories.items():
                     normalized_cat = normalize_category_name(cat)
+                    # Strip whitespace from rating values
+                    normalized_rating = rating.strip() if isinstance(rating, str) else rating
+                    
                     if normalized_cat in SITE_CATEGORIES:
-                        normalized_categories[normalized_cat] = rating
+                        # Validate the rating
+                        if normalized_rating in ["beneficial", "neutral", "harmful", "not_applicable"]:
+                            normalized_categories[normalized_cat] = normalized_rating
+                        else:
+                            print(f"      ⚠️  Invalid rating '{normalized_rating}' for {normalized_cat}, defaulting to neutral")
+                            normalized_categories[normalized_cat] = "neutral"
                     else:
                         print(f"      ⚠️  Ignoring invalid category: {cat}")
                 

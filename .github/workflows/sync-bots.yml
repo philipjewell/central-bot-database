@@ -135,6 +135,10 @@ jobs:
           python scripts/enrich_with_ai.py
           echo "AI enrichment completed!"
       
+      - name: Fix any rating whitespace issues
+        run: |
+          python scripts/fix_ratings.py
+      
       - name: Upload enriched artifacts
         uses: actions/upload-artifact@v4
         with:

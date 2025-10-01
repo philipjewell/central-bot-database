@@ -147,7 +147,7 @@ jobs:
           retention-days: 1
 
   generate-and-validate:
-    name: Phase 3 - Generate Outputs
+    name: Phase 3 - Generate Outputs and Create PR
     needs: enrich-with-ai
     runs-on: ubuntu-latest
     
@@ -156,6 +156,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main  # Ensure we're on the main branch
       
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -172,24 +173,56 @@ jobs:
           name: staging-enriched
           path: staging/
       
-      - name: Generate outputs
+      - name: Check current state
         run: |
+          echo "Current files in data/:"
+          ls -lah data/ 2>/dev/null || echo "data/ does not exist"
+          echo ""
+          echo "Current files in docs/:"
+          ls -lah docs/ 2>/dev/null || echo "docs/ does not exist"
+          echo ""
+          echo "Downloaded staging files:"
+          ls -lah staging/
+      
+      - name: Generate JSON output (data/bots.json)
+        run: |
+          echo "Generating JSON output from enriched data..."
           python scripts/generate_outputs.py
-      
-      - name: Validate outputs
+          echo ""
+          echo "✓ JSON generated at data/bots.json"
+          
+      - name: Validate JSON output
         run: |
+          echo "Validating bot database..."
           python scripts/validate_data.py
+          echo "✓ Validation passed"
       
-      - name: Check for changes
+      - name: Check for any changes
         id: check_changes
         run: |
-          if git diff --quiet data/bots.json docs/BOTS.md; then
-            echo "No changes detected"
+          # Check if there are any changes in data/ or docs/
+          if git diff --quiet data/ docs/ 2>/dev/null; then
+            echo "No changes detected in output files"
             echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "skip_pr=true" >> $GITHUB_OUTPUT
           else
-            echo "Changes detected"
+            echo "Changes detected!"
+            echo ""
+            echo "Changed files:"
+            git diff --name-only data/ docs/ 2>/dev/null || echo "New files created"
+            echo ""
             echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "skip_pr=false" >> $GITHUB_OUTPUT
           fi
+      
+      - name: Show diff summary
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          echo "## Changes Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Modified Files" >> $GITHUB_STEP_SUMMARY
+          git diff --stat data/ docs/ >> $GITHUB_STEP_SUMMARY || echo "New files" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
       
       - name: Create Pull Request
         if: steps.check_changes.outputs.has_changes == 'true'
@@ -198,52 +231,79 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: bot-sync-${{ github.run_number }}
           delete-branch: true
-          title: 'Weekly Bot Database Update'
+          title: '🤖 Weekly Bot Database Update'
           add-paths: |
             data/bots.json
             docs/BOTS.md
           commit-message: 'chore: update bot database [skip ci]'
           body: |
-            ## Bot Database Sync
+            ## 🤖 Bot Database Sync
             
-            This PR contains updates to the bot database from:
-            - ai.robots.txt repository
-            - Cloudflare Radar API (if available)
-            - Local manual entries
+            This PR contains updates to the bot database.
             
-            ### What Changed
-            - ✅ Fetched latest bot data
-            - ✅ Merged and deduplicated entries
-            - ✅ AI-enriched descriptions and recommendations
-            - ✅ Generated JSON and Markdown outputs
-            - ✅ Validated all data
+            ### 📊 Data Sources
+            - ✅ ai.robots.txt repository
+            - ✅ Cloudflare Radar API (if available)
+            - ✅ Local manual entries
             
-            ### Review Checklist
-            - [ ] Verify new bots have accurate descriptions
-            - [ ] Check category recommendations make sense
-            - [ ] Review any new operators
-            - [ ] Ensure technical details are present
+            ### 🔄 Processing Steps
+            1. ✅ Fetched latest bot data from sources
+            2. ✅ Merged with existing data (deduplicated)
+            3. ✅ AI-enriched new/incomplete bot entries
+            4. ✅ Generated JSON output (`data/bots.json`)
+            5. ✅ Generated Markdown documentation (`docs/BOTS.md`)
+            6. ✅ Validated all data integrity
+            
+            ### 📝 What Changed
+            
+            The following files have been updated:
+            - `data/bots.json` - Machine-readable bot database
+            - `docs/BOTS.md` - Human-readable documentation
+            
+            ### ✅ Review Checklist
+            - [ ] New bots have accurate descriptions
+            - [ ] Category recommendations make sense
+            - [ ] Technical details (IP ranges, ASN) are present
+            - [ ] No sensitive information in descriptions
+            - [ ] Markdown formatting looks correct
+            
+            ### 📈 Statistics
+            See the workflow run for enrichment statistics and validation results.
+            
+            ---
             
             **Auto-generated by GitHub Actions**
-            
-            Run number: ${{ github.run_number }}
-            Workflow: ${{ github.workflow }}
+            - Run: ${{ github.run_number }}
+            - Workflow: ${{ github.workflow }}
+            - Triggered: ${{ github.event_name }}
           labels: |
-            automated
             bot-database
+            automated
+          assignees: ${{ github.repository_owner }}
           draft: false
+        id: create_pr
       
-      - name: Workflow Summary
-        if: always()
+      - name: PR Created Summary
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: |
-          echo "## Workflow Complete! 🎉" >> $GITHUB_STEP_SUMMARY
+          echo "## ✅ Pull Request Created!" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          if [ "${{ steps.check_changes.outputs.has_changes }}" == "true" ]; then
-            echo "✅ Changes detected and PR created" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "ℹ️ No changes detected" >> $GITHUB_STEP_SUMMARY
-          fi
+          echo "A pull request has been created with the updated bot database." >> $GITHUB_STEP_SUMMARY
+          echo "Review and merge it to update the repository." >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Files Generated" >> $GITHUB_STEP_SUMMARY
-          echo "- \`data/bots.json\`" >> $GITHUB_STEP_SUMMARY
-          echo "- \`docs/BOTS.md\`" >> $GITHUB_STEP_SUMMARY
+          echo "### Next Steps" >> $GITHUB_STEP_SUMMARY
+          echo "1. Review the changes in the PR" >> $GITHUB_STEP_SUMMARY
+          echo "2. Check the generated Markdown formatting" >> $GITHUB_STEP_SUMMARY
+          echo "3. Verify new bot descriptions" >> $GITHUB_STEP_SUMMARY
+          echo "4. Merge the PR to update the database" >> $GITHUB_STEP_SUMMARY
+      
+      - name: No Changes Summary
+        if: steps.check_changes.outputs.has_changes == 'false'
+        run: |
+          echo "## ℹ️ No Changes Detected" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "The bot database is already up to date." >> $GITHUB_STEP_SUMMARY
+          echo "No pull request was created." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Possible Reasons" >> $GITHUB_STEP_SUMMARY
+          echo "- No new

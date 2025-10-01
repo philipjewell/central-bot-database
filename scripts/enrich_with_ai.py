@@ -56,20 +56,36 @@ def normalize_category_name(category: str) -> str:
 def enrich_bot(bot: Dict, bot_num: int, total: int) -> Dict:
     """Enrich a single bot with AI-generated content"""
     
-    # Skip if already has manual data
-    if "manual" in bot.get("sources", []):
-        if bot.get("purpose") and bot.get("categories"):
-            print(f"  [{bot_num}/{total}] ⊙ Skipping {bot['user_agent']} (manual entry)")
-            return bot
-    
     user_agent = bot.get("user_agent", "")
     operator = bot.get("operator", "")
     existing_desc = bot.get("description", "")
     
+    # Check if bot is already fully enriched
+    has_purpose = bool(bot.get("purpose"))
+    has_impact = bool(bot.get("impact_of_blocking"))
+    has_categories = bool(bot.get("categories"))
+    
+    if has_purpose and has_impact and has_categories:
+        # Already fully enriched - skip
+        source_type = "manual" if "manual" in bot.get("sources", []) else "external"
+        print(f"  [{bot_num}/{total}] ⊙ Skipping {user_agent} (already enriched, {source_type})")
+        return bot
+    
+    # Only enrich what's missing
     print(f"  [{bot_num}/{total}] → Enriching {user_agent}...")
+    needs_enrichment = []
+    
+    if not has_purpose:
+        needs_enrichment.append("purpose")
+    if not has_impact:
+        needs_enrichment.append("impact")
+    if not has_categories:
+        needs_enrichment.append("categories")
+    
+    print(f"      Needs: {', '.join(needs_enrichment)}")
     
     # Generate purpose description
-    if not bot.get("purpose"):
+    if not has_purpose:
         purpose_prompt = f"""Describe the purpose of this bot in 1-2 concise sentences:
 
 Bot Name: {user_agent}
@@ -84,7 +100,7 @@ Focus on what the bot does and why it exists. Be factual and concise."""
             print(f"      ✓ Generated purpose")
     
     # Generate impact of blocking
-    if not bot.get("impact_of_blocking"):
+    if not has_impact:
         impact_prompt = f"""In 1-2 sentences, describe the potential impact of blocking this bot:
 
 Bot Name: {user_agent}
@@ -99,7 +115,7 @@ Focus on what functionality or visibility would be lost. Be specific and practic
             print(f"      ✓ Generated impact")
     
     # Generate category recommendations
-    if not bot.get("categories"):
+    if not has_categories:
         categories_prompt = f"""For the following bot, classify it for different website types.
 Respond with ONLY a JSON object mapping each category to one of: "beneficial", "neutral", "harmful", or "not_applicable".
 

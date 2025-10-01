@@ -28,19 +28,52 @@ def load_existing_database() -> List[Dict]:
         return []
 
 def load_manual_bots() -> List[Dict]:
-    """Load manually defined bots from local source"""
-    manual_file = Path("sources/manual_bots.json")
-    if not manual_file.exists():
-        print("ℹ No manual bots file found, creating empty one")
-        manual_file.parent.mkdir(exist_ok=True)
-        with open(manual_file, 'w') as f:
-            json.dump([], f, indent=2)
+    """Load manually defined bots from all JSON files in sources/ directory"""
+    sources_dir = Path("sources")
+    if not sources_dir.exists():
+        print("ℹ No sources directory found, creating it")
+        sources_dir.mkdir(exist_ok=True)
         return []
     
-    with open(manual_file, 'r') as f:
-        bots = json.load(f)
-    print(f"✓ Loaded {len(bots)} manual bot entries")
-    return bots
+    all_manual_bots = []
+    json_files = list(sources_dir.glob("*.json"))
+    
+    if not json_files:
+        print("ℹ No manual bot files found in sources/")
+        return []
+    
+    for json_file in json_files:
+        try:
+            with open(json_file, 'r') as f:
+                content = json.load(f)
+                
+                # Handle both single bot object and array of bots
+                if isinstance(content, list):
+                    bots = content
+                elif isinstance(content, dict):
+                    # Single bot object
+                    bots = [content]
+                else:
+                    print(f"⚠️  Skipping {json_file.name}: Invalid format")
+                    continue
+                
+                # Ensure each bot has the manual source
+                for bot in bots:
+                    if "sources" not in bot:
+                        bot["sources"] = ["manual"]
+                    elif "manual" not in bot["sources"]:
+                        bot["sources"].append("manual")
+                
+                all_manual_bots.extend(bots)
+                print(f"✓ Loaded {len(bots)} bot(s) from {json_file.name}")
+                
+        except json.JSONDecodeError as e:
+            print(f"✗ Error parsing {json_file.name}: {e}")
+        except Exception as e:
+            print(f"✗ Error loading {json_file.name}: {e}")
+    
+    print(f"✓ Total manual bots loaded: {len(all_manual_bots)}")
+    return all_manual_bots
 
 def load_staging_bots() -> List[Dict]:
     """Load bots from staging area"""

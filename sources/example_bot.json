@@ -1,0 +1,27 @@
+{
+  "user_agent": "ExampleBot/1.0",
+  "operator": "Example Company",
+  "purpose": "Crawls websites to index content for our search engine.",
+  "description": "Our proprietary web crawler",
+  "impact_of_blocking": "Your content will not appear in Example search results, potentially reducing discoverability.",
+  "website": "https://example.com/bot",
+  "categories": {
+    "ecommerce": "beneficial",
+    "news": "beneficial",
+    "media": "beneficial",
+    "blog": "beneficial",
+    "saas": "neutral",
+    "corporate": "beneficial",
+    "documentation": "beneficial",
+    "social": "not_applicable",
+    "portfolio": "beneficial",
+    "government": "neutral"
+  },
+  "sources": ["manual"],
+  "raw_data": {
+    "ip_ranges": ["192.0.2.0/24", "198.51.100.0/24"],
+    "asn": "AS64496",
+    "verification_method": "DNS reverse lookup",
+    "documentation_url": "https://example.com/bot/docs"
+  }
+}

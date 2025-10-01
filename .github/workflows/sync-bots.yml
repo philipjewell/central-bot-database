@@ -1,4 +1,3 @@
----
 name: Sync and Enrich Bot Database
 
 on:
@@ -47,7 +46,7 @@ jobs:
           python scripts/merge_sources.py
       
       - name: Upload staging artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: staging-merged
           path: staging/
@@ -72,7 +71,7 @@ jobs:
           pip install -r requirements.txt
       
       - name: Download staging artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: staging-merged
           path: staging/
@@ -110,7 +109,7 @@ jobs:
           echo "AI enrichment completed!"
       
       - name: Upload enriched artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: staging-enriched
           path: staging/
@@ -137,7 +136,7 @@ jobs:
           pip install -r requirements.txt
       
       - name: Download enriched artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: staging-enriched
           path: staging/

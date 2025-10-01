@@ -1,6 +1,6 @@
 # Bot Database
 
-Last updated: 2025-10-01 19:47 UTC
+Last updated: 2025-10-01 21:04 UTC
 
 Total bots: **186**
 
@@ -665,6 +665,21 @@ Total bots: **186**
 **Impact of Blocking:** Blocking the Internet Archive bot would likely cause irreparable loss of access to historical websites, books, music, and movies that are no longer available online due to obsolescence or removal. This would mean that future generations may not be able to view content like the Library of Congress's digitized archives of the Civil War era or classic films from the 1920s-1950s that are currently preserved by the Internet Archive.
 
 **Verification:** cloudflare-verified
+
+**Recommendations by Site Type:**
+
+| Category | Rating |
+|----------|--------|
+| Ecommerce | ➖ Not Applicable |
+| News | ⚪ Neutral |
+| Media | ✅ Beneficial |
+| Blog | ➖ Not Applicable |
+| Saas | ❌ Harmful |
+| Corporate | ✅ Beneficial |
+| Documentation | ⚪ Neutral |
+| Social | ⚪ Neutral |
+| Portfolio | ➖ Not Applicable |
+| Government | ⚪ Neutral |
 
 **Sources:** cloudflare-radar
 

@@ -10,6 +10,23 @@ def normalize_user_agent(ua: str) -> str:
     """Normalize user agent strings for comparison"""
     return ua.lower().strip().replace('-', '').replace('_', '')
 
+def load_existing_database() -> List[Dict]:
+    """Load existing enriched bots from data/bots.json if it exists"""
+    db_file = Path("data/bots.json")
+    if not db_file.exists():
+        print("ℹ No existing database found, starting fresh")
+        return []
+    
+    try:
+        with open(db_file, 'r') as f:
+            data = json.load(f)
+            bots = data.get("bots", [])
+            print(f"✓ Loaded {len(bots)} bots from existing database")
+            return bots
+    except Exception as e:
+        print(f"⚠️ Error loading existing database: {e}")
+        return []
+
 def load_manual_bots() -> List[Dict]:
     """Load manually defined bots from local source"""
     manual_file = Path("sources/manual_bots.json")
@@ -35,6 +52,10 @@ def load_staging_bots() -> List[Dict]:
         return []
     
     for file in staging_dir.glob("*.json"):
+        # Skip merged/enriched files
+        if file.name in ["merged_bots.json", "enriched_bots.json"]:
+            continue
+            
         try:
             with open(file, 'r') as f:
                 bots = json.load(f)
@@ -45,7 +66,7 @@ def load_staging_bots() -> List[Dict]:
     
     return all_bots
 
-def merge_bot_entries(existing: Dict, new: Dict) -> Dict:
+def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = False) -> Dict:
     """Merge two bot entries, preferring manual data, then newer data"""
     merged = existing.copy()
     
@@ -54,18 +75,33 @@ def merge_bot_entries(existing: Dict, new: Dict) -> Dict:
     new_sources = set(new.get("sources", []))
     merged["sources"] = sorted(list(existing_sources | new_sources))
     
-    # If new entry has manual source, prefer its data
-    if "manual" in new.get("sources", []):
-        for key in ["description", "operator", "purpose", "impact_of_blocking", "categories"]:
-            if key in new and new[key]:
-                merged[key] = new[key]
-    else:
-        # Otherwise, prefer non-empty values from new entry
-        for key in ["description", "operator", "website"]:
+    # If preserve_enrichment is True, keep existing enrichment data
+    if preserve_enrichment:
+        # Only update technical details, not enrichment
+        for key in ["description", "website"]:
             if key in new and new[key] and not existing.get(key):
                 merged[key] = new[key]
+        
+        # Keep existing enrichment if present
+        if not existing.get("purpose") and new.get("purpose"):
+            merged["purpose"] = new["purpose"]
+        if not existing.get("impact_of_blocking") and new.get("impact_of_blocking"):
+            merged["impact_of_blocking"] = new["impact_of_blocking"]
+        if not existing.get("categories") and new.get("categories"):
+            merged["categories"] = new["categories"]
+    else:
+        # If new entry has manual source, prefer its data
+        if "manual" in new.get("sources", []):
+            for key in ["description", "operator", "purpose", "impact_of_blocking", "categories"]:
+                if key in new and new[key]:
+                    merged[key] = new[key]
+        else:
+            # Otherwise, prefer non-empty values from new entry
+            for key in ["description", "operator", "website"]:
+                if key in new and new[key] and not existing.get(key):
+                    merged[key] = new[key]
     
-    # Merge raw_data
+    # Merge raw_data (always update technical details)
     existing_raw = existing.get("raw_data", {})
     new_raw = new.get("raw_data", {})
     
@@ -86,11 +122,15 @@ def merge_bot_entries(existing: Dict, new: Dict) -> Dict:
 def merge_sources():
     """Merge all bot sources and deduplicate"""
     
-    # Load all sources
+    # Load existing database first (this has enriched data we want to preserve)
+    existing_db_bots = load_existing_database()
+    
+    # Load all new sources
     manual_bots = load_manual_bots()
     staging_bots = load_staging_bots()
     
-    all_bots = manual_bots + staging_bots
+    # Start with existing database
+    all_bots = existing_db_bots + manual_bots + staging_bots
     
     if not all_bots:
         print("⚠️ No bots found to merge")
@@ -104,8 +144,20 @@ def merge_sources():
     
     # Deduplicate by normalized user agent
     bot_map = {}
+    existing_bot_uas = set()
     
-    for bot in all_bots:
+    # First pass: add existing database bots (these are already enriched)
+    for bot in existing_db_bots:
+        ua = bot.get("user_agent", "")
+        if not ua:
+            continue
+        
+        normalized_ua = normalize_user_agent(ua)
+        bot_map[normalized_ua] = bot
+        existing_bot_uas.add(normalized_ua)
+    
+    # Second pass: merge new bots
+    for bot in manual_bots + staging_bots:
         ua = bot.get("user_agent", "")
         if not ua:
             continue
@@ -113,10 +165,11 @@ def merge_sources():
         normalized_ua = normalize_user_agent(ua)
         
         if normalized_ua in bot_map:
-            # Merge with existing entry
-            bot_map[normalized_ua] = merge_bot_entries(bot_map[normalized_ua], bot)
+            # Bot exists - preserve enrichment, update technical details
+            preserve = normalized_ua in existing_bot_uas
+            bot_map[normalized_ua] = merge_bot_entries(bot_map[normalized_ua], bot, preserve_enrichment=preserve)
         else:
-            # New entry
+            # New bot
             bot_map[normalized_ua] = bot
     
     # Convert back to list and sort
@@ -154,6 +207,14 @@ def merge_sources():
     print("\nSource breakdown:")
     for source, count in sorted(source_counts.items()):
         print(f"  {source}: {count} bots")
+    
+    # Count already enriched vs needs enrichment
+    enriched = sum(1 for b in merged_bots if b.get("purpose") and b.get("categories"))
+    needs_enrichment = len(merged_bots) - enriched
+    
+    print(f"\nEnrichment status:")
+    print(f"  Already enriched: {enriched}")
+    print(f"  Needs enrichment: {needs_enrichment}")
 
 if __name__ == "__main__":
     merge_sources()

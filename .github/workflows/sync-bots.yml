@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write  # Required for PR labels
 
 jobs:
   fetch-and-merge:
@@ -150,12 +151,15 @@ jobs:
     name: Phase 3 - Generate Outputs and Create PR
     needs: enrich-with-ai
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
           ref: main  # Ensure we're on the main branch
       
       - name: Set up Python
@@ -228,14 +232,17 @@ jobs:
         if: steps.check_changes.outputs.has_changes == 'true'
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
           branch: bot-sync-${{ github.run_number }}
           delete-branch: true
+          base: main
           title: '🤖 Weekly Bot Database Update'
           add-paths: |
             data/bots.json
             docs/BOTS.md
           commit-message: 'chore: update bot database [skip ci]'
+          committer: GitHub Actions <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           body: |
             ## 🤖 Bot Database Sync
             

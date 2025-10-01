@@ -142,7 +142,7 @@ jobs:
           path: staging/
           retention-days: 1
 
-generate-and-validate:
+  generate-and-validate:
     name: Phase 3 - Generate Outputs
     needs: enrich-with-ai
     runs-on: ubuntu-latest

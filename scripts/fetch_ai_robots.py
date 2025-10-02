@@ -45,7 +45,8 @@ def fetch_ai_robots():
                     # Dictionary format with more details
                     bot = {
                         "user_agent": entry.get("user_agent", entry.get("agent", entry.get("name", ""))),
-                        "operator": entry.get("company", entry.get("operator", entry.get("owner", ""))),
+                        "operator": entry.get("operator", ""),
+                        "owner": entry.get("owner", ""),
                         "description": entry.get("description", ""),
                         "website": entry.get("website", entry.get("url", "")),
                         "sources": ["ai-robots-txt"],

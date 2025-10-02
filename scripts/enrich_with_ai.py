@@ -5,6 +5,7 @@ import json
 import requests
 from pathlib import Path
 from typing import Dict
+from datetime import datetime
 
 # Site categories for classification
 SITE_CATEGORIES = [

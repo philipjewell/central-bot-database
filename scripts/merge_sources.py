@@ -209,8 +209,9 @@ def merge_sources():
     
     # Start with existing database
     all_bots = existing_db_bots + manual_bots + staging_bots
+    sorted_bots = sorted(all_bots, key=lambda x: x["user_agent"])
     
-    if not all_bots:
+    if not sorted_bots:
         print("⚠️ No bots found to merge")
         # Create empty output anyway
         staging_dir = Path("staging")
@@ -281,7 +282,7 @@ def merge_sources():
     with open(output_file, 'w') as f:
         json.dump(merged_bots, f, indent=2)
     
-    print(f"\n✓ Merged {len(merged_bots)} unique bots from {len(all_bots)} total entries")
+    print(f"\n✓ Merged {len(merged_bots)} unique bots from {len(sorted_bots)} total entries")
     
     # Print summary
     source_counts = {}

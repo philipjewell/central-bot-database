@@ -124,12 +124,15 @@ def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = Fal
         merged["sources"] = merged_sources
         was_updated = True
     
-    # Merge operator/category with normalization
+    # Merge operator/category with priority: Cloudflare > Manual > Mapped
     existing_category = existing.get("operator", "")
     new_category = new.get("operator", "")
     
     if existing_category != new_category:
-        unified_category = mapper.merge_categories(existing_category, new_category, list(new_sources))
+        unified_category = mapper.merge_categories(
+            existing_category, list(existing_sources),
+            new_category, list(new_sources)
+        )
         if unified_category != existing_category:
             merged["operator"] = unified_category
             was_updated = True
@@ -217,10 +220,6 @@ def merge_sources():
             json.dump([], f, indent=2)
         return
     
-    # Learn category mappings from bots with multiple sources
-    print("\n📚 Learning category mappings from multi-source bots...")
-    mapper.learn_from_bots(all_bots)
-    
     # Deduplicate by normalized user agent
     bot_map = {}
     existing_bot_uas = set()
@@ -232,8 +231,8 @@ def merge_sources():
             continue
         
         normalized_ua = normalize_user_agent(ua)
-        # Normalize category
-        bot["operator"] = mapper.get_unified_category(bot)
+        # Get category using priority system
+        bot["operator"] = mapper.get_category_for_bot(bot)
         bot_map[normalized_ua] = bot
         existing_bot_uas.add(normalized_ua)
     
@@ -245,8 +244,8 @@ def merge_sources():
         
         normalized_ua = normalize_user_agent(ua)
         
-        # Normalize category
-        bot["operator"] = mapper.get_unified_category(bot)
+        # Get category using priority system
+        bot["operator"] = mapper.get_category_for_bot(bot)
         
         if normalized_ua in bot_map:
             # Bot exists - preserve enrichment, update technical details

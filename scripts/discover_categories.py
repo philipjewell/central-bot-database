@@ -14,7 +14,12 @@ def load_existing_mappings() -> Dict[str, str]:
         with open(mapping_file, 'r') as f:
             return json.load(f)
     else:
-        return {}
+        return {
+            "": "Other",
+            "Other": "Other",
+            "Unknown": "Other",
+            "Uncategorized": "Other"
+        }
 
 def load_all_bot_data() -> List[Dict]:
     """Load bot data from all staging sources"""
@@ -58,11 +63,16 @@ def normalize_user_agent(ua: str) -> str:
 
 def discover_categories() -> Tuple[Dict[str, Set[str]], Dict[str, str]]:
     """
-    Discover all categories and learn mappings from bots appearing in multiple sources
+    Discover all categories and learn mappings
+    
+    Strategy:
+    - Cloudflare categories are AUTHORITATIVE (no mapping needed)
+    - Manual categories are kept as-is (no mapping needed)
+    - Other source categories get mapped TO Cloudflare categories when same bot exists
     
     Returns:
         - all_categories: Dict mapping category -> set of sources that use it
-        - learned_mappings: Dict mapping source category -> unified category
+        - learned_mappings: Dict mapping non-Cloudflare category -> Cloudflare category
     """
     
     all_bots = load_all_bot_data()
@@ -77,7 +87,8 @@ def discover_categories() -> Tuple[Dict[str, Set[str]], Dict[str, str]]:
     all_categories = defaultdict(set)
     
     # Track bots that appear in multiple sources with their categories
-    bot_categories = defaultdict(lambda: defaultdict(set))  # normalized_ua -> source -> categories
+    # Structure: normalized_ua -> {source: category}
+    bot_source_categories = defaultdict(dict)
     
     for bot in all_bots:
         ua = bot.get("user_agent", "")
@@ -94,46 +105,61 @@ def discover_categories() -> Tuple[Dict[str, Set[str]], Dict[str, str]]:
         # Track all categories
         for source in sources:
             all_categories[category].add(source)
-            bot_categories[normalized_ua][source].add(category)
+            
+            # For learning mappings, we only care about the primary source
+            # (a bot should primarily come from one source at fetch time)
+            if source in bot_source_categories[normalized_ua]:
+                # Already have this source, skip
+                continue
+            
+            bot_source_categories[normalized_ua][source] = category
     
-    # Learn mappings from bots appearing in multiple sources
+    # Learn mappings: Other sources -> Cloudflare categories
     learned_mappings = {}
     
-    print("🔍 Discovering category mappings from multi-source bots:\n")
+    print("🔍 Discovering category mappings:\n")
+    print("   Strategy: Map non-Cloudflare categories to Cloudflare categories\n")
     
-    for ua, source_data in bot_categories.items():
-        if len(source_data) < 2:
-            # Bot only appears in one source
+    cloudflare_bots_analyzed = 0
+    mappings_learned = 0
+    
+    for ua, source_cats in bot_source_categories.items():
+        # Check if this bot has a Cloudflare category
+        if "cloudflare-radar" not in source_cats:
             continue
         
-        # Bot appears in multiple sources - look for patterns
-        categories = {}
-        for source, cats in source_data.items():
-            if cats:
-                categories[source] = list(cats)[0]  # Take first category
+        cloudflare_bots_analyzed += 1
+        cloudflare_category = source_cats["cloudflare-radar"]
         
-        if len(categories) < 2:
-            continue
-        
-        # If cloudflare-radar has a category, it becomes the canonical one
-        if "cloudflare-radar" in categories:
-            canonical = categories["cloudflare-radar"]
+        # For each other source this bot appears in, map to Cloudflare category
+        for source, category in source_cats.items():
+            if source == "cloudflare-radar":
+                continue
             
-            for source, cat in categories.items():
-                if source != "cloudflare-radar" and cat != canonical and cat != "Other":
-                    if cat not in learned_mappings:
-                        learned_mappings[cat] = canonical
-                        print(f"  ✓ {cat} → {canonical} (from {source} to cloudflare-radar)")
-        
-        # If ai-robots-txt and manual both exist, prefer manual
-        elif "manual" in categories and "ai-robots-txt" in categories:
-            canonical = categories["manual"]
-            cat = categories["ai-robots-txt"]
+            # Don't map manual categories
+            if source == "manual":
+                continue
             
-            if cat != canonical and cat != "Other":
-                if cat not in learned_mappings:
-                    learned_mappings[cat] = canonical
-                    print(f"  ✓ {cat} → {canonical} (from ai-robots-txt to manual)")
+            # Don't map if category is already correct
+            if category == cloudflare_category:
+                continue
+            
+            # Don't map "Other"
+            if category == "Other":
+                continue
+            
+            # Learn this mapping
+            if category not in learned_mappings:
+                learned_mappings[category] = cloudflare_category
+                mappings_learned += 1
+                print(f"  ✓ {category} → {cloudflare_category}")
+                print(f"      (learned from bot that exists in both {source} and Cloudflare)")
+    
+    if cloudflare_bots_analyzed == 0:
+        print("  ℹ️  No bots found in Cloudflare Radar to learn from")
+    else:
+        print(f"\n  📊 Analyzed {cloudflare_bots_analyzed} bots that exist in Cloudflare")
+        print(f"  📝 Learned {mappings_learned} new category mappings")
     
     return dict(all_categories), learned_mappings
 
@@ -147,51 +173,35 @@ def update_mappings():
         print("⚠️  No categories discovered")
         return False
     
-    # Find new categories (not in existing mappings as keys or values)
-    existing_keys = set(existing_mappings.keys())
-    existing_values = set(existing_mappings.values())
-    all_seen_categories = existing_keys | existing_values
-    
-    new_categories = []
-    for category in all_categories.keys():
-        if category not in all_seen_categories and category != "Other":
-            new_categories.append(category)
-    
-    # Update mappings with learned mappings
     updated = False
     
     print("\n📝 Updating category mappings...\n")
     
-    # Add learned mappings
-    for source_cat, unified_cat in learned_mappings.items():
-        if source_cat not in existing_mappings or existing_mappings[source_cat] != unified_cat:
-            existing_mappings[source_cat] = unified_cat
-            print(f"  + Added mapping: {source_cat} → {unified_cat}")
+    # Add learned mappings (non-Cloudflare -> Cloudflare)
+    for source_cat, cloudflare_cat in learned_mappings.items():
+        if source_cat not in existing_mappings or existing_mappings[source_cat] != cloudflare_cat:
+            existing_mappings[source_cat] = cloudflare_cat
+            print(f"  + Added mapping: {source_cat} → {cloudflare_cat}")
             updated = True
     
-    # Add new categories that don't have mappings (map to themselves)
-    for category in new_categories:
-        if category not in existing_mappings:
-            existing_mappings[category] = category
-            print(f"  + New category discovered: {category} (keeping as-is)")
-            updated = True
+    # Don't auto-add new categories that don't have mappings
+    # Those will be kept as-is when they're used
     
-    # Ensure "Other" is always mapped
-    if "" not in existing_mappings:
-        existing_mappings[""] = "Other"
-        updated = True
-    if "Other" not in existing_mappings:
-        existing_mappings["Other"] = "Other"
-        updated = True
-    if "Unknown" not in existing_mappings:
-        existing_mappings["Unknown"] = "Other"
-        updated = True
-    if "Uncategorized" not in existing_mappings:
-        existing_mappings["Uncategorized"] = "Other"
-        updated = True
+    # Ensure standard "Other" mappings exist
+    standard_others = {
+        "": "Other",
+        "Other": "Other",
+        "Unknown": "Other",
+        "Uncategorized": "Other"
+    }
+    
+    for key, value in standard_others.items():
+        if key not in existing_mappings:
+            existing_mappings[key] = value
+            updated = True
     
     if not updated:
-        print("  ℹ️  No new categories or mappings to add")
+        print("  ℹ️  No new mappings to add")
         return False
     
     # Save updated mappings
@@ -207,17 +217,21 @@ def update_mappings():
     print(f"\n✅ Updated category mappings saved to {mapping_file}")
     print(f"   Total mappings: {len(sorted_mappings)}")
     
-    # Print summary of all unified categories
-    unified_categories = set(sorted_mappings.values())
-    print(f"\n📋 Unified categories ({len(unified_categories)}):")
-    for cat in sorted(unified_categories):
-        count = sum(1 for v in sorted_mappings.values() if v == cat)
-        source_cats = [k for k, v in sorted_mappings.items() if v == cat]
-        print(f"  • {cat} ({count} source categories)")
-        if count <= 5:  # Show mappings if not too many
-            for sc in source_cats[:5]:
-                if sc != cat:
-                    print(f"      - {sc}")
+    # Print summary
+    print(f"\n📋 Category Mapping Summary:")
+    print(f"   These mappings apply ONLY to non-Cloudflare, non-Manual sources")
+    print(f"   Cloudflare and Manual categories are used as-is\n")
+    
+    # Group by target category
+    by_target = defaultdict(list)
+    for source, target in sorted_mappings.items():
+        if source != target:  # Don't show identity mappings
+            by_target[target].append(source)
+    
+    for target, sources in sorted(by_target.items()):
+        print(f"  • {target}")
+        for source in sorted(sources):
+            print(f"      ← {source}")
     
     return True
 

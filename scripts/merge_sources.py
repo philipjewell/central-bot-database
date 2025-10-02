@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 from datetime import datetime
 from typing import List, Dict
+from category_mapper import get_category_mapper
 
 def normalize_user_agent(ua: str) -> str:
     """Normalize user agent strings for comparison"""
@@ -63,6 +64,10 @@ def load_manual_bots() -> List[Dict]:
                         bot["sources"] = ["manual"]
                     elif "manual" not in bot["sources"]:
                         bot["sources"].append("manual")
+                    
+                    # Default operator to "Other" if not provided
+                    if not bot.get("operator"):
+                        bot["operator"] = "Other"
                 
                 all_manual_bots.extend(bots)
                 print(f"✓ Loaded {len(bots)} bot(s) from {json_file.name}")
@@ -92,6 +97,12 @@ def load_staging_bots() -> List[Dict]:
         try:
             with open(file, 'r') as f:
                 bots = json.load(f)
+                
+                # Default operator to "Other" if not provided
+                for bot in bots:
+                    if not bot.get("operator"):
+                        bot["operator"] = "Other"
+                
                 all_bots.extend(bots)
                 print(f"✓ Loaded {len(bots)} bots from {file.name}")
         except Exception as e:
@@ -103,6 +114,7 @@ def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = Fal
     """Merge two bot entries, preferring manual data, then newer data"""
     merged = existing.copy()
     was_updated = False
+    mapper = get_category_mapper()
     
     # Merge sources
     existing_sources = set(existing.get("sources", []))
@@ -111,6 +123,16 @@ def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = Fal
     if merged_sources != merged["sources"]:
         merged["sources"] = merged_sources
         was_updated = True
+    
+    # Merge operator/category with normalization
+    existing_category = existing.get("operator", "")
+    new_category = new.get("operator", "")
+    
+    if existing_category != new_category:
+        unified_category = mapper.merge_categories(existing_category, new_category, list(new_sources))
+        if unified_category != existing_category:
+            merged["operator"] = unified_category
+            was_updated = True
     
     # If preserve_enrichment is True, keep existing enrichment data
     if preserve_enrichment:
@@ -139,7 +161,7 @@ def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = Fal
                     was_updated = True
         else:
             # Otherwise, prefer non-empty values from new entry
-            for key in ["description", "operator", "website"]:
+            for key in ["description", "website"]:
                 if key in new and new[key] and not existing.get(key):
                     merged[key] = new[key]
                     was_updated = True
@@ -173,6 +195,8 @@ def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = Fal
 def merge_sources():
     """Merge all bot sources and deduplicate"""
     
+    mapper = get_category_mapper()
+    
     # Load existing database first (this has enriched data we want to preserve)
     existing_db_bots = load_existing_database()
     
@@ -193,6 +217,10 @@ def merge_sources():
             json.dump([], f, indent=2)
         return
     
+    # Learn category mappings from bots with multiple sources
+    print("\n📚 Learning category mappings from multi-source bots...")
+    mapper.learn_from_bots(all_bots)
+    
     # Deduplicate by normalized user agent
     bot_map = {}
     existing_bot_uas = set()
@@ -204,6 +232,8 @@ def merge_sources():
             continue
         
         normalized_ua = normalize_user_agent(ua)
+        # Normalize category
+        bot["operator"] = mapper.get_unified_category(bot)
         bot_map[normalized_ua] = bot
         existing_bot_uas.add(normalized_ua)
     
@@ -214,6 +244,9 @@ def merge_sources():
             continue
         
         normalized_ua = normalize_user_agent(ua)
+        
+        # Normalize category
+        bot["operator"] = mapper.get_unified_category(bot)
         
         if normalized_ua in bot_map:
             # Bot exists - preserve enrichment, update technical details
@@ -230,13 +263,16 @@ def merge_sources():
     # Ensure all required fields exist (but don't update timestamp)
     for bot in merged_bots:
         bot.setdefault("description", "")
-        bot.setdefault("operator", "")
+        bot.setdefault("operator", "Other")
         bot.setdefault("purpose", "")
         bot.setdefault("impact_of_blocking", "")
         bot.setdefault("categories", {})
         bot.setdefault("sources", [])
         bot.setdefault("raw_data", {})
         bot.setdefault("last_updated", datetime.utcnow().isoformat() + "Z")  # Only if not set
+    
+    # Save category mappings for future runs
+    mapper.save_mappings()
     
     # Save merged data
     output_dir = Path("staging")
@@ -257,6 +293,16 @@ def merge_sources():
     print("\nSource breakdown:")
     for source, count in sorted(source_counts.items()):
         print(f"  {source}: {count} bots")
+    
+    # Print category breakdown
+    category_counts = {}
+    for bot in merged_bots:
+        category = bot.get("operator", "Other")
+        category_counts[category] = category_counts.get(category, 0) + 1
+    
+    print("\nCategory breakdown:")
+    for category, count in sorted(category_counts.items(), key=lambda x: x[1], reverse=True):
+        print(f"  {category}: {count} bots")
     
     # Count already enriched vs needs enrichment
     enriched = sum(1 for b in merged_bots if b.get("purpose") and b.get("categories"))

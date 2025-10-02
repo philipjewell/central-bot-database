@@ -42,6 +42,13 @@ jobs:
           python scripts/fetch_cloudflare_radar.py
         continue-on-error: true
       
+      - name: Discover and update category mappings
+        run: |
+          echo "Discovering new categories from fetched data..."
+          python scripts/discover_categories.py
+          echo ""
+          echo "Category discovery complete!"
+      
       - name: Merge and deduplicate
         run: |
           python scripts/merge_sources.py
@@ -204,8 +211,8 @@ jobs:
       - name: Check for any changes
         id: check_changes
         run: |
-          # Check if there are any changes in data/ or docs/
-          if git diff --quiet data/ docs/ 2>/dev/null; then
+          # Check if there are any changes in data/, docs/, or schemas/
+          if git diff --quiet data/ docs/ schemas/category_mappings.json 2>/dev/null; then
             echo "No changes detected in output files"
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "skip_pr=true" >> $GITHUB_OUTPUT
@@ -213,7 +220,7 @@ jobs:
             echo "Changes detected!"
             echo ""
             echo "Changed files:"
-            git diff --name-only data/ docs/ 2>/dev/null || echo "New files created"
+            git diff --name-only data/ docs/ schemas/category_mappings.json 2>/dev/null || echo "New files created"
             echo ""
             echo "has_changes=true" >> $GITHUB_OUTPUT
             echo "skip_pr=false" >> $GITHUB_OUTPUT
@@ -225,12 +232,23 @@ jobs:
           echo "## Changes Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Modified Files" >> $GITHUB_STEP_SUMMARY
-          git diff --stat data/ docs/ >> $GITHUB_STEP_SUMMARY || echo "New files" >> $GITHUB_STEP_SUMMARY
+          git diff --stat data/ docs/ schemas/category_mappings.json >> $GITHUB_STEP_SUMMARY || echo "New files" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Show category mapping changes if any
+          if git diff --quiet schemas/category_mappings.json 2>/dev/null; then
+            echo "No category mapping changes" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### Category Mapping Changes" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo '```diff' >> $GITHUB_STEP_SUMMARY
+            git diff schemas/category_mappings.json | head -50 >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          fi
       
       - name: Create Pull Request
         if: steps.check_changes.outputs.has_changes == 'true'
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.PAT_TOKEN }}
           branch: bot-sync-${{ github.run_number }}
@@ -240,36 +258,46 @@ jobs:
           add-paths: |
             data/bots.json
             docs/BOTS.md
-          commit-message: 'chore: update bot database [skip ci]'
+            schemas/category_mappings.json
+          commit-message: 'chore: update bot database and category mappings'
           committer: GitHub Actions <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           body: |
             ## 🤖 Bot Database Sync
             
-            This PR contains updates to the bot database.
+            This PR contains updates to the bot database and category mappings.
             
             ### 📊 Data Sources
             - ✅ ai.robots.txt repository
             - ✅ Cloudflare Radar API (if available)
             - ✅ Local manual entries
+            - ✅ Existing enriched database
             
             ### 🔄 Processing Steps
             1. ✅ Fetched latest bot data from sources
-            2. ✅ Merged with existing data (deduplicated)
-            3. ✅ AI-enriched new/incomplete bot entries
-            4. ✅ Generated JSON output (`data/bots.json`)
-            5. ✅ Generated Markdown documentation (`docs/BOTS.md`)
-            6. ✅ Validated all data integrity
+            2. ✅ Discovered and mapped new bot categories
+            3. ✅ Merged with existing data (preserved AI descriptions)
+            4. ✅ AI-enriched only new/incomplete bot entries
+            5. ✅ Generated JSON output (`data/bots.json`)
+            6. ✅ Generated Markdown documentation (`docs/BOTS.md`)
+            7. ✅ Validated all data integrity
             
             ### 📝 What Changed
             
-            The following files have been updated:
+            Files updated:
             - `data/bots.json` - Machine-readable bot database
             - `docs/BOTS.md` - Human-readable documentation
+            - `schemas/category_mappings.json` - Bot category mappings (if new categories discovered)
+            
+            ### 🏷️ Category Updates
+            
+            The workflow automatically discovered categories from multiple sources and learned mappings.
+            Review the changes to `schemas/category_mappings.json` to see any new categories or mappings.
             
             ### ✅ Review Checklist
             - [ ] New bots have accurate descriptions
             - [ ] Category recommendations make sense
+            - [ ] Category mappings are logical
             - [ ] Technical details (IP ranges, ASN) are present
             - [ ] No sensitive information in descriptions
             - [ ] Markdown formatting looks correct
@@ -280,9 +308,8 @@ jobs:
             ---
             
             **Auto-generated by GitHub Actions**
-            - Run: ${{ github.run_number }}
+            - Run: #${{ github.run_number }}
             - Workflow: ${{ github.workflow }}
-            - Triggered: ${{ github.event_name }}
           labels: |
             bot-database
             automated

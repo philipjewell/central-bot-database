@@ -1,8 +1,8 @@
 # Bot Database
 
-Last generated: 2025-11-02 03:16 UTC
+Last generated: 2025-11-23 03:30 UTC
 
-Total bots: **295**
+Total bots: **302**
 
 ## Legend
 
@@ -28,10 +28,10 @@ Total bots: **295**
 
 - [AI Assistant](#ai-assistant) (2 bots)
 - [AI Crawler](#ai-crawler) (24 bots)
-- [AI Search](#ai-search) (2 bots)
-- [Academic Research](#academic-research) (2 bots)
+- [AI Search](#ai-search) (3 bots)
+- [Academic Research](#academic-research) (3 bots)
 - [Accessibility](#accessibility) (6 bots)
-- [Advertising & Marketing](#advertising-&-marketing) (19 bots)
+- [Advertising & Marketing](#advertising-&-marketing) (20 bots)
 - [Aggregator](#aggregator) (4 bots)
 - [Anthropic](#anthropic) (1 bot)
 - [Archiver](#archiver) (2 bots)
@@ -57,10 +57,12 @@ Total bots: **295**
 - [WEBSPARK](#webspark) (1 bot)
 - [Webhooks](#webhooks) (20 bots)
 - [[Ai2](https://allenai.org/crawler)](#[ai2]https:allenaiorgcrawler) (2 bots)
-- [[Amazon](https://amazon.com)](#[amazon]https:amazoncom) (1 bot)
+- [[Amazon](https://amazon.com)](#[amazon]https:amazoncom) (2 bots)
 - [[Andi](https://andisearch.com/)](#[andi]https:andisearchcom) (1 bot)
 - [[Anthropic](https://www.anthropic.com)](#[anthropic]https:wwwanthropiccom) (4 bots)
 - [[Apple](https://support.apple.com/en-us/119829#datausage)](#[apple]https:supportapplecomen-us119829#datausage) (1 bot)
+- [[Atlassian](https://www.atlassian.com)](#[atlassian]https:wwwatlassiancom) (1 bot)
+- [[BuddyBotLearning](https://www.buddybotlearning.com)](#[buddybotlearning]https:wwwbuddybotlearningcom) (1 bot)
 - [[Ceramic AI](https://ceramic.ai/)](#[ceramic-ai]https:ceramicai) (1 bot)
 - [[Cloudflare](https://developers.cloudflare.com/autorag)](#[cloudflare]https:developerscloudflarecomautorag) (1 bot)
 - [[Cohere](https://cohere.com)](#[cohere]https:coherecom) (1 bot)
@@ -73,6 +75,7 @@ Total bots: **295**
 - [[Firecrawl](https://www.firecrawl.dev/)](#[firecrawl]https:wwwfirecrawldev) (1 bot)
 - [[ISS-Corporate](https://iss-cyber.com)](#[iss-corporate]https:iss-cybercom) (1 bot)
 - [[ImageSift](https://imagesift.com)](#[imagesift]https:imagesiftcom) (1 bot)
+- [[Klaviyo](https://www.klaviyo.com)](#[klaviyo]https:wwwklaviyocom) (1 bot)
 - [[Linguee](https://www.linguee.com)](#[linguee]https:wwwlingueecom) (1 bot)
 - [[Meltwater](https://www.meltwater.com/en/suite/consumer-intelligence)](#[meltwater]https:wwwmeltwatercomensuiteconsumer-intelligence) (1 bot)
 - [[Meta](https://developers.facebook.com/docs/sharing/webmasters/web-crawlers/)](#[meta]https:developersfacebookcomdocssharingwebmastersweb-crawlers) (1 bot)
@@ -124,7 +127,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -144,7 +147,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -166,7 +169,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -186,7 +189,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -206,7 +209,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -226,7 +229,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -246,7 +249,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -266,7 +269,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -286,7 +289,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -306,7 +309,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -326,7 +329,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -346,7 +349,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -366,7 +369,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -386,7 +389,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -406,7 +409,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -426,7 +429,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -446,7 +449,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -466,7 +469,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -486,7 +489,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -506,7 +509,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -526,7 +529,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -546,7 +549,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -566,7 +569,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -586,7 +589,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -606,7 +609,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -626,7 +629,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -648,7 +651,27 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
+
+---
+
+### NotebookLM
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Search | `NotebookLM` | Not specified | ai-robots-txt |
+
+**Purpose:** NotebookLM is an AI-powered research assistant that helps users synthesize information from uploaded sources by generating summaries, answering questions, and highlighting key themes. It acts as a personalized research companion to aid users in organizing and analyzing their research materials.
+
+**Impact of Blocking:** Blocking the NotebookLM bot would prevent users from easily summarizing and synthesizing information from uploaded sources, resulting in lost productivity and reduced ability to organize and analyze research materials. This would particularly impact researchers, students, and professionals relying on the tool for concise and meaningful summaries of complex texts and data.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2025-11-23*
 
 ---
 
@@ -668,11 +691,31 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
 ## Academic Research
+
+### Bibliotheque Nacional de France Crawler
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Academic Research | `Bibliotheque Nacional de France Crawler` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Bibliotheque Nacional de France Crawler is a bot designed to scrape and gather information from online sources, specifically its namesake library's website, for academic research purposes. Its primary function is to provide a reliable source of metadata and bibliographic data for researchers and scholars.
+
+**Impact of Blocking:** Blocking the Bibliotheque Nacional de France Crawler could significantly impede academic research by depriving researchers of access to a reliable, aggregated source of metadata and bibliographic data, hindering their ability to discover and analyze scholarly publications. This blockade would limit the availability of valuable information, making it more difficult for scholars to conduct comprehensive literature reviews.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2025-11-23*
+
+---
 
 ### Library Of Congress Web Archiving
 
@@ -690,7 +733,7 @@ Total bots: **295**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -712,7 +755,7 @@ The kb.dk_bot likely exists to assist with knowledge management and retrieval in
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -756,7 +799,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -776,7 +819,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -796,7 +839,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -816,7 +859,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -836,7 +879,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -858,7 +901,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -878,7 +921,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -898,7 +941,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -918,7 +961,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -938,7 +981,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-10-01*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -958,7 +1001,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -978,7 +1021,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -998,7 +1041,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1020,7 +1063,7 @@ The purpose of Google Firebase is to provide a set of cloud-based tools and serv
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1040,7 +1083,7 @@ The purpose of Google Firebase is to provide a set of cloud-based tools and serv
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1060,7 +1103,7 @@ The purpose of Google Firebase is to provide a set of cloud-based tools and serv
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1080,7 +1123,7 @@ The purpose of Google Firebase is to provide a set of cloud-based tools and serv
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1100,7 +1143,29 @@ The purpose of Google Firebase is to provide a set of cloud-based tools and serv
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
+
+---
+
+### Reelevant
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Advertising & Marketing | `Reelevant` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** I couldn't find any information about a specific bot named "Reelevant". However, based on the context provided, I can make an educated guess.
+
+The purpose of a bot like Reelevant, which is an Advertising & Marketing bot, would likely be to assist with automated tasks related to advertising and marketing, such as generating content, tracking engagement metrics, or providing data-driven insights to improve campaign performance.
+
+**Impact of Blocking:** Blocking the Reelevant bot could significantly impact advertisers and marketers by limiting their ability to leverage automation in content generation, engagement tracking, and data analysis, ultimately hindering their efficiency and competitiveness in the digital advertising landscape. This blockage may lead to increased manual effort, decreased productivity, and potentially higher costs associated with performing these tasks manually.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1120,7 +1185,7 @@ The purpose of Google Firebase is to provide a set of cloud-based tools and serv
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1140,7 +1205,7 @@ The purpose of Google Firebase is to provide a set of cloud-based tools and serv
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1160,7 +1225,7 @@ The purpose of Google Firebase is to provide a set of cloud-based tools and serv
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1180,7 +1245,7 @@ The purpose of Google Firebase is to provide a set of cloud-based tools and serv
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1202,7 +1267,7 @@ If you could provide more context or clarify what the bot is specifically design
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1222,7 +1287,7 @@ If you could provide more context or clarify what the bot is specifically design
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1244,7 +1309,7 @@ If you could provide more context or clarify what the bot is specifically design
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1264,7 +1329,7 @@ If you could provide more context or clarify what the bot is specifically design
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1286,7 +1351,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1306,7 +1371,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1328,7 +1393,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1370,7 +1435,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1392,7 +1457,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1414,7 +1479,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1436,7 +1501,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1456,7 +1521,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1478,7 +1543,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1500,7 +1565,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1522,7 +1587,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1544,7 +1609,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1566,7 +1631,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1615,7 +1680,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1635,7 +1700,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1655,7 +1720,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1675,7 +1740,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1695,7 +1760,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1715,7 +1780,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1737,7 +1802,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1757,7 +1822,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1779,7 +1844,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1801,7 +1866,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1823,7 +1888,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1843,7 +1908,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1863,7 +1928,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1883,7 +1948,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1903,7 +1968,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1923,7 +1988,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1943,7 +2008,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -1963,7 +2028,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2003,7 +2068,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2023,7 +2088,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2043,7 +2108,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2063,7 +2128,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2083,7 +2148,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2103,7 +2168,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2123,7 +2188,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2143,7 +2208,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2163,7 +2228,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2183,7 +2248,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2203,7 +2268,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2223,7 +2288,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2263,7 +2328,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2283,7 +2348,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2303,7 +2368,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2323,7 +2388,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2343,7 +2408,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2363,7 +2428,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2383,7 +2448,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2403,7 +2468,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2423,7 +2488,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2443,7 +2508,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2463,7 +2528,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2483,7 +2548,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2503,7 +2568,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2543,7 +2608,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2563,7 +2628,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2583,7 +2648,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2603,7 +2668,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2623,7 +2688,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2643,7 +2708,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2663,7 +2728,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2683,7 +2748,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2703,7 +2768,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2723,7 +2788,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2743,7 +2808,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2763,7 +2828,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2783,7 +2848,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2803,7 +2868,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2825,7 +2890,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2845,7 +2910,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2887,7 +2952,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2907,7 +2972,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2927,7 +2992,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2947,7 +3012,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -2991,7 +3056,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3011,7 +3076,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3031,7 +3096,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3051,7 +3116,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3071,7 +3136,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3091,7 +3156,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3111,7 +3176,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3131,7 +3196,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3151,7 +3216,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3173,7 +3238,7 @@ The Page Preview operator is likely used to generate previews of emails sent via
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3193,7 +3258,7 @@ The Page Preview operator is likely used to generate previews of emails sent via
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3215,7 +3280,7 @@ The Page Preview operator is likely used to generate previews of emails sent via
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3235,7 +3300,7 @@ The Page Preview operator is likely used to generate previews of emails sent via
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3255,7 +3320,7 @@ The Page Preview operator is likely used to generate previews of emails sent via
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3279,7 +3344,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3299,7 +3364,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3319,7 +3384,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3339,7 +3404,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3359,7 +3424,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3379,7 +3444,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3399,7 +3464,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3419,7 +3484,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3459,7 +3524,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3479,7 +3544,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3499,7 +3564,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3519,7 +3584,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3539,7 +3604,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3559,7 +3624,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3579,7 +3644,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3599,7 +3664,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3619,7 +3684,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3639,7 +3704,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3661,7 +3726,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3681,7 +3746,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3701,7 +3766,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3743,7 +3808,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3763,7 +3828,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ❌ Harmful | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3783,7 +3848,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3803,7 +3868,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3823,7 +3888,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3843,7 +3908,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3863,7 +3928,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3885,7 +3950,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3905,7 +3970,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3925,7 +3990,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3945,7 +4010,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3965,7 +4030,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -3985,7 +4050,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4005,7 +4070,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4025,7 +4090,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4045,7 +4110,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4067,7 +4132,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4087,7 +4152,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4107,7 +4172,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4127,7 +4192,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4147,7 +4212,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4167,7 +4232,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4187,7 +4252,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4207,7 +4272,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4227,7 +4292,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4247,7 +4312,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4267,7 +4332,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4287,7 +4352,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4309,7 +4374,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4329,7 +4394,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4349,7 +4414,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4369,7 +4434,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4389,7 +4454,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4409,7 +4474,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4433,7 +4498,7 @@ If you're referring to the Qualys bot within this context, it's likely a tool us
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4453,7 +4518,7 @@ If you're referring to the Qualys bot within this context, it's likely a tool us
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4473,7 +4538,7 @@ If you're referring to the Qualys bot within this context, it's likely a tool us
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4495,7 +4560,7 @@ A security bot, such as SmarshBot, is designed to detect and respond to potentia
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4515,7 +4580,7 @@ A security bot, such as SmarshBot, is designed to detect and respond to potentia
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4537,7 +4602,7 @@ A security bot, such as SmarshBot, is designed to detect and respond to potentia
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4559,7 +4624,7 @@ A security bot, such as SmarshBot, is designed to detect and respond to potentia
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4583,7 +4648,7 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4603,7 +4668,7 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4623,7 +4688,7 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4643,7 +4708,7 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4663,7 +4728,7 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4683,7 +4748,7 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4703,7 +4768,7 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4723,7 +4788,7 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4743,7 +4808,7 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4763,7 +4828,7 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4785,7 +4850,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4805,7 +4870,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4825,7 +4890,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4845,7 +4910,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4865,7 +4930,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4885,7 +4950,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4905,7 +4970,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ❌ Harmful | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4925,7 +4990,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4945,7 +5010,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4965,7 +5030,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -4987,7 +5052,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5007,11 +5072,31 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
 ## [Amazon](https://amazon.com)
+
+### AmazonBuyForMe
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| [Amazon](https://amazon.com) | `AmazonBuyForMe` | Not specified | ai-robots-txt |
+
+**Purpose:** The AmazonBuyForMe bot is an AI-powered shopping assistant designed to help customers make purchases on Amazon by providing recommendations and directions, automating the buying process. It exists to simplify and streamline online shopping for users who want hands-free or assisted purchasing experiences.
+
+**Impact of Blocking:** Blocking the AmazonBuyForMe bot would result in users losing access to AI-powered product recommendations and personalized purchase suggestions, making it more difficult to discover new products and find relevant deals on Amazon. Additionally, users may also experience inconvenience due to reduced assistance with navigating the website and completing purchases, potentially leading to increased frustration and abandonment of online shopping transactions.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2025-11-23*
+
+---
 
 ### bedrockbot
 
@@ -5029,7 +5114,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5051,7 +5136,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5073,7 +5158,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5093,7 +5178,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5113,7 +5198,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5133,7 +5218,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5155,7 +5240,53 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
+
+---
+
+## [Atlassian](https://www.atlassian.com)
+
+### atlassian-bot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| [Atlassian](https://www.atlassian.com) | `atlassian-bot` | Not specified | ai-robots-txt |
+
+**Purpose:** The atlassian-bot is a web crawler developed by Atlassian that indexes website content to power its AI-powered search features and assistive tools, such as the Rovo GenAI product. Its purpose is to gather and organize online data for improved search functionality and user experience.
+
+**Impact of Blocking:** Blocking the atlassian-bot could disrupt Atlassian's AI-powered search features and assistive tools, such as the Rovo GenAI product, potentially leading to a loss of functionality in search results and recommendations. This could result in users experiencing reduced access to relevant information on websites indexed by the bot.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2025-11-23*
+
+---
+
+## [BuddyBotLearning](https://www.buddybotlearning.com)
+
+### BuddyBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| [BuddyBotLearning](https://www.buddybotlearning.com) | `BuddyBot` | Not specified | ai-robots-txt |
+
+**Purpose:** Here is a concise description of the purpose of BuddyBot:
+
+BuddyBot is an interactive AI assistant designed to provide personalized, voice-controlled support for children's STEM (Science, Technology, Engineering, and Math) education, aiming to make learning engaging and fun.
+
+**Impact of Blocking:** Blocking BuddyBot would significantly impact children's access to personalized STEM education, potentially hindering their ability to explore complex concepts in a voice-controlled, interactive manner. By blocking the bot, students may lose the opportunity to engage with hands-on learning experiences, receive real-time guidance, and develop problem-solving skills through conversational support.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5177,7 +5308,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5199,7 +5330,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5221,7 +5352,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5243,7 +5374,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5265,7 +5396,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5287,7 +5418,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5309,7 +5440,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5331,7 +5462,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5353,7 +5484,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5375,7 +5506,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5397,7 +5528,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5419,7 +5550,29 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
+
+---
+
+## [Klaviyo](https://www.klaviyo.com)
+
+### KlaviyoAIBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| [Klaviyo](https://www.klaviyo.com) | `KlaviyoAIBot` | Not specified | ai-robots-txt |
+
+**Purpose:** The KlaviyoAIBot is a conversational AI assistant that indexes content to provide personalized experiences, generate content, answer questions, and offer recommendations for users interacting with Klaviyo's platform. Its purpose is to enhance user engagement and streamline interactions through tailored responses.
+
+**Impact of Blocking:** Blocking the KlaviyoAIBot could result in a loss of personalized content indexing, recommendation suggestions, and tailored responses for users interacting with Klaviyo's platform, making their experiences less engaging and less efficient. This blockage would specifically impact the bot's ability to generate content, answer questions, and offer recommendations, hindering the user's ability to find relevant information and take desired actions within the platform.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5441,7 +5594,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5463,7 +5616,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5485,7 +5638,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5507,7 +5660,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5529,7 +5682,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5549,7 +5702,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5571,7 +5724,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5593,7 +5746,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5613,7 +5766,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5635,7 +5788,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5657,7 +5810,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5679,7 +5832,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5701,7 +5854,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5721,7 +5874,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5743,7 +5896,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5765,7 +5918,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5787,7 +5940,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5807,7 +5960,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5829,7 +5982,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5851,7 +6004,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5873,7 +6026,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5895,7 +6048,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5917,7 +6070,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5937,7 +6090,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5959,7 +6112,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -5979,7 +6132,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -6001,7 +6154,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -6023,7 +6176,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -6045,7 +6198,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -6067,7 +6220,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -6089,7 +6242,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -6111,7 +6264,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -6133,7 +6286,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -6155,7 +6308,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -6177,7 +6330,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 
@@ -6199,7 +6352,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-02*
+*Last updated: 2025-11-23*
 
 ---
 

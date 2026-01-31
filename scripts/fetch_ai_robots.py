@@ -3,7 +3,32 @@ Fetch bot definitions from ai.robots.txt repository
 """
 import json
 import requests
+import re
 from pathlib import Path
+
+def clean_markdown_links(text: str) -> str:
+    """Remove markdown link syntax and return just the text"""
+    if not text:
+        return ""
+    # Pattern: [text](url) -> text
+    cleaned = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+    return cleaned.strip()
+
+def get_category_from_entry(entry: dict) -> str:
+    """
+    Extract the best category from an ai.robots.txt entry.
+    Prefer 'function' field over 'operator' to avoid company names as categories.
+    """
+    # Try function field first (e.g., "AI Agents", "SEO", "Monitoring")
+    function = entry.get("function", "").strip()
+    if function and function not in ["No information provided.", "Unknown", ""]:
+        return function
+
+    # Fall back to operator, but clean markdown links
+    operator = entry.get("operator", entry.get("company", entry.get("owner", ""))).strip()
+    operator = clean_markdown_links(operator)
+
+    return operator if operator else ""
 
 def fetch_ai_robots():
     """Fetch the robots.txt data from ai.robots.txt repo"""
@@ -45,7 +70,7 @@ def fetch_ai_robots():
                     # Dictionary format with more details
                     bot = {
                         "user_agent": entry.get("user_agent", entry.get("agent", entry.get("name", ""))),
-                        "operator": "",  # This will get replaced once we get more data
+                        "operator": get_category_from_entry(entry),
                         "owner": entry.get("owner", ""),
                         "description": entry.get("description", ""),
                         "website": entry.get("website", entry.get("url", "")),
@@ -83,7 +108,7 @@ def fetch_ai_robots():
                     elif isinstance(entry, dict):
                         bot = {
                             "user_agent": entry.get("user_agent", entry.get("agent", entry.get("name", ""))),
-                            "operator": entry.get("company", entry.get("operator", entry.get("owner", ""))),
+                            "operator": get_category_from_entry(entry),
                             "description": entry.get("description", ""),
                             "website": entry.get("website", entry.get("url", "")),
                             "sources": ["ai-robots-txt"],
@@ -102,7 +127,7 @@ def fetch_ai_robots():
                     if isinstance(value, dict):
                         bot = {
                             "user_agent": value.get("user_agent", key),
-                            "operator": value.get("company", value.get("operator", "")),
+                            "operator": get_category_from_entry(value),
                             "description": value.get("description", ""),
                             "website": value.get("website", ""),
                             "sources": ["ai-robots-txt"],

@@ -269,7 +269,8 @@ def merge_sources():
         bot.setdefault("categories", {})
         bot.setdefault("sources", [])
         bot.setdefault("raw_data", {})
-        bot.setdefault("last_updated", datetime.utcnow().isoformat() + "Z")  # Only if not set
+        # Note: last_updated is only set when bot is created (line 257) or modified (line 194)
+        # Do NOT set a default timestamp here as it causes all bots to appear changed in PRs
     
     # Save category mappings for future runs
     mapper.save_mappings()

@@ -91,21 +91,35 @@ def fetch_cloudflare_bots():
                     
                     for entry in bot_list:
                         if isinstance(entry, dict):
-                            # Extract bot name - try different possible fields
-                            bot_name = (
-                                entry.get("botName") or 
-                                entry.get("name") or 
-                                entry.get("bot_name") or
-                                entry.get("clientName") or
-                                "Unknown"
-                            )
-                            
-                            # Skip if we couldn't find a name
-                            if bot_name == "Unknown":
+                            # Extract user agent patterns - prefer userAgentPatterns over botName
+                            user_agent_patterns = entry.get("userAgentPatterns", entry.get("user_agent_patterns", []))
+
+                            # Determine the user_agent to use
+                            if user_agent_patterns:
+                                # If patterns exist, use the first one as the primary user_agent
+                                if isinstance(user_agent_patterns, list) and len(user_agent_patterns) > 0:
+                                    user_agent = user_agent_patterns[0]
+                                elif isinstance(user_agent_patterns, str):
+                                    user_agent = user_agent_patterns
+                                else:
+                                    # Fallback if patterns exist but are empty
+                                    user_agent = entry.get("botName", entry.get("name", entry.get("bot_name", entry.get("clientName", "Unknown"))))
+                            else:
+                                # Fallback to bot name if no patterns available
+                                user_agent = (
+                                    entry.get("botName") or
+                                    entry.get("name") or
+                                    entry.get("bot_name") or
+                                    entry.get("clientName") or
+                                    "Unknown"
+                                )
+
+                            # Skip if we couldn't find a user agent
+                            if user_agent == "Unknown":
                                 continue
-                            
+
                             bot = {
-                                "user_agent": bot_name,
+                                "user_agent": user_agent,
                                 "operator": entry.get("botCategory", entry.get("category", "")),
                                 "description": entry.get("description", ""),
                                 "sources": ["cloudflare-radar"],
@@ -114,6 +128,9 @@ def fetch_cloudflare_bots():
                                     "ip_ranges": entry.get("ipRanges", entry.get("ip_ranges", [])),
                                     "verification_method": "cloudflare-verified",
                                     "rank": entry.get("rank", entry.get("ranking", "")),
+                                    # Store user agent patterns if available (for reference and future use)
+                                    "user_agent_patterns": user_agent_patterns if user_agent_patterns else None,
+                                    "bot_name": entry.get("botName", entry.get("name", "")),
                                     "original": entry
                                 }
                             }

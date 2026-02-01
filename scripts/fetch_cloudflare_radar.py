@@ -131,9 +131,7 @@ def fetch_cloudflare_bots():
                                     "asn": str(entry.get("asn", "")),
                                     "ip_ranges": entry.get("ipRanges", entry.get("ip_ranges", [])),
                                     "verification_method": "cloudflare-verified",
-                                    "rank": entry.get("rank", entry.get("ranking", "")),
-                                    # Store user agent patterns if available (for reference and future use)
-                                    "user_agent_patterns": user_agent_patterns if user_agent_patterns else None,
+                                    "cf_traffic_percentage": entry.get("value", ""),
                                     "bot_name": entry.get("botName", entry.get("name", "")),
                                     "original": entry
                                 }

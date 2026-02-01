@@ -326,3 +326,129 @@ class TestLoadFunctions:
 
         bots = load_staging_bots()
         assert bots[0]["operator"] == "Other"
+
+
+class TestCloudflarFieldProtection:
+    """Test that CF-specific fields are protected from manual overwrites"""
+
+    def test_cf_traffic_percentage_protected_from_manual(self):
+        """Test that manual sources cannot overwrite cf_traffic_percentage"""
+        # Existing bot from Cloudflare with traffic data
+        existing = {
+            "user_agent": "TestBot",
+            "operator": "Testing",
+            "sources": ["cloudflare-radar"],
+            "raw_data": {
+                "cf_traffic_percentage": "0.05",
+                "bot_name": "TestBot"
+            }
+        }
+
+        # Manual submission trying to overwrite CF data
+        manual = {
+            "user_agent": "TestBot",
+            "operator": "Testing",
+            "sources": ["manual"],
+            "raw_data": {
+                "cf_traffic_percentage": "0.99",  # Trying to inflate traffic
+                "asn": "AS12345"
+            }
+        }
+
+        merged = merge_bot_entries(existing, manual)
+
+        # Should preserve CF traffic percentage, ignore manual attempt
+        assert merged["raw_data"]["cf_traffic_percentage"] == "0.05"
+        # Should still merge other fields
+        assert merged["raw_data"]["asn"] == "AS12345"
+        assert "cloudflare-radar" in merged["sources"]
+        assert "manual" in merged["sources"]
+
+    def test_cf_traffic_percentage_updated_by_cloudflare(self):
+        """Test that Cloudflare sources CAN update cf_traffic_percentage"""
+        # Existing bot from Cloudflare
+        existing = {
+            "user_agent": "TestBot",
+            "operator": "Testing",
+            "sources": ["cloudflare-radar"],
+            "raw_data": {
+                "cf_traffic_percentage": "0.05",
+                "bot_name": "TestBot"
+            }
+        }
+
+        # New Cloudflare data with updated traffic
+        new_cf = {
+            "user_agent": "TestBot",
+            "operator": "Testing",
+            "sources": ["cloudflare-radar"],
+            "raw_data": {
+                "cf_traffic_percentage": "0.10",  # Traffic increased
+                "bot_name": "TestBot"
+            }
+        }
+
+        merged = merge_bot_entries(existing, new_cf)
+
+        # Should update CF traffic percentage from CF source
+        assert merged["raw_data"]["cf_traffic_percentage"] == "0.10"
+
+    def test_manual_bot_with_cf_traffic_ignored(self):
+        """Test that manual submissions with cf_traffic_percentage are ignored"""
+        # No existing bot
+        existing = {
+            "user_agent": "NewBot",
+            "operator": "Testing",
+            "sources": [],
+            "raw_data": {}
+        }
+
+        # Manual submission trying to set CF-specific field
+        manual = {
+            "user_agent": "NewBot",
+            "operator": "Testing",
+            "sources": ["manual"],
+            "raw_data": {
+                "cf_traffic_percentage": "0.99",  # Invalid - manual can't set this
+                "asn": "AS12345"
+            }
+        }
+
+        merged = merge_bot_entries(existing, manual)
+
+        # Should NOT have cf_traffic_percentage (manual can't set it)
+        assert "cf_traffic_percentage" not in merged["raw_data"]
+        # Should still have other fields
+        assert merged["raw_data"]["asn"] == "AS12345"
+
+    def test_mixed_sources_preserves_cf_data(self):
+        """Test that merging manual into CF bot preserves CF-specific data"""
+        # Bot from both Cloudflare and manual
+        existing = {
+            "user_agent": "TestBot",
+            "operator": "Testing",
+            "sources": ["cloudflare-radar", "manual"],
+            "raw_data": {
+                "cf_traffic_percentage": "0.05",
+                "bot_name": "TestBot",
+                "asn": "AS12345"
+            }
+        }
+
+        # Manual update trying to change CF data
+        manual = {
+            "user_agent": "TestBot",
+            "operator": "Testing",
+            "sources": ["manual"],
+            "raw_data": {
+                "cf_traffic_percentage": "0.99",  # Should be ignored
+                "ip_ranges": ["192.0.2.0/24"]
+            }
+        }
+
+        merged = merge_bot_entries(existing, manual)
+
+        # CF data should be preserved
+        assert merged["raw_data"]["cf_traffic_percentage"] == "0.05"
+        # Other fields should merge
+        assert merged["raw_data"]["ip_ranges"] == ["192.0.2.0/24"]

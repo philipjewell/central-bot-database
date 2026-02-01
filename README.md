@@ -1,5 +1,12 @@
 # Central Bot Database 🤖
 
+[![Tests](https://github.com/philipjewell/central-bot-database/actions/workflows/test.yml/badge.svg)](https://github.com/philipjewell/central-bot-database/actions/workflows/test.yml)
+[![PR Validation](https://github.com/philipjewell/central-bot-database/actions/workflows/pr-validation.yml/badge.svg)](https://github.com/philipjewell/central-bot-database/actions/workflows/pr-validation.yml)
+[![Sync Bots](https://github.com/philipjewell/central-bot-database/actions/workflows/sync-bots.yml/badge.svg)](https://github.com/philipjewell/central-bot-database/actions/workflows/sync-bots.yml)
+[![codecov](https://codecov.io/gh/philipjewell/central-bot-database/branch/main/graph/badge.svg)](https://codecov.io/gh/philipjewell/central-bot-database)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+
 A comprehensive, automated database of internet bots with AI-powered categorization for different types of websites. This project aggregates bot information from multiple sources, enriches it with contextual descriptions, and provides recommendations for whether each bot should be allowed or blocked based on your site type.
 
 ## Features
@@ -47,52 +54,74 @@ Each bot is rated for 10 website categories:
 
 ## Quick Start
 
-### Prerequisites
+### For Users
 
+**Query the database:**
+```bash
+# Search for a specific bot
+python scripts/bot_utils.py search "googlebot"
+
+# Get recommendations for your site type
+python scripts/bot_utils.py recommend ecommerce
+
+# Generate a robots.txt file
+python scripts/bot_utils.py robots ecommerce > robots.txt
+```
+
+**Use the JSON data:**
+```python
+import requests
+
+# Load the database
+url = "https://raw.githubusercontent.com/philipjewell/central-bot-database/main/data/bots.json"
+data = requests.get(url).json()
+
+# Filter for beneficial bots
+good_bots = [bot for bot in data['bots']
+             if bot['categories'].get('ecommerce') == 'beneficial']
+```
+
+### For Contributors
+
+**Prerequisites:**
 - Python 3.11+
-- [Ollama](https://ollama.ai) with llama3.2 model (for AI enrichment)
-- GitHub repository with Actions enabled
-- (Optional) Cloudflare API token
+- [Ollama](https://ollama.ai) with llama3.2 model (for local development)
+- Git
 
-### Installation
+**Setup:**
+```bash
+# Clone the repository
+git clone https://github.com/philipjewell/central-bot-database.git
+cd central-bot-database
 
-1. **Clone this repository**
-   ```bash
-   git clone https://github.com/yourusername/central-bot-database.git
-   cd central-bot-database
-   ```
+# Install dependencies
+pip install -r requirements.txt
 
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+# Install Ollama and model (for AI enrichment)
+ollama pull llama3.2
 
-3. **Install Ollama and pull the model**
-   ```bash
-   # Install Ollama from https://ollama.ai
-   ollama pull llama3.2
-   ```
+# Run tests
+pytest
 
-4. **Run the pipeline locally (optional)**
-   ```bash
-   chmod +x run_pipeline.sh
-   ./run_pipeline.sh
-   ```
+# Run the pipeline locally
+chmod +x run_pipeline.sh
+./run_pipeline.sh
+```
 
-### GitHub Actions Setup
+**Add your bot:**
+1. Create a file in `sources/` (e.g., `sources/mybot.json`)
+2. Use the template from `sources/README.md`
+3. Run tests: `pytest`
+4. Submit a pull request
 
-1. **Add Cloudflare API Token** (optional)
-   - Go to repository Settings → Secrets → Actions
-   - Add `CLOUDFLARE_API_TOKEN` (if you have one)
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
-2. **Add Personal Access Token** (required for PR creation)
-   - Create a Fine-Grained Personal Access Token
-   - Permissions needed: Contents (read/write), Pull Requests (read/write)
-   - Add as `PAT_TOKEN` in repository secrets
+### For Maintainers
 
-3. **Enable GitHub Actions**
-   - Workflows run automatically every Sunday at 2 AM UTC
-   - Or trigger manually from the Actions tab
+**GitHub Actions Setup:**
+1. Add `CLOUDFLARE_API_TOKEN` in repository secrets (optional)
+2. Add `PAT_TOKEN` for PR creation (required)
+3. Workflows run automatically every Sunday at 2 AM UTC
 
 ## Usage
 
@@ -282,6 +311,35 @@ Each bot entry includes:
 }
 ```
 
+## Testing
+
+This project uses pytest with comprehensive test coverage (>80% required).
+
+**Run tests:**
+```bash
+# Run all tests
+pytest
+
+# Run with coverage report
+pytest --cov=scripts --cov-report=html
+
+# Run specific test file
+pytest tests/test_merge_sources.py
+
+# Run tests in verbose mode
+pytest -v
+```
+
+**Test structure:**
+- `tests/` - Unit tests for all core scripts
+- `conftest.py` - Shared test fixtures
+- `pytest.ini` - Test configuration
+
+**CI/CD:**
+- All pull requests must pass tests before merging
+- Coverage reports are uploaded to Codecov
+- Tests run on every push to main and all PRs
+
 ## CLI Utilities
 
 ```bash
@@ -307,14 +365,18 @@ python scripts/bot_utils.py operators
 
 ## Contributing
 
-We welcome contributions! Here's how:
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
-1. **Add a new bot**: Edit `sources/manual_bots.json` and submit a PR
-2. **Improve descriptions**: Open an issue with corrections
-3. **Report bugs**: Open an issue with details
-4. **Suggest features**: Open a discussion
+**Quick Contribution:**
+1. Fork the repository
+2. Add your bot to `sources/` directory
+3. Run tests: `pytest`
+4. Submit a pull request
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+All PRs must:
+- ✅ Pass unit tests (>80% coverage)
+- ✅ Pass data validation
+- ✅ Follow the schema in `sources/README.md`
 
 ## Data Sources
 

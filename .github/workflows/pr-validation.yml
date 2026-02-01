@@ -1,0 +1,76 @@
+name: PR Validation
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    name: Validate Changes
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: |
+          pytest -v
+
+      - name: Validate data schema
+        run: |
+          if [ -f "data/bots.json" ]; then
+            python scripts/validate_data.py
+          else
+            echo "No data/bots.json found, skipping validation"
+          fi
+
+      - name: Check for syntax errors
+        run: |
+          python -m py_compile scripts/*.py
+
+      - name: Lint check (if files present)
+        continue-on-error: true
+        run: |
+          if command -v flake8 &> /dev/null; then
+            flake8 scripts/ --count --select=E9,F63,F7,F82 --show-source --statistics
+          fi
+
+  coverage:
+    name: Code Coverage
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate coverage report
+        run: |
+          pytest --cov=scripts --cov-report=term-missing --cov-fail-under=80
+
+      - name: Post coverage comment
+        uses: py-cov-action/python-coverage-comment-action@v3
+        with:
+          GITHUB_TOKEN: ${{ github.token }}

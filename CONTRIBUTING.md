@@ -15,13 +15,14 @@ Thank you for your interest in contributing! This guide will help you add new bo
 ### Step 1: Fork and Clone
 
 ```bash
-git clone https://github.com/your-username/bot-database.git
-cd bot-database
+git clone https://github.com/your-username/central-bot-database.git
+cd central-bot-database
+pip install -r requirements.txt
 ```
 
-### Step 2: Edit Manual Bots File
+### Step 2: Create Your Bot File
 
-Open `sources/manual_bots.json` and add your bot entry:
+Create a new file in `sources/` directory (e.g., `sources/mybot.json`) with your bot entry:
 
 ```json
 {
@@ -124,28 +125,39 @@ Common methods:
 - Published IP ranges
 - API verification endpoint
 
-### Step 5: Validate Your Entry
+### Step 5: Run Tests
 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
+# Run all tests
+pytest
 
-# Run validation
+# Run with coverage
+pytest --cov=scripts
+
+# Validate data (if data/bots.json exists)
 python scripts/validate_data.py
 ```
+
+All pull requests must pass tests with >80% code coverage.
 
 ### Step 6: Submit Pull Request
 
 ```bash
 git checkout -b add-bot-yourbot
-git add sources/manual_bots.json
-git commit -m "Add YourBot to manual entries"
+git add sources/mybot.json
+git commit -m "Add YourBot to database"
 git push origin add-bot-yourbot
 ```
 
 Create a pull request with:
 - **Title**: "Add [BotName] to bot database"
 - **Description**: Brief explanation of the bot and why it should be included
+
+**Automated checks will run:**
+- ✅ Unit tests
+- ✅ Code coverage (>80%)
+- ✅ Data validation
+- ✅ Schema compliance
 
 ## Updating Existing Bots
 

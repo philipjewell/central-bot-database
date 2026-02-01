@@ -52,6 +52,43 @@ Each bot is rated for 10 website categories:
 - ❌ **Harmful** - Generally recommended to block
 - ➖ **Not Applicable** - Bot doesn't interact with this site type
 
+## Web Application & API
+
+🌐 **Browse the database online:** [https://your-deployment.pages.dev](https://your-deployment.pages.dev)
+
+The bot database includes a modern web interface and RESTful API:
+
+- **Interactive Table** - Search, filter, and sort bots by all fields
+- **Category Recommendations** - Find the best bots for your site type
+- **RESTful API** - Programmatic access via simple HTTP endpoints
+- **robots.txt Generator** - Generate robots.txt files on-the-fly
+- **Fast & Global** - Powered by Cloudflare Pages and Workers
+
+### Deploy Your Own
+
+```bash
+# Fork the repository, then:
+cd web
+wrangler pages deploy . --project-name=central-bot-database
+```
+
+See [web/README.md](web/README.md) for detailed deployment instructions.
+
+### API Quick Start
+
+```bash
+# Search for bots
+curl "https://your-deployment.pages.dev/api/search?q=googlebot"
+
+# Get recommendations for e-commerce sites
+curl "https://your-deployment.pages.dev/api/recommend?category=ecommerce&rating=beneficial"
+
+# Generate robots.txt
+curl "https://your-deployment.pages.dev/api/robots?category=ecommerce&block=harmful"
+```
+
+See the [API Documentation](https://your-deployment.pages.dev/api.html) for all endpoints.
+
 ## Quick Start
 
 ### For Users

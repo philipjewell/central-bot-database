@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Bot Database - Browse & Filter</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🤖 Central Bot Database</h1>
+            <p>Comprehensive database of internet bots with AI-powered categorization</p>
+            <nav>
+                <a href="/">Browse</a>
+                <a href="/api.html">API Docs</a>
+                <a href="https://github.com/philipjewell/central-bot-database" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search bots by name, operator, or purpose...">
+            </div>
+
+            <div class="filters">
+                <select id="operatorFilter">
+                    <option value="">All Operators</option>
+                </select>
+
+                <select id="sourceFilter">
+                    <option value="">All Sources</option>
+                    <option value="cloudflare-radar">Cloudflare Radar</option>
+                    <option value="ai-robots-txt">ai.robots.txt</option>
+                    <option value="manual">Manual Submissions</option>
+                </select>
+
+                <select id="categoryFilter">
+                    <option value="">All Site Categories</option>
+                    <option value="ecommerce">E-commerce</option>
+                    <option value="news">News</option>
+                    <option value="media">Media</option>
+                    <option value="blog">Blog</option>
+                    <option value="saas">SaaS</option>
+                    <option value="corporate">Corporate</option>
+                    <option value="documentation">Documentation</option>
+                    <option value="social">Social</option>
+                    <option value="portfolio">Portfolio</option>
+                    <option value="government">Government</option>
+                </select>
+
+                <select id="ratingFilter">
+                    <option value="">All Ratings</option>
+                    <option value="beneficial">✅ Beneficial</option>
+                    <option value="neutral">⚪ Neutral</option>
+                    <option value="harmful">❌ Harmful</option>
+                    <option value="not_applicable">➖ Not Applicable</option>
+                </select>
+
+                <button id="resetFilters">Reset Filters</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalBots">-</div>
+                <div class="stat-label">Total Bots</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="filteredBots">-</div>
+                <div class="stat-label">Filtered Results</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="operatorCount">-</div>
+                <div class="stat-label">Operators</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="botsTable">
+                <thead>
+                    <tr>
+                        <th data-sort="user_agent">Bot Name <span class="sort-icon">↕</span></th>
+                        <th data-sort="operator">Operator <span class="sort-icon">↕</span></th>
+                        <th data-sort="purpose">Purpose</th>
+                        <th>Category Rating</th>
+                        <th data-sort="sources">Sources</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody id="botsTableBody">
+                    <tr>
+                        <td colspan="6" class="loading">Loading bot database...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            <button id="prevPage" disabled>← Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextPage">Next →</button>
+        </div>
+    </main>
+
+    <!-- Bot Details Modal -->
+    <div id="botModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="botDetails">
+                <!-- Details populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Central Bot Database | <a href="https://github.com/philipjewell/central-bot-database">Open Source</a> | MIT License</p>
+        </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

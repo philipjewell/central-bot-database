@@ -54,7 +54,7 @@ Each bot is rated for 10 website categories:
 
 ## Web Application & API
 
-🌐 **Browse the database online:** [https://your-deployment.pages.dev](https://your-deployment.pages.dev)
+🌐 **Browse the database online:** [https://central-bot-database.pages.dev](https://central-bot-database.pages.dev)
 
 The bot database includes a modern web interface and RESTful API:
 
@@ -78,16 +78,16 @@ See [web/README.md](web/README.md) for detailed deployment instructions.
 
 ```bash
 # Search for bots
-curl "https://your-deployment.pages.dev/api/search?q=googlebot"
+curl "https://central-bot-database.pages.dev/api/search?q=googlebot"
 
 # Get recommendations for e-commerce sites
-curl "https://your-deployment.pages.dev/api/recommend?category=ecommerce&rating=beneficial"
+curl "https://central-bot-database.pages.dev/api/recommend?category=ecommerce&rating=beneficial"
 
 # Generate robots.txt
-curl "https://your-deployment.pages.dev/api/robots?category=ecommerce&block=harmful"
+curl "https://central-bot-database.pages.dev/api/robots?category=ecommerce&block=harmful"
 ```
 
-See the [API Documentation](https://your-deployment.pages.dev/api.html) for all endpoints.
+See the [API Documentation](https://central-bot-database.pages.dev/api.html) for all endpoints.
 
 ## Quick Start
 

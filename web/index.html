@@ -20,6 +20,10 @@
     </header>
 
     <main class="container">
+        <div class="info-banner">
+            <strong>About the Data:</strong> The "Operator" field represents the bot's category or classification - either the organization running it (e.g., Google, Amazon) or its functional purpose (e.g., Search Engines, Monitoring & Analytics). Data is sourced from ai.robots.txt, Cloudflare Radar, and manual community submissions.
+        </div>
+
         <div class="controls">
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Search bots by name, operator, or purpose...">
@@ -83,7 +87,10 @@
                 <thead>
                     <tr>
                         <th data-sort="user_agent">Bot Name <span class="sort-icon">↕</span></th>
-                        <th data-sort="operator">Operator <span class="sort-icon">↕</span></th>
+                        <th data-sort="operator">
+                            Operator <span class="sort-icon">↕</span>
+                            <span class="help-icon" title="Bot category/classification - represents either the organization running the bot (e.g., Google, Amazon) or its functional category (e.g., Search Engines, Monitoring & Analytics)">ⓘ</span>
+                        </th>
                         <th data-sort="purpose">Purpose</th>
                         <th>Category Rating</th>
                         <th data-sort="sources">Sources</th>

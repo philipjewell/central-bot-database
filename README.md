@@ -342,11 +342,42 @@ Each bot entry includes:
   "raw_data": {
     "ip_ranges": ["192.0.2.0/24"],
     "asn": "AS64496",
-    "verification_method": "DNS reverse lookup"
+    "verification_method": "DNS reverse lookup",
+    "cf_traffic_percentage": "0.123"
   },
   "last_updated": "2025-10-01T14:30:00Z"
 }
 ```
+
+### Field Descriptions
+
+**Core Fields:**
+- `user_agent` - The bot's user agent string as it appears in HTTP requests
+- `operator` - **Bot category or classification.** This represents either:
+  - The organization running the bot (e.g., "Google", "Amazon", "Ahrefs")
+  - A functional category (e.g., "Search Engines", "Monitoring & Analytics", "AI Crawlers")
+  - Source priority: Cloudflare category → ai.robots.txt function → company/owner → "Other"
+- `purpose` - AI-generated description of what the bot does
+- `description` - Additional context about the bot (from source data)
+- `impact_of_blocking` - AI-generated explanation of consequences if you block this bot
+- `website` - Official documentation or information page for the bot
+
+**Categorization:**
+- `categories` - Recommendations for 10 site types (ecommerce, news, media, blog, saas, corporate, documentation, social, portfolio, government)
+  - `beneficial` - Generally recommended to allow
+  - `neutral` - Depends on your use case
+  - `harmful` - Generally recommended to block
+  - `not_applicable` - Bot doesn't interact with this site type
+
+**Metadata:**
+- `sources` - Where the bot data came from (ai-robots-txt, cloudflare-radar, manual)
+- `last_updated` - ISO 8601 timestamp, only updated when bot data actually changes
+
+**Technical Details (raw_data):**
+- `ip_ranges` - IP address ranges the bot operates from (CIDR notation)
+- `asn` - Autonomous System Number(s)
+- `verification_method` - How to verify the bot is legitimate
+- `cf_traffic_percentage` - Cloudflare-specific metric showing relative traffic volume (only from cloudflare-radar source, cannot be set manually)
 
 ## Testing
 

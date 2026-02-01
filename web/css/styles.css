@@ -66,6 +66,21 @@ main {
     padding: 30px 0;
 }
 
+/* Info Banner */
+.info-banner {
+    background: #eff6ff;
+    border-left: 4px solid var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    color: #1e40af;
+    line-height: 1.6;
+}
+
+.info-banner strong {
+    color: #1e3a8a;
+}
+
 /* Controls */
 .controls {
     background: white;
@@ -193,6 +208,19 @@ th.sort-asc .sort-icon::after {
 
 th.sort-desc .sort-icon::after {
     content: '↓';
+}
+
+.help-icon {
+    display: inline-block;
+    margin-left: 5px;
+    color: var(--primary-color);
+    cursor: help;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.help-icon:hover {
+    opacity: 1;
 }
 
 td {

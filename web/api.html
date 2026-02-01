@@ -91,10 +91,58 @@
             <p>The Central Bot Database API provides programmatic access to our comprehensive bot database. All endpoints return JSON data and require no authentication.</p>
 
             <h3>Base URL</h3>
-            <div class="path">https://your-deployment.pages.dev/api</div>
+            <div class="path">https://central-bot-database.pages.dev/api</div>
 
             <h3>Rate Limits</h3>
             <p>Currently no rate limits. Please use responsibly.</p>
+        </div>
+
+        <div class="api-section">
+            <h2>Understanding the Data</h2>
+
+            <h3>What is "Operator"?</h3>
+            <p>The <strong>operator</strong> field represents a bot's category or classification. It can be either:</p>
+            <ul>
+                <li><strong>Organization name</strong> - The company running the bot (e.g., "Google", "Amazon", "Ahrefs")</li>
+                <li><strong>Functional category</strong> - What type of bot it is (e.g., "Search Engines", "Monitoring & Analytics", "AI Crawlers")</li>
+            </ul>
+
+            <p><strong>Data Sources Priority:</strong></p>
+            <ol>
+                <li>Cloudflare category (e.g., "Monitoring & Analytics")</li>
+                <li>ai.robots.txt function field</li>
+                <li>ai.robots.txt operator/company/owner fields</li>
+                <li>Defaults to "Other" if none specified</li>
+            </ol>
+
+            <p><strong>Examples:</strong></p>
+            <ul>
+                <li>Googlebot → operator: "Search Engines"</li>
+                <li>360Monitoring → operator: "Monitoring & Analytics"</li>
+                <li>AmazonBot → operator: "Amazon"</li>
+            </ul>
+
+            <h3>Response Data Structure</h3>
+            <p>All endpoints that return bot data include these fields:</p>
+            <div class="example">
+                <pre>{
+  "user_agent": "BotName/1.0",
+  "operator": "Category or Company Name",
+  "purpose": "AI-generated description",
+  "impact_of_blocking": "What happens if blocked",
+  "categories": {
+    "ecommerce": "beneficial|neutral|harmful|not_applicable",
+    ...
+  },
+  "sources": ["ai-robots-txt", "cloudflare-radar", "manual"],
+  "raw_data": {
+    "ip_ranges": ["192.0.2.0/24"],
+    "asn": "AS64496",
+    "cf_traffic_percentage": "0.123"
+  },
+  "last_updated": "2026-02-01T12:00:00Z"
+}</pre>
+            </div>
         </div>
 
         <div class="api-section">
@@ -300,12 +348,12 @@ console.log(bots.bots);</pre>
                 <pre>import requests
 
 # Search for bots
-response = requests.get('https://your-deployment.pages.dev/api/search?q=googlebot')
+response = requests.get('https://central-bot-database.pages.dev/api/search?q=googlebot')
 data = response.json()
 print(data['results'])
 
 # Get recommendations
-response = requests.get('https://your-deployment.pages.dev/api/recommend?category=ecommerce&rating=beneficial')
+response = requests.get('https://central-bot-database.pages.dev/api/recommend?category=ecommerce&rating=beneficial')
 bots = response.json()
 print(bots['bots'])</pre>
             </div>

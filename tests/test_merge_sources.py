@@ -139,9 +139,29 @@ class TestMergeBotEntries:
 
         merged = merge_bot_entries(existing, new, preserve_enrichment=False)
 
-        # Timestamp should NOT be updated if nothing changed (except sources merge)
-        # Note: Sources merge will trigger update, but description staying same won't add to it
-        assert "last_updated" in merged
+        # Timestamp should NOT be updated when nothing changed
+        assert merged["last_updated"] == "2025-01-01T00:00:00Z"
+
+    def test_no_timestamp_update_for_reordered_sources(self):
+        """Test that reordering sources doesn't trigger timestamp update"""
+        existing = {
+            "user_agent": "TestBot",
+            "sources": ["cloudflare-radar", "ai-robots-txt"],  # Different order
+            "description": "Same description",
+            "last_updated": "2025-01-01T00:00:00Z"
+        }
+        new = {
+            "user_agent": "TestBot",
+            "sources": ["ai-robots-txt", "cloudflare-radar"],  # Different order
+            "description": "Same description"
+        }
+
+        merged = merge_bot_entries(existing, new, preserve_enrichment=False)
+
+        # Timestamp should NOT be updated - sources are the same, just different order
+        assert merged["last_updated"] == "2025-01-01T00:00:00Z"
+        # Sources should be sorted
+        assert merged["sources"] == ["ai-robots-txt", "cloudflare-radar"]
 
 
 class TestLoadFunctions:

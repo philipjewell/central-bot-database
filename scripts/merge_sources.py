@@ -119,9 +119,11 @@ def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = Fal
     # Merge sources
     existing_sources = set(existing.get("sources", []))
     new_sources = set(new.get("sources", []))
-    merged_sources = sorted(list(existing_sources | new_sources))
-    if merged_sources != merged["sources"]:
-        merged["sources"] = merged_sources
+    merged_sources_set = existing_sources | new_sources
+
+    # Only update if sources actually changed (compare sets to ignore order)
+    if merged_sources_set != existing_sources:
+        merged["sources"] = sorted(list(merged_sources_set))
         was_updated = True
     
     # Merge operator/category with priority: Cloudflare > Manual > Mapped

@@ -160,8 +160,8 @@ class TestMergeBotEntries:
 
         # Timestamp should NOT be updated - sources are the same, just different order
         assert merged["last_updated"] == "2025-01-01T00:00:00Z"
-        # Sources should be sorted
-        assert merged["sources"] == ["ai-robots-txt", "cloudflare-radar"]
+        # Sources should remain unchanged (same as existing, not re-sorted)
+        assert merged["sources"] == ["cloudflare-radar", "ai-robots-txt"]
 
 
 class TestLoadFunctions:

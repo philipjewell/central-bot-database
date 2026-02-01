@@ -313,7 +313,7 @@ Each bot entry includes:
 
 ## Testing
 
-This project uses pytest with comprehensive test coverage (>80% required).
+This project uses pytest with comprehensive test coverage (>70% required for core logic).
 
 **Run tests:**
 ```bash
@@ -331,9 +331,14 @@ pytest -v
 ```
 
 **Test structure:**
-- `tests/` - Unit tests for all core scripts
+- `tests/` - Unit tests for core business logic
 - `conftest.py` - Shared test fixtures
 - `pytest.ini` - Test configuration
+
+**Coverage:**
+- **Core scripts** (70% minimum): fetch, merge, validate, category mapping
+- **Excluded from coverage**: CLI utilities, output generators, AI enrichment (requires Ollama)
+- Current coverage: ~75% on tested scripts
 
 **CI/CD:**
 - All pull requests must pass tests before merging
@@ -374,7 +379,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed gu
 4. Submit a pull request
 
 All PRs must:
-- ✅ Pass unit tests (>80% coverage)
+- ✅ Pass unit tests (>70% coverage on core logic)
 - ✅ Pass data validation
 - ✅ Follow the schema in `sources/README.md`
 

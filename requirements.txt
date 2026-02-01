@@ -3,6 +3,11 @@
 # HTTP requests
 requests>=2.31.0
 
+# Testing and code coverage
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.0
+
 # JSON schema validation
 jsonschema>=4.19.0
 

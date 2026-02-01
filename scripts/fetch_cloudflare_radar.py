@@ -28,12 +28,16 @@ def fetch_cloudflare_bots():
     date_from = start_date.strftime("%Y-%m-%dT%H:%M:%SZ")
     date_to = end_date.strftime("%Y-%m-%dT%H:%M:%SZ")
     
+    # Cloudflare API limit - fetches top 250 most common verified bots
+    # Note: This does not fetch ALL bots from Cloudflare, only the top N by traffic
+    CLOUDFLARE_BOT_LIMIT = 250
+
     # Try multiple possible endpoints with proper date ranges
     endpoints_to_try = [
         (
             "https://api.cloudflare.com/client/v4/radar/verified_bots/top/bots",
             {
-                "limit": 200,
+                "limit": CLOUDFLARE_BOT_LIMIT,
                 "dateStart": date_from,
                 "dateEnd": date_to,
                 "format": "json"
@@ -42,14 +46,14 @@ def fetch_cloudflare_bots():
         (
             "https://api.cloudflare.com/client/v4/radar/verified_bots/top/bots",
             {
-                "limit": 200,
+                "limit": CLOUDFLARE_BOT_LIMIT,
                 "dateRange": "7d"
             }
         ),
         (
             "https://api.cloudflare.com/client/v4/radar/verified_bots/top/bots",
             {
-                "limit": 200,
+                "limit": CLOUDFLARE_BOT_LIMIT,
                 "range": "7d"
             }
         ),

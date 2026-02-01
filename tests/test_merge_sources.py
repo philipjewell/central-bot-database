@@ -90,6 +90,38 @@ class TestMergeBotEntries:
         assert "198.51.100.0/24" in merged["raw_data"]["ip_ranges"]
         assert merged["raw_data"]["asn"] == "AS64496"
 
+    def test_adds_missing_description(self):
+        """Test that description gets added when missing"""
+        existing = {
+            "user_agent": "TestBot",
+            "sources": ["manual"],
+            "description": ""
+        }
+        new = {
+            "user_agent": "TestBot",
+            "sources": ["ai-robots-txt"],
+            "description": "New description"
+        }
+
+        merged = merge_bot_entries(existing, new, preserve_enrichment=True)
+        assert merged["description"] == "New description"
+
+    def test_preserves_existing_description(self):
+        """Test that existing description is preserved"""
+        existing = {
+            "user_agent": "TestBot",
+            "sources": ["manual"],
+            "description": "Existing description"
+        }
+        new = {
+            "user_agent": "TestBot",
+            "sources": ["ai-robots-txt"],
+            "description": "New description"
+        }
+
+        merged = merge_bot_entries(existing, new, preserve_enrichment=True)
+        assert merged["description"] == "Existing description"
+
     def test_manual_source_takes_precedence(self):
         existing = {
             "user_agent": "TestBot",
@@ -184,6 +216,19 @@ class TestLoadFunctions:
         assert len(bots) == 1
         assert bots[0]["user_agent"] == "TestBot/1.0"
 
+    def test_load_existing_database_invalid_json(self, tmp_path, monkeypatch, capsys):
+        monkeypatch.chdir(tmp_path)
+        data_dir = tmp_path / "data"
+        data_dir.mkdir()
+
+        db_file = data_dir / "bots.json"
+        db_file.write_text("invalid json {")
+
+        bots = load_existing_database()
+        assert bots == []
+        captured = capsys.readouterr()
+        assert "Error loading" in captured.out
+
     def test_load_manual_bots_empty(self, tmp_path, monkeypatch):
         monkeypatch.chdir(tmp_path)
         sources_dir = tmp_path / "sources"
@@ -205,6 +250,50 @@ class TestLoadFunctions:
         assert bots[0]["user_agent"] == "TestBot/1.0"
         assert "manual" in bots[0]["sources"]
 
+    def test_load_manual_bots_single_object(self, tmp_path, monkeypatch, sample_bot):
+        """Test loading a single bot object (not array)"""
+        monkeypatch.chdir(tmp_path)
+        sources_dir = tmp_path / "sources"
+        sources_dir.mkdir()
+
+        manual_file = sources_dir / "single_bot.json"
+        manual_file.write_text(json.dumps(sample_bot))
+
+        bots = load_manual_bots()
+        assert len(bots) == 1
+        assert "manual" in bots[0]["sources"]
+
+    def test_load_manual_bots_no_operator(self, tmp_path, monkeypatch):
+        """Test that bots without operator get 'Other' as default"""
+        monkeypatch.chdir(tmp_path)
+        sources_dir = tmp_path / "sources"
+        sources_dir.mkdir()
+
+        bot_without_operator = {
+            "user_agent": "TestBot",
+            "sources": ["manual"]
+        }
+
+        manual_file = sources_dir / "bot.json"
+        manual_file.write_text(json.dumps([bot_without_operator]))
+
+        bots = load_manual_bots()
+        assert bots[0]["operator"] == "Other"
+
+    def test_load_manual_bots_invalid_json(self, tmp_path, monkeypatch, capsys):
+        """Test handling of invalid JSON files"""
+        monkeypatch.chdir(tmp_path)
+        sources_dir = tmp_path / "sources"
+        sources_dir.mkdir()
+
+        bad_file = sources_dir / "bad.json"
+        bad_file.write_text("invalid json {")
+
+        bots = load_manual_bots()
+        assert bots == []
+        captured = capsys.readouterr()
+        assert "Error parsing" in captured.out
+
     def test_load_staging_bots_skips_merged(self, tmp_path, monkeypatch, sample_bot):
         monkeypatch.chdir(tmp_path)
         staging_dir = tmp_path / "staging"
@@ -220,3 +309,20 @@ class TestLoadFunctions:
 
         bots = load_staging_bots()
         assert len(bots) == 1  # Only one, not two
+
+    def test_load_staging_bots_adds_default_operator(self, tmp_path, monkeypatch):
+        """Test that staging bots without operator get 'Other'"""
+        monkeypatch.chdir(tmp_path)
+        staging_dir = tmp_path / "staging"
+        staging_dir.mkdir()
+
+        bot_without_operator = {
+            "user_agent": "StagingBot",
+            "sources": ["cloudflare-radar"]
+        }
+
+        staging_file = staging_dir / "cloudflare_bots.json"
+        staging_file.write_text(json.dumps([bot_without_operator]))
+
+        bots = load_staging_bots()
+        assert bots[0]["operator"] == "Other"

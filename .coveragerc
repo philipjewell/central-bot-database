@@ -7,6 +7,12 @@ omit =
     */__pycache__/*
     */staging/*
     */setup.py
+    # Exclude scripts that require external dependencies or are CLI utilities
+    scripts/bot_utils.py
+    scripts/enrich_with_ai.py
+    scripts/discover_categories.py
+    scripts/generate_outputs.py
+    scripts/fix_ratings.py
 
 [report]
 precision = 2

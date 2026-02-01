@@ -184,22 +184,6 @@ main {
     margin-top: 5px;
 }
 
-.legend-card {
-    background: linear-gradient(135deg, #eff6ff 0%, #f9fafb 100%);
-}
-
-.legend-items {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font-size: 0.85rem;
-    margin-top: 5px;
-}
-
-.legend-items span {
-    color: var(--text-color);
-}
-
 /* Table */
 .table-container {
     background: white;

@@ -105,8 +105,16 @@ function filterBots() {
 
         // Category and rating filter
         let categoryMatch = true;
+
         if (categoryFilter && ratingFilter) {
+            // Both category and rating specified - must match exactly
             categoryMatch = bot.categories?.[categoryFilter] === ratingFilter;
+        } else if (categoryFilter) {
+            // Only category specified - show if bot has any rating for this category
+            categoryMatch = bot.categories?.[categoryFilter] !== undefined;
+        } else if (ratingFilter) {
+            // Only rating specified - show if bot has this rating for ANY category
+            categoryMatch = Object.values(bot.categories || {}).includes(ratingFilter);
         }
 
         return searchMatch && operatorMatch && sourceMatch && categoryMatch;

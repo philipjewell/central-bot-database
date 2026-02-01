@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-02-01T16:30:15.951100Z",
+    "generated_at": "2026-02-01T19:13:51.975215Z",
     "version": "1.0",
-    "total_bots": 331,
+    "total_bots": 368,
     "description": "Comprehensive database of internet bots with categorization by site type"
   },
   "bots": [
@@ -97,9 +97,11 @@
           "botCategory": "Monitoring & Analytics",
           "botOwner": "ActiveComply",
           "value": "0.003212"
-        }
+        },
+        "user_agent_patterns": null,
+        "bot_name": "ActiveComply Bot"
       },
-      "last_updated": "2026-01-25T03:50:43.575833Z",
+      "last_updated": "2026-02-01T18:50:43.206827Z",
       "purpose": "The ActiveComply Bot is designed to monitor and analyze compliance activities for organizations, helping them stay up-to-date with regulatory requirements and ensure adherence to standards. Its purpose is to provide real-time monitoring and insights to support operational efficiency and risk management.",
       "impact_of_blocking": "Blocking the ActiveComply Bot could result in a loss of real-time monitoring capabilities, hindering organizations from promptly identifying compliance gaps, tracking regulatory changes, and responding accordingly to potential risks. This could lead to delayed notification of non-compliance issues, making it more challenging for organizations to maintain optimal adherence to standards and regulations.",
       "categories": {
@@ -173,9 +175,11 @@
           "botCategory": "Advertising & Marketing",
           "botOwner": "OneTag Limited",
           "value": "0.009107"
-        }
+        },
+        "user_agent_patterns": null,
+        "bot_name": "AdsTxtCrawler"
       },
-      "last_updated": "2026-01-25T03:50:43.575844Z",
+      "last_updated": "2026-02-01T18:50:43.206880Z",
       "purpose": "The AdsTxtCrawler is a custom-built bot designed to monitor and analyze ad verification text (also known as \"ads.txt\") files, helping advertisers and publishers ensure accurate ad serving and reducing the risk of invalid traffic. The bot's purpose is to provide real-time insights into ad delivery and help maintain brand integrity in online advertising.",
       "impact_of_blocking": "Blocking AdsTxtCrawler would prevent advertisers from accessing critical information about their ads' delivery, including validation results, impression counts, and invalid traffic metrics, potentially hindering their ability to optimize ad campaigns and maintain brand integrity online. This would result in lost visibility into ad performance and reduced effectiveness in filtering out malicious or low-quality ad serving activities.",
       "categories": {
@@ -878,9 +882,11 @@
           "botCategory": "Archiver",
           "botOwner": "Arquivo",
           "value": "0.004013"
-        }
+        },
+        "user_agent_patterns": null,
+        "bot_name": "Arquivo Web Crawler"
       },
-      "last_updated": "2025-12-14T03:26:02.200509Z",
+      "last_updated": "2026-02-01T18:50:43.206922Z",
       "purpose": "The Arquivo Web Crawler is a web archiving bot that crawls the internet to capture and preserve websites, ensuring their content remains accessible for future generations. It serves as a digital archive, preserving the past and providing a snapshot of the web at a particular point in time.",
       "impact_of_blocking": "Blocking the Arquivo Web Crawler would result in the loss of access to websites that have not been crawled by other bots, potentially depriving future researchers, historians, and enthusiasts of valuable historical content, including articles, documents, and images that may be no longer available on their original platforms. This could also impact the preservation of online resources such as academic papers, e-books, and digital artifacts that rely on the Arquivo Web Crawler for long-term archiving.",
       "categories": {
@@ -898,26 +904,30 @@
     },
     {
       "user_agent": "atlassian-bot",
-      "operator": "[Atlassian](https://www.atlassian.com)",
+      "operator": "AI Crawler",
       "description": "atlassian-bot is a web crawler used to index website content for its AI search, assistants and agents available in its Rovo GenAI product.",
       "website": "",
       "sources": [
-        "ai-robots-txt"
+        "ai-robots-txt",
+        "cloudflare-radar"
       ],
       "raw_data": {
         "ip_ranges": [],
         "asn": "",
         "asn_list": [],
-        "verification_method": "",
+        "verification_method": "cloudflare-verified",
         "original": {
           "operator": "[Atlassian](https://www.atlassian.com)",
           "respect": "[Yes](https://support.atlassian.com/organization-administration/docs/connect-custom-website-to-rovo/#Editing-your-robots.txt)",
           "function": "AI search, assistants and agents",
           "frequency": "No information provided.",
           "description": "atlassian-bot is a web crawler used to index website content for its AI search, assistants and agents available in its Rovo GenAI product."
-        }
+        },
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "atlassian-bot"
       },
-      "last_updated": "2026-02-01T07:16:19.958983Z",
+      "last_updated": "2026-02-01T18:50:43.206786Z",
       "purpose": "The atlassian-bot is a web crawler that indexes website content to power Atlassian's AI search, assistants, and agents in their Rovo GenAI product. Its purpose is to provide improved search functionality for users across Atlassian's platform.",
       "impact_of_blocking": "Blocking the atlassian-bot could result in reduced search results and incomplete information for users attempting to find specific documents, projects, or other content within Atlassian's platforms. This may lead to frustrated users experiencing difficulty locating relevant data, potentially impacting their productivity and work efficiency.",
       "categories": {
@@ -1339,6 +1349,43 @@
       }
     },
     {
+      "user_agent": "BinaryCanary",
+      "operator": "Monitoring & Analytics",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "BinaryCanary",
+        "original": {
+          "botName": "BinaryCanary",
+          "botCategory": "Monitoring & Analytics",
+          "botOwner": "Binary Canary",
+          "value": "0.001573"
+        }
+      },
+      "last_updated": "2026-02-01T18:52:23.366515Z",
+      "purpose": "BinaryCanary is a monitoring and analytics bot designed to track and alert on system performance issues, allowing operators to identify and resolve problems before they impact business operations. Its purpose is to provide real-time insights and early warning systems for organizations to maintain optimal system stability and efficiency.",
+      "impact_of_blocking": "Blocking BinaryCanary would significantly reduce the visibility into system performance issues, potentially leading to undetected problems and decreased system stability, as operators would no longer receive real-time alerts and insights to identify and resolve issues before they impact business operations. This could result in delayed resolutions, increased downtime, and potential losses for organizations reliant on timely system monitoring.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "neutral",
+        "blog": "neutral",
+        "saas": "neutral",
+        "corporate": "beneficial",
+        "documentation": "not_applicable",
+        "social": "neutral",
+        "portfolio": "neutral",
+        "government": "not_applicable"
+      }
+    },
+    {
       "user_agent": "Bing Ads",
       "operator": "Advertising & Marketing",
       "description": "",
@@ -1516,6 +1563,43 @@
         "documentation": "beneficial",
         "social": "neutral",
         "portfolio": "not_applicable",
+        "government": "neutral"
+      }
+    },
+    {
+      "user_agent": "Blogtrottr",
+      "operator": "Feed Fetcher",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Blogtrottr",
+        "original": {
+          "botName": "Blogtrottr",
+          "botCategory": "Feed Fetcher",
+          "botOwner": "Blogtrottr",
+          "value": "0.001465"
+        }
+      },
+      "last_updated": "2026-02-01T18:52:56.465718Z",
+      "purpose": "The Blogtrottr bot is designed to automate tasks related to blogging, specifically feeding content from one platform to another, ensuring that blog posts are syndicated across various outlets. It exists to simplify the process of publishing and sharing content on multiple platforms efficiently and consistently.",
+      "impact_of_blocking": "Blocking the Blogtrottr bot could disrupt the seamless syndication of blog posts across multiple platforms, resulting in inconsistent publication schedules and potential delays in content dissemination. This would likely impact the authors and publishers who rely on the bot to efficiently publish their work on various outlets, hindering their ability to reach a broader audience.",
+      "categories": {
+        "blog": "beneficial",
+        "ecommerce": "not_applicable",
+        "media": "beneficial",
+        "news": "beneficial",
+        "saas": "beneficial",
+        "corporate": "beneficial",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "beneficial",
         "government": "neutral"
       }
     },
@@ -1779,6 +1863,80 @@
       }
     },
     {
+      "user_agent": "BugsNag",
+      "operator": "Monitoring & Analytics",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "BugsNag",
+        "original": {
+          "botName": "BugsNag",
+          "botCategory": "Monitoring & Analytics",
+          "botOwner": "Bugs Nag",
+          "value": "0.00131"
+        }
+      },
+      "last_updated": "2026-02-01T18:53:30.765209Z",
+      "purpose": "The BugsNag bot is designed to monitor and analyze system or application issues, alerting operators when problems occur to ensure prompt resolution and minimize downtime. Its purpose is to identify and notify technical staff of potential software bugs or performance issues, enabling proactive maintenance and support.",
+      "impact_of_blocking": "Blocking the BugsNag bot would significantly limit a monitoring team's ability to receive timely alerts about system or application issues, potentially leading to delayed detection and resolution of problems, which could result in increased downtime and reduced system availability. This would also obscure visibility into performance metrics and error patterns, making it more challenging for technical staff to identify and address potential software bugs or issues.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "not_applicable",
+        "blog": "neutral",
+        "saas": "neutral",
+        "corporate": "not_applicable",
+        "documentation": "not_applicable",
+        "social": "neutral",
+        "portfolio": "neutral",
+        "government": "harmful"
+      }
+    },
+    {
+      "user_agent": "Bushbaby",
+      "operator": "Security",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Bushbaby",
+        "original": {
+          "botName": "Bushbaby",
+          "botCategory": "Security",
+          "botOwner": "Cloudflare",
+          "value": "0.001773"
+        }
+      },
+      "last_updated": "2026-02-01T18:54:06.727168Z",
+      "purpose": "I don't have any information about a \"Bushbaby\" bot, but I can provide some general information about security bots.\n\nA security bot like Bushbaby is likely designed to detect and respond to potential security threats in its environment, such as surveillance cameras or sensors. Its purpose is to monitor and alert authorities to any suspicious activity, helping to prevent or mitigate potential security breaches.",
+      "impact_of_blocking": "Blocking the Bushbaby bot could potentially disrupt the detection of suspicious activity in its environment, resulting in lost alerts and delayed notifications for security personnel. This loss of visibility into potential security threats may allow unauthorized access or manipulation to go undetected, posing a risk to security and safety.",
+      "categories": {
+        "ecommerce": "not_applicable",
+        "news": "not_applicable",
+        "media": "not_applicable",
+        "blog": "beneficial",
+        "saas": "harmful",
+        "corporate": "neutral",
+        "documentation": "beneficial",
+        "social": "neutral",
+        "portfolio": "beneficial",
+        "government": "neutral"
+      }
+    },
+    {
       "user_agent": "Bytespider",
       "operator": "ByteDance",
       "description": "Downloads data to train LLMS, including ChatGPT competitors.",
@@ -1980,9 +2138,11 @@
           "botCategory": "Webhooks",
           "botOwner": "ChargeBee",
           "value": "0.006915"
-        }
+        },
+        "user_agent_patterns": null,
+        "bot_name": "ChargeBee"
       },
-      "last_updated": "2026-01-25T03:50:43.575812Z",
+      "last_updated": "2026-02-01T18:50:43.206852Z",
       "purpose": "ChargeBee is a web-based automation tool that helps businesses manage their recurring subscriptions, invoices, and payments through automated workflows using webhooks. It enables operators to streamline and scale their subscription management processes, improving efficiency and reducing administrative burdens.",
       "impact_of_blocking": "Blocking ChargeBee could result in the loss of automation capabilities for managing recurring subscriptions, invoices, and payments, causing business owners to manually process these tasks, leading to increased administrative workload and potential errors. This could also impact operators' ability to track payment status, send notifications, and update subscription information, hindering their efficiency and revenue growth.",
       "categories": {
@@ -2336,6 +2496,43 @@
       }
     },
     {
+      "user_agent": "ClearscopeBot",
+      "operator": "Search Engine Optimization",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "ClearscopeBot",
+        "original": {
+          "botName": "ClearscopeBot",
+          "botCategory": "Search Engine Optimization",
+          "botOwner": "Mushi Labs",
+          "value": "0.001268"
+        }
+      },
+      "last_updated": "2026-02-01T18:54:40.314533Z",
+      "purpose": "The ClearscopeBot is a search engine optimization (SEO) tool designed to provide clear, concise, and accurate information about various topics within specific niches or industries. Its purpose is to help users quickly find relevant and trustworthy sources of knowledge on a particular subject.",
+      "impact_of_blocking": "Blocking the ClearscopeBot could result in a significant loss of visibility for niche websites, industry-specific resources, and high-quality informational content that relies on its indexing capabilities to reach users searching for specific topics. This could lead to reduced traffic and engagement for these sites, particularly those targeting specialized or technical subjects where accurate and concise information is scarce.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "harmful",
+        "blog": "neutral",
+        "saas": "harmful",
+        "corporate": "neutral",
+        "documentation": "beneficial",
+        "social": "neutral",
+        "portfolio": "neutral",
+        "government": "harmful"
+      }
+    },
+    {
       "user_agent": "Cloudflare Custom Hostname Verification",
       "operator": "Search Engine Optimization",
       "description": "",
@@ -2444,6 +2641,80 @@
         "social": "neutral",
         "portfolio": "beneficial",
         "government": "neutral"
+      }
+    },
+    {
+      "user_agent": "Cloudflare Radar URL Scanner",
+      "operator": "Security",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Cloudflare Radar URL Scanner",
+        "original": {
+          "botName": "Cloudflare Radar URL Scanner",
+          "botCategory": "Security",
+          "botOwner": "Cloudflare",
+          "value": "0.001609"
+        }
+      },
+      "last_updated": "2026-02-01T18:55:14.002061Z",
+      "purpose": "The Cloudflare Radar URL Scanner is a security bot designed to identify and alert users about malicious or suspicious websites, helping to protect them from potential threats such as phishing, malware, and other online dangers. It scans URLs in real-time to provide an added layer of protection for users' online activities.",
+      "impact_of_blocking": "Blocking the Cloudflare Radar URL Scanner bot would likely result in a loss of real-time URL scanning and alerting capabilities, leaving users more vulnerable to malicious websites that evade detection. This blockage would render the bot's primary functionality useless, making it difficult for users to identify and avoid suspicious online threats.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "neutral",
+        "blog": "neutral",
+        "saas": "neutral",
+        "corporate": "beneficial",
+        "documentation": "neutral",
+        "social": "harmful",
+        "portfolio": "neutral",
+        "government": "neutral"
+      }
+    },
+    {
+      "user_agent": "Cloudflare SSLDetector",
+      "operator": "Search Engine Optimization",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Cloudflare SSLDetector",
+        "original": {
+          "botName": "Cloudflare SSLDetector",
+          "botCategory": "Search Engine Optimization",
+          "botOwner": "Cloudflare",
+          "value": "0.001382"
+        }
+      },
+      "last_updated": "2026-02-01T18:55:51.704994Z",
+      "purpose": "The Cloudflare SSLDetector is a search engine optimization (SEO) tool that detects and reports potential security vulnerabilities associated with HTTP, non-HTTPS websites, helping businesses ensure their online presence is secure and trustworthy. Its primary purpose is to encourage website owners to migrate to HTTPS, ensuring the protection of user data and maintaining a positive online reputation.",
+      "impact_of_blocking": "Blocking the Cloudflare SSLDetector bot could result in the loss of critical security vulnerability reports for websites, potentially leaving them exposed to cyber threats, as well as reducing website owners' ability to monitor their online presence and make data-driven decisions about HTTPS migration. This could also lead to a decrease in transparency and accountability within the industry, hindering businesses' efforts to maintain a secure and trustworthy online reputation.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "not_applicable",
+        "blog": "neutral",
+        "saas": "neutral",
+        "corporate": "beneficial",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "neutral",
+        "government": "harmful"
       }
     },
     {
@@ -3076,6 +3347,43 @@
       }
     },
     {
+      "user_agent": "Cybaa Bot",
+      "operator": "Security",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Cybaa Bot",
+        "original": {
+          "botName": "Cybaa Bot",
+          "botCategory": "Security",
+          "botOwner": null,
+          "value": "0.001857"
+        }
+      },
+      "last_updated": "2026-02-01T18:56:26.151039Z",
+      "purpose": "The Cybaa Bot is a security-focused automated system designed to detect, analyze, and respond to potential security threats or incidents in real-time. Its primary purpose is to enhance security operations by providing proactive monitoring, rapid incident response, and enhanced threat intelligence.",
+      "impact_of_blocking": "Blocking the Cybaa Bot would result in a loss of real-time threat detection and analysis capabilities, allowing potential security threats to go undetected and unaddressed for an extended period. As a result, organizations relying on the bot's proactive monitoring and incident response features may experience delayed responses to security incidents, potentially leading to increased downtime, data breaches, or other security-related losses.",
+      "categories": {
+        "ecommerce": "harmful",
+        "news": "not_applicable",
+        "media": "not_applicable",
+        "blog": "neutral",
+        "saas": "beneficial",
+        "corporate": "neutral",
+        "documentation": "beneficial",
+        "social": "neutral",
+        "portfolio": "not_applicable",
+        "government": "harmful"
+      }
+    },
+    {
       "user_agent": "C\u1ed1c C\u1ed1c",
       "operator": "Search Engine Crawler",
       "description": "",
@@ -3258,6 +3566,43 @@
         "social": "neutral",
         "portfolio": "not_applicable",
         "government": "harmful"
+      }
+    },
+    {
+      "user_agent": "deadlinkchecker",
+      "operator": "Monitoring & Analytics",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "deadlinkchecker",
+        "original": {
+          "botName": "deadlinkchecker",
+          "botCategory": "Monitoring & Analytics",
+          "botOwner": "DLC Websites",
+          "value": "0.001081"
+        }
+      },
+      "last_updated": "2026-02-01T18:56:59.896828Z",
+      "purpose": "The DeadLinkChecker bot is a monitoring tool designed to identify and notify users about broken or \"dead\" links, typically used in digital content, social media, or online communities. Its purpose is to ensure that links are functioning correctly and provide an alternative solution when they fail.",
+      "impact_of_blocking": "Blocking the DeadLinkChecker bot could lead to missed opportunities for users to discover functional alternatives to broken links, potentially disrupting their digital content, social media engagement, or online community interactions. By blocking this bot, users may also lose access to notifications about link fixes or updates, which could impact their experience and productivity.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "neutral",
+        "blog": "beneficial",
+        "saas": "neutral",
+        "corporate": "neutral",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "neutral",
+        "government": "not_applicable"
       }
     },
     {
@@ -3597,26 +3942,30 @@
     },
     {
       "user_agent": "Echobot Bot",
-      "operator": "Echobox",
+      "operator": "AI Crawler",
       "description": "Echobot Bot is an AI data scraper operated by Echobox. It's not currently known to be artificially intelligent or AI-related. If you think that's incorrect or can provide more detail about its purpose, please contact us. More info can be found at https://darkvisitors.com/agents/agents/echobot-bot",
       "website": "",
       "sources": [
-        "ai-robots-txt"
+        "ai-robots-txt",
+        "cloudflare-radar"
       ],
       "raw_data": {
         "ip_ranges": [],
         "asn": "",
         "asn_list": [],
-        "verification_method": "",
+        "verification_method": "cloudflare-verified",
         "original": {
           "operator": "Echobox",
           "respect": "Unclear at this time.",
           "function": "AI Data Scrapers",
           "frequency": "Unclear at this time.",
           "description": "Echobot Bot is an AI data scraper operated by Echobox. It's not currently known to be artificially intelligent or AI-related. If you think that's incorrect or can provide more detail about its purpose, please contact us. More info can be found at https://darkvisitors.com/agents/agents/echobot-bot"
-        }
+        },
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Echobot Bot"
       },
-      "last_updated": "2026-02-01T07:16:19.959105Z",
+      "last_updated": "2026-02-01T18:50:43.206766Z",
       "purpose": "The Echobot Bot is an AI data scraper designed to extract specific information from various sources, but its true nature and capabilities are unclear. Its purpose remains unknown or misunderstood, and more information can be found at the provided link.",
       "impact_of_blocking": "Blocking the Echobot Bot could potentially disrupt data extraction operations for other users who rely on the bot to scrape information from various sources, resulting in a loss of access to valuable data and insights. Specifically, blocking the bot could prevent users from accessing data through APIs or web scraping platforms that utilize its capabilities, hindering their ability to process and analyze large datasets.",
       "categories": {
@@ -3703,6 +4052,43 @@
         "documentation": "not_applicable",
         "social": "not_applicable",
         "portfolio": "neutral",
+        "government": "neutral"
+      }
+    },
+    {
+      "user_agent": "eMoney Advisor",
+      "operator": "Aggregator",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "eMoney Advisor",
+        "original": {
+          "botName": "eMoney Advisor",
+          "botCategory": "Aggregator",
+          "botOwner": "eMoney Advisor",
+          "value": "0.001804"
+        }
+      },
+      "last_updated": "2026-02-01T18:57:33.627806Z",
+      "purpose": "The eMoney Advisor is a financial aggregation bot that provides personalized investment advice and portfolio management services to users, helping them make informed decisions about their financial investments. Its purpose is to streamline access to expert investment guidance and tools, making it easier for individuals to manage their wealth effectively.",
+      "impact_of_blocking": "Blocking the eMoney Advisor bot would significantly limit users' ability to receive personalized investment advice and portfolio management services, resulting in a loss of access to expert guidance and tools that could help them make informed decisions about their financial investments. Specifically, users would no longer be able to ask for customized investment recommendations or track the performance of their portfolios in real-time.",
+      "categories": {
+        "ecommerce": "not_applicable",
+        "news": "neutral",
+        "media": "neutral",
+        "blog": "neutral",
+        "saas": "beneficial",
+        "corporate": "neutral",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "beneficial",
         "government": "neutral"
       }
     },
@@ -4079,6 +4465,43 @@
       }
     },
     {
+      "user_agent": "FlipboardRSS",
+      "operator": "Feed Fetcher",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "FlipboardRSS",
+        "original": {
+          "botName": "FlipboardRSS",
+          "botCategory": "Feed Fetcher",
+          "botOwner": "Flipboard",
+          "value": "0.001368"
+        }
+      },
+      "last_updated": "2026-02-01T18:58:09.598629Z",
+      "purpose": "The FlipboardRSS bot is an automated feed fetcher designed to retrieve and aggregate content from various RSS feeds, updating a user's Flipboard account with new articles in real-time or at set intervals. Its purpose is to simplify the process of staying up-to-date with news and interests by continuously fetching and displaying fresh content from subscribed sources.",
+      "impact_of_blocking": "Blocking the FlipboardRSS bot would prevent users from receiving automated updates of new articles from their subscribed RSS feeds, resulting in a loss of real-time or scheduled updates that simplify staying informed about news and interests. This would particularly impact users who rely on the bot's automatic feed refresh to discover new content without actively searching for it.",
+      "categories": {
+        "ecommerce": "not_applicable",
+        "news": "beneficial",
+        "media": "neutral",
+        "blog": "beneficial",
+        "saas": "neutral",
+        "corporate": "beneficial",
+        "documentation": "not_applicable",
+        "social": "neutral",
+        "portfolio": "beneficial",
+        "government": "neutral"
+      }
+    },
+    {
       "user_agent": "Foregenix ThreatView/WebScan",
       "operator": "Monitoring & Analytics",
       "description": "",
@@ -4221,6 +4644,43 @@
         "documentation": "neutral",
         "social": "beneficial",
         "portfolio": "neutral",
+        "government": "harmful"
+      }
+    },
+    {
+      "user_agent": "Funnelback",
+      "operator": "Search Engine Crawler",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Funnelback",
+        "original": {
+          "botName": "Funnelback",
+          "botCategory": "Search Engine Crawler",
+          "botOwner": "Squiz - FunnelBack",
+          "value": "0.002117"
+        }
+      },
+      "last_updated": "2026-02-01T18:58:44.226977Z",
+      "purpose": "The Funnelback bot is a search engine crawler designed to continuously scan and index web content, ensuring a comprehensive database of online information for its operator. Its primary purpose is to retrieve and update data from various websites, allowing users to access the most recent content through a unified interface.",
+      "impact_of_blocking": "If the Funnelback bot is blocked, users may lose access to the latest updates and information on websites that rely on its index, potentially causing delays in retrieving relevant search results from those sites. This could lead to gaps in search results for certain topics or keywords, particularly if the affected website relies heavily on real-time data and updates.",
+      "categories": {
+        "ecommerce": "not_applicable",
+        "news": "beneficial",
+        "media": "beneficial",
+        "blog": "neutral",
+        "saas": "neutral",
+        "corporate": "neutral",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "not_applicable",
         "government": "harmful"
       }
     },
@@ -4632,6 +5092,43 @@
       }
     },
     {
+      "user_agent": "Google NotebookLM",
+      "operator": "AI Crawler",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Google NotebookLM",
+        "original": {
+          "botName": "Google NotebookLM",
+          "botCategory": "AI Crawler",
+          "botOwner": "Google",
+          "value": "0.000924"
+        }
+      },
+      "last_updated": "2026-02-01T18:59:20.254369Z",
+      "purpose": "The Google NotebookLM is a conversational AI designed to summarize and extract insights from written content, using natural language processing (NLP) capabilities powered by large language models like LM (Large Language Model). Its purpose is to assist users in quickly summarizing information from various sources, such as articles, documents, and websites.",
+      "impact_of_blocking": "Blocking the Google NotebookLM bot could significantly hinder users' ability to quickly summarize and extract insights from written content, particularly if they rely on this feature for research or work purposes. This could lead to a loss of productivity and time spent manually summarizing large amounts of text, as well as reduced access to concise summaries in online articles and documents.",
+      "categories": {
+        "ecommerce": "not_applicable",
+        "news": "beneficial",
+        "media": "neutral",
+        "blog": "neutral",
+        "saas": "neutral",
+        "corporate": "beneficial",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "beneficial",
+        "government": "not_applicable"
+      }
+    },
+    {
       "user_agent": "Google Page Renderer",
       "operator": "Page Preview",
       "description": "",
@@ -4703,6 +5200,43 @@
         "social": "beneficial",
         "portfolio": "neutral",
         "government": "beneficial"
+      }
+    },
+    {
+      "user_agent": "Google Schema Markup Testing Tool",
+      "operator": "Monitoring & Analytics",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Google Schema Markup Testing Tool",
+        "original": {
+          "botName": "Google Schema Markup Testing Tool",
+          "botCategory": "Monitoring & Analytics",
+          "botOwner": "Google",
+          "value": "0.000968"
+        }
+      },
+      "last_updated": "2026-02-01T18:59:55.325021Z",
+      "purpose": "The Google Schema Markup Testing Tool is a tool designed to help operators test and optimize their website's schema markup, ensuring accurate and consistent representation of content in search engine results pages (SERPs). Its purpose is to facilitate better monitoring and analytics of website data, providing insights to improve user experience and search rankings.",
+      "impact_of_blocking": "Blocking this bot could significantly impact the operator's ability to accurately test and optimize their schema markup, resulting in potential errors and inconsistencies in search engine results pages (SERPs). Specifically, operators may lose access to real-time data insights that enable them to refine their schema markup, potentially affecting their website's visibility and ranking in search results.",
+      "categories": {
+        "ecommerce": "not_applicable",
+        "news": "not_applicable",
+        "media": "neutral",
+        "blog": "neutral",
+        "saas": "neutral",
+        "corporate": "beneficial",
+        "documentation": "neutral",
+        "social": "not_applicable",
+        "portfolio": "neutral",
+        "government": "neutral"
       }
     },
     {
@@ -4780,6 +5314,43 @@
       }
     },
     {
+      "user_agent": "Google Trust Services (DCV Check)",
+      "operator": "Security",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Google Trust Services (DCV Check)",
+        "original": {
+          "botName": "Google Trust Services (DCV Check)",
+          "botCategory": "Security",
+          "botOwner": "Google",
+          "value": "0.001567"
+        }
+      },
+      "last_updated": "2026-02-01T19:00:30.370885Z",
+      "purpose": "The Google Trust Services (DCV Check) bot is an automated security tool that verifies the authenticity of SSL/TLS certificates issued by GoDaddy, using the Google Public Key Pinning (PKP) protocol. Its purpose is to detect and prevent malicious certificate issuance or substitution attempts by GoDaddy.",
+      "impact_of_blocking": "Blocking this bot could potentially disrupt users' ability to verify the authenticity of SSL/TLS certificates issued by GoDaddy, losing their confidence in the security and trustworthiness of websites that rely on these certificates for encryption and secure connections. This could particularly affect businesses and organizations relying heavily on online transactions and communication.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "neutral",
+        "blog": "not_applicable",
+        "saas": "beneficial",
+        "corporate": "beneficial",
+        "documentation": "beneficial",
+        "social": "neutral",
+        "portfolio": "neutral",
+        "government": "neutral"
+      }
+    },
+    {
       "user_agent": "Google Videos",
       "operator": "Search Engine Crawler",
       "description": "",
@@ -4851,6 +5422,43 @@
         "social": "neutral",
         "portfolio": "neutral",
         "government": "neutral"
+      }
+    },
+    {
+      "user_agent": "Google-Adwords-Instant",
+      "operator": "Search Engine Optimization",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Google-Adwords-Instant",
+        "original": {
+          "botName": "Google-Adwords-Instant",
+          "botCategory": "Search Engine Optimization",
+          "botOwner": "Google",
+          "value": "0.001298"
+        }
+      },
+      "last_updated": "2026-02-01T19:01:09.651946Z",
+      "purpose": "The Google-Adwords-Instant bot is designed to optimize search engine results pages (SERPs) by providing real-time data and insights from Google AdWords, enabling operators like SEO experts to make informed decisions about their online marketing strategies. Its purpose is to provide up-to-date information on keyword search volumes, competition, and trends, helping operators refine their SEO efforts.",
+      "impact_of_blocking": "Blocking the Google-Adwords-Instant bot could severely limit SEO experts' access to real-time data on keyword search volumes, competition, and trends, hindering their ability to monitor and adjust their online marketing strategies accordingly, particularly in terms of ad spend optimization and campaign performance analysis. This would result in a loss of visibility into actionable insights that are typically provided by this bot's dynamic SERP updates.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "not_applicable",
+        "blog": "beneficial",
+        "saas": "beneficial",
+        "corporate": "beneficial",
+        "documentation": "neutral",
+        "social": "beneficial",
+        "portfolio": "neutral",
+        "government": "harmful"
       }
     },
     {
@@ -5713,6 +6321,43 @@
       }
     },
     {
+      "user_agent": "ICC Crawler",
+      "operator": "AI Crawler",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "ICC Crawler",
+        "original": {
+          "botName": "ICC Crawler",
+          "botCategory": "AI Crawler",
+          "botOwner": "NICT",
+          "value": "0.00106"
+        }
+      },
+      "last_updated": "2026-02-01T19:01:45.570773Z",
+      "purpose": "The ICC Crawler is a web crawler designed to extract and process data from online resources, specifically the International Cricket Council (ICC) website, in order to gather and provide accurate information for users. Its primary purpose is to crawl, index, and make accessible publicly available content on the ICC website through its interface.",
+      "impact_of_blocking": "Blocking the ICC Crawler could lead to a loss of easily accessible and up-to-date information on the ICC website, including schedules, scores, match reports, and team statistics, making it difficult for users to find accurate information about cricket matches and teams. This would result in reduced visibility for these resources, potentially hindering research, analysis, and fan engagement.",
+      "categories": {
+        "news": "beneficial",
+        "media": "neutral",
+        "blog": "not_applicable",
+        "saas": "neutral",
+        "corporate": "neutral",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "not_applicable",
+        "government": "not_applicable",
+        "ecommerce": "neutral"
+      }
+    },
+    {
       "user_agent": "ICC-Crawler",
       "operator": "[NICT](https://nict.go.jp)",
       "description": "Use the collected data for artificial intelligence technologies; provide data to third parties, including commercial companies; those companies can use the data for their own business.",
@@ -5972,6 +6617,43 @@
       }
     },
     {
+      "user_agent": "Instapaper",
+      "operator": "Other",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Instapaper",
+        "original": {
+          "botName": "Instapaper",
+          "botCategory": "Other",
+          "botOwner": "Instant Paper",
+          "value": "0.001027"
+        }
+      },
+      "last_updated": "2026-02-01T19:02:19.431040Z",
+      "purpose": "The Instapaper bot extracts relevant text from web pages and summarizes them into a concise, readable format for easy sharing and studying. Its purpose is to assist users in quickly capturing and preserving valuable content from online sources.",
+      "impact_of_blocking": "Blocking the Instapaper bot would likely result in users being unable to access pre-summarized versions of web pages, which could hinder their ability to capture and preserve valuable content from online sources, particularly for individuals with visual impairments or those who struggle to read large blocks of text. This would also impact users who rely on Instapaper to quickly scan articles for key takeaways and share them on social media or via messaging platforms.",
+      "categories": {
+        "blog": "beneficial",
+        "corporate": "harmful",
+        "documentation": "beneficial",
+        "ecommerce": "beneficial",
+        "government": "not_applicable",
+        "media": "neutral",
+        "news": "beneficial",
+        "portfolio": "not_applicable",
+        "saas": "neutral",
+        "social": "not_applicable"
+      }
+    },
+    {
       "user_agent": "Internet Archive",
       "operator": "Archiver",
       "description": "",
@@ -6005,6 +6687,43 @@
         "documentation": "neutral",
         "social": "neutral",
         "portfolio": "not_applicable",
+        "government": "neutral"
+      }
+    },
+    {
+      "user_agent": "Internet Archive - Archive-It",
+      "operator": "Archiver",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Internet Archive - Archive-It",
+        "original": {
+          "botName": "Internet Archive - Archive-It",
+          "botCategory": "Archiver",
+          "botOwner": "Archive-It",
+          "value": "0.002314"
+        }
+      },
+      "last_updated": "2026-02-01T19:02:55.118605Z",
+      "purpose": "The Internet Archive's Archive-It bot is a digital preservation service that automatically collects and archives websites, web pages, and online content before they are removed or go offline. Its purpose is to capture and preserve internet history for future research, education, and cultural significance.",
+      "impact_of_blocking": "Blocking the Internet Archive - Archive-It bot would likely result in the loss of archived versions of websites, web pages, and online content that are currently preserved through its automated collection process, preventing researchers, educators, and the public from accessing these historical resources for future study, reference, or cultural significance. This would also affect the preservation of internet history, with potentially significant consequences for documenting and understanding online activities, events, and cultural phenomena.",
+      "categories": {
+        "ecommerce": "not_applicable",
+        "news": "beneficial",
+        "media": "beneficial",
+        "blog": "neutral",
+        "saas": "neutral",
+        "corporate": "neutral",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "neutral",
         "government": "neutral"
       }
     },
@@ -6083,6 +6802,80 @@
       }
     },
     {
+      "user_agent": "jobswithgptcom-bot",
+      "operator": "Search Engine Crawler",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "jobswithgptcom-bot",
+        "original": {
+          "botName": "jobswithgptcom-bot",
+          "botCategory": "Search Engine Crawler",
+          "botOwner": "jobswithgptcom",
+          "value": "0.001878"
+        }
+      },
+      "last_updated": "2026-02-01T19:03:29.433321Z",
+      "purpose": "This bot, jobsWithGPTcom-bot, is a search engine crawler designed to gather information about jobs and employment-related topics for a specific purpose, likely related to the GPT.com platform. Its primary function is to collect and provide data on various job-related subjects.",
+      "impact_of_blocking": "Blocking the jobswithgptcom-bot search engine crawler may significantly impact users' ability to access employment-related information, as it could lead to reduced or lost visibility for job postings, industry news, and other relevant content. Specifically, blocking this bot might prevent job seekers from finding information on in-demand jobs, salary ranges, and required skills.",
+      "categories": {
+        "ecommerce": "harmful",
+        "news": "beneficial",
+        "media": "not_applicable",
+        "blog": "neutral",
+        "saas": "neutral",
+        "corporate": "neutral",
+        "documentation": "neutral",
+        "social": "beneficial",
+        "portfolio": "neutral",
+        "government": "neutral"
+      }
+    },
+    {
+      "user_agent": "KakaoTalk Scrap",
+      "operator": "Page Preview",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "KakaoTalk Scrap",
+        "original": {
+          "botName": "KakaoTalk Scrap",
+          "botCategory": "Page Preview",
+          "botOwner": null,
+          "value": "0.001655"
+        }
+      },
+      "last_updated": "2026-02-01T19:04:02.919348Z",
+      "purpose": "The KakaoTalk Scrap bot, powered by Page Preview, is a messaging app integration that allows users to quickly share content from web pages directly within KakaoTalk conversations. Its purpose is to enable seamless sharing of online content between KakaoTalk users.",
+      "impact_of_blocking": "Blocking the KakaoTalk Scrap bot would prevent users from easily sharing content from web pages within KakaoTalk conversations, losing a convenient feature that allows for quick and seamless sharing of online content. This blockage would specifically impact users' ability to share links, articles, or images directly in conversations, potentially hindering their communication efficiency and productivity.",
+      "categories": {
+        "ecommerce": "not_applicable",
+        "news": "neutral",
+        "media": "harmful",
+        "blog": "neutral",
+        "saas": "neutral",
+        "corporate": "beneficial",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "neutral",
+        "government": "not_applicable"
+      }
+    },
+    {
       "user_agent": "Kangaroo Bot",
       "operator": "AI Crawler",
       "description": "Kangaroo Bot is used by the company Kangaroo LLM to download data to train AI models tailored to Australian language and culture. More info can be found at https://darkvisitors.com/agents/agents/kangaroo-bot",
@@ -6136,9 +6929,11 @@
           "botCategory": "Academic Research",
           "botOwner": "Netarkivet",
           "value": "0.003076"
-        }
+        },
+        "user_agent_patterns": null,
+        "bot_name": "kb.dk_bot"
       },
-      "last_updated": "2025-11-30T03:23:51.372482Z",
+      "last_updated": "2026-02-01T18:50:43.206863Z",
       "purpose": "I couldn't find any information about a specific bot named \"kb.dk_bot\" or its operator, which may indicate that it doesn't exist or is not publicly available. However, based on your mention of academic research, I can provide a general statement:\n\nThe kb.dk_bot likely exists to assist with knowledge management and retrieval in the field of academic research, providing access to relevant information and data for researchers.",
       "impact_of_blocking": "Blocking the kb.dk_bot may limit access to specialized databases, academic journals, and other resources that rely on this bot for indexing and searching purposes, potentially hindering researchers' ability to locate and analyze relevant information in their field of study. This could result in delayed or hindered research progress, particularly in areas where timely access to knowledge is crucial.",
       "categories": {
@@ -6451,6 +7246,43 @@
       }
     },
     {
+      "user_agent": "Let's Encrypt",
+      "operator": "Security",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Let's Encrypt",
+        "original": {
+          "botName": "Let's Encrypt",
+          "botCategory": "Security",
+          "botOwner": "Let's Encrypt",
+          "value": "0.001938"
+        }
+      },
+      "last_updated": "2026-02-01T19:04:36.856499Z",
+      "purpose": "The \"Let's Encrypt\" bot, operated by a security-focused entity, likely provides automated SSL/TLS certificate issuance services to simplify the process of securing websites with secure connections (HTTPS). Its purpose is to streamline the certification process for website owners, improving online security and trust.",
+      "impact_of_blocking": "Blocking the \"Let's Encrypt\" bot could cause website owners to lose access to automated SSL/TLS certificate issuance services, forcing them to manually apply for certificates, which may slow down their domain verification process and add additional administrative overhead. This could lead to delays in securing websites with HTTPS, potentially compromising online security and trust.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "beneficial",
+        "blog": "beneficial",
+        "saas": "neutral",
+        "corporate": "neutral",
+        "documentation": "neutral",
+        "social": "beneficial",
+        "portfolio": "beneficial",
+        "government": "not_applicable"
+      }
+    },
+    {
       "user_agent": "Library Of Congress Web Archiving",
       "operator": "Academic Research",
       "description": "",
@@ -6467,9 +7299,11 @@
           "botCategory": "Academic Research",
           "botOwner": "United States Library of Congress",
           "value": "0.005804"
-        }
+        },
+        "user_agent_patterns": null,
+        "bot_name": "Library Of Congress Web Archiving"
       },
-      "last_updated": "2026-01-11T03:46:56.298728Z",
+      "last_updated": "2026-02-01T18:50:43.206777Z",
       "purpose": "The Library of Congress Web Archiving bot is a digital preservation tool designed to capture, store, and provide long-term access to historical web content for academic research purposes. It serves as an archive of the internet's past, allowing researchers to study and analyze outdated websites, pages, and online resources.",
       "impact_of_blocking": "Blocking this bot could result in a loss of long-term access to historical web content, effectively erasing a record of the internet's past and hindering academic research that relies on these archived resources. Specifically, blocking the bot would prevent researchers from accessing archived versions of websites, pages, and online resources that are no longer available or have been removed from the internet.",
       "categories": {
@@ -6761,9 +7595,11 @@
           "botCategory": "AI Assistant",
           "botOwner": "Manus",
           "value": "0.002941"
-        }
+        },
+        "user_agent_patterns": null,
+        "bot_name": "Manus Bot"
       },
-      "last_updated": "2026-01-25T03:50:43.575735Z",
+      "last_updated": "2026-02-01T18:50:43.206888Z",
       "purpose": "I couldn't find any information about a specific \"Manus Bot\" that I can provide a description for. If you could provide more context or details about this bot, I would be happy to try and assist you further.",
       "impact_of_blocking": "Blocking the Manus Bot would likely result in a loss of access to its AI-powered assistance features, limiting users' ability to receive help with language-related tasks such as grammar correction, vocabulary suggestions, and text analysis. This could also impact users who rely on the bot for language-specific information or context, potentially hindering their productivity and communication.",
       "categories": {
@@ -6851,6 +7687,43 @@
         "social": "neutral",
         "portfolio": "not_applicable",
         "government": "harmful"
+      }
+    },
+    {
+      "user_agent": "marketgoo",
+      "operator": "Search Engine Optimization",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "marketgoo",
+        "original": {
+          "botName": "marketgoo",
+          "botCategory": "Search Engine Optimization",
+          "botOwner": "marketgoo",
+          "value": "0.000935"
+        }
+      },
+      "last_updated": "2026-02-01T19:05:10.332368Z",
+      "purpose": "The MarketGoo bot is designed to assist with search engine optimization (SEO) by providing tools and services for businesses and individuals to improve their online visibility and ranking. Its purpose is to help users optimize their digital presence, increase website traffic, and drive more conversions through enhanced SEO strategies.",
+      "impact_of_blocking": "Blocking the MarketGoo bot could result in a significant loss of visibility for businesses and individuals relying on its tools and services to optimize their websites and online presence. Specifically, users may experience reduced search engine ranking, decreased website traffic, and impaired ability to track and analyze keyword performance and SEO metrics.",
+      "categories": {
+        "ecommerce": "harmful",
+        "news": "not_applicable",
+        "media": "neutral",
+        "blog": "beneficial",
+        "saas": "beneficial",
+        "corporate": "beneficial",
+        "documentation": "not_applicable",
+        "social": "neutral",
+        "portfolio": "beneficial",
+        "government": "neutral"
       }
     },
     {
@@ -7153,26 +8026,30 @@
     },
     {
       "user_agent": "MistralAI-User",
-      "operator": "Mistral",
+      "operator": "AI Assistant",
       "description": "MistralAI-User is an AI assistant operated by Mistral. It's not currently known to be artificially intelligent or AI-related. If you think that's incorrect or can provide more detail about its purpose, please contact us. More info can be found at https://darkvisitors.com/agents/agents/mistralai-user",
       "website": "",
       "sources": [
-        "ai-robots-txt"
+        "ai-robots-txt",
+        "cloudflare-radar"
       ],
       "raw_data": {
         "ip_ranges": [],
         "asn": "",
         "asn_list": [],
-        "verification_method": "",
+        "verification_method": "cloudflare-verified",
         "original": {
           "operator": "Mistral",
           "respect": "Unclear at this time.",
           "function": "AI Assistants",
           "frequency": "Unclear at this time.",
           "description": "MistralAI-User is an AI assistant operated by Mistral. It's not currently known to be artificially intelligent or AI-related. If you think that's incorrect or can provide more detail about its purpose, please contact us. More info can be found at https://darkvisitors.com/agents/agents/mistralai-user"
-        }
+        },
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "MistralAI-User"
       },
-      "last_updated": "2026-02-01T07:16:19.959267Z",
+      "last_updated": "2026-02-01T18:50:43.206800Z",
       "purpose": "MistralAI-User is a chatbot operated by Mistral that provides information about itself, its purpose, or other details, with no apparent AI-related functionality. Its primary function appears to be to serve as a knowledge repository or informational hub for users inquiring about the bot's existence and capabilities.",
       "impact_of_blocking": "Blocking MistralAI-User would eliminate users' access to basic information about the bot, including its purpose and available details, potentially disrupting their ability to understand its role as a knowledge repository or informational hub. This blocking could also limit users' ability to find context-specific information related to Mistral's specific capabilities or interests.",
       "categories": {
@@ -7297,6 +8174,43 @@
         "social": "neutral",
         "portfolio": "neutral",
         "government": "harmful"
+      }
+    },
+    {
+      "user_agent": "MonitoRSS",
+      "operator": "Feed Fetcher",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "MonitoRSS",
+        "original": {
+          "botName": "MonitoRSS",
+          "botCategory": "Feed Fetcher",
+          "botOwner": "MonitoRSS",
+          "value": "0.001373"
+        }
+      },
+      "last_updated": "2026-02-01T19:05:43.856032Z",
+      "purpose": "MonitoRSS is a bot designed to fetch and retrieve RSS feeds from various sources, making them available for monitoring and analysis. Its purpose is to automate feed fetching, allowing users to stay informed about their desired topics or updates without manually checking multiple sources.",
+      "impact_of_blocking": "Blocking MonitoRSS could significantly impact a user's ability to monitor and analyze RSS feeds from various sources, resulting in the loss of automated feed fetching functionality and reduced visibility into updates from these sources. As a result, users may need to manually check multiple sources for new content, potentially leading to decreased efficiency and accuracy in tracking their desired topics or updates.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "beneficial",
+        "saas": "neutral",
+        "media": "neutral",
+        "blog": "neutral",
+        "corporate": "neutral",
+        "documentation": "not_applicable",
+        "social": "neutral",
+        "portfolio": "not_applicable",
+        "government": "not_applicable"
       }
     },
     {
@@ -7668,6 +8582,43 @@
       }
     },
     {
+      "user_agent": "NixStatsMonitoringBot",
+      "operator": "Monitoring & Analytics",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "NixStatsMonitoringBot",
+        "original": {
+          "botName": "NixStatsMonitoringBot",
+          "botCategory": "Monitoring & Analytics",
+          "botOwner": "NixStats",
+          "value": "0.001222"
+        }
+      },
+      "last_updated": "2026-02-01T19:06:16.493350Z",
+      "purpose": "The NixStatsMonitoringBot is a monitoring and analytics bot designed to track system performance, detect anomalies, and provide real-time insights to optimize network operations. Its purpose is to ensure efficient and reliable IT infrastructure management.",
+      "impact_of_blocking": "Blocking the NixStatsMonitoringBot would likely result in loss of real-time monitoring and anomaly detection capabilities for system performance, causing potential system downtime, data corruption, or security breaches due to undetected issues. This would also hinder timely identification and optimization of network operations, leading to decreased IT infrastructure efficiency and reliability.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "not_applicable",
+        "blog": "not_applicable",
+        "saas": "beneficial",
+        "corporate": "beneficial",
+        "documentation": "neutral",
+        "social": "not_applicable",
+        "portfolio": "not_applicable",
+        "government": "not_applicable"
+      }
+    },
+    {
       "user_agent": "Nodeping",
       "operator": "Monitoring & Analytics",
       "description": "",
@@ -7702,6 +8653,43 @@
         "social": "neutral",
         "portfolio": "not_applicable",
         "government": "harmful"
+      }
+    },
+    {
+      "user_agent": "NostoCrawlerBot",
+      "operator": "Advertising & Marketing",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "NostoCrawlerBot",
+        "original": {
+          "botName": "NostoCrawlerBot",
+          "botCategory": "Advertising & Marketing",
+          "botOwner": "Nosto",
+          "value": "0.001819"
+        }
+      },
+      "last_updated": "2026-02-01T19:06:52.414593Z",
+      "purpose": "The NostoCrawlerBot is a marketing-focused automation tool designed to crawl and analyze websites, identifying relevant advertising opportunities and providing insights for targeted advertising campaigns. Its primary purpose is to streamline the discovery of potential ad placements, increasing efficiency and effectiveness in digital advertising efforts.",
+      "impact_of_blocking": "Blocking the NostoCrawlerBot could disrupt marketing teams' ability to access detailed website analytics and identify high-quality ad opportunities, potentially leading to reduced targeting accuracy and lower return on investment (ROI) for their digital advertising campaigns. The loss of real-time website crawling insights may also hinder the discovery of new and relevant ad placements, forcing marketers to rely more heavily on manual research methods or alternative, potentially less effective tools.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "harmful",
+        "blog": "beneficial",
+        "saas": "beneficial",
+        "corporate": "harmful",
+        "documentation": "neutral",
+        "social": "beneficial",
+        "portfolio": "beneficial",
+        "government": "not_applicable"
       }
     },
     {
@@ -7922,6 +8910,43 @@
         "blog": "not_applicable",
         "saas": "harmful",
         "corporate": "beneficial",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "not_applicable",
+        "government": "not_applicable"
+      }
+    },
+    {
+      "user_agent": "Omnisend",
+      "operator": "Webhooks",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Omnisend",
+        "original": {
+          "botName": "Omnisend",
+          "botCategory": "Webhooks",
+          "botOwner": "Omnisend",
+          "value": "0.000966"
+        }
+      },
+      "last_updated": "2026-02-01T19:07:26.744647Z",
+      "purpose": "The Omnisend bot is designed to send automated emails, newsletters, and other notifications through webhooks, enabling businesses to integrate their marketing automation with external systems and services. Its purpose is to facilitate seamless communication and task automation for organizations using the Omnisend platform.",
+      "impact_of_blocking": "Blocking the Omnisend bot could prevent automated email sendings, newsletters, and notifications from being triggered through webhooks, resulting in a disruption to tasks such as marketing campaigns, order confirmations, and subscription updates. This blockage would lead to visible delays or failures in these automated processes, affecting an organization's ability to deliver timely and seamless customer communication.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "not_applicable",
+        "blog": "beneficial",
+        "saas": "neutral",
+        "corporate": "neutral",
         "documentation": "neutral",
         "social": "neutral",
         "portfolio": "not_applicable",
@@ -8151,6 +9176,43 @@
       }
     },
     {
+      "user_agent": "Paddle Webhooks",
+      "operator": "Webhooks",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Paddle Webhooks",
+        "original": {
+          "botName": "Paddle Webhooks",
+          "botCategory": "Webhooks",
+          "botOwner": null,
+          "value": "0.001086"
+        }
+      },
+      "last_updated": "2026-02-01T19:08:03.855809Z",
+      "purpose": "The Paddle Webhooks bot is a tool designed to send automated notifications (webhooks) to integrations and applications when specific events occur in your Paddle account, such as payments or subscription updates. Its purpose is to streamline communication between Paddle's platform and external services, enabling seamless data exchange and automation of workflows.",
+      "impact_of_blocking": "Blocking the Paddle Webhooks bot would prevent automated notifications (webhooks) from being sent to integrations and applications when specific events occur in a Paddle account, resulting in lost functionality for automating workflows and data exchange with external services. This could lead to manual checks and updates required for tracking payments and subscription status, potentially disrupting business operations and increasing administrative burdens.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "not_applicable",
+        "blog": "beneficial",
+        "saas": "neutral",
+        "corporate": "not_applicable",
+        "documentation": "beneficial",
+        "social": "not_applicable",
+        "portfolio": "not_applicable",
+        "government": "not_applicable"
+      }
+    },
+    {
       "user_agent": "PanguBot",
       "operator": "the Chinese company Huawei",
       "description": "PanguBot is a web crawler operated by the Chinese company Huawei. It's used to download training data for its multimodal LLM (Large Language Model) called PanGu. More info can be found at https://darkvisitors.com/agents/agents/pangubot",
@@ -8294,6 +9356,43 @@
         "corporate": "neutral",
         "documentation": "beneficial",
         "social": "not_applicable",
+        "portfolio": "beneficial",
+        "government": "neutral"
+      }
+    },
+    {
+      "user_agent": "Parse.ly",
+      "operator": "Monitoring & Analytics",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Parse.ly",
+        "original": {
+          "botName": "Parse.ly",
+          "botCategory": "Monitoring & Analytics",
+          "botOwner": "Parse.ly",
+          "value": "0.001406"
+        }
+      },
+      "last_updated": "2026-02-01T19:08:38.428992Z",
+      "purpose": "The Parse.ly bot is a monitoring and analytics tool that helps track and analyze website engagement, reader behavior, and content performance metrics to provide insights for content creators and publishers. Its purpose is to facilitate data-driven decision making by analyzing online interactions with published content.",
+      "impact_of_blocking": "Blocking the Parse.ly bot could result in the loss of real-time analytics and engagement tracking data, including metrics such as page views, unique visitors, bounce rates, and time-on-page, which are crucial for content creators and publishers to understand their audience behavior and make informed decisions about their online content. By blocking this functionality, users would no longer be able to gain insights into how their published content is performing in terms of reader engagement and interaction with it.",
+      "categories": {
+        "ecommerce": "not_applicable",
+        "news": "beneficial",
+        "media": "neutral",
+        "blog": "beneficial",
+        "saas": "neutral",
+        "corporate": "neutral",
+        "documentation": "not_applicable",
+        "social": "neutral",
         "portfolio": "beneficial",
         "government": "neutral"
       }
@@ -8519,6 +9618,43 @@
         "documentation": "not_applicable",
         "social": "neutral",
         "portfolio": "neutral",
+        "government": "harmful"
+      }
+    },
+    {
+      "user_agent": "PingPing Bot",
+      "operator": "Monitoring & Analytics",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "PingPing Bot",
+        "original": {
+          "botName": "PingPing Bot",
+          "botCategory": "Monitoring & Analytics",
+          "botOwner": "PingPing.io",
+          "value": "0.001189"
+        }
+      },
+      "last_updated": "2026-02-01T19:09:13.045375Z",
+      "purpose": "The PingPing Bot, an operational tool under Monitoring & Analytics, is designed to perform routine checks and maintenance tasks, ensuring the smooth functioning of underlying systems. Its primary purpose is to detect issues, alert operators, and provide data-driven insights to support proactive problem-solving and system optimization.",
+      "impact_of_blocking": "Blocking the PingPing Bot would result in the loss of real-time monitoring and detection capabilities for underlying systems, potentially leading to undetected issues and reduced visibility into system performance and potential problems, thereby hindering proactive problem-solving and optimization efforts. This could lead to delayed response times, increased downtime, and decreased overall system reliability.",
+      "categories": {
+        "ecommerce": "not_applicable",
+        "news": "neutral",
+        "media": "neutral",
+        "blog": "neutral",
+        "saas": "neutral",
+        "corporate": "beneficial",
+        "documentation": "not_applicable",
+        "social": "not_applicable",
+        "portfolio": "not_applicable",
         "government": "harmful"
       }
     },
@@ -8782,6 +9918,43 @@
       }
     },
     {
+      "user_agent": "Protopage",
+      "operator": "Feed Fetcher",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Protopage",
+        "original": {
+          "botName": "Protopage",
+          "botCategory": "Feed Fetcher",
+          "botOwner": "Protopage Ltd",
+          "value": "0.002088"
+        }
+      },
+      "last_updated": "2026-02-01T19:09:58.974943Z",
+      "purpose": "I couldn't find any information about a specific bot named \"Protopage\" or its purpose. However, I can suggest some possible bots that may be related to this name:\n\n* Protopage: a wiki-driven knowledge base that provides information on scientific topics, particularly in the fields of biology and medicine.\n* Protopage Bot: a maintenance bot used by the Protopage wiki to automate tasks such as updating links, removing broken links, and more.\n\nIf you could provide more context or clarify which Protopage bot you are referring to, I'll be happy to help.",
+      "impact_of_blocking": "Blocking the \"Protopage Bot\" may result in issues with link updates and broken link removals on the wiki, potentially causing outdated or inaccessible information to remain. This could lead to a decrease in the overall quality and accuracy of scientific content, as it may take longer for links to be corrected.",
+      "categories": {
+        "ecommerce": "not_applicable",
+        "news": "not_applicable",
+        "media": "not_applicable",
+        "blog": "neutral",
+        "saas": "neutral",
+        "corporate": "neutral",
+        "documentation": "beneficial",
+        "social": "neutral",
+        "portfolio": "neutral",
+        "government": "neutral"
+      }
+    },
+    {
       "user_agent": "Proximic",
       "operator": "Advertising & Marketing",
       "description": "",
@@ -8934,6 +10107,43 @@
       }
     },
     {
+      "user_agent": "Quantcastbot",
+      "operator": "Advertising & Marketing",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Quantcastbot",
+        "original": {
+          "botName": "Quantcastbot",
+          "botCategory": "Advertising & Marketing",
+          "botOwner": "Quantcast",
+          "value": "0.001913"
+        }
+      },
+      "last_updated": "2026-02-01T19:10:32.394565Z",
+      "purpose": "The Quantcastbot is a marketing automation tool designed to help advertising and marketing professionals optimize their campaigns, track performance, and make data-driven decisions. It serves as a platform for real-time analytics, reporting, and insights to measure ad effectiveness and improve overall campaign efficiency.",
+      "impact_of_blocking": "Blocking the Quantcastbot could result in the loss of access to its real-time analytics and reporting capabilities, preventing advertising and marketing professionals from tracking campaign performance and making data-driven decisions in real-time. This would hinder their ability to optimize campaigns, measure ad effectiveness, and improve overall campaign efficiency.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "beneficial",
+        "blog": "beneficial",
+        "saas": "neutral",
+        "corporate": "beneficial",
+        "documentation": "neutral",
+        "social": "beneficial",
+        "portfolio": "neutral",
+        "government": "harmful"
+      }
+    },
+    {
       "user_agent": "QuillBot",
       "operator": "[Quillbot](https://quillbot.com)",
       "description": "Operated by QuillBot as part of their suite of AI product offerings.",
@@ -9082,6 +10292,43 @@
       }
     },
     {
+      "user_agent": "Reelevant",
+      "operator": "Advertising & Marketing",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Reelevant",
+        "original": {
+          "botName": "Reelevant",
+          "botCategory": "Advertising & Marketing",
+          "botOwner": "Reelevant",
+          "value": "0.001765"
+        }
+      },
+      "last_updated": "2026-02-01T19:11:06.061203Z",
+      "purpose": "The Reelevant bot is a conversational AI designed to assist with advertising and marketing-related tasks, aiming to provide personalized and relevant suggestions to users. Its purpose is to help businesses improve their marketing strategies and enhance customer engagement through data-driven insights and creative ideas.",
+      "impact_of_blocking": "Blocking the Reelevant bot could result in a loss of access to personalized advertising and marketing suggestions, potentially hindering businesses' ability to gather unique insights and creative ideas for their campaigns. The blocking could also lead to the interruption of data-driven conversations with users, resulting in missed opportunities for customer engagement and strategy improvement.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "neutral",
+        "blog": "neutral",
+        "saas": "harmful",
+        "corporate": "beneficial",
+        "documentation": "not_applicable",
+        "social": "neutral",
+        "portfolio": "not_applicable",
+        "government": "not_applicable"
+      }
+    },
+    {
       "user_agent": "Retool",
       "operator": "Other",
       "description": "",
@@ -9116,6 +10363,43 @@
         "social": "neutral",
         "portfolio": "neutral",
         "government": "harmful"
+      }
+    },
+    {
+      "user_agent": "rss2tg_bot",
+      "operator": "Feed Fetcher",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "rss2tg_bot",
+        "original": {
+          "botName": "rss2tg_bot",
+          "botCategory": "Feed Fetcher",
+          "botOwner": "Yellow Rubber Duck Consulting",
+          "value": "0.002007"
+        }
+      },
+      "last_updated": "2026-02-01T19:11:39.993096Z",
+      "purpose": "The rss2tg_bot is a bot designed to fetch and deliver RSS feeds from various sources to users, allowing them to stay updated on their favorite topics and interests. Its purpose is to serve as a feed fetcher operator for users to access and consume RSS content.",
+      "impact_of_blocking": "Blocking the rss2tg_bot would significantly impact users who rely on it to automatically fetch and deliver RSS feeds, losing their ability to stay updated on their favorite topics and interests. Specifically, users would no longer receive updates on new content from their subscribed feeds, leading to missed notifications and reduced access to timely information.",
+      "categories": {
+        "ecommerce": "not_applicable",
+        "news": "beneficial",
+        "media": "neutral",
+        "blog": "beneficial",
+        "saas": "neutral",
+        "corporate": "neutral",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "not_applicable",
+        "government": "not_applicable"
       }
     },
     {
@@ -10048,6 +11332,43 @@
       }
     },
     {
+      "user_agent": "Skroutz ImageBot",
+      "operator": "Other",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Skroutz ImageBot",
+        "original": {
+          "botName": "Skroutz ImageBot",
+          "botCategory": "Other",
+          "botOwner": "Skroutz S.A.",
+          "value": "0.001327"
+        }
+      },
+      "last_updated": "2026-02-01T19:12:23.158894Z",
+      "purpose": "I couldn't find any information about a specific \"Skroutz ImageBot\" or its purpose. However, I found that Skroutz is an online shopping platform that aggregates deals from various retailers in Greece.\n\nIf you're referring to the Skroutz ImageBot on the Skroutz platform, it's likely a tool designed by other developers to automate tasks such as image processing, product scanning, or e-commerce bot functionality for Skroutz users.",
+      "impact_of_blocking": "Blocking the Skroutz ImageBot could potentially hinder its ability to automatically process images of products for sale on the Skroutz platform, making it more difficult for users to find deals and discounts by not having up-to-date product information. This may lead to a less user-friendly shopping experience, especially for those relying on automated image processing tools.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "not_applicable",
+        "blog": "not_applicable",
+        "saas": "neutral",
+        "corporate": "not_applicable",
+        "documentation": "neutral",
+        "social": "not_applicable",
+        "portfolio": "not_applicable",
+        "government": "not_applicable"
+      }
+    },
+    {
       "user_agent": "Skype",
       "operator": "Page Preview",
       "description": "",
@@ -10796,9 +12117,11 @@
           "botCategory": "Other",
           "botOwner": "Termly",
           "value": "0.003142"
-        }
+        },
+        "user_agent_patterns": null,
+        "bot_name": "Termly"
       },
-      "last_updated": "2026-01-25T03:50:43.575816Z",
+      "last_updated": "2026-02-01T18:50:43.206842Z",
       "purpose": "I couldn't find any information about a specific bot named \"Termly\". If you could provide more context or details about the bot, I would be happy to help you describe its purpose.",
       "impact_of_blocking": "Blocking Termly could potentially hinder access to term frequency and inverse document frequency (TF-IDF) calculations in Natural Language Processing (NLP) applications, such as search engines or text analysis software, if it is a crucial component of their algorithm. This could result in loss of functionality related to keyword extraction, sentiment analysis, and topic modeling.",
       "categories": {
@@ -10886,6 +12209,43 @@
         "social": "harmful",
         "portfolio": "beneficial",
         "government": "not_applicable"
+      }
+    },
+    {
+      "user_agent": "Thousand Eyes Cloud Agent",
+      "operator": "Monitoring & Analytics",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "Thousand Eyes Cloud Agent",
+        "original": {
+          "botName": "Thousand Eyes Cloud Agent",
+          "botCategory": "Monitoring & Analytics",
+          "botOwner": "Thousand Eyes",
+          "value": "0.001494"
+        }
+      },
+      "last_updated": "2026-02-01T19:12:59.057892Z",
+      "purpose": "The Thousand Eyes Cloud Agent is a monitoring and analytics tool that enables operators to collect, process, and analyze data from various cloud-based sources, providing real-time insights into system performance, security, and other critical aspects of cloud infrastructure. Its purpose is to help ensure the efficient operation and secure management of cloud resources.",
+      "impact_of_blocking": "Blocking the Thousand Eyes Cloud Agent would significantly limit an organization's ability to monitor and analyze its cloud-based systems in real-time, resulting in reduced visibility into system performance, security threats, and resource utilization. This could lead to delayed incident detection, compromised system availability, and increased risk of security breaches or downtime.",
+      "categories": {
+        "ecommerce": "harmful",
+        "news": "not_applicable",
+        "media": "not_applicable",
+        "blog": "not_applicable",
+        "saas": "beneficial",
+        "corporate": "beneficial",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "not_applicable",
+        "government": "harmful"
       }
     },
     {
@@ -11608,9 +12968,11 @@
           "botCategory": "Monitoring & Analytics",
           "botOwner": "Wormly",
           "value": "0.00317"
-        }
+        },
+        "user_agent_patterns": null,
+        "bot_name": "WormlyBot"
       },
-      "last_updated": "2025-11-30T03:23:51.372572Z",
+      "last_updated": "2026-02-01T18:50:43.206812Z",
       "purpose": "The WormlyBot is a monitoring and analytics bot that serves to track and report on system performance, detecting potential issues and providing insights for optimization and maintenance. Its purpose is to ensure the efficient operation of its operating environment, enabling informed decision-making by operators.",
       "impact_of_blocking": "Blocking WormlyBot could result in the loss of real-time monitoring and analytics capabilities, leaving system administrators without timely alerts and insights into potential issues, which could lead to delayed detection and resolution of performance problems. This would compromise their ability to make data-driven decisions and optimize system maintenance schedules.",
       "categories": {
@@ -11698,6 +13060,43 @@
         "social": "neutral",
         "portfolio": "neutral",
         "government": "neutral"
+      }
+    },
+    {
+      "user_agent": "WPMUDEV Uptime Monitor 5.0",
+      "operator": "Monitoring & Analytics",
+      "description": "",
+      "sources": [
+        "cloudflare-radar"
+      ],
+      "raw_data": {
+        "asn": "",
+        "ip_ranges": [],
+        "verification_method": "cloudflare-verified",
+        "rank": "",
+        "user_agent_patterns": null,
+        "bot_name": "WPMUDEV Uptime Monitor 5.0",
+        "original": {
+          "botName": "WPMUDEV Uptime Monitor 5.0",
+          "botCategory": "Monitoring & Analytics",
+          "botOwner": "WPMUDEV",
+          "value": "0.001116"
+        }
+      },
+      "last_updated": "2026-02-01T19:13:37.072821Z",
+      "purpose": "The WPMUDEV Uptime Monitor 5.0 is a monitoring and analytics bot designed to track website uptime and alert users when their site goes down or experiences performance issues, ensuring businesses and individuals can quickly identify and resolve downtime. Its purpose is to provide real-time monitoring and notification services for website owners and administrators.",
+      "impact_of_blocking": "Blocking the WPMUDEV Uptime Monitor 5.0 bot could result in a loss of real-time alerts and notifications about website downtime, potentially causing users to go undetected for an extended period without knowing their site is experiencing performance issues. This would limit users' ability to promptly identify and resolve issues with their websites, leading to potential lost revenue or data exposure.",
+      "categories": {
+        "ecommerce": "beneficial",
+        "news": "not_applicable",
+        "media": "not_applicable",
+        "blog": "neutral",
+        "saas": "beneficial",
+        "corporate": "beneficial",
+        "documentation": "neutral",
+        "social": "neutral",
+        "portfolio": "neutral",
+        "government": "not_applicable"
       }
     },
     {
@@ -12198,9 +13597,11 @@
           "botCategory": "Webhooks",
           "botOwner": "Zapier Inc.",
           "value": "0.002857"
-        }
+        },
+        "user_agent_patterns": null,
+        "bot_name": "Zapier"
       },
-      "last_updated": "2025-12-14T03:26:02.200592Z",
+      "last_updated": "2026-02-01T18:50:43.206913Z",
       "purpose": "The Zapier bot is a webhook-based automation tool that connects different web applications to automate tasks, such as sending data between services or triggering actions in response to specific events. Its purpose is to simplify workflow integration and streamline business processes by creating customized connections between various online tools and services.",
       "impact_of_blocking": "Blocking the Zapier bot would impact businesses that rely heavily on automation and integrations, resulting in lost productivity and efficiency as they would no longer be able to easily connect their web applications and automate tasks. Specific functionality that would be affected includes the inability to send data between services, trigger actions in response to specific events, or streamline workflow integration across various online tools and services.",
       "categories": {

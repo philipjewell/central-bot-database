@@ -273,7 +273,7 @@ central-bot-database/
 
 **Phase 1: Fetch and Merge** (~1 minute)
 1. Fetches latest bots from ai.robots.txt (all bots)
-2. Optionally fetches from Cloudflare Radar (top 250 most common bots)
+2. Optionally fetches from Cloudflare Radar (top 300 most common bots)
 3. Loads existing enriched database
 4. Merges all sources, preserving existing AI enrichment
 5. Only updates technical details (IP ranges, ASN)
@@ -454,10 +454,10 @@ All PRs must:
 ## Data Sources
 
 - **[ai.robots.txt](https://github.com/ai-robots-txt/ai.robots.txt)** - Community-maintained AI bot list (all bots)
-- **[Cloudflare Radar](https://radar.cloudflare.com/)** - Verified bot traffic data (top 250 most common bots by traffic, optional)
+- **[Cloudflare Radar](https://radar.cloudflare.com/)** - Verified bot traffic data (top 300 most common bots by traffic, optional)
 - **Manual community submissions** - User-contributed bot entries in `sources/` directory
 
-**Note:** The Cloudflare integration fetches the top 250 most common bots based on traffic patterns, not their entire bot database. This ensures we capture the most relevant bots while staying within API limits.
+**Note:** The Cloudflare integration fetches the top 300 most common bots based on traffic patterns, not their entire bot database. This ensures we capture the most relevant bots while staying within API limits.
 
 ## License
 

@@ -28,9 +28,9 @@ def fetch_cloudflare_bots():
     date_from = start_date.strftime("%Y-%m-%dT%H:%M:%SZ")
     date_to = end_date.strftime("%Y-%m-%dT%H:%M:%SZ")
     
-    # Cloudflare API limit - fetches top 250 most common verified bots
+    # Cloudflare API limit - fetches top 300 most common verified bots
     # Note: This does not fetch ALL bots from Cloudflare, only the top N by traffic
-    CLOUDFLARE_BOT_LIMIT = 250
+    CLOUDFLARE_BOT_LIMIT = 300
 
     # Try multiple possible endpoints with proper date ranges
     endpoints_to_try = [

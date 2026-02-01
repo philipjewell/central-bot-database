@@ -24,7 +24,6 @@
           "botOwner": "360Monitoring",
           "value": "0.01067"
         },
-        "user_agent_patterns": null,
         "bot_name": "360Monitoring"
       },
       "last_updated": "2026-02-01T07:16:19.958615Z",
@@ -61,7 +60,6 @@
           "botOwner": "Accessible Web",
           "value": "0.002963"
         },
-        "user_agent_patterns": null,
         "bot_name": "Accessible Web Bot"
       },
       "last_updated": "2026-02-01T07:16:19.958922Z",
@@ -98,7 +96,6 @@
           "botOwner": "ActiveComply",
           "value": "0.003212"
         },
-        "user_agent_patterns": null,
         "bot_name": "ActiveComply Bot"
       },
       "last_updated": "2026-02-01T18:50:43.206827Z",
@@ -139,7 +136,6 @@
           "description": "AddSearchBot is a web crawler that indexes website content for AddSearch's AI-powered site search solution, collecting data to provide fast and accurate search results. More info can be found at https://darkvisitors.com/agents/agents/addsearchbot"
         },
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "AddSearchBot"
       },
       "last_updated": "2026-02-01T07:16:19.958928Z",
@@ -176,7 +172,6 @@
           "botOwner": "OneTag Limited",
           "value": "0.009107"
         },
-        "user_agent_patterns": null,
         "bot_name": "AdsTxtCrawler"
       },
       "last_updated": "2026-02-01T18:50:43.206880Z",
@@ -213,7 +208,6 @@
           "botOwner": "Adyen",
           "value": "0.006852"
         },
-        "user_agent_patterns": null,
         "bot_name": "Adyen"
       },
       "last_updated": "2026-02-01T07:16:19.958627Z",
@@ -250,7 +244,6 @@
           "botOwner": "Ahrefs",
           "value": "0.194677"
         },
-        "user_agent_patterns": null,
         "bot_name": "Ahrefs Site Audit"
       },
       "last_updated": "2026-02-01T07:16:19.958300Z",
@@ -287,7 +280,6 @@
           "botOwner": "Ahrefs",
           "value": "2.195938"
         },
-        "user_agent_patterns": null,
         "bot_name": "AhrefsBot"
       },
       "last_updated": "2026-02-01T07:16:19.958178Z",
@@ -472,7 +464,6 @@
           "botOwner": "Smartbear",
           "value": "0.011339"
         },
-        "user_agent_patterns": null,
         "bot_name": "Alertsite by Smartbear"
       },
       "last_updated": "2026-02-01T07:16:19.958553Z",
@@ -509,7 +500,6 @@
           "botOwner": "Algolia",
           "value": "0.003719"
         },
-        "user_agent_patterns": null,
         "bot_name": "Algolia"
       },
       "last_updated": "2026-02-01T07:16:19.958894Z",
@@ -546,7 +536,6 @@
           "botOwner": "Amazon",
           "value": "0.017431"
         },
-        "user_agent_patterns": null,
         "bot_name": "Amazon AdBot"
       },
       "last_updated": "2026-02-01T07:16:19.958264Z",
@@ -622,7 +611,6 @@
           "value": "3.025642"
         },
         "asn_list": [],
-        "user_agent_patterns": null,
         "bot_name": "Amazonbot"
       },
       "last_updated": "2026-02-01T07:16:19.958954Z",
@@ -809,7 +797,6 @@
           "value": "1.175519"
         },
         "asn_list": [],
-        "user_agent_patterns": null,
         "bot_name": "Applebot"
       },
       "last_updated": "2026-02-01T07:16:19.958975Z",
@@ -883,7 +870,6 @@
           "botOwner": "Arquivo",
           "value": "0.004013"
         },
-        "user_agent_patterns": null,
         "bot_name": "Arquivo Web Crawler"
       },
       "last_updated": "2026-02-01T18:50:43.206922Z",
@@ -924,7 +910,6 @@
           "description": "atlassian-bot is a web crawler used to index website content for its AI search, assistants and agents available in its Rovo GenAI product."
         },
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "atlassian-bot"
       },
       "last_updated": "2026-02-01T18:50:43.206786Z",
@@ -961,7 +946,6 @@
           "botOwner": "Audisto",
           "value": "0.003895"
         },
-        "user_agent_patterns": null,
         "bot_name": "Audisto Crawler"
       },
       "last_updated": "2026-02-01T07:16:19.958833Z",
@@ -998,7 +982,6 @@
           "botOwner": "Cloudflare",
           "value": "0.007846"
         },
-        "user_agent_patterns": null,
         "bot_name": "AutoRAG"
       },
       "last_updated": "2026-02-01T07:16:19.958888Z",
@@ -1072,7 +1055,6 @@
           "botOwner": "Awario",
           "value": "0.005084"
         },
-        "user_agent_patterns": null,
         "bot_name": "AwarioSmartBot"
       },
       "last_updated": "2026-02-01T07:16:19.958836Z",
@@ -1109,7 +1091,6 @@
           "botOwner": "Baidu",
           "value": "0.199393"
         },
-        "user_agent_patterns": null,
         "bot_name": "Baiduspider"
       },
       "last_updated": "2026-02-01T07:16:19.958225Z",
@@ -1146,7 +1127,6 @@
           "botOwner": "Babbar",
           "value": "0.618703"
         },
-        "user_agent_patterns": null,
         "bot_name": "Barkrowler"
       },
       "last_updated": "2026-02-01T07:16:19.958252Z",
@@ -1220,7 +1200,6 @@
           "botOwner": "BestChange",
           "value": "0.005504"
         },
-        "user_agent_patterns": null,
         "bot_name": "BestChange Bot"
       },
       "last_updated": "2026-02-01T07:16:19.958815Z",
@@ -1257,7 +1236,6 @@
           "botOwner": "Better Stack",
           "value": "0.116124"
         },
-        "user_agent_patterns": null,
         "bot_name": "Better Uptime"
       },
       "last_updated": "2026-02-01T07:16:19.958352Z",
@@ -1360,7 +1338,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "BinaryCanary",
         "original": {
           "botName": "BinaryCanary",
@@ -1403,7 +1380,6 @@
           "botOwner": "Microsoft",
           "value": "0.062174"
         },
-        "user_agent_patterns": null,
         "bot_name": "Bing Ads"
       },
       "last_updated": "2026-02-01T07:16:19.958372Z",
@@ -1440,7 +1416,6 @@
           "botOwner": "Microsoft",
           "value": "0.003784"
         },
-        "user_agent_patterns": null,
         "bot_name": "Bing Preview"
       },
       "last_updated": "2026-02-01T07:16:19.958387Z",
@@ -1477,7 +1452,6 @@
           "botOwner": "Microsoft",
           "value": "5.83608"
         },
-        "user_agent_patterns": null,
         "bot_name": "BingBot"
       },
       "last_updated": "2026-02-01T07:16:19.958160Z",
@@ -1578,7 +1552,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Blogtrottr",
         "original": {
           "botName": "Blogtrottr",
@@ -1621,7 +1594,6 @@
           "botOwner": "BlogVault",
           "value": "0.013673"
         },
-        "user_agent_patterns": null,
         "bot_name": "BlogVault"
       },
       "last_updated": "2026-02-01T07:16:19.958618Z",
@@ -1658,7 +1630,6 @@
           "botOwner": "Bluesky ",
           "value": "0.010749"
         },
-        "user_agent_patterns": null,
         "bot_name": "Bluesky Link Preview Service"
       },
       "last_updated": "2026-02-01T07:16:19.958690Z",
@@ -1695,7 +1666,6 @@
           "botOwner": "Botify",
           "value": "0.095761"
         },
-        "user_agent_patterns": null,
         "bot_name": "Botify"
       },
       "last_updated": "2026-02-01T07:16:19.958349Z",
@@ -1806,7 +1776,6 @@
           "botOwner": "BrightEdge",
           "value": "0.015678"
         },
-        "user_agent_patterns": null,
         "bot_name": "BrightEdge Bot"
       },
       "last_updated": "2026-02-01T07:16:19.958543Z",
@@ -1874,7 +1843,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "BugsNag",
         "original": {
           "botName": "BugsNag",
@@ -1911,7 +1879,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Bushbaby",
         "original": {
           "botName": "Bushbaby",
@@ -1991,7 +1958,6 @@
           "botOwner": "Conductor",
           "value": "0.028595"
         },
-        "user_agent_patterns": null,
         "bot_name": "CaliberBot"
       },
       "last_updated": "2026-02-01T07:16:19.958567Z",
@@ -2028,7 +1994,6 @@
           "botOwner": "Catchpoint",
           "value": "0.091098"
         },
-        "user_agent_patterns": null,
         "bot_name": "catchpoint"
       },
       "last_updated": "2026-02-01T07:16:19.958376Z",
@@ -2139,7 +2104,6 @@
           "botOwner": "ChargeBee",
           "value": "0.006915"
         },
-        "user_agent_patterns": null,
         "bot_name": "ChargeBee"
       },
       "last_updated": "2026-02-01T18:50:43.206852Z",
@@ -2215,7 +2179,6 @@
           "value": "0.074794"
         },
         "asn_list": [],
-        "user_agent_patterns": null,
         "bot_name": "ChatGPT agent"
       },
       "last_updated": "2026-02-01T07:16:19.959029Z",
@@ -2254,7 +2217,6 @@
           "value": "0.95079"
         },
         "asn_list": [],
-        "user_agent_patterns": null,
         "bot_name": "ChatGPT-User"
       },
       "last_updated": "2026-02-01T07:16:19.959033Z",
@@ -2291,7 +2253,6 @@
           "botOwner": "Checkly",
           "value": "0.049803"
         },
-        "user_agent_patterns": null,
         "bot_name": "Checkly Bot"
       },
       "last_updated": "2026-02-01T07:16:19.958438Z",
@@ -2328,7 +2289,6 @@
           "botOwner": "Google",
           "value": "0.841877"
         },
-        "user_agent_patterns": null,
         "bot_name": "Chrome-Lighthouse"
       },
       "last_updated": "2026-02-01T07:16:19.958242Z",
@@ -2507,7 +2467,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "ClearscopeBot",
         "original": {
           "botName": "ClearscopeBot",
@@ -2550,7 +2509,6 @@
           "botOwner": null,
           "value": "0.004653"
         },
-        "user_agent_patterns": null,
         "bot_name": "Cloudflare Custom Hostname Verification"
       },
       "last_updated": "2026-02-01T07:16:19.958727Z",
@@ -2587,7 +2545,6 @@
           "botOwner": "Cloudflare",
           "value": "0.560448"
         },
-        "user_agent_patterns": null,
         "bot_name": "Cloudflare Healthchecks"
       },
       "last_updated": "2026-02-01T07:16:19.958272Z",
@@ -2624,7 +2581,6 @@
           "botOwner": "Cloudflare",
           "value": "0.013181"
         },
-        "user_agent_patterns": null,
         "bot_name": "Cloudflare Prefetch"
       },
       "last_updated": "2026-02-01T07:16:19.958497Z",
@@ -2655,7 +2611,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Cloudflare Radar URL Scanner",
         "original": {
           "botName": "Cloudflare Radar URL Scanner",
@@ -2692,7 +2647,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Cloudflare SSLDetector",
         "original": {
           "botName": "Cloudflare SSLDetector",
@@ -2772,7 +2726,6 @@
           "botOwner": "Cloudflare",
           "value": "0.132783"
         },
-        "user_agent_patterns": null,
         "bot_name": "Cloudflare-Traffic-Manager"
       },
       "last_updated": "2026-02-01T07:16:19.958332Z",
@@ -2840,7 +2793,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Cludo",
         "original": {
           "botName": "Cludo",
@@ -2957,7 +2909,6 @@
           "botOwner": "ContentKing",
           "value": "0.120515"
         },
-        "user_agent_patterns": null,
         "bot_name": "ContentKing"
       },
       "last_updated": "2026-02-01T07:16:19.958338Z",
@@ -2994,7 +2945,6 @@
           "botOwner": "Outcomes",
           "value": "0.003195"
         },
-        "user_agent_patterns": null,
         "bot_name": "ContextualBot"
       },
       "last_updated": "2026-02-01T07:16:19.958706Z",
@@ -3031,7 +2981,6 @@
           "botOwner": "Cybot A/S",
           "value": "0.204977"
         },
-        "user_agent_patterns": null,
         "bot_name": "Cookiebot"
       },
       "last_updated": "2026-02-01T07:16:19.958323Z",
@@ -3068,7 +3017,6 @@
           "botOwner": "CookieYes",
           "value": "0.050507"
         },
-        "user_agent_patterns": null,
         "bot_name": "CookieYesBot"
       },
       "last_updated": "2026-02-01T07:16:19.958487Z",
@@ -3142,7 +3090,6 @@
           "botOwner": "Coveo",
           "value": "0.013645"
         },
-        "user_agent_patterns": null,
         "bot_name": "Coveo Bot"
       },
       "last_updated": "2026-02-01T07:16:19.958630Z",
@@ -3253,7 +3200,6 @@
           "botOwner": "Criteo",
           "value": "0.111012"
         },
-        "user_agent_patterns": null,
         "bot_name": "CriteoBot"
       },
       "last_updated": "2026-02-01T07:16:19.958355Z",
@@ -3290,7 +3236,6 @@
           "botOwner": "cron-job.org",
           "value": "0.01882"
         },
-        "user_agent_patterns": null,
         "bot_name": "cron-job.org"
       },
       "last_updated": "2026-02-01T07:16:19.958529Z",
@@ -3327,7 +3272,6 @@
           "botOwner": "Cxense",
           "value": "0.024503"
         },
-        "user_agent_patterns": null,
         "bot_name": "Cxense"
       },
       "last_updated": "2026-02-01T07:16:19.958509Z",
@@ -3358,7 +3302,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Cybaa Bot",
         "original": {
           "botName": "Cybaa Bot",
@@ -3401,7 +3344,6 @@
           "botOwner": "Coccoc",
           "value": "0.055051"
         },
-        "user_agent_patterns": null,
         "bot_name": "C\u1ed1c C\u1ed1c"
       },
       "last_updated": "2026-02-01T07:16:19.958435Z",
@@ -3438,7 +3380,6 @@
           "botOwner": "DataForSEO",
           "value": "0.008369"
         },
-        "user_agent_patterns": null,
         "bot_name": "DataForSEO"
       },
       "last_updated": "2026-02-01T07:16:19.958719Z",
@@ -3475,7 +3416,6 @@
           "botOwner": "DataForSEO",
           "value": "0.413788"
         },
-        "user_agent_patterns": null,
         "bot_name": "DataForSEO Bot"
       },
       "last_updated": "2026-02-01T07:16:19.958282Z",
@@ -3512,7 +3452,6 @@
           "botOwner": "Dataprovider.com",
           "value": "0.034304"
         },
-        "user_agent_patterns": null,
         "bot_name": "Dataprovider.com"
       },
       "last_updated": "2026-02-01T07:16:19.958451Z",
@@ -3580,7 +3519,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "deadlinkchecker",
         "original": {
           "botName": "deadlinkchecker",
@@ -3695,7 +3633,6 @@
           "botOwner": "Detectify",
           "value": "0.044642"
         },
-        "user_agent_patterns": null,
         "bot_name": "Detectify"
       },
       "last_updated": "2026-02-01T07:16:19.958275Z",
@@ -3806,7 +3743,6 @@
           "botOwner": "Dotcom-Monitor",
           "value": "0.003082"
         },
-        "user_agent_patterns": null,
         "bot_name": "Doctom Monitor"
       },
       "last_updated": "2026-02-01T07:16:19.958905Z",
@@ -3847,7 +3783,6 @@
           "description": "DuckAssistBot is used by DuckDuckGo's DuckAssist feature to fetch content and generate realtime AI answers to user searches. More info can be found at https://darkvisitors.com/agents/agents/duckassistbot"
         },
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "DuckAssistbot"
       },
       "last_updated": "2026-02-01T07:16:19.959101Z",
@@ -3884,7 +3819,6 @@
           "botOwner": "DuckDuckGo",
           "value": "0.077615"
         },
-        "user_agent_patterns": null,
         "bot_name": "DuckDuckBot"
       },
       "last_updated": "2026-02-01T07:16:19.958369Z",
@@ -3915,7 +3849,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "EasyCron",
         "original": {
           "botName": "EasyCron",
@@ -3962,7 +3895,6 @@
           "description": "Echobot Bot is an AI data scraper operated by Echobox. It's not currently known to be artificially intelligent or AI-related. If you think that's incorrect or can provide more detail about its purpose, please contact us. More info can be found at https://darkvisitors.com/agents/agents/echobot-bot"
         },
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Echobot Bot"
       },
       "last_updated": "2026-02-01T18:50:43.206766Z",
@@ -4036,7 +3968,6 @@
           "botOwner": "elmah.io",
           "value": "0.00454"
         },
-        "user_agent_patterns": null,
         "bot_name": "elmah.io Uptime Monitoring"
       },
       "last_updated": "2026-02-01T07:16:19.958812Z",
@@ -4067,7 +3998,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "eMoney Advisor",
         "original": {
           "botName": "eMoney Advisor",
@@ -4143,7 +4073,6 @@
           "botOwner": "Exodus",
           "value": "0.037992"
         },
-        "user_agent_patterns": null,
         "bot_name": "Exodus"
       },
       "last_updated": "2026-02-01T07:16:19.958454Z",
@@ -4219,7 +4148,6 @@
           "value": "2.218289"
         },
         "asn_list": [],
-        "user_agent_patterns": null,
         "bot_name": "FacebookExternalHit"
       },
       "last_updated": "2026-02-01T07:16:19.959116Z",
@@ -4260,7 +4188,6 @@
           "description": "Scrapes data for AI training."
         },
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Factset_spyderbot"
       },
       "last_updated": "2026-02-01T07:16:19.959120Z",
@@ -4297,7 +4224,6 @@
           "botOwner": "Feedbin",
           "value": "0.005804"
         },
-        "user_agent_patterns": null,
         "bot_name": "Feedbin"
       },
       "last_updated": "2026-02-01T07:16:19.958766Z",
@@ -4334,7 +4260,6 @@
           "botOwner": "Really Simple AB",
           "value": "0.00709"
         },
-        "user_agent_patterns": null,
         "bot_name": "Feeder"
       },
       "last_updated": "2026-02-01T07:16:19.958745Z",
@@ -4371,7 +4296,6 @@
           "botOwner": "Feedly",
           "value": "0.011132"
         },
-        "user_agent_patterns": null,
         "bot_name": "Feedly"
       },
       "last_updated": "2026-02-01T07:16:19.958562Z",
@@ -4445,7 +4369,6 @@
           "botOwner": "Flipboard",
           "value": "0.003936"
         },
-        "user_agent_patterns": null,
         "bot_name": "FlipboardProxy"
       },
       "last_updated": "2026-02-01T07:16:19.958917Z",
@@ -4476,7 +4399,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "FlipboardRSS",
         "original": {
           "botName": "FlipboardRSS",
@@ -4554,7 +4476,6 @@
           "botOwner": "freshping",
           "value": "0.016278"
         },
-        "user_agent_patterns": null,
         "bot_name": "Freshping"
       },
       "last_updated": "2026-02-01T07:16:19.958584Z",
@@ -4628,7 +4549,6 @@
           "botOwner": "Full Story",
           "value": "0.063158"
         },
-        "user_agent_patterns": null,
         "bot_name": "FullStory"
       },
       "last_updated": "2026-02-01T07:16:19.958366Z",
@@ -4659,7 +4579,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Funnelback",
         "original": {
           "botName": "Funnelback",
@@ -4739,7 +4658,6 @@
           "botOwner": "Ghost Inspector",
           "value": "0.012594"
         },
-        "user_agent_patterns": null,
         "bot_name": "Ghost Inspector"
       },
       "last_updated": "2026-02-01T07:16:19.958600Z",
@@ -4776,7 +4694,6 @@
           "botOwner": "Google",
           "value": "5.835751"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google AdsBot"
       },
       "last_updated": "2026-02-01T07:16:19.958163Z",
@@ -4813,7 +4730,6 @@
           "botOwner": "Google",
           "value": "0.638028"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google Adsense: Mediapartners-Google"
       },
       "last_updated": "2026-02-01T07:16:19.958268Z",
@@ -4850,7 +4766,6 @@
           "botOwner": "Google",
           "value": "1.239569"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google API"
       },
       "last_updated": "2026-02-01T07:16:19.958207Z",
@@ -4887,7 +4802,6 @@
           "botOwner": "Google",
           "value": "0.035029"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google Digital Asset Links"
       },
       "last_updated": "2026-02-01T07:16:19.958474Z",
@@ -4924,7 +4838,6 @@
           "botOwner": "Google",
           "value": "0.031137"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google Feed Fetcher"
       },
       "last_updated": "2026-02-01T07:16:19.958466Z",
@@ -4961,7 +4874,6 @@
           "botOwner": "Google",
           "value": "0.003215"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google Firebase"
       },
       "last_updated": "2026-02-01T07:16:19.958871Z",
@@ -4998,7 +4910,6 @@
           "botOwner": "Google",
           "value": "3.85785"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google Image Proxy"
       },
       "last_updated": "2026-02-01T07:16:19.958182Z",
@@ -5035,7 +4946,6 @@
           "botOwner": "Google",
           "value": "1.771059"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google Images"
       },
       "last_updated": "2026-02-01T07:16:19.958197Z",
@@ -5072,7 +4982,6 @@
           "botOwner": "Google",
           "value": "0.013815"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google Inspection Tool"
       },
       "last_updated": "2026-02-01T07:16:19.958572Z",
@@ -5103,7 +5012,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Google NotebookLM",
         "original": {
           "botName": "Google NotebookLM",
@@ -5146,7 +5054,6 @@
           "botOwner": "Google",
           "value": "0.027463"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google Page Renderer"
       },
       "last_updated": "2026-02-01T07:16:19.958899Z",
@@ -5183,7 +5090,6 @@
           "botOwner": "Google",
           "value": "1.132379"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google Read Aloud"
       },
       "last_updated": "2026-02-01T07:16:19.958211Z",
@@ -5214,7 +5120,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Google Schema Markup Testing Tool",
         "original": {
           "botName": "Google Schema Markup Testing Tool",
@@ -5257,7 +5162,6 @@
           "botOwner": "Google",
           "value": "0.039752"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google Site Verification"
       },
       "last_updated": "2026-02-01T07:16:19.958441Z",
@@ -5294,7 +5198,6 @@
           "botOwner": "Google",
           "value": "1.141002"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google StoreBot"
       },
       "last_updated": "2026-02-01T07:16:19.958245Z",
@@ -5325,7 +5228,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Google Trust Services (DCV Check)",
         "original": {
           "botName": "Google Trust Services (DCV Check)",
@@ -5368,7 +5270,6 @@
           "botOwner": "Google",
           "value": "0.033925"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google Videos"
       },
       "last_updated": "2026-02-01T07:16:19.958363Z",
@@ -5405,7 +5306,6 @@
           "botOwner": "Google",
           "value": "0.005105"
         },
-        "user_agent_patterns": null,
         "bot_name": "Google-AdWords-Express"
       },
       "last_updated": "2026-02-01T07:16:19.958738Z",
@@ -5436,7 +5336,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Google-Adwords-Instant",
         "original": {
           "botName": "Google-Adwords-Instant",
@@ -5481,7 +5380,6 @@
           "value": "0.048871"
         },
         "asn_list": [],
-        "user_agent_patterns": null,
         "bot_name": "Google-CloudVertexBot"
       },
       "last_updated": "2026-02-01T07:16:19.959136Z",
@@ -5666,7 +5564,6 @@
           "botOwner": "Google",
           "value": "22.5974"
         },
-        "user_agent_patterns": null,
         "bot_name": "GoogleBot"
       },
       "last_updated": "2026-02-01T07:16:19.958132Z",
@@ -5705,7 +5602,6 @@
           "value": "1.925202"
         },
         "asn_list": [],
-        "user_agent_patterns": null,
         "bot_name": "GoogleOther"
       },
       "last_updated": "2026-02-01T07:16:19.959155Z",
@@ -5818,7 +5714,6 @@
           "value": "5.136247"
         },
         "asn_list": [],
-        "user_agent_patterns": null,
         "bot_name": "GPTBot"
       },
       "last_updated": "2026-02-01T07:16:19.959165Z",
@@ -5855,7 +5750,6 @@
           "botOwner": "Grafana Labs",
           "value": "0.037221"
         },
-        "user_agent_patterns": null,
         "bot_name": "Grafana's Synthetic Monitoring"
       },
       "last_updated": "2026-02-01T07:16:19.958537Z",
@@ -5892,7 +5786,6 @@
           "botOwner": "GTmetrix",
           "value": "0.00514"
         },
-        "user_agent_patterns": null,
         "bot_name": "GTmetrix"
       },
       "last_updated": "2026-02-01T07:16:19.958741Z",
@@ -5929,7 +5822,6 @@
           "botOwner": "HetrixTools Inc",
           "value": "0.09895"
         },
-        "user_agent_patterns": null,
         "bot_name": "HetrixTools"
       },
       "last_updated": "2026-02-01T07:16:19.958359Z",
@@ -5966,7 +5858,6 @@
           "botOwner": "HostTracker",
           "value": "0.004877"
         },
-        "user_agent_patterns": null,
         "bot_name": "HostTracker"
       },
       "last_updated": "2026-02-01T07:16:19.958827Z",
@@ -6003,7 +5894,6 @@
           "botOwner": "Hotjar",
           "value": "0.006913"
         },
-        "user_agent_patterns": null,
         "bot_name": "Hotjar"
       },
       "last_updated": "2026-02-01T07:16:19.958794Z",
@@ -6040,7 +5930,6 @@
           "botOwner": "Hubspot",
           "value": "0.015437"
         },
-        "user_agent_patterns": null,
         "bot_name": "HubSpot Crawler"
       },
       "last_updated": "2026-02-01T07:16:19.958424Z",
@@ -6077,7 +5966,6 @@
           "botOwner": "HubSpot",
           "value": "0.079114"
         },
-        "user_agent_patterns": null,
         "bot_name": "HubSpot Feed Fetcher"
       },
       "last_updated": "2026-02-01T07:16:19.958457Z",
@@ -6114,7 +6002,6 @@
           "botOwner": "HubSpot",
           "value": "0.038767"
         },
-        "user_agent_patterns": null,
         "bot_name": "HubSpot Page Fetcher"
       },
       "last_updated": "2026-02-01T07:16:19.958411Z",
@@ -6151,7 +6038,6 @@
           "botOwner": "Integral Ad Science",
           "value": "0.005521"
         },
-        "user_agent_patterns": null,
         "bot_name": "IAS crawler"
       },
       "last_updated": "2026-02-01T07:16:19.958763Z",
@@ -6301,7 +6187,6 @@
           "value": "0.129969"
         },
         "asn_list": [],
-        "user_agent_patterns": null,
         "bot_name": "IbouBot"
       },
       "last_updated": "2026-02-01T07:16:19.959182Z",
@@ -6332,7 +6217,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "ICC Crawler",
         "original": {
           "botName": "ICC Crawler",
@@ -6412,7 +6296,6 @@
           "botOwner": "Iframely",
           "value": "0.005697"
         },
-        "user_agent_patterns": null,
         "bot_name": "Iframely"
       },
       "last_updated": "2026-02-01T07:16:19.958782Z",
@@ -6560,7 +6443,6 @@
           "botOwner": "Indeed",
           "value": "0.003173"
         },
-        "user_agent_patterns": null,
         "bot_name": "IndeedJobBot"
       },
       "last_updated": "2026-02-01T07:16:19.958850Z",
@@ -6597,7 +6479,6 @@
           "botOwner": "Innologica",
           "value": "0.012631"
         },
-        "user_agent_patterns": null,
         "bot_name": "Innologica"
       },
       "last_updated": "2026-02-01T07:16:19.958590Z",
@@ -6628,7 +6509,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Instapaper",
         "original": {
           "botName": "Instapaper",
@@ -6671,7 +6551,6 @@
           "botOwner": "Internet Archive",
           "value": "0.023751"
         },
-        "user_agent_patterns": null,
         "bot_name": "Internet Archive"
       },
       "last_updated": "2026-02-01T07:16:19.958480Z",
@@ -6702,7 +6581,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Internet Archive - Archive-It",
         "original": {
           "botName": "Internet Archive - Archive-It",
@@ -6745,7 +6623,6 @@
           "botOwner": "Internet Archive",
           "value": "0.008915"
         },
-        "user_agent_patterns": null,
         "bot_name": "InternetArchiveBot"
       },
       "last_updated": "2026-02-01T07:16:19.958513Z",
@@ -6813,7 +6690,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "jobswithgptcom-bot",
         "original": {
           "botName": "jobswithgptcom-bot",
@@ -6850,7 +6726,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "KakaoTalk Scrap",
         "original": {
           "botName": "KakaoTalk Scrap",
@@ -6930,7 +6805,6 @@
           "botOwner": "Netarkivet",
           "value": "0.003076"
         },
-        "user_agent_patterns": null,
         "bot_name": "kb.dk_bot"
       },
       "last_updated": "2026-02-01T18:50:43.206863Z",
@@ -6967,7 +6841,6 @@
           "botOwner": "Kinsta",
           "value": "0.053439"
         },
-        "user_agent_patterns": null,
         "bot_name": "Kinsta"
       },
       "last_updated": "2026-02-01T07:16:19.958418Z",
@@ -7004,7 +6877,6 @@
           "botOwner": "Klaviyo",
           "value": "0.013988"
         },
-        "user_agent_patterns": null,
         "bot_name": "klaviyo"
       },
       "last_updated": "2026-02-01T07:16:19.958603Z",
@@ -7226,7 +7098,6 @@
           "botOwner": "DoubleVerify",
           "value": "0.027041"
         },
-        "user_agent_patterns": null,
         "bot_name": "LeikiBot"
       },
       "last_updated": "2026-02-01T07:16:19.958525Z",
@@ -7257,7 +7128,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Let's Encrypt",
         "original": {
           "botName": "Let's Encrypt",
@@ -7300,7 +7170,6 @@
           "botOwner": "United States Library of Congress",
           "value": "0.005804"
         },
-        "user_agent_patterns": null,
         "bot_name": "Library Of Congress Web Archiving"
       },
       "last_updated": "2026-02-01T18:50:43.206777Z",
@@ -7411,7 +7280,6 @@
           "botOwner": "LinkedIn",
           "value": "0.022353"
         },
-        "user_agent_patterns": null,
         "bot_name": "LinkedInBot"
       },
       "last_updated": "2026-02-01T07:16:19.958477Z",
@@ -7485,7 +7353,6 @@
           "botOwner": "LogicMonitor",
           "value": "0.050611"
         },
-        "user_agent_patterns": null,
         "bot_name": "logicmonitor"
       },
       "last_updated": "2026-02-01T07:16:19.958447Z",
@@ -7522,7 +7389,6 @@
           "botOwner": "Make",
           "value": "0.019473"
         },
-        "user_agent_patterns": null,
         "bot_name": "Make Platform"
       },
       "last_updated": "2026-02-01T07:16:19.958522Z",
@@ -7559,7 +7425,6 @@
           "botOwner": "ManageWP",
           "value": "0.004978"
         },
-        "user_agent_patterns": null,
         "bot_name": "ManageWP"
       },
       "last_updated": "2026-02-01T07:16:19.958789Z",
@@ -7596,7 +7461,6 @@
           "botOwner": "Manus",
           "value": "0.002941"
         },
-        "user_agent_patterns": null,
         "bot_name": "Manus Bot"
       },
       "last_updated": "2026-02-01T18:50:43.206888Z",
@@ -7670,7 +7534,6 @@
           "botOwner": "Marginalia",
           "value": "0.005092"
         },
-        "user_agent_patterns": null,
         "bot_name": "Marginalia Search"
       },
       "last_updated": "2026-02-01T07:16:19.958844Z",
@@ -7701,7 +7564,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "marketgoo",
         "original": {
           "botName": "marketgoo",
@@ -7744,7 +7606,6 @@
           "botOwner": "Determ",
           "value": "0.012565"
         },
-        "user_agent_patterns": null,
         "bot_name": "Mediatoolkitbot"
       },
       "last_updated": "2026-02-01T07:16:19.958624Z",
@@ -7781,7 +7642,6 @@
           "botOwner": "Meta",
           "value": "9.920032"
         },
-        "user_agent_patterns": null,
         "bot_name": "Meta-ExternalAds"
       },
       "last_updated": "2026-02-01T07:16:19.958156Z",
@@ -7820,7 +7680,6 @@
           "value": "3.963162"
         },
         "asn_list": [],
-        "user_agent_patterns": null,
         "bot_name": "Meta-ExternalAgent"
       },
       "last_updated": "2026-02-01T07:16:19.959250Z",
@@ -7931,7 +7790,6 @@
           "botOwner": "Metorik",
           "value": "0.003104"
         },
-        "user_agent_patterns": null,
         "bot_name": "Metorik"
       },
       "last_updated": "2026-02-01T07:16:19.958868Z",
@@ -7968,7 +7826,6 @@
           "botOwner": "Microsoft",
           "value": "0.642999"
         },
-        "user_agent_patterns": null,
         "bot_name": "Microsoft Preview"
       },
       "last_updated": "2026-02-01T07:16:19.958249Z",
@@ -8005,7 +7862,6 @@
           "botOwner": "MirrorWeb Ltd",
           "value": "0.005368"
         },
-        "user_agent_patterns": null,
         "bot_name": "MirrorWebCrawler"
       },
       "last_updated": "2026-02-01T07:16:19.958809Z",
@@ -8046,7 +7902,6 @@
           "description": "MistralAI-User is an AI assistant operated by Mistral. It's not currently known to be artificially intelligent or AI-related. If you think that's incorrect or can provide more detail about its purpose, please contact us. More info can be found at https://darkvisitors.com/agents/agents/mistralai-user"
         },
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "MistralAI-User"
       },
       "last_updated": "2026-02-01T18:50:43.206800Z",
@@ -8120,7 +7975,6 @@
           "botOwner": "Majestic",
           "value": "0.368492"
         },
-        "user_agent_patterns": null,
         "bot_name": "MJ12Bot"
       },
       "last_updated": "2026-02-01T07:16:19.958214Z",
@@ -8157,7 +8011,6 @@
           "botOwner": "Mojeek",
           "value": "0.012232"
         },
-        "user_agent_patterns": null,
         "bot_name": "Mojeek"
       },
       "last_updated": "2026-02-01T07:16:19.958693Z",
@@ -8188,7 +8041,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "MonitoRSS",
         "original": {
           "botName": "MonitoRSS",
@@ -8266,7 +8118,6 @@
           "botOwner": "MonSpark",
           "value": "0.008582"
         },
-        "user_agent_patterns": null,
         "bot_name": "MonSpark"
       },
       "last_updated": "2026-02-01T07:16:19.958723Z",
@@ -8303,7 +8154,6 @@
           "botOwner": "Moz",
           "value": "1.233581"
         },
-        "user_agent_patterns": null,
         "bot_name": "Moz dotbot"
       },
       "last_updated": "2026-02-01T07:16:19.958190Z",
@@ -8340,7 +8190,6 @@
           "botOwner": "Moz",
           "value": "0.004178"
         },
-        "user_agent_patterns": null,
         "bot_name": "Moz rogerbot"
       },
       "last_updated": "2026-02-01T07:16:19.958847Z",
@@ -8377,7 +8226,6 @@
           "botOwner": "Microsoft",
           "value": "0.013317"
         },
-        "user_agent_patterns": null,
         "bot_name": "MSN"
       },
       "last_updated": "2026-02-01T07:16:19.958700Z",
@@ -8488,7 +8336,6 @@
           "botOwner": "Netvigie",
           "value": "0.010011"
         },
-        "user_agent_patterns": null,
         "bot_name": "NETVIGIE"
       },
       "last_updated": "2026-02-01T07:16:19.958713Z",
@@ -8525,7 +8372,6 @@
           "botOwner": "New Relic",
           "value": "0.825928"
         },
-        "user_agent_patterns": null,
         "bot_name": "New Relic"
       },
       "last_updated": "2026-02-01T07:16:19.958239Z",
@@ -8562,7 +8408,6 @@
           "botOwner": "NitroPack Ltd",
           "value": "0.017874"
         },
-        "user_agent_patterns": null,
         "bot_name": "NitroBot"
       },
       "last_updated": "2026-02-01T07:16:19.958540Z",
@@ -8593,7 +8438,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "NixStatsMonitoringBot",
         "original": {
           "botName": "NixStatsMonitoringBot",
@@ -8636,7 +8480,6 @@
           "botOwner": "Nodeping",
           "value": "0.008671"
         },
-        "user_agent_patterns": null,
         "bot_name": "Nodeping"
       },
       "last_updated": "2026-02-01T07:16:19.958716Z",
@@ -8667,7 +8510,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "NostoCrawlerBot",
         "original": {
           "botName": "NostoCrawlerBot",
@@ -8786,7 +8628,6 @@
           "value": "0.558846"
         },
         "asn_list": [],
-        "user_agent_patterns": null,
         "bot_name": "OAI-SearchBot"
       },
       "last_updated": "2026-02-01T07:16:19.959291Z",
@@ -8823,7 +8664,6 @@
           "botOwner": "Oh Dear",
           "value": "0.013556"
         },
-        "user_agent_patterns": null,
         "bot_name": "Oh Dear"
       },
       "last_updated": "2026-02-01T07:16:19.958587Z",
@@ -8928,7 +8768,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Omnisend",
         "original": {
           "botName": "Omnisend",
@@ -8971,7 +8810,6 @@
           "botOwner": "Oncrawl",
           "value": "0.04978"
         },
-        "user_agent_patterns": null,
         "bot_name": "OnCrawl"
       },
       "last_updated": "2026-02-01T07:16:19.958429Z",
@@ -9008,7 +8846,6 @@
           "botOwner": "OneTrust, LLC.",
           "value": "0.371628"
         },
-        "user_agent_patterns": null,
         "bot_name": "Onetrust CMP Scanner"
       },
       "last_updated": "2026-02-01T07:16:19.958285Z",
@@ -9119,7 +8956,6 @@
           "botOwner": "Outbrain",
           "value": "0.005571"
         },
-        "user_agent_patterns": null,
         "bot_name": "Outbrain"
       },
       "last_updated": "2026-02-01T07:16:19.958751Z",
@@ -9156,7 +8992,6 @@
           "botOwner": "Overcast Radio",
           "value": "0.005668"
         },
-        "user_agent_patterns": null,
         "bot_name": "Overcast"
       },
       "last_updated": "2026-02-01T07:16:19.958805Z",
@@ -9187,7 +9022,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Paddle Webhooks",
         "original": {
           "botName": "Paddle Webhooks",
@@ -9267,7 +9101,6 @@
           "botOwner": "Panopta",
           "value": "0.002951"
         },
-        "user_agent_patterns": null,
         "bot_name": "Panopta"
       },
       "last_updated": "2026-02-01T07:16:19.958865Z",
@@ -9372,7 +9205,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Parse.ly",
         "original": {
           "botName": "Parse.ly",
@@ -9415,7 +9247,6 @@
           "botOwner": "PayPal",
           "value": "0.011118"
         },
-        "user_agent_patterns": null,
         "bot_name": "PayPal"
       },
       "last_updated": "2026-02-01T07:16:19.958697Z",
@@ -9528,7 +9359,6 @@
           "value": "1.81743"
         },
         "asn_list": [],
-        "user_agent_patterns": null,
         "bot_name": "PetalBot"
       },
       "last_updated": "2026-02-01T07:16:19.959330Z",
@@ -9602,7 +9432,6 @@
           "botOwner": "Pingdom",
           "value": "0.252783"
         },
-        "user_agent_patterns": null,
         "bot_name": "Pingdom"
       },
       "last_updated": "2026-02-01T07:16:19.958303Z",
@@ -9633,7 +9462,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "PingPing Bot",
         "original": {
           "botName": "PingPing Bot",
@@ -9676,7 +9504,6 @@
           "botOwner": "Pinterest",
           "value": "2.174904"
         },
-        "user_agent_patterns": null,
         "bot_name": "PinterestBot"
       },
       "last_updated": "2026-02-01T07:16:19.958167Z",
@@ -9713,7 +9540,6 @@
           "botOwner": "Pocket Casts",
           "value": "0.010086"
         },
-        "user_agent_patterns": null,
         "bot_name": "Pocket Casts Feed Parser"
       },
       "last_updated": "2026-02-01T07:16:19.958611Z",
@@ -9787,7 +9613,6 @@
           "botOwner": "Polar",
           "value": "0.092322"
         },
-        "user_agent_patterns": null,
         "bot_name": "Polar"
       },
       "last_updated": "2026-02-01T07:16:19.958335Z",
@@ -9861,7 +9686,6 @@
           "botOwner": "Prerender, LLC",
           "value": "1.193115"
         },
-        "user_agent_patterns": null,
         "bot_name": "prerender"
       },
       "last_updated": "2026-02-01T07:16:19.958217Z",
@@ -9898,7 +9722,6 @@
           "botOwner": "PRO Sitemaps",
           "value": "0.0059"
         },
-        "user_agent_patterns": null,
         "bot_name": "Pro Sitemaps"
       },
       "last_updated": "2026-02-01T07:16:19.958779Z",
@@ -9929,7 +9752,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Protopage",
         "original": {
           "botName": "Protopage",
@@ -9972,7 +9794,6 @@
           "botOwner": "ComScore",
           "value": "0.03909"
         },
-        "user_agent_patterns": null,
         "bot_name": "Proximic"
       },
       "last_updated": "2026-02-01T07:16:19.958597Z",
@@ -10009,7 +9830,6 @@
           "botOwner": "Pulsetic",
           "value": "0.004479"
         },
-        "user_agent_patterns": null,
         "bot_name": "Pulsetic"
       },
       "last_updated": "2026-02-01T07:16:19.958748Z",
@@ -10050,7 +9870,6 @@
           "description": "Operated by Qualified as part of their suite of AI product offerings."
         },
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "QualifiedBot"
       },
       "last_updated": "2026-02-01T07:16:19.959347Z",
@@ -10087,7 +9906,6 @@
           "botOwner": "Qualys",
           "value": "0.535002"
         },
-        "user_agent_patterns": null,
         "bot_name": "Qualys"
       },
       "last_updated": "2026-02-01T07:16:19.958255Z",
@@ -10118,7 +9936,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Quantcastbot",
         "original": {
           "botName": "Quantcastbot",
@@ -10235,7 +10052,6 @@
           "botOwner": "Qwant",
           "value": "0.061508"
         },
-        "user_agent_patterns": null,
         "bot_name": "Qwantbot"
       },
       "last_updated": "2026-02-01T07:16:19.958493Z",
@@ -10272,7 +10088,6 @@
           "botOwner": "Rackspace",
           "value": "0.004548"
         },
-        "user_agent_patterns": null,
         "bot_name": "Rackspace"
       },
       "last_updated": "2026-02-01T07:16:19.958818Z",
@@ -10303,7 +10118,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Reelevant",
         "original": {
           "botName": "Reelevant",
@@ -10346,7 +10160,6 @@
           "botOwner": "Retool",
           "value": "0.003699"
         },
-        "user_agent_patterns": null,
         "bot_name": "Retool"
       },
       "last_updated": "2026-02-01T07:16:19.958853Z",
@@ -10377,7 +10190,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "rss2tg_bot",
         "original": {
           "botName": "rss2tg_bot",
@@ -10420,7 +10232,6 @@
           "botOwner": "SalesViewer GmbH",
           "value": "0.002976"
         },
-        "user_agent_patterns": null,
         "bot_name": "SalesViewerBot"
       },
       "last_updated": "2026-02-01T07:16:19.958861Z",
@@ -10457,7 +10268,6 @@
           "botOwner": "Sansec Security Monitor",
           "value": "0.006922"
         },
-        "user_agent_patterns": null,
         "bot_name": "Sansec Security Monitor"
       },
       "last_updated": "2026-02-01T07:16:19.958822Z",
@@ -10568,7 +10378,6 @@
           "botOwner": "SE Ranking",
           "value": "0.018358"
         },
-        "user_agent_patterns": null,
         "bot_name": "SE Ranking Bot"
       },
       "last_updated": "2026-02-01T07:16:19.958490Z",
@@ -10605,7 +10414,6 @@
           "botOwner": "Search Atlas",
           "value": "0.014508"
         },
-        "user_agent_patterns": null,
         "bot_name": "SearchAtlas Bot"
       },
       "last_updated": "2026-02-01T07:16:19.958559Z",
@@ -10642,7 +10450,6 @@
           "botOwner": "SISTRIX",
           "value": "0.105624"
         },
-        "user_agent_patterns": null,
         "bot_name": "Seekport"
       },
       "last_updated": "2026-02-01T07:16:19.958398Z",
@@ -10679,7 +10486,6 @@
           "botOwner": "Semrush",
           "value": "0.224502"
         },
-        "user_agent_patterns": null,
         "bot_name": "Semrushbot"
       },
       "last_updated": "2026-02-01T07:16:19.958317Z",
@@ -10720,7 +10526,6 @@
           "description": "Data collected is used for the ContentShake AI tool reports."
         },
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "SemrushBot-OCOB"
       },
       "last_updated": "2026-02-01T07:16:19.959366Z",
@@ -10794,7 +10599,6 @@
           "botOwner": "Semrush",
           "value": "2.349803"
         },
-        "user_agent_patterns": null,
         "bot_name": "SemrushBotBacklinks"
       },
       "last_updated": "2026-02-01T07:16:19.958185Z",
@@ -10831,7 +10635,6 @@
           "botOwner": "SendGrid",
           "value": "0.044321"
         },
-        "user_agent_patterns": null,
         "bot_name": "SendGrid"
       },
       "last_updated": "2026-02-01T07:16:19.958444Z",
@@ -10868,7 +10671,6 @@
           "botOwner": "Sentry Uptime Bot",
           "value": "0.036151"
         },
-        "user_agent_patterns": null,
         "bot_name": "Sentry Uptime Monitoring"
       },
       "last_updated": "2026-02-01T07:16:19.958461Z",
@@ -10905,7 +10707,6 @@
           "botOwner": "Capsule Code",
           "value": "0.00465"
         },
-        "user_agent_patterns": null,
         "bot_name": "seo4ajax"
       },
       "last_updated": "2026-02-01T07:16:19.958786Z",
@@ -10942,7 +10743,6 @@
           "botOwner": "Seobility",
           "value": "0.004989"
         },
-        "user_agent_patterns": null,
         "bot_name": "SeobilityBot"
       },
       "last_updated": "2026-02-01T07:16:19.958621Z",
@@ -10979,7 +10779,6 @@
           "botOwner": "Serpstat",
           "value": "0.042236"
         },
-        "user_agent_patterns": null,
         "bot_name": "SerpstatBot"
       },
       "last_updated": "2026-02-01T07:16:19.958516Z",
@@ -11016,7 +10815,6 @@
           "botOwner": "Seznam",
           "value": "0.059326"
         },
-        "user_agent_patterns": null,
         "bot_name": "Seznam"
       },
       "last_updated": "2026-02-01T07:16:19.958405Z",
@@ -11090,7 +10888,6 @@
           "botOwner": "Shopify",
           "value": "0.281959"
         },
-        "user_agent_patterns": null,
         "bot_name": "Shopify-Captain-Hook"
       },
       "last_updated": "2026-02-01T07:16:19.958292Z",
@@ -11164,7 +10961,6 @@
           "botOwner": "Silktide",
           "value": "0.002842"
         },
-        "user_agent_patterns": null,
         "bot_name": "SilktideBot"
       },
       "last_updated": "2026-02-01T07:16:19.958857Z",
@@ -11201,7 +10997,6 @@
           "botOwner": "Site24x7",
           "value": "0.199695"
         },
-        "user_agent_patterns": null,
         "bot_name": "Site24x7"
       },
       "last_updated": "2026-02-01T07:16:19.958320Z",
@@ -11238,7 +11033,6 @@
           "botOwner": "Semrush",
           "value": "0.070829"
         },
-        "user_agent_patterns": null,
         "bot_name": "SiteAuditBot"
       },
       "last_updated": "2026-02-01T07:16:19.958401Z",
@@ -11275,7 +11069,6 @@
           "botOwner": "Siteimprove",
           "value": "0.083701"
         },
-        "user_agent_patterns": null,
         "bot_name": "Siteimprove Crawl"
       },
       "last_updated": "2026-02-01T07:16:19.958390Z",
@@ -11312,7 +11105,6 @@
           "botOwner": "SiteLock",
           "value": "0.008264"
         },
-        "user_agent_patterns": null,
         "bot_name": "SiteLock"
       },
       "last_updated": "2026-02-01T07:16:19.958519Z",
@@ -11343,7 +11135,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Skroutz ImageBot",
         "original": {
           "botName": "Skroutz ImageBot",
@@ -11421,7 +11212,6 @@
           "botOwner": "Slack",
           "value": "0.00557"
         },
-        "user_agent_patterns": null,
         "bot_name": "Slack Image Proxy"
       },
       "last_updated": "2026-02-01T07:16:19.958730Z",
@@ -11458,7 +11248,6 @@
           "botOwner": "Slack",
           "value": "0.144603"
         },
-        "user_agent_patterns": null,
         "bot_name": "Slackbot"
       },
       "last_updated": "2026-02-01T07:16:19.958326Z",
@@ -11530,7 +11319,6 @@
           "botOwner": "https://central.smarsh.com/s/",
           "value": "0.011947"
         },
-        "user_agent_patterns": null,
         "bot_name": "SmarshBot"
       },
       "last_updated": "2026-02-01T07:16:19.958685Z",
@@ -11567,7 +11355,6 @@
           "botOwner": "Sogou",
           "value": "0.09399"
         },
-        "user_agent_patterns": null,
         "bot_name": "Sogou"
       },
       "last_updated": "2026-02-01T07:16:19.958344Z",
@@ -11604,7 +11391,6 @@
           "botOwner": "SolarWinds",
           "value": "0.014387"
         },
-        "user_agent_patterns": null,
         "bot_name": "SolarWinds Observability"
       },
       "last_updated": "2026-02-01T07:16:19.958594Z",
@@ -11641,7 +11427,6 @@
           "botOwner": "Bird",
           "value": "0.012798"
         },
-        "user_agent_patterns": null,
         "bot_name": "SparkpostBot"
       },
       "last_updated": "2026-02-01T07:16:19.958581Z",
@@ -11750,7 +11535,6 @@
           "botOwner": "Splunk",
           "value": "0.015724"
         },
-        "user_agent_patterns": null,
         "bot_name": "Splunk Synthetics"
       },
       "last_updated": "2026-02-01T07:16:19.958532Z",
@@ -11787,7 +11571,6 @@
           "botOwner": "StatusCake",
           "value": "0.074773"
         },
-        "user_agent_patterns": null,
         "bot_name": "StatusCake"
       },
       "last_updated": "2026-02-01T07:16:19.958394Z",
@@ -11824,7 +11607,6 @@
           "botOwner": "Stripe",
           "value": "0.177551"
         },
-        "user_agent_patterns": null,
         "bot_name": "Stripe"
       },
       "last_updated": "2026-02-01T07:16:19.958314Z",
@@ -11861,7 +11643,6 @@
           "botOwner": "Stripe",
           "value": "0.011423"
         },
-        "user_agent_patterns": null,
         "bot_name": "Stripebot"
       },
       "last_updated": "2026-02-01T07:16:19.958549Z",
@@ -11898,7 +11679,6 @@
           "botOwner": "Sucuri",
           "value": "0.075286"
         },
-        "user_agent_patterns": null,
         "bot_name": "Sucuri"
       },
       "last_updated": "2026-02-01T07:16:19.958379Z",
@@ -11935,7 +11715,6 @@
           "botOwner": "Svix Inc.",
           "value": "0.012392"
         },
-        "user_agent_patterns": null,
         "bot_name": "Svix Webhooks"
       },
       "last_updated": "2026-02-01T07:16:19.958546Z",
@@ -11972,7 +11751,6 @@
           "botOwner": "DataDog",
           "value": "0.469241"
         },
-        "user_agent_patterns": null,
         "bot_name": "Synthetic Bot"
       },
       "last_updated": "2026-02-01T07:16:19.958260Z",
@@ -12081,7 +11859,6 @@
           "botOwner": "Telegram",
           "value": "0.016027"
         },
-        "user_agent_patterns": null,
         "bot_name": "Telegram Bot"
       },
       "last_updated": "2026-02-01T07:16:19.958556Z",
@@ -12118,7 +11895,6 @@
           "botOwner": "Termly",
           "value": "0.003142"
         },
-        "user_agent_patterns": null,
         "bot_name": "Termly"
       },
       "last_updated": "2026-02-01T18:50:43.206842Z",
@@ -12223,7 +11999,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "Thousand Eyes Cloud Agent",
         "original": {
           "botName": "Thousand Eyes Cloud Agent",
@@ -12340,7 +12115,6 @@
           "botOwner": "Bytedance",
           "value": "0.228637"
         },
-        "user_agent_patterns": null,
         "bot_name": "Toutiao"
       },
       "last_updated": "2026-02-01T07:16:19.958297Z",
@@ -12377,7 +12151,6 @@
           "botOwner": "Trendiction S.A.",
           "value": "0.039648"
         },
-        "user_agent_patterns": null,
         "bot_name": "Trendiction Bot"
       },
       "last_updated": "2026-02-01T07:16:19.958471Z",
@@ -12414,7 +12187,6 @@
           "botOwner": "The Trade Desk",
           "value": "0.029848"
         },
-        "user_agent_patterns": null,
         "bot_name": "TTD Content"
       },
       "last_updated": "2026-02-01T07:16:19.958506Z",
@@ -12451,7 +12223,6 @@
           "botOwner": "Twilio, Inc.",
           "value": "0.243885"
         },
-        "user_agent_patterns": null,
         "bot_name": "Twilio Proxy"
       },
       "last_updated": "2026-02-01T07:16:19.958306Z",
@@ -12525,7 +12296,6 @@
           "botOwner": "Twitter",
           "value": "0.333034"
         },
-        "user_agent_patterns": null,
         "bot_name": "twitterbot"
       },
       "last_updated": "2026-02-01T07:16:19.958309Z",
@@ -12562,7 +12332,6 @@
           "botOwner": "Updown",
           "value": "0.00938"
         },
-        "user_agent_patterns": null,
         "bot_name": "UpDownBot"
       },
       "last_updated": "2026-02-01T07:16:19.958710Z",
@@ -12599,7 +12368,6 @@
           "botOwner": "Uptime",
           "value": "0.058067"
         },
-        "user_agent_patterns": null,
         "bot_name": "Uptime LLC"
       },
       "last_updated": "2026-02-01T07:16:19.958414Z",
@@ -12636,7 +12404,6 @@
           "botOwner": "UptimeBot",
           "value": "0.003493"
         },
-        "user_agent_patterns": null,
         "bot_name": "UptimeBot"
       },
       "last_updated": "2026-02-01T07:16:19.958909Z",
@@ -12673,7 +12440,6 @@
           "botOwner": "Uptimerobot",
           "value": "0.420693"
         },
-        "user_agent_patterns": null,
         "bot_name": "UptimeRobot"
       },
       "last_updated": "2026-02-01T07:16:19.958278Z",
@@ -12710,7 +12476,6 @@
           "botOwner": "Uptimia",
           "value": "0.006456"
         },
-        "user_agent_patterns": null,
         "bot_name": "Uptimia"
       },
       "last_updated": "2026-02-01T07:16:19.958735Z",
@@ -12747,7 +12512,6 @@
           "botOwner": "Uptrends GmbH",
           "value": "0.066029"
         },
-        "user_agent_patterns": null,
         "bot_name": "UptrendsBot"
       },
       "last_updated": "2026-02-01T07:16:19.958408Z",
@@ -12784,7 +12548,6 @@
           "botOwner": "Automattic",
           "value": "0.012139"
         },
-        "user_agent_patterns": null,
         "bot_name": "VaultPress"
       },
       "last_updated": "2026-02-01T07:16:19.958703Z",
@@ -12932,7 +12695,6 @@
           "botOwner": "WorldPay",
           "value": "0.006593"
         },
-        "user_agent_patterns": null,
         "bot_name": "WorldPay"
       },
       "last_updated": "2026-02-01T07:16:19.958776Z",
@@ -12969,7 +12731,6 @@
           "botOwner": "Wormly",
           "value": "0.00317"
         },
-        "user_agent_patterns": null,
         "bot_name": "WormlyBot"
       },
       "last_updated": "2026-02-01T18:50:43.206812Z",
@@ -13006,7 +12767,6 @@
           "botOwner": "Wovn Technologies, Inc.",
           "value": "0.003616"
         },
-        "user_agent_patterns": null,
         "bot_name": "WOVN Crawler"
       },
       "last_updated": "2026-02-01T07:16:19.958830Z",
@@ -13074,7 +12834,6 @@
         "ip_ranges": [],
         "verification_method": "cloudflare-verified",
         "rank": "",
-        "user_agent_patterns": null,
         "bot_name": "WPMUDEV Uptime Monitor 5.0",
         "original": {
           "botName": "WPMUDEV Uptime Monitor 5.0",
@@ -13154,7 +12913,6 @@
           "botOwner": "Yahoo",
           "value": "0.016863"
         },
-        "user_agent_patterns": null,
         "bot_name": "Yahoo Ad Monitoring"
       },
       "last_updated": "2026-02-01T07:16:19.958608Z",
@@ -13191,7 +12949,6 @@
           "botOwner": "Yahoo Japan Corporation",
           "value": "0.006325"
         },
-        "user_agent_patterns": null,
         "bot_name": "Yahoo Japan"
       },
       "last_updated": "2026-02-01T07:16:19.958840Z",
@@ -13228,7 +12985,6 @@
           "botOwner": "Yahoo",
           "value": "0.018126"
         },
-        "user_agent_patterns": null,
         "bot_name": "Yahoo Slurp"
       },
       "last_updated": "2026-02-01T07:16:19.958577Z",
@@ -13265,7 +13021,6 @@
           "botOwner": "Yahoo",
           "value": "0.297804"
         },
-        "user_agent_patterns": null,
         "bot_name": "YahooMailProxy"
       },
       "last_updated": "2026-02-01T07:16:19.958288Z",
@@ -13413,7 +13168,6 @@
           "botOwner": "Yandex",
           "value": "2.35232"
         },
-        "user_agent_patterns": null,
         "bot_name": "YandexBot"
       },
       "last_updated": "2026-02-01T07:16:19.958232Z",
@@ -13450,7 +13204,6 @@
           "botOwner": "Naver",
           "value": "0.050921"
         },
-        "user_agent_patterns": null,
         "bot_name": "Yeti"
       },
       "last_updated": "2026-02-01T07:16:19.958421Z",
@@ -13487,7 +13240,6 @@
           "botOwner": "Yext",
           "value": "0.005964"
         },
-        "user_agent_patterns": null,
         "bot_name": "Yext Inc"
       },
       "last_updated": "2026-02-01T07:16:19.958760Z",
@@ -13598,7 +13350,6 @@
           "botOwner": "Zapier Inc.",
           "value": "0.002857"
         },
-        "user_agent_patterns": null,
         "bot_name": "Zapier"
       },
       "last_updated": "2026-02-01T18:50:43.206913Z",
@@ -13635,7 +13386,6 @@
           "botOwner": "ZoomInfo",
           "value": "0.006706"
         },
-        "user_agent_patterns": null,
         "bot_name": "ZoomInfo"
       },
       "last_updated": "2026-02-01T07:16:19.958802Z",

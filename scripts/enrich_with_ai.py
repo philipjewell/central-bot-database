@@ -7,6 +7,61 @@ from pathlib import Path
 from typing import Dict
 from datetime import datetime
 
+def bot_has_changed(original: Dict, updated: Dict) -> bool:
+    """
+    Compare two bot dictionaries to see if any meaningful fields changed.
+
+    Compares: user_agent, operator, description, sources, raw_data,
+              purpose, impact_of_blocking, categories
+
+    Returns True if any field has changed, False otherwise.
+    """
+    # Fields to compare (excluding last_updated)
+    fields_to_compare = [
+        "user_agent",
+        "operator",
+        "description",
+        "purpose",
+        "impact_of_blocking"
+    ]
+
+    # Compare simple fields
+    for field in fields_to_compare:
+        if original.get(field) != updated.get(field):
+            return True
+
+    # Compare sources (as sets to ignore order)
+    original_sources = set(original.get("sources", []))
+    updated_sources = set(updated.get("sources", []))
+    if original_sources != updated_sources:
+        return True
+
+    # Compare categories (nested dict)
+    original_categories = original.get("categories", {})
+    updated_categories = updated.get("categories", {})
+    if original_categories != updated_categories:
+        return True
+
+    # Compare raw_data (nested dict)
+    original_raw = original.get("raw_data", {})
+    updated_raw = updated.get("raw_data", {})
+
+    # Compare all keys in raw_data
+    all_raw_keys = set(original_raw.keys()) | set(updated_raw.keys())
+    for key in all_raw_keys:
+        original_val = original_raw.get(key)
+        updated_val = updated_raw.get(key)
+
+        # For lists (like ip_ranges), compare as sets to ignore order
+        if isinstance(original_val, list) and isinstance(updated_val, list):
+            if set(original_val) != set(updated_val):
+                return True
+        elif original_val != updated_val:
+            return True
+
+    # No changes detected
+    return False
+
 # Site categories for classification
 SITE_CATEGORIES = [
     "ecommerce",
@@ -56,24 +111,33 @@ def normalize_category_name(category: str) -> str:
 
 def enrich_bot(bot: Dict, bot_num: int, total: int) -> Dict:
     """Enrich a single bot with AI-generated content"""
-    
+
+    # Take snapshot of original state
+    original_state = {
+        "user_agent": bot.get("user_agent"),
+        "operator": bot.get("operator"),
+        "description": bot.get("description"),
+        "sources": bot.get("sources", [])[:],  # copy list
+        "raw_data": bot.get("raw_data", {}).copy(),
+        "purpose": bot.get("purpose"),
+        "impact_of_blocking": bot.get("impact_of_blocking"),
+        "categories": bot.get("categories", {}).copy()
+    }
+
     user_agent = bot.get("user_agent", "")
     operator = bot.get("operator", "")
     existing_desc = bot.get("description", "")
-    
+
     # Check if bot is already fully enriched
     has_purpose = bool(bot.get("purpose"))
     has_impact = bool(bot.get("impact_of_blocking"))
     has_categories = bool(bot.get("categories"))
-    
+
     if has_purpose and has_impact and has_categories:
         # Already fully enriched - skip
         source_type = "manual" if "manual" in bot.get("sources", []) else "external"
         print(f"  [{bot_num}/{total}] ⊙ Skipping {user_agent} (already enriched, {source_type})")
         return bot
-    
-    # Bot needs enrichment - will update timestamp
-    was_enriched = False
     
     # Only enrich what's missing
     print(f"  [{bot_num}/{total}] → Enriching {user_agent}...")
@@ -184,12 +248,12 @@ Your JSON response (use exact category names):"""
             print(f"      ✗ Error parsing categories: {e}")
             # Default to neutral for all categories
             bot["categories"] = {cat: "neutral" for cat in SITE_CATEGORIES}
-            was_enriched = True
-    
-    # Update timestamp only if we enriched the bot
-    if was_enriched:
+
+    # Compare final state to original state
+    # Only update timestamp if something actually changed
+    if bot_has_changed(original_state, bot):
         bot["last_updated"] = datetime.utcnow().isoformat() + "Z"
-    
+
     return bot
 
 def enrich_with_ai():

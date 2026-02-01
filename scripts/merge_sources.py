@@ -11,6 +11,61 @@ def normalize_user_agent(ua: str) -> str:
     """Normalize user agent strings for comparison"""
     return ua.lower().strip().replace('-', '').replace('_', '')
 
+def bot_has_changed(original: Dict, updated: Dict) -> bool:
+    """
+    Compare two bot dictionaries to see if any meaningful fields changed.
+
+    Compares: user_agent, operator, description, sources, raw_data,
+              purpose, impact_of_blocking, categories
+
+    Returns True if any field has changed, False otherwise.
+    """
+    # Fields to compare (excluding last_updated)
+    fields_to_compare = [
+        "user_agent",
+        "operator",
+        "description",
+        "purpose",
+        "impact_of_blocking"
+    ]
+
+    # Compare simple fields
+    for field in fields_to_compare:
+        if original.get(field) != updated.get(field):
+            return True
+
+    # Compare sources (as sets to ignore order)
+    original_sources = set(original.get("sources", []))
+    updated_sources = set(updated.get("sources", []))
+    if original_sources != updated_sources:
+        return True
+
+    # Compare categories (nested dict)
+    original_categories = original.get("categories", {})
+    updated_categories = updated.get("categories", {})
+    if original_categories != updated_categories:
+        return True
+
+    # Compare raw_data (nested dict)
+    original_raw = original.get("raw_data", {})
+    updated_raw = updated.get("raw_data", {})
+
+    # Compare all keys in raw_data
+    all_raw_keys = set(original_raw.keys()) | set(updated_raw.keys())
+    for key in all_raw_keys:
+        original_val = original_raw.get(key)
+        updated_val = updated_raw.get(key)
+
+        # For lists (like ip_ranges), compare as sets to ignore order
+        if isinstance(original_val, list) and isinstance(updated_val, list):
+            if set(original_val) != set(updated_val):
+                return True
+        elif original_val != updated_val:
+            return True
+
+    # No changes detected
+    return False
+
 def load_existing_database() -> List[Dict]:
     """Load existing enriched bots from data/bots.json if it exists"""
     db_file = Path("data/bots.json")
@@ -112,10 +167,21 @@ def load_staging_bots() -> List[Dict]:
 
 def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = False) -> Dict:
     """Merge two bot entries, preferring manual data, then newer data"""
+    # Take snapshot of original state (deep copy of fields we care about)
+    original_state = {
+        "user_agent": existing.get("user_agent"),
+        "operator": existing.get("operator"),
+        "description": existing.get("description"),
+        "sources": existing.get("sources", [])[:],  # copy list
+        "raw_data": existing.get("raw_data", {}).copy(),
+        "purpose": existing.get("purpose"),
+        "impact_of_blocking": existing.get("impact_of_blocking"),
+        "categories": existing.get("categories", {}).copy()
+    }
+
     merged = existing.copy()
-    was_updated = False
     mapper = get_category_mapper()
-    
+
     # Merge sources
     existing_sources = set(existing.get("sources", []))
     new_sources = set(new.get("sources", []))
@@ -124,12 +190,11 @@ def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = Fal
     # Only update if sources actually changed (compare sets to ignore order)
     if merged_sources_set != existing_sources:
         merged["sources"] = sorted(list(merged_sources_set))
-        was_updated = True
-    
+
     # Merge operator/category with priority: Cloudflare > Manual > Mapped
     existing_category = existing.get("operator", "")
     new_category = new.get("operator", "")
-    
+
     if existing_category != new_category:
         unified_category = mapper.merge_categories(
             existing_category, list(existing_sources),
@@ -137,49 +202,41 @@ def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = Fal
         )
         if unified_category != existing_category:
             merged["operator"] = unified_category
-            was_updated = True
-    
+
     # If preserve_enrichment is True, keep existing enrichment data
     if preserve_enrichment:
         # Only update technical details, not enrichment
         for key in ["description", "website"]:
             if key in new and new[key] and not existing.get(key):
                 merged[key] = new[key]
-                was_updated = True
-        
+
         # Keep existing enrichment if present
         if not existing.get("purpose") and new.get("purpose"):
             merged["purpose"] = new["purpose"]
-            was_updated = True
         if not existing.get("impact_of_blocking") and new.get("impact_of_blocking"):
             merged["impact_of_blocking"] = new["impact_of_blocking"]
-            was_updated = True
         if not existing.get("categories") and new.get("categories"):
             merged["categories"] = new["categories"]
-            was_updated = True
     else:
         # If new entry has manual source, prefer its data
         if "manual" in new.get("sources", []):
             for key in ["description", "operator", "purpose", "impact_of_blocking", "categories"]:
                 if key in new and new[key] and new[key] != existing.get(key):
                     merged[key] = new[key]
-                    was_updated = True
         else:
             # Otherwise, prefer non-empty values from new entry
             for key in ["description", "website"]:
                 if key in new and new[key] and not existing.get(key):
                     merged[key] = new[key]
-                    was_updated = True
-    
+
     # Merge raw_data (always update technical details)
     existing_raw = existing.get("raw_data", {})
     new_raw = new.get("raw_data", {})
-    
+
     merged_raw = existing_raw.copy()
     for key, value in new_raw.items():
         if key not in merged_raw or not merged_raw[key]:
             merged_raw[key] = value
-            was_updated = True
         elif key == "ip_ranges" and isinstance(value, list):
             # Merge IP ranges
             existing_ips = set(merged_raw.get("ip_ranges", []))
@@ -187,14 +244,14 @@ def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = Fal
             merged_ips = sorted(list(existing_ips | new_ips))
             if merged_ips != merged_raw.get("ip_ranges", []):
                 merged_raw["ip_ranges"] = merged_ips
-                was_updated = True
-    
+
     merged["raw_data"] = merged_raw
-    
-    # Only update timestamp if data actually changed
-    if was_updated:
+
+    # Compare final state to original state
+    # Only update timestamp if something actually changed
+    if bot_has_changed(original_state, merged):
         merged["last_updated"] = datetime.utcnow().isoformat() + "Z"
-    
+
     return merged
 
 def merge_sources():

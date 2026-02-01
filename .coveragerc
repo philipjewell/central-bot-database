@@ -1,6 +1,7 @@
 # Coverage.py configuration
 [run]
 source = scripts
+relative_files = true
 omit =
     */tests/*
     */venv/*

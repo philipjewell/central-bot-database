@@ -27,40 +27,55 @@
             </div>
 
             <div class="filters">
-                <select id="operatorFilter">
-                    <option value="">All Operators</option>
-                </select>
+                <div class="filter-group">
+                    <label for="operatorFilter">Operator:</label>
+                    <select id="operatorFilter">
+                        <option value="">All</option>
+                    </select>
+                </div>
 
-                <select id="sourceFilter">
-                    <option value="">All Sources</option>
-                    <option value="cloudflare-radar">Cloudflare Radar</option>
-                    <option value="ai-robots-txt">ai.robots.txt</option>
-                    <option value="manual">Manual Submissions</option>
-                </select>
+                <div class="filter-group">
+                    <label for="sourceFilter">Source:</label>
+                    <select id="sourceFilter">
+                        <option value="">All</option>
+                        <option value="cloudflare-radar">Cloudflare Radar</option>
+                        <option value="ai-robots-txt">ai.robots.txt</option>
+                        <option value="manual">Manual</option>
+                    </select>
+                </div>
 
-                <select id="categoryFilter">
-                    <option value="">All Site Categories</option>
-                    <option value="ecommerce">E-commerce</option>
-                    <option value="news">News</option>
-                    <option value="media">Media</option>
-                    <option value="blog">Blog</option>
-                    <option value="saas">SaaS</option>
-                    <option value="corporate">Corporate</option>
-                    <option value="documentation">Documentation</option>
-                    <option value="social">Social</option>
-                    <option value="portfolio">Portfolio</option>
-                    <option value="government">Government</option>
-                </select>
+                <div class="filter-group">
+                    <label for="categoryFilter">Site Type:</label>
+                    <select id="categoryFilter">
+                        <option value="">All Categories</option>
+                        <option value="ecommerce">E-commerce</option>
+                        <option value="news">News</option>
+                        <option value="media">Media</option>
+                        <option value="blog">Blog</option>
+                        <option value="saas">SaaS</option>
+                        <option value="corporate">Corporate</option>
+                        <option value="documentation">Documentation</option>
+                        <option value="social">Social</option>
+                        <option value="portfolio">Portfolio</option>
+                        <option value="government">Government</option>
+                    </select>
+                </div>
 
-                <select id="ratingFilter">
-                    <option value="">All Ratings</option>
-                    <option value="beneficial">✅ Beneficial</option>
-                    <option value="neutral">⚪ Neutral</option>
-                    <option value="harmful">❌ Harmful</option>
-                    <option value="not_applicable">➖ Not Applicable</option>
-                </select>
+                <div class="filter-group">
+                    <label for="ratingFilter">Rating:</label>
+                    <select id="ratingFilter">
+                        <option value="">All</option>
+                        <option value="beneficial">✅ Beneficial</option>
+                        <option value="neutral">⚪ Neutral</option>
+                        <option value="harmful">❌ Harmful</option>
+                        <option value="not_applicable">➖ Not Applicable</option>
+                    </select>
+                </div>
 
-                <button id="resetFilters">Reset Filters</button>
+                <button id="resetFilters">Reset</button>
+            </div>
+            <div class="filter-hint">
+                💡 Tip: Use "Site Type" + "Rating" together to filter (e.g., show bots that are ✅ Beneficial for E-commerce)
             </div>
         </div>
 
@@ -77,6 +92,15 @@
                 <div class="stat-value" id="operatorCount">-</div>
                 <div class="stat-label">Operators</div>
             </div>
+            <div class="stat-card legend-card">
+                <div class="stat-label">Rating Legend</div>
+                <div class="legend-items">
+                    <span>✅ Beneficial</span>
+                    <span>⚪ Neutral</span>
+                    <span>❌ Harmful</span>
+                    <span>➖ N/A</span>
+                </div>
+            </div>
         </div>
 
         <div class="table-container">
@@ -89,7 +113,10 @@
                             <span class="help-icon" title="Bot category/classification - represents either the organization running the bot (e.g., Google, Amazon) or its functional category (e.g., Search Engines, Monitoring & Analytics)">ⓘ</span>
                         </th>
                         <th data-sort="purpose">Purpose</th>
-                        <th>Category Rating</th>
+                        <th>
+                            Ratings by Site Type
+                            <span class="help-icon" title="Shows rating for all 10 site categories in order: E-commerce, News, Media, Blog, SaaS, Corporate, Documentation, Social, Portfolio, Government. Hover over each emoji for details.">ⓘ</span>
+                        </th>
                         <th data-sort="sources">Sources</th>
                         <th>Details</th>
                     </tr>

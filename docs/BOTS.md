@@ -1,8 +1,8 @@
 # Bot Database
 
-Last generated: 2026-02-01 16:30 UTC
+Last generated: 2026-02-01 19:13 UTC
 
-Total bots: **331**
+Total bots: **368**
 
 ## Legend
 
@@ -26,15 +26,15 @@ Total bots: **331**
 
 ## Table of Contents
 
-- [AI Assistant](#ai-assistant) (3 bots)
-- [AI Crawler](#ai-crawler) (45 bots)
+- [AI Assistant](#ai-assistant) (4 bots)
+- [AI Crawler](#ai-crawler) (49 bots)
 - [AI Search](#ai-search) (3 bots)
 - [Academic Research](#academic-research) (3 bots)
 - [Accessibility](#accessibility) (6 bots)
-- [Advertising & Marketing](#advertising-&-marketing) (21 bots)
-- [Aggregator](#aggregator) (5 bots)
+- [Advertising & Marketing](#advertising-&-marketing) (24 bots)
+- [Aggregator](#aggregator) (6 bots)
 - [Anthropic](#anthropic) (1 bot)
-- [Archiver](#archiver) (2 bots)
+- [Archiver](#archiver) (3 bots)
 - [Awario](#awario) (1 bot)
 - [Big Sur AI that fetches website content to enable AI-powered web agents, sales assistants, and content marketing solutions for businesses](#big-sur-ai-that-fetches-website-content-to-enable-ai-powered-web-agents,-sales-assistants,-and-content-marketing-solutions-for-businesses) (1 bot)
 - [ByteDance](#bytedance) (2 bots)
@@ -42,26 +42,23 @@ Total bots: **331**
 - [Datenbank](#datenbank) (1 bot)
 - [DeepSeek](#deepseek) (1 bot)
 - [Devin AI](#devin-ai) (1 bot)
-- [Echobox](#echobox) (1 bot)
 - [Example Company](#example-company) (1 bot)
-- [Feed Fetcher](#feed-fetcher) (8 bots)
-- [Mistral](#mistral) (1 bot)
+- [Feed Fetcher](#feed-fetcher) (13 bots)
 - [Mistral AI](#mistral-ai) (1 bot)
-- [Monitoring & Analytics](#monitoring-&-analytics) (51 bots)
-- [Other](#other) (4 bots)
-- [Page Preview](#page-preview) (17 bots)
-- [Search Engine Crawler](#search-engine-crawler) (23 bots)
-- [Search Engine Optimization](#search-engine-optimization) (32 bots)
-- [Security](#security) (11 bots)
+- [Monitoring & Analytics](#monitoring-&-analytics) (60 bots)
+- [Other](#other) (6 bots)
+- [Page Preview](#page-preview) (18 bots)
+- [Search Engine Crawler](#search-engine-crawler) (25 bots)
+- [Search Engine Optimization](#search-engine-optimization) (36 bots)
+- [Security](#security) (16 bots)
 - [Unclear at this time.](#unclear-at-this-time) (1 bot)
 - [WEBSPARK](#webspark) (1 bot)
-- [Webhooks](#webhooks) (22 bots)
+- [Webhooks](#webhooks) (24 bots)
 - [[Ai2](https://allenai.org/crawler)](#[ai2]https:allenaiorgcrawler) (2 bots)
 - [[Amazon](https://amazon.com)](#[amazon]https:amazoncom) (2 bots)
 - [[Andi](https://andisearch.com/)](#[andi]https:andisearchcom) (1 bot)
 - [[Anthropic](https://www.anthropic.com)](#[anthropic]https:wwwanthropiccom) (4 bots)
 - [[Apple](https://support.apple.com/en-us/119829#datausage)](#[apple]https:supportapplecomen-us119829#datausage) (1 bot)
-- [[Atlassian](https://www.atlassian.com)](#[atlassian]https:wwwatlassiancom) (1 bot)
 - [[BuddyBotLearning](https://www.buddybotlearning.com)](#[buddybotlearning]https:wwwbuddybotlearningcom) (1 bot)
 - [[Ceramic AI](https://ceramic.ai/)](#[ceramic-ai]https:ceramicai) (1 bot)
 - [[Cloudflare](https://developers.cloudflare.com/autorag)](#[cloudflare]https:developerscloudflarecomautorag) (1 bot)
@@ -167,7 +164,27 @@ Total bots: **331**
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-01-25*
+*Last updated: 2026-02-01*
+
+---
+
+### MistralAI-User
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Assistant | `MistralAI-User` | cloudflare-verified | ai-robots-txt, cloudflare-radar |
+
+**Purpose:** MistralAI-User is a chatbot operated by Mistral that provides information about itself, its purpose, or other details, with no apparent AI-related functionality. Its primary function appears to be to serve as a knowledge repository or informational hub for users inquiring about the bot's existence and capabilities.
+
+**Impact of Blocking:** Blocking MistralAI-User would eliminate users' access to basic information about the bot, including its purpose and available details, potentially disrupting their ability to understand its role as a knowledge repository or informational hub. This blocking could also limit users' ability to find context-specific information related to Mistral's specific capabilities or interests.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
 
 ---
 
@@ -317,6 +334,26 @@ The ChatGLM-Spider bot likely exists to provide search capabilities for users, p
 
 ---
 
+### Echobot Bot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Crawler | `Echobot Bot` | cloudflare-verified | ai-robots-txt, cloudflare-radar |
+
+**Purpose:** The Echobot Bot is an AI data scraper designed to extract specific information from various sources, but its true nature and capabilities are unclear. Its purpose remains unknown or misunderstood, and more information can be found at the provided link.
+
+**Impact of Blocking:** Blocking the Echobot Bot could potentially disrupt data extraction operations for other users who rely on the bot to scrape information from various sources, resulting in a loss of access to valuable data and insights. Specifically, blocking the bot could prevent users from accessing data through APIs or web scraping platforms that utilize its capabilities, hindering their ability to process and analyze large datasets.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-02-01*
+
+---
+
 ### GPTBot
 
 | Bot Category | User Agent | Verification | Sources |
@@ -352,6 +389,26 @@ The ChatGLM-Spider bot likely exists to provide search capabilities for users, p
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Google NotebookLM
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Crawler | `Google NotebookLM` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Google NotebookLM is a conversational AI designed to summarize and extract insights from written content, using natural language processing (NLP) capabilities powered by large language models like LM (Large Language Model). Its purpose is to assist users in quickly summarizing information from various sources, such as articles, documents, and websites.
+
+**Impact of Blocking:** Blocking the Google NotebookLM bot could significantly hinder users' ability to quickly summarize and extract insights from written content, particularly if they rely on this feature for research or work purposes. This could lead to a loss of productivity and time spent manually summarizing large amounts of text, as well as reduced access to concise summaries in online articles and documents.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
 *Last updated: 2026-02-01*
 
@@ -512,6 +569,26 @@ The ChatGLM-Spider bot likely exists to provide search capabilities for users, p
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
+### ICC Crawler
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Crawler | `ICC Crawler` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The ICC Crawler is a web crawler designed to extract and process data from online resources, specifically the International Cricket Council (ICC) website, in order to gather and provide accurate information for users. Its primary purpose is to crawl, index, and make accessible publicly available content on the ICC website through its interface.
+
+**Impact of Blocking:** Blocking the ICC Crawler could lead to a loss of easily accessible and up-to-date information on the ICC website, including schedules, scores, match reports, and team statistics, making it difficult for users to find accurate information about cricket matches and teams. This would result in reduced visibility for these resources, potentially hindering research, analysis, and fan engagement.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
 *Last updated: 2026-02-01*
 
@@ -981,6 +1058,26 @@ However, based on the name "Poggio-Citations", it is likely that this bot genera
 
 ---
 
+### atlassian-bot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Crawler | `atlassian-bot` | cloudflare-verified | ai-robots-txt, cloudflare-radar |
+
+**Purpose:** The atlassian-bot is a web crawler that indexes website content to power Atlassian's AI search, assistants, and agents in their Rovo GenAI product. Its purpose is to provide improved search functionality for users across Atlassian's platform.
+
+**Impact of Blocking:** Blocking the atlassian-bot could result in reduced search results and incomplete information for users attempting to find specific documents, projects, or other content within Atlassian's platforms. This may lead to frustrated users experiencing difficulty locating relevant data, potentially impacting their productivity and work efficiency.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
 ### iAskBot
 
 | Bot Category | User Agent | Verification | Sources |
@@ -1185,7 +1282,7 @@ The "laion-huggingface-processor" bot is likely a language processing and machin
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-01-11*
+*Last updated: 2026-02-01*
 
 ---
 
@@ -1207,7 +1304,7 @@ The kb.dk_bot likely exists to assist with knowledge management and retrieval in
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2025-11-30*
+*Last updated: 2026-02-01*
 
 ---
 
@@ -1353,7 +1450,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-01-25*
+*Last updated: 2026-02-01*
 
 ---
 
@@ -1579,6 +1676,26 @@ The purpose of Google Firebase is to provide a set of cloud-based tools and serv
 
 ---
 
+### NostoCrawlerBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Advertising & Marketing | `NostoCrawlerBot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The NostoCrawlerBot is a marketing-focused automation tool designed to crawl and analyze websites, identifying relevant advertising opportunities and providing insights for targeted advertising campaigns. Its primary purpose is to streamline the discovery of potential ad placements, increasing efficiency and effectiveness in digital advertising efforts.
+
+**Impact of Blocking:** Blocking the NostoCrawlerBot could disrupt marketing teams' ability to access detailed website analytics and identify high-quality ad opportunities, potentially leading to reduced targeting accuracy and lower return on investment (ROI) for their digital advertising campaigns. The loss of real-time website crawling insights may also hinder the discovery of new and relevant ad placements, forcing marketers to rely more heavily on manual research methods or alternative, potentially less effective tools.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
 ### Outbrain
 
 | Bot Category | User Agent | Verification | Sources |
@@ -1614,6 +1731,46 @@ The purpose of Google Firebase is to provide a set of cloud-based tools and serv
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Quantcastbot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Advertising & Marketing | `Quantcastbot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Quantcastbot is a marketing automation tool designed to help advertising and marketing professionals optimize their campaigns, track performance, and make data-driven decisions. It serves as a platform for real-time analytics, reporting, and insights to measure ad effectiveness and improve overall campaign efficiency.
+
+**Impact of Blocking:** Blocking the Quantcastbot could result in the loss of access to its real-time analytics and reporting capabilities, preventing advertising and marketing professionals from tracking campaign performance and making data-driven decisions in real-time. This would hinder their ability to optimize campaigns, measure ad effectiveness, and improve overall campaign efficiency.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Reelevant
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Advertising & Marketing | `Reelevant` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Reelevant bot is a conversational AI designed to assist with advertising and marketing-related tasks, aiming to provide personalized and relevant suggestions to users. Its purpose is to help businesses improve their marketing strategies and enhance customer engagement through data-driven insights and creative ideas.
+
+**Impact of Blocking:** Blocking the Reelevant bot could result in a loss of access to personalized advertising and marketing suggestions, potentially hindering businesses' ability to gather unique insights and creative ideas for their campaigns. The blocking could also lead to the interruption of data-driven conversations with users, resulting in missed opportunities for customer engagement and strategy improvement.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
 *Last updated: 2026-02-01*
 
@@ -1865,6 +2022,26 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 
 ---
 
+### eMoney Advisor
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Aggregator | `eMoney Advisor` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The eMoney Advisor is a financial aggregation bot that provides personalized investment advice and portfolio management services to users, helping them make informed decisions about their financial investments. Its purpose is to streamline access to expert investment guidance and tools, making it easier for individuals to manage their wealth effectively.
+
+**Impact of Blocking:** Blocking the eMoney Advisor bot would significantly limit users' ability to receive personalized investment advice and portfolio management services, resulting in a loss of access to expert guidance and tools that could help them make informed decisions about their financial investments. Specifically, users would no longer be able to ask for customized investment recommendations or track the performance of their portfolios in real-time.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
 ## Anthropic
 
 ### Claude-Web
@@ -1905,7 +2082,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-12-14*
+*Last updated: 2026-02-01*
 
 ---
 
@@ -1924,6 +2101,26 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Internet Archive - Archive-It
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Archiver | `Internet Archive - Archive-It` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Internet Archive's Archive-It bot is a digital preservation service that automatically collects and archives websites, web pages, and online content before they are removed or go offline. Its purpose is to capture and preserve internet history for future research, education, and cultural significance.
+
+**Impact of Blocking:** Blocking the Internet Archive - Archive-It bot would likely result in the loss of archived versions of websites, web pages, and online content that are currently preserved through its automated collection process, preventing researchers, educators, and the public from accessing these historical resources for future study, reference, or cultural significance. This would also affect the preservation of internet history, with potentially significant consequences for documenting and understanding online activities, events, and cultural phenomena.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
 *Last updated: 2026-02-01*
 
@@ -2103,28 +2300,6 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 
 ---
 
-## Echobox
-
-### Echobot Bot
-
-| Bot Category | User Agent | Verification | Sources |
-|--------------|------------|--------------|---------|
-| Echobox | `Echobot Bot` | Not specified | ai-robots-txt |
-
-**Purpose:** The Echobot Bot is an AI data scraper designed to extract specific information from various sources, but its true nature and capabilities are unclear. Its purpose remains unknown or misunderstood, and more information can be found at the provided link.
-
-**Impact of Blocking:** Blocking the Echobot Bot could potentially disrupt data extraction operations for other users who rely on the bot to scrape information from various sources, resulting in a loss of access to valuable data and insights. Specifically, blocking the bot could prevent users from accessing data through APIs or web scraping platforms that utilize its capabilities, hindering their ability to process and analyze large datasets.
-
-**Recommendations by Site Type:**
-
-| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
-|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful |
-
-*Last updated: 2026-02-01*
-
----
-
 ## Example Company
 
 ### ExampleBot/1.0
@@ -2153,6 +2328,26 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 ---
 
 ## Feed Fetcher
+
+### Blogtrottr
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Feed Fetcher | `Blogtrottr` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Blogtrottr bot is designed to automate tasks related to blogging, specifically feeding content from one platform to another, ensuring that blog posts are syndicated across various outlets. It exists to simplify the process of publishing and sharing content on multiple platforms efficiently and consistently.
+
+**Impact of Blocking:** Blocking the Blogtrottr bot could disrupt the seamless syndication of blog posts across multiple platforms, resulting in inconsistent publication schedules and potential delays in content dissemination. This would likely impact the authors and publishers who rely on the bot to efficiently publish their work on various outlets, hindering their ability to reach a broader audience.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
 
 ### Feedbin
 
@@ -2209,6 +2404,26 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-02-01*
+
+---
+
+### FlipboardRSS
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Feed Fetcher | `FlipboardRSS` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The FlipboardRSS bot is an automated feed fetcher designed to retrieve and aggregate content from various RSS feeds, updating a user's Flipboard account with new articles in real-time or at set intervals. Its purpose is to simplify the process of staying up-to-date with news and interests by continuously fetching and displaying fresh content from subscribed sources.
+
+**Impact of Blocking:** Blocking the FlipboardRSS bot would prevent users from receiving automated updates of new articles from their subscribed RSS feeds, resulting in a loss of real-time or scheduled updates that simplify staying informed about news and interests. This would particularly impact users who rely on the bot's automatic feed refresh to discover new content without actively searching for it.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
 *Last updated: 2026-02-01*
 
@@ -2274,6 +2489,26 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 
 ---
 
+### MonitoRSS
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Feed Fetcher | `MonitoRSS` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** MonitoRSS is a bot designed to fetch and retrieve RSS feeds from various sources, making them available for monitoring and analysis. Its purpose is to automate feed fetching, allowing users to stay informed about their desired topics or updates without manually checking multiple sources.
+
+**Impact of Blocking:** Blocking MonitoRSS could significantly impact a user's ability to monitor and analyze RSS feeds from various sources, resulting in the loss of automated feed fetching functionality and reduced visibility into updates from these sources. As a result, users may need to manually check multiple sources for new content, potentially leading to decreased efficiency and accuracy in tracking their desired topics or updates.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
 ### Overcast
 
 | Bot Category | User Agent | Verification | Sources |
@@ -2316,23 +2551,46 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 
 ---
 
-## Mistral
-
-### MistralAI-User
+### Protopage
 
 | Bot Category | User Agent | Verification | Sources |
 |--------------|------------|--------------|---------|
-| Mistral | `MistralAI-User` | Not specified | ai-robots-txt |
+| Feed Fetcher | `Protopage` | cloudflare-verified | cloudflare-radar |
 
-**Purpose:** MistralAI-User is a chatbot operated by Mistral that provides information about itself, its purpose, or other details, with no apparent AI-related functionality. Its primary function appears to be to serve as a knowledge repository or informational hub for users inquiring about the bot's existence and capabilities.
+**Purpose:** I couldn't find any information about a specific bot named "Protopage" or its purpose. However, I can suggest some possible bots that may be related to this name:
 
-**Impact of Blocking:** Blocking MistralAI-User would eliminate users' access to basic information about the bot, including its purpose and available details, potentially disrupting their ability to understand its role as a knowledge repository or informational hub. This blocking could also limit users' ability to find context-specific information related to Mistral's specific capabilities or interests.
+* Protopage: a wiki-driven knowledge base that provides information on scientific topics, particularly in the fields of biology and medicine.
+* Protopage Bot: a maintenance bot used by the Protopage wiki to automate tasks such as updating links, removing broken links, and more.
+
+If you could provide more context or clarify which Protopage bot you are referring to, I'll be happy to help.
+
+**Impact of Blocking:** Blocking the "Protopage Bot" may result in issues with link updates and broken link removals on the wiki, potentially causing outdated or inaccessible information to remain. This could lead to a decrease in the overall quality and accuracy of scientific content, as it may take longer for links to be corrected.
 
 **Recommendations by Site Type:**
 
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
+### rss2tg_bot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Feed Fetcher | `rss2tg_bot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The rss2tg_bot is a bot designed to fetch and deliver RSS feeds from various sources to users, allowing them to stay updated on their favorite topics and interests. Its purpose is to serve as a feed fetcher operator for users to access and consume RSS content.
+
+**Impact of Blocking:** Blocking the rss2tg_bot would significantly impact users who rely on it to automatically fetch and deliver RSS feeds, losing their ability to stay updated on their favorite topics and interests. Specifically, users would no longer receive updates on new content from their subscribed feeds, leading to missed notifications and reduced access to timely information.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
 *Last updated: 2026-02-01*
 
@@ -2398,7 +2656,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial |
 
-*Last updated: 2026-01-25*
+*Last updated: 2026-02-01*
 
 ---
 
@@ -2462,6 +2720,26 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 
 ---
 
+### BinaryCanary
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `BinaryCanary` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** BinaryCanary is a monitoring and analytics bot designed to track and alert on system performance issues, allowing operators to identify and resolve problems before they impact business operations. Its purpose is to provide real-time insights and early warning systems for organizations to maintain optimal system stability and efficiency.
+
+**Impact of Blocking:** Blocking BinaryCanary would significantly reduce the visibility into system performance issues, potentially leading to undetected problems and decreased system stability, as operators would no longer receive real-time alerts and insights to identify and resolve issues before they impact business operations. This could result in delayed resolutions, increased downtime, and potential losses for organizations reliant on timely system monitoring.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
 ### BlogVault
 
 | Bot Category | User Agent | Verification | Sources |
@@ -2477,6 +2755,26 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
+### BugsNag
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `BugsNag` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The BugsNag bot is designed to monitor and analyze system or application issues, alerting operators when problems occur to ensure prompt resolution and minimize downtime. Its purpose is to identify and notify technical staff of potential software bugs or performance issues, enabling proactive maintenance and support.
+
+**Impact of Blocking:** Blocking the BugsNag bot would significantly limit a monitoring team's ability to receive timely alerts about system or application issues, potentially leading to delayed detection and resolution of problems, which could result in increased downtime and reduced system availability. This would also obscure visibility into performance metrics and error patterns, making it more challenging for technical staff to identify and address potential software bugs or issues.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
 *Last updated: 2026-02-01*
 
@@ -2657,6 +2955,26 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Google Schema Markup Testing Tool
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `Google Schema Markup Testing Tool` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Google Schema Markup Testing Tool is a tool designed to help operators test and optimize their website's schema markup, ensuring accurate and consistent representation of content in search engine results pages (SERPs). Its purpose is to facilitate better monitoring and analytics of website data, providing insights to improve user experience and search rankings.
+
+**Impact of Blocking:** Blocking this bot could significantly impact the operator's ability to accurately test and optimize their schema markup, resulting in potential errors and inconsistencies in search engine results pages (SERPs). Specifically, operators may lose access to real-time data insights that enable them to refine their schema markup, potentially affecting their website's visibility and ranking in search results.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral |
 
 *Last updated: 2026-02-01*
 
@@ -2862,6 +3180,26 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 
 ---
 
+### NixStatsMonitoringBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `NixStatsMonitoringBot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The NixStatsMonitoringBot is a monitoring and analytics bot designed to track system performance, detect anomalies, and provide real-time insights to optimize network operations. Its purpose is to ensure efficient and reliable IT infrastructure management.
+
+**Impact of Blocking:** Blocking the NixStatsMonitoringBot would likely result in loss of real-time monitoring and anomaly detection capabilities for system performance, causing potential system downtime, data corruption, or security breaches due to undetected issues. This would also hinder timely identification and optimization of network operations, leading to decreased IT infrastructure efficiency and reliability.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
 ### Nodeping
 
 | Bot Category | User Agent | Verification | Sources |
@@ -2937,6 +3275,46 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Parse.ly
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `Parse.ly` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Parse.ly bot is a monitoring and analytics tool that helps track and analyze website engagement, reader behavior, and content performance metrics to provide insights for content creators and publishers. Its purpose is to facilitate data-driven decision making by analyzing online interactions with published content.
+
+**Impact of Blocking:** Blocking the Parse.ly bot could result in the loss of real-time analytics and engagement tracking data, including metrics such as page views, unique visitors, bounce rates, and time-on-page, which are crucial for content creators and publishers to understand their audience behavior and make informed decisions about their online content. By blocking this functionality, users would no longer be able to gain insights into how their published content is performing in terms of reader engagement and interaction with it.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
+### PingPing Bot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `PingPing Bot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The PingPing Bot, an operational tool under Monitoring & Analytics, is designed to perform routine checks and maintenance tasks, ensuring the smooth functioning of underlying systems. Its primary purpose is to detect issues, alert operators, and provide data-driven insights to support proactive problem-solving and system optimization.
+
+**Impact of Blocking:** Blocking the PingPing Bot would result in the loss of real-time monitoring and detection capabilities for underlying systems, potentially leading to undetected issues and reduced visibility into system performance and potential problems, thereby hindering proactive problem-solving and optimization efforts. This could lead to delayed response times, increased downtime, and decreased overall system reliability.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
 *Last updated: 2026-02-01*
 
@@ -3162,6 +3540,26 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 
 ---
 
+### Thousand Eyes Cloud Agent
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `Thousand Eyes Cloud Agent` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Thousand Eyes Cloud Agent is a monitoring and analytics tool that enables operators to collect, process, and analyze data from various cloud-based sources, providing real-time insights into system performance, security, and other critical aspects of cloud infrastructure. Its purpose is to help ensure the efficient operation and secure management of cloud resources.
+
+**Impact of Blocking:** Blocking the Thousand Eyes Cloud Agent would significantly limit an organization's ability to monitor and analyze its cloud-based systems in real-time, resulting in reduced visibility into system performance, security threats, and resource utilization. This could lead to delayed incident detection, compromised system availability, and increased risk of security breaches or downtime.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
+
+*Last updated: 2026-02-01*
+
+---
+
 ### Trendiction Bot
 
 | Bot Category | User Agent | Verification | Sources |
@@ -3302,6 +3700,26 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 
 ---
 
+### WPMUDEV Uptime Monitor 5.0
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `WPMUDEV Uptime Monitor 5.0` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The WPMUDEV Uptime Monitor 5.0 is a monitoring and analytics bot designed to track website uptime and alert users when their site goes down or experiences performance issues, ensuring businesses and individuals can quickly identify and resolve downtime. Its purpose is to provide real-time monitoring and notification services for website owners and administrators.
+
+**Impact of Blocking:** Blocking the WPMUDEV Uptime Monitor 5.0 bot could result in a loss of real-time alerts and notifications about website downtime, potentially causing users to go undetected for an extended period without knowing their site is experiencing performance issues. This would limit users' ability to promptly identify and resolve issues with their websites, leading to potential lost revenue or data exposure.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
 ### WormlyBot
 
 | Bot Category | User Agent | Verification | Sources |
@@ -3318,7 +3736,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2025-11-30*
+*Last updated: 2026-02-01*
 
 ---
 
@@ -3337,6 +3755,26 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-02-01*
+
+---
+
+### deadlinkchecker
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `deadlinkchecker` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The DeadLinkChecker bot is a monitoring tool designed to identify and notify users about broken or "dead" links, typically used in digital content, social media, or online communities. Its purpose is to ensure that links are functioning correctly and provide an alternative solution when they fail.
+
+**Impact of Blocking:** Blocking the DeadLinkChecker bot could lead to missed opportunities for users to discover functional alternatives to broken links, potentially disrupting their digital content, social media engagement, or online community interactions. By blocking this bot, users may also lose access to notifications about link fixes or updates, which could impact their experience and productivity.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
 *Last updated: 2026-02-01*
 
@@ -3424,6 +3862,26 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 
 ---
 
+### Instapaper
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Other | `Instapaper` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Instapaper bot extracts relevant text from web pages and summarizes them into a concise, readable format for easy sharing and studying. Its purpose is to assist users in quickly capturing and preserving valuable content from online sources.
+
+**Impact of Blocking:** Blocking the Instapaper bot would likely result in users being unable to access pre-summarized versions of web pages, which could hinder their ability to capture and preserve valuable content from online sources, particularly for individuals with visual impairments or those who struggle to read large blocks of text. This would also impact users who rely on Instapaper to quickly scan articles for key takeaways and share them on social media or via messaging platforms.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
 ### Retool
 
 | Bot Category | User Agent | Verification | Sources |
@@ -3439,6 +3897,28 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Skroutz ImageBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Other | `Skroutz ImageBot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** I couldn't find any information about a specific "Skroutz ImageBot" or its purpose. However, I found that Skroutz is an online shopping platform that aggregates deals from various retailers in Greece.
+
+If you're referring to the Skroutz ImageBot on the Skroutz platform, it's likely a tool designed by other developers to automate tasks such as image processing, product scanning, or e-commerce bot functionality for Skroutz users.
+
+**Impact of Blocking:** Blocking the Skroutz ImageBot could potentially hinder its ability to automatically process images of products for sale on the Skroutz platform, making it more difficult for users to find deals and discounts by not having up-to-date product information. This may lead to a less user-friendly shopping experience, especially for those relying on automated image processing tools.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
 *Last updated: 2026-02-01*
 
@@ -3460,7 +3940,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2026-01-25*
+*Last updated: 2026-02-01*
 
 ---
 
@@ -3645,6 +4125,26 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
+### KakaoTalk Scrap
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Page Preview | `KakaoTalk Scrap` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The KakaoTalk Scrap bot, powered by Page Preview, is a messaging app integration that allows users to quickly share content from web pages directly within KakaoTalk conversations. Its purpose is to enable seamless sharing of online content between KakaoTalk users.
+
+**Impact of Blocking:** Blocking the KakaoTalk Scrap bot would prevent users from easily sharing content from web pages within KakaoTalk conversations, losing a convenient feature that allows for quick and seamless sharing of online content. This blockage would specifically impact users' ability to share links, articles, or images directly in conversations, potentially hindering their communication efficiency and productivity.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
 *Last updated: 2026-02-01*
 
@@ -3955,6 +4455,26 @@ If you have any additional context or clarification about the bot, I'll do my be
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Funnelback
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Search Engine Crawler | `Funnelback` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Funnelback bot is a search engine crawler designed to continuously scan and index web content, ensuring a comprehensive database of online information for its operator. Its primary purpose is to retrieve and update data from various websites, allowing users to access the most recent content through a unified interface.
+
+**Impact of Blocking:** If the Funnelback bot is blocked, users may lose access to the latest updates and information on websites that rely on its index, potentially causing delays in retrieving relevant search results from those sites. This could lead to gaps in search results for certain topics or keywords, particularly if the affected website relies heavily on real-time data and updates.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
 *Last updated: 2026-02-01*
 
@@ -4280,6 +4800,26 @@ If you have any additional context or clarification about the bot, I'll do my be
 
 ---
 
+### jobswithgptcom-bot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Search Engine Crawler | `jobswithgptcom-bot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** This bot, jobsWithGPTcom-bot, is a search engine crawler designed to gather information about jobs and employment-related topics for a specific purpose, likely related to the GPT.com platform. Its primary function is to collect and provide data on various job-related subjects.
+
+**Impact of Blocking:** Blocking the jobswithgptcom-bot search engine crawler may significantly impact users' ability to access employment-related information, as it could lead to reduced or lost visibility for job postings, industry news, and other relevant content. Specifically, blocking this bot might prevent job seekers from finding information on in-demand jobs, salary ranges, and required skills.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
 ## Search Engine Optimization
 
 ### AddSearchBot
@@ -4444,6 +4984,26 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 
 ---
 
+### ClearscopeBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Search Engine Optimization | `ClearscopeBot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The ClearscopeBot is a search engine optimization (SEO) tool designed to provide clear, concise, and accurate information about various topics within specific niches or industries. Its purpose is to help users quickly find relevant and trustworthy sources of knowledge on a particular subject.
+
+**Impact of Blocking:** Blocking the ClearscopeBot could result in a significant loss of visibility for niche websites, industry-specific resources, and high-quality informational content that relies on its indexing capabilities to reach users searching for specific topics. This could lead to reduced traffic and engagement for these sites, particularly those targeting specialized or technical subjects where accurate and concise information is scarce.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-02-01*
+
+---
+
 ### Cloudflare Custom Hostname Verification
 
 | Bot Category | User Agent | Verification | Sources |
@@ -4499,6 +5059,26 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Cloudflare SSLDetector
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Search Engine Optimization | `Cloudflare SSLDetector` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Cloudflare SSLDetector is a search engine optimization (SEO) tool that detects and reports potential security vulnerabilities associated with HTTP, non-HTTPS websites, helping businesses ensure their online presence is secure and trustworthy. Its primary purpose is to encourage website owners to migrate to HTTPS, ensuring the protection of user data and maintaining a positive online reputation.
+
+**Impact of Blocking:** Blocking the Cloudflare SSLDetector bot could result in the loss of critical security vulnerability reports for websites, potentially leaving them exposed to cyber threats, as well as reducing website owners' ability to monitor their online presence and make data-driven decisions about HTTPS migration. This could also lead to a decrease in transparency and accountability within the industry, hindering businesses' efforts to maintain a secure and trustworthy online reputation.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
 *Last updated: 2026-02-01*
 
@@ -4641,6 +5221,26 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Google-Adwords-Instant
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Search Engine Optimization | `Google-Adwords-Instant` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Google-Adwords-Instant bot is designed to optimize search engine results pages (SERPs) by providing real-time data and insights from Google AdWords, enabling operators like SEO experts to make informed decisions about their online marketing strategies. Its purpose is to provide up-to-date information on keyword search volumes, competition, and trends, helping operators refine their SEO efforts.
+
+**Impact of Blocking:** Blocking the Google-Adwords-Instant bot could severely limit SEO experts' access to real-time data on keyword search volumes, competition, and trends, hindering their ability to monitor and adjust their online marketing strategies accordingly, particularly in terms of ad spend optimization and campaign performance analysis. This would result in a loss of visibility into actionable insights that are typically provided by this bot's dynamic SERP updates.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
 *Last updated: 2026-02-01*
 
@@ -4888,6 +5488,26 @@ An SEO bot is a software program designed to automate tasks related to search en
 
 ---
 
+### marketgoo
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Search Engine Optimization | `marketgoo` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The MarketGoo bot is designed to assist with search engine optimization (SEO) by providing tools and services for businesses and individuals to improve their online visibility and ranking. Its purpose is to help users optimize their digital presence, increase website traffic, and drive more conversions through enhanced SEO strategies.
+
+**Impact of Blocking:** Blocking the MarketGoo bot could result in a significant loss of visibility for businesses and individuals relying on its tools and services to optimize their websites and online presence. Specifically, users may experience reduced search engine ranking, decreased website traffic, and impaired ability to track and analyze keyword performance and SEO metrics.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
 ### prerender
 
 | Bot Category | User Agent | Verification | Sources |
@@ -4950,6 +5570,48 @@ An SEO bot is a software program designed to automate tasks related to search en
 
 ---
 
+### Bushbaby
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Security | `Bushbaby` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** I don't have any information about a "Bushbaby" bot, but I can provide some general information about security bots.
+
+A security bot like Bushbaby is likely designed to detect and respond to potential security threats in its environment, such as surveillance cameras or sensors. Its purpose is to monitor and alert authorities to any suspicious activity, helping to prevent or mitigate potential security breaches.
+
+**Impact of Blocking:** Blocking the Bushbaby bot could potentially disrupt the detection of suspicious activity in its environment, resulting in lost alerts and delayed notifications for security personnel. This loss of visibility into potential security threats may allow unauthorized access or manipulation to go undetected, posing a risk to security and safety.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Cloudflare Radar URL Scanner
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Security | `Cloudflare Radar URL Scanner` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Cloudflare Radar URL Scanner is a security bot designed to identify and alert users about malicious or suspicious websites, helping to protect them from potential threats such as phishing, malware, and other online dangers. It scans URLs in real-time to provide an added layer of protection for users' online activities.
+
+**Impact of Blocking:** Blocking the Cloudflare Radar URL Scanner bot would likely result in a loss of real-time URL scanning and alerting capabilities, leaving users more vulnerable to malicious websites that evade detection. This blockage would render the bot's primary functionality useless, making it difficult for users to identify and avoid suspicious online threats.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
 ### CookieYesBot
 
 | Bot Category | User Agent | Verification | Sources |
@@ -4985,6 +5647,26 @@ An SEO bot is a software program designed to automate tasks related to search en
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Cybaa Bot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Security | `Cybaa Bot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Cybaa Bot is a security-focused automated system designed to detect, analyze, and respond to potential security threats or incidents in real-time. Its primary purpose is to enhance security operations by providing proactive monitoring, rapid incident response, and enhanced threat intelligence.
+
+**Impact of Blocking:** Blocking the Cybaa Bot would result in a loss of real-time threat detection and analysis capabilities, allowing potential security threats to go undetected and unaddressed for an extended period. As a result, organizations relying on the bot's proactive monitoring and incident response features may experience delayed responses to security incidents, potentially leading to increased downtime, data breaches, or other security-related losses.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
 *Last updated: 2026-02-01*
 
@@ -5045,6 +5727,46 @@ An SEO bot is a software program designed to automate tasks related to search en
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Google Trust Services (DCV Check)
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Security | `Google Trust Services (DCV Check)` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Google Trust Services (DCV Check) bot is an automated security tool that verifies the authenticity of SSL/TLS certificates issued by GoDaddy, using the Google Public Key Pinning (PKP) protocol. Its purpose is to detect and prevent malicious certificate issuance or substitution attempts by GoDaddy.
+
+**Impact of Blocking:** Blocking this bot could potentially disrupt users' ability to verify the authenticity of SSL/TLS certificates issued by GoDaddy, losing their confidence in the security and trustworthiness of websites that rely on these certificates for encryption and secure connections. This could particularly affect businesses and organizations relying heavily on online transactions and communication.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Let's Encrypt
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Security | `Let's Encrypt` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The "Let's Encrypt" bot, operated by a security-focused entity, likely provides automated SSL/TLS certificate issuance services to simplify the process of securing websites with secure connections (HTTPS). Its purpose is to streamline the certification process for website owners, improving online security and trust.
+
+**Impact of Blocking:** Blocking the "Let's Encrypt" bot could cause website owners to lose access to automated SSL/TLS certificate issuance services, forcing them to manually apply for certificates, which may slow down their domain verification process and add additional administrative overhead. This could lead to delays in securing websites with HTTPS, potentially compromising online security and trust.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
 *Last updated: 2026-02-01*
 
@@ -5240,7 +5962,7 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-01-25*
+*Last updated: 2026-02-01*
 
 ---
 
@@ -5359,6 +6081,46 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Omnisend
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Webhooks | `Omnisend` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Omnisend bot is designed to send automated emails, newsletters, and other notifications through webhooks, enabling businesses to integrate their marketing automation with external systems and services. Its purpose is to facilitate seamless communication and task automation for organizations using the Omnisend platform.
+
+**Impact of Blocking:** Blocking the Omnisend bot could prevent automated email sendings, newsletters, and notifications from being triggered through webhooks, resulting in a disruption to tasks such as marketing campaigns, order confirmations, and subscription updates. This blockage would lead to visible delays or failures in these automated processes, affecting an organization's ability to deliver timely and seamless customer communication.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-02-01*
+
+---
+
+### Paddle Webhooks
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Webhooks | `Paddle Webhooks` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Paddle Webhooks bot is a tool designed to send automated notifications (webhooks) to integrations and applications when specific events occur in your Paddle account, such as payments or subscription updates. Its purpose is to streamline communication between Paddle's platform and external services, enabling seamless data exchange and automation of workflows.
+
+**Impact of Blocking:** Blocking the Paddle Webhooks bot would prevent automated notifications (webhooks) from being sent to integrations and applications when specific events occur in a Paddle account, resulting in lost functionality for automating workflows and data exchange with external services. This could lead to manual checks and updates required for tracking payments and subscription status, potentially disrupting business operations and increasing administrative burdens.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
 *Last updated: 2026-02-01*
 
@@ -5622,7 +6384,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2025-12-14*
+*Last updated: 2026-02-01*
 
 ---
 
@@ -5851,28 +6613,6 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral |
-
-*Last updated: 2026-02-01*
-
----
-
-## [Atlassian](https://www.atlassian.com)
-
-### atlassian-bot
-
-| Bot Category | User Agent | Verification | Sources |
-|--------------|------------|--------------|---------|
-| [Atlassian](https://www.atlassian.com) | `atlassian-bot` | Not specified | ai-robots-txt |
-
-**Purpose:** The atlassian-bot is a web crawler that indexes website content to power Atlassian's AI search, assistants, and agents in their Rovo GenAI product. Its purpose is to provide improved search functionality for users across Atlassian's platform.
-
-**Impact of Blocking:** Blocking the atlassian-bot could result in reduced search results and incomplete information for users attempting to find specific documents, projects, or other content within Atlassian's platforms. This may lead to frustrated users experiencing difficulty locating relevant data, potentially impacting their productivity and work efficiency.
-
-**Recommendations by Site Type:**
-
-| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
-|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
 *Last updated: 2026-02-01*
 

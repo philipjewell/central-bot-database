@@ -267,6 +267,13 @@ tbody tr:hover {
     color: #6b7280;
 }
 
+.category-emoji {
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0 2px;
+    cursor: help;
+}
+
 .source-tag {
     display: inline-block;
     padding: 2px 8px;

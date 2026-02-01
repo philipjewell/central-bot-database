@@ -14,6 +14,31 @@ const RATING_BADGES = {
     'not_applicable': '➖ N/A'
 };
 
+// Emoji-only ratings for compact display
+const RATING_EMOJIS = {
+    'beneficial': '✅',
+    'neutral': '⚪',
+    'harmful': '❌',
+    'not_applicable': '➖'
+};
+
+// Category display names for tooltips
+const CATEGORY_NAMES = {
+    'ecommerce': 'E-commerce',
+    'news': 'News',
+    'media': 'Media',
+    'blog': 'Blog',
+    'saas': 'SaaS',
+    'corporate': 'Corporate',
+    'documentation': 'Documentation',
+    'social': 'Social',
+    'portfolio': 'Portfolio',
+    'government': 'Government'
+};
+
+// Ordered list of categories to display
+const CATEGORY_ORDER = ['ecommerce', 'news', 'media', 'blog', 'saas', 'corporate', 'documentation', 'social', 'portfolio', 'government'];
+
 // Load bots from GitHub
 async function loadBots() {
     try {
@@ -176,15 +201,14 @@ function renderTable() {
 function getCategoryRatings(bot) {
     if (!bot.categories) return '-';
 
-    const ratings = Object.entries(bot.categories)
-        .filter(([_, rating]) => rating && rating !== 'not_applicable')
-        .slice(0, 3);
+    // Show all 10 categories in order, emoji-only for compact display
+    return CATEGORY_ORDER.map(category => {
+        const rating = bot.categories[category] || 'not_applicable';
+        const emoji = RATING_EMOJIS[rating] || '❓';
+        const categoryName = CATEGORY_NAMES[category];
+        const ratingName = RATING_BADGES[rating]?.split(' ')[1] || rating;
 
-    if (ratings.length === 0) return '-';
-
-    return ratings.map(([_, rating]) => {
-        const badge = RATING_BADGES[rating] || rating;
-        return `<span class="badge badge-${rating}">${badge}</span>`;
+        return `<span class="category-emoji" title="${categoryName}: ${ratingName}">${emoji}</span>`;
     }).join(' ');
 }
 

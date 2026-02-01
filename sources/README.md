@@ -233,6 +233,20 @@ git commit -m "Add MyBot to database"
 git push origin add-mybot
 ```
 
+## Data Source Information
+
+This database aggregates bots from multiple sources:
+
+- **ai.robots.txt**: All bots from the community database
+- **Cloudflare Radar**: Top 250 most common verified bots (by traffic volume)
+- **Manual submissions**: Community-contributed bots (this directory)
+
+**Why add your bot manually?**
+- Your bot may not be in the top 250 by traffic
+- You want to provide more detailed information
+- You want to control the categorization and descriptions
+- You have technical details (IP ranges, ASN) to share
+
 ## Thank You!
 
 Thanks for contributing to the Central Bot Database! Your submission helps website owners make informed decisions about which bots to allow or block.

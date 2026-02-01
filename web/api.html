@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation - Central Bot Database</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        .api-section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .endpoint {
+            background: #f9fafb;
+            padding: 20px;
+            border-left: 4px solid #3b82f6;
+            margin: 20px 0;
+        }
+        .endpoint h3 {
+            color: #3b82f6;
+            margin-bottom: 10px;
+        }
+        .method {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #10b981;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            margin-right: 10px;
+        }
+        .path {
+            font-family: monospace;
+            background: #1f2937;
+            color: #10b981;
+            padding: 8px 12px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .params {
+            margin: 15px 0;
+        }
+        .param {
+            margin: 10px 0;
+        }
+        .param-name {
+            font-family: monospace;
+            font-weight: bold;
+            color: #3b82f6;
+        }
+        .param-type {
+            font-family: monospace;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        .example {
+            background: #1f2937;
+            color: #10b981;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        .example pre {
+            margin: 0;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🤖 API Documentation</h1>
+            <p>RESTful API for querying the Central Bot Database</p>
+            <nav>
+                <a href="/">Browse</a>
+                <a href="/api.html">API Docs</a>
+                <a href="https://github.com/philipjewell/central-bot-database" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="api-section">
+            <h2>Getting Started</h2>
+            <p>The Central Bot Database API provides programmatic access to our comprehensive bot database. All endpoints return JSON data and require no authentication.</p>
+
+            <h3>Base URL</h3>
+            <div class="path">https://your-deployment.pages.dev/api</div>
+
+            <h3>Rate Limits</h3>
+            <p>Currently no rate limits. Please use responsibly.</p>
+        </div>
+
+        <div class="api-section">
+            <h2>Endpoints</h2>
+
+            <div class="endpoint">
+                <h3><span class="method">GET</span> Search Bots</h3>
+                <div class="path">/api/search</div>
+
+                <p>Search for bots by user agent, operator, or purpose.</p>
+
+                <div class="params">
+                    <h4>Query Parameters</h4>
+                    <div class="param">
+                        <span class="param-name">q</span>
+                        <span class="param-type">string</span> (required)
+                        <p>Search query - matches user agent, operator, or purpose</p>
+                    </div>
+                    <div class="param">
+                        <span class="param-name">limit</span>
+                        <span class="param-type">number</span> (optional)
+                        <p>Maximum results to return (default: 10, max: 100)</p>
+                    </div>
+                </div>
+
+                <h4>Example Request</h4>
+                <div class="example">
+                    <pre>GET /api/search?q=googlebot&limit=5</pre>
+                </div>
+
+                <h4>Example Response</h4>
+                <div class="example">
+                    <pre>{
+  "results": [
+    {
+      "user_agent": "Googlebot",
+      "operator": "Search Engines",
+      "purpose": "...",
+      "sources": ["ai-robots-txt"]
+    }
+  ],
+  "count": 1,
+  "query": "googlebot"
+}</pre>
+                </div>
+            </div>
+
+            <div class="endpoint">
+                <h3><span class="method">GET</span> Get Recommendations</h3>
+                <div class="path">/api/recommend</div>
+
+                <p>Get bot recommendations for a specific site category.</p>
+
+                <div class="params">
+                    <h4>Query Parameters</h4>
+                    <div class="param">
+                        <span class="param-name">category</span>
+                        <span class="param-type">string</span> (required)
+                        <p>Site category: ecommerce, news, media, blog, saas, corporate, documentation, social, portfolio, government</p>
+                    </div>
+                    <div class="param">
+                        <span class="param-name">rating</span>
+                        <span class="param-type">string</span> (optional)
+                        <p>Filter by rating: beneficial, neutral, harmful, not_applicable</p>
+                    </div>
+                </div>
+
+                <h4>Example Request</h4>
+                <div class="example">
+                    <pre>GET /api/recommend?category=ecommerce&rating=beneficial</pre>
+                </div>
+
+                <h4>Example Response</h4>
+                <div class="example">
+                    <pre>{
+  "category": "ecommerce",
+  "rating": "beneficial",
+  "bots": [...],
+  "count": 42
+}</pre>
+                </div>
+            </div>
+
+            <div class="endpoint">
+                <h3><span class="method">GET</span> Get Bot Details</h3>
+                <div class="path">/api/details</div>
+
+                <p>Get detailed information about a specific bot.</p>
+
+                <div class="params">
+                    <h4>Query Parameters</h4>
+                    <div class="param">
+                        <span class="param-name">bot</span>
+                        <span class="param-type">string</span> (required)
+                        <p>Bot user agent (case-insensitive partial match)</p>
+                    </div>
+                </div>
+
+                <h4>Example Request</h4>
+                <div class="example">
+                    <pre>GET /api/details?bot=Googlebot</pre>
+                </div>
+
+                <h4>Example Response</h4>
+                <div class="example">
+                    <pre>{
+  "user_agent": "Googlebot",
+  "operator": "Search Engines",
+  "purpose": "...",
+  "impact_of_blocking": "...",
+  "categories": { ... },
+  "sources": ["ai-robots-txt"],
+  "raw_data": { ... },
+  "last_updated": "2026-02-01T12:00:00Z"
+}</pre>
+                </div>
+            </div>
+
+            <div class="endpoint">
+                <h3><span class="method">GET</span> Generate robots.txt</h3>
+                <div class="path">/api/robots</div>
+
+                <p>Generate a robots.txt file based on category recommendations.</p>
+
+                <div class="params">
+                    <h4>Query Parameters</h4>
+                    <div class="param">
+                        <span class="param-name">category</span>
+                        <span class="param-type">string</span> (required)
+                        <p>Site category</p>
+                    </div>
+                    <div class="param">
+                        <span class="param-name">block</span>
+                        <span class="param-type">string</span> (optional)
+                        <p>Which bots to block: harmful (default), harmful+neutral</p>
+                    </div>
+                </div>
+
+                <h4>Example Request</h4>
+                <div class="example">
+                    <pre>GET /api/robots?category=ecommerce&block=harmful</pre>
+                </div>
+
+                <h4>Example Response</h4>
+                <div class="example">
+                    <pre># Generated robots.txt for ecommerce sites
+# Block harmful bots
+
+User-agent: BadBot
+Disallow: /
+
+User-agent: ScraperBot
+Disallow: /</pre>
+                </div>
+            </div>
+
+            <div class="endpoint">
+                <h3><span class="method">GET</span> Get Statistics</h3>
+                <div class="path">/api/stats</div>
+
+                <p>Get database statistics.</p>
+
+                <h4>Example Request</h4>
+                <div class="example">
+                    <pre>GET /api/stats</pre>
+                </div>
+
+                <h4>Example Response</h4>
+                <div class="example">
+                    <pre>{
+  "total_bots": 368,
+  "operators": 45,
+  "sources": {
+    "ai-robots-txt": 108,
+    "cloudflare-radar": 260,
+    "manual": 15
+  },
+  "last_updated": "2026-02-01T12:00:00Z"
+}</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="api-section">
+            <h2>Client Libraries</h2>
+            <p>Currently, no official client libraries are available. You can use any HTTP client to make requests.</p>
+
+            <h3>JavaScript/TypeScript Example</h3>
+            <div class="example">
+                <pre>// Search for bots
+const response = await fetch('/api/search?q=googlebot');
+const data = await response.json();
+console.log(data.results);
+
+// Get recommendations
+const recs = await fetch('/api/recommend?category=ecommerce&rating=beneficial');
+const bots = await recs.json();
+console.log(bots.bots);</pre>
+            </div>
+
+            <h3>Python Example</h3>
+            <div class="example">
+                <pre>import requests
+
+# Search for bots
+response = requests.get('https://your-deployment.pages.dev/api/search?q=googlebot')
+data = response.json()
+print(data['results'])
+
+# Get recommendations
+response = requests.get('https://your-deployment.pages.dev/api/recommend?category=ecommerce&rating=beneficial')
+bots = response.json()
+print(bots['bots'])</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Central Bot Database | <a href="https://github.com/philipjewell/central-bot-database">Open Source</a> | MIT License</p>
+        </div>
+    </footer>
+</body>
+</html>

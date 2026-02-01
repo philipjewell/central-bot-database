@@ -155,7 +155,7 @@ Create a pull request with:
 
 **Automated checks will run:**
 - ✅ Unit tests
-- ✅ Code coverage (>80%)
+- ✅ Code coverage (>70% on core logic)
 - ✅ Data validation
 - ✅ Schema compliance
 

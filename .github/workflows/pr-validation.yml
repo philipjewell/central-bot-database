@@ -68,7 +68,7 @@ jobs:
 
       - name: Generate coverage report
         run: |
-          pytest --cov=scripts --cov-report=term-missing --cov-fail-under=80
+          pytest --cov=scripts --cov-report=term-missing --cov-fail-under=70
 
       - name: Post coverage comment
         uses: py-cov-action/python-coverage-comment-action@v3

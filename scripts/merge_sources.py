@@ -235,6 +235,14 @@ def merge_bot_entries(existing: Dict, new: Dict, preserve_enrichment: bool = Fal
 
     merged_raw = existing_raw.copy()
     for key, value in new_raw.items():
+        # Protect CF-specific fields - only allow cloudflare-radar sources to set/update them
+        if key == "cf_traffic_percentage":
+            # Only update if new source is Cloudflare
+            if "cloudflare-radar" in new.get("sources", []):
+                merged_raw[key] = value
+            # If new source is manual, skip this field (preserve existing CF data)
+            continue
+
         if key not in merged_raw or not merged_raw[key]:
             merged_raw[key] = value
         elif key == "ip_ranges" and isinstance(value, list):

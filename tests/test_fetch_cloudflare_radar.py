@@ -49,9 +49,11 @@ class TestFetchCloudflareRadar:
         assert len(bots) == 1
         # Should use first pattern as user_agent
         assert bots[0]["user_agent"] == "TestBot/1.0"
-        # Should store all patterns in raw_data
-        assert bots[0]["raw_data"]["user_agent_patterns"] == ["TestBot/1.0", "TestBot/2.0"]
+        # Should store traffic percentage and bot name
+        assert bots[0]["raw_data"]["cf_traffic_percentage"] == "0.123"
         assert bots[0]["raw_data"]["bot_name"] == "TestBot"
+        # user_agent_patterns should NOT be stored
+        assert "user_agent_patterns" not in bots[0]["raw_data"]
 
     @patch('fetch_cloudflare_radar.requests.get')
     def test_fetch_with_user_agent_patterns_string(self, mock_get, tmp_path, monkeypatch):
@@ -70,7 +72,8 @@ class TestFetchCloudflareRadar:
                     {
                         "botName": "TestBot",
                         "botCategory": "Testing",
-                        "userAgentPatterns": "TestBot/1.0"
+                        "userAgentPatterns": "TestBot/1.0",
+                        "value": "0.05"
                     }
                 ]
             }
@@ -81,7 +84,9 @@ class TestFetchCloudflareRadar:
         bots = fetch_cloudflare_bots()
 
         assert bots[0]["user_agent"] == "TestBot/1.0"
-        assert bots[0]["raw_data"]["user_agent_patterns"] == "TestBot/1.0"
+        assert bots[0]["raw_data"]["cf_traffic_percentage"] == "0.05"
+        # user_agent_patterns should NOT be stored
+        assert "user_agent_patterns" not in bots[0]["raw_data"]
 
     @patch('fetch_cloudflare_radar.requests.get')
     def test_fetch_fallback_to_bot_name(self, mock_get, tmp_path, monkeypatch):
@@ -100,7 +105,8 @@ class TestFetchCloudflareRadar:
                 "top": [
                     {
                         "botName": "TestBot",
-                        "botCategory": "Testing"
+                        "botCategory": "Testing",
+                        "value": "0.02"
                     }
                 ]
             }
@@ -112,7 +118,9 @@ class TestFetchCloudflareRadar:
 
         # Should fall back to botName
         assert bots[0]["user_agent"] == "TestBot"
-        assert bots[0]["raw_data"]["user_agent_patterns"] is None
+        assert bots[0]["raw_data"]["cf_traffic_percentage"] == "0.02"
+        # user_agent_patterns should NOT be in raw_data
+        assert "user_agent_patterns" not in bots[0]["raw_data"]
 
     def test_fetch_without_api_token(self, tmp_path, monkeypatch):
         monkeypatch.chdir(tmp_path)

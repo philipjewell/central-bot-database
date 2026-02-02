@@ -207,12 +207,18 @@ jobs:
           echo "Validating bot database..."
           python scripts/validate_data.py
           echo "✓ Validation passed"
-      
+
+      - name: Generate nginx bot category map
+        run: |
+          echo "Generating nginx bot category map..."
+          python scripts/generate_nginx_map.py
+          echo "✓ nginx map generated at nginx/bot_category_map.conf"
+
       - name: Check for any changes
         id: check_changes
         run: |
-          # Check if there are any changes in data/, docs/, or schemas/
-          if git diff --quiet data/ docs/ schemas/category_mappings.json 2>/dev/null; then
+          # Check if there are any changes in data/, docs/, nginx/, or schemas/
+          if git diff --quiet data/ docs/ nginx/ schemas/category_mappings.json 2>/dev/null; then
             echo "No changes detected in output files"
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "skip_pr=true" >> $GITHUB_OUTPUT
@@ -220,7 +226,7 @@ jobs:
             echo "Changes detected!"
             echo ""
             echo "Changed files:"
-            git diff --name-only data/ docs/ schemas/category_mappings.json 2>/dev/null || echo "New files created"
+            git diff --name-only data/ docs/ nginx/ schemas/category_mappings.json 2>/dev/null || echo "New files created"
             echo ""
             echo "has_changes=true" >> $GITHUB_OUTPUT
             echo "skip_pr=false" >> $GITHUB_OUTPUT
@@ -232,9 +238,9 @@ jobs:
           echo "## Changes Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Modified Files" >> $GITHUB_STEP_SUMMARY
-          git diff --stat data/ docs/ schemas/category_mappings.json >> $GITHUB_STEP_SUMMARY || echo "New files" >> $GITHUB_STEP_SUMMARY
+          git diff --stat data/ docs/ nginx/ schemas/category_mappings.json >> $GITHUB_STEP_SUMMARY || echo "New files" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          
+
           # Show category mapping changes if any
           if git diff --quiet schemas/category_mappings.json 2>/dev/null; then
             echo "No category mapping changes" >> $GITHUB_STEP_SUMMARY
@@ -258,6 +264,7 @@ jobs:
           add-paths: |
             data/bots.json
             docs/BOTS.md
+            nginx/bot_category_map.conf
             schemas/category_mappings.json
           commit-message: 'chore: update bot database and category mappings'
           committer: GitHub Actions <noreply@github.com>
@@ -281,12 +288,14 @@ jobs:
             5. ✅ Generated JSON output (`data/bots.json`)
             6. ✅ Generated Markdown documentation (`docs/BOTS.md`)
             7. ✅ Validated all data integrity
+            8. ✅ Generated nginx bot category map (`nginx/bot_category_map.conf`)
             
             ### 📝 What Changed
-            
+
             Files updated:
             - `data/bots.json` - Machine-readable bot database
             - `docs/BOTS.md` - Human-readable documentation
+            - `nginx/bot_category_map.conf` - nginx bot category mapping for rate limiting
             - `schemas/category_mappings.json` - Bot category mappings (if new categories discovered)
             
             ### 🏷️ Category Updates

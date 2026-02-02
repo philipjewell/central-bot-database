@@ -22,9 +22,10 @@ A comprehensive, automated database of internet bots with AI-powered categorizat
 - Explains the impact of blocking each bot
 - Provides category recommendations for 10 different site types
 
-📊 **Dual Output Formats**
+📊 **Multiple Output Formats**
 - **JSON** (`data/bots.json`) - Machine-readable for programmatic access
 - **Markdown** (`docs/BOTS.md`) - Human-readable documentation
+- **nginx map** (`nginx/bot_category_map.conf`) - Server-side bot identification and rate limiting
 
 🔄 **Automated Weekly Updates**
 - GitHub Actions workflow runs weekly
@@ -88,6 +89,44 @@ curl "https://central-bot-database.pages.dev/api/robots?category=ecommerce&block
 ```
 
 See the [API Documentation](https://central-bot-database.pages.dev/api.html) for all endpoints.
+
+## nginx Configuration
+
+🔧 **Server-Side Bot Management** - Auto-generated nginx configuration for rate limiting and blocking bots by category.
+
+The database includes a pre-configured nginx map file that maps user agent patterns to bot categories. Use it to:
+
+- **Rate limit AI crawlers** - Throttle AI training bots
+- **Block harmful categories** - Stop unwanted bot traffic
+- **Allow-list beneficial bots** - Ensure search engines and monitoring tools work
+- **Apply tiered policies** - Different limits for different bot types
+
+**Quick Example:**
+```nginx
+http {
+    # Include bot category mapping
+    include /path/to/nginx/bot_category_map.conf;
+
+    # Rate limit AI crawlers to 1 request per minute
+    limit_req_zone $binary_remote_addr zone=ai_crawlers:10m rate=1r/m;
+
+    server {
+        location / {
+            if ($bot_category = "AI Crawler") {
+                limit_req zone=ai_crawlers burst=5;
+            }
+        }
+    }
+}
+```
+
+See [nginx/README.md](nginx/README.md) for complete documentation and examples.
+
+**Generate the map file:**
+```bash
+source venv/bin/activate
+python scripts/generate_nginx_map.py
+```
 
 ## Quick Start
 
@@ -251,6 +290,7 @@ central-bot-database/
 │   ├── enrich_with_ai.py       # AI enrichment (Ollama)
 │   ├── fix_ratings.py          # Fix whitespace in ratings
 │   ├── generate_outputs.py     # Generate JSON & Markdown
+│   ├── generate_nginx_map.py   # Generate nginx config
 │   ├── validate_data.py        # Validate data integrity
 │   └── bot_utils.py            # CLI utilities
 ├── sources/
@@ -261,6 +301,9 @@ central-bot-database/
 │   └── bots.json               # Generated JSON database
 ├── docs/
 │   └── BOTS.md                 # Generated Markdown docs
+├── nginx/
+│   ├── bot_category_map.conf   # Generated nginx map file
+│   └── README.md               # nginx usage documentation
 ├── staging/                    # Temporary processing files
 ├── requirements.txt            # Python dependencies
 ├── .gitignore                  # Git ignore rules

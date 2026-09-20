@@ -1,8 +1,8 @@
 # Bot Database
 
-Last generated: 2026-06-14 06:40 UTC
+Last generated: 2026-09-20 07:45 UTC
 
-Total bots: **466**
+Total bots: **511**
 
 ## Legend
 
@@ -26,15 +26,15 @@ Total bots: **466**
 
 ## Table of Contents
 
-- [AI Assistant](#ai-assistant) (11 bots)
-- [AI Coding Agents](#ai-coding-agents) (5 bots)
-- [AI Crawler](#ai-crawler) (56 bots)
-- [AI Data Providers](#ai-data-providers) (3 bots)
-- [AI Search](#ai-search) (10 bots)
+- [AI Assistant](#ai-assistant) (16 bots)
+- [AI Crawler](#ai-crawler) (58 bots)
+- [AI Data Scrapers](#ai-data-scrapers) (2 bots)
+- [AI Search](#ai-search) (21 bots)
+- [AI crawler for ByteDance's Doubao AI assistant.](#ai-crawler-for-bytedance's-doubao-ai-assistant) (1 bot)
 - [AI data scraper](#ai-data-scraper) (2 bots)
-- [Academic Research](#academic-research) (3 bots)
+- [Academic Research](#academic-research) (4 bots)
 - [Accessibility](#accessibility) (7 bots)
-- [Advertising & Marketing](#advertising-&-marketing) (31 bots)
+- [Advertising & Marketing](#advertising-&-marketing) (32 bots)
 - [Aggregator](#aggregator) (11 bots)
 - [Anthropic](#anthropic) (1 bot)
 - [Archiver](#archiver) (3 bots)
@@ -42,23 +42,26 @@ Total bots: **466**
 - [Big Sur AI that fetches website content to enable AI-powered web agents, sales assistants, and content marketing solutions for businesses](#big-sur-ai-that-fetches-website-content-to-enable-ai-powered-web-agents,-sales-assistants,-and-content-marketing-solutions-for-businesses) (1 bot)
 - [ByteDance](#bytedance) (2 bots)
 - [Cohere to download training data for its LLMs (Large Language Models) that power its enterprise AI products](#cohere-to-download-training-data-for-its-llms-large-language-models-that-power-its-enterprise-ai-products) (1 bot)
+- [Collects public web content for Alibaba's Qwen (Tongyi Qianwen) large language models.](#collects-public-web-content-for-alibaba's-qwen-tongyi-qianwen-large-language-models) (1 bot)
+- [Collects public web content for Baidu's ERNIE large language models.](#collects-public-web-content-for-baidu's-ernie-large-language-models) (1 bot)
 - [Data Scraper from RSS Feeds.](#data-scraper-from-rss-feeds) (1 bot)
 - [Datenbank](#datenbank) (1 bot)
 - [DeepSeek](#deepseek) (1 bot)
 - [Example Company](#example-company) (1 bot)
-- [Feed Fetcher](#feed-fetcher) (18 bots)
+- [Feed Fetcher](#feed-fetcher) (19 bots)
+- [Indexes web content for Mistral AI's search, used to answer questions in Le Chat. Per Mistral, not used for model training.](#indexes-web-content-for-mistral-ai's-search,-used-to-answer-questions-in-le-chat-per-mistral,-not-used-for-model-training) (1 bot)
 - [Mistral AI](#mistral-ai) (1 bot)
-- [Monitoring & Analytics](#monitoring-&-analytics) (84 bots)
-- [Other](#other) (8 bots)
-- [Page Preview](#page-preview) (22 bots)
-- [Search Engine Crawler](#search-engine-crawler) (31 bots)
-- [Search Engine Optimization](#search-engine-optimization) (42 bots)
-- [Security](#security) (24 bots)
+- [Monitoring & Analytics](#monitoring-&-analytics) (90 bots)
+- [Other](#other) (9 bots)
+- [Page Preview](#page-preview) (31 bots)
+- [Search Engine Crawler](#search-engine-crawler) (33 bots)
+- [Search Engine Optimization](#search-engine-optimization) (45 bots)
+- [Security](#security) (27 bots)
 - [Social Media Marketing](#social-media-marketing) (1 bot)
 - [Unclear at this time.](#unclear-at-this-time) (1 bot)
-- [Undocumented AI Agents](#undocumented-ai-agents) (2 bots)
+- [Undocumented AI Agents](#undocumented-ai-agents) (3 bots)
 - [WEBSPARK](#webspark) (1 bot)
-- [Webhooks](#webhooks) (28 bots)
+- [Webhooks](#webhooks) (30 bots)
 - [[Ai2](https://allenai.org/crawler)](#[ai2]https:allenaiorgcrawler) (2 bots)
 - [[Amazon](https://amazon.com)](#[amazon]https:amazoncom) (2 bots)
 - [[Andi](https://andisearch.com/)](#[andi]https:andisearchcom) (1 bot)
@@ -79,7 +82,6 @@ Total bots: **466**
 - [[Large-scale Artificial Intelligence Open Network](https://laion.ai/)](#[large-scale-artificial-intelligence-open-network]https:laionai) (1 bot)
 - [[Linguee](https://www.linguee.com)](#[linguee]https:wwwlingueecom) (1 bot)
 - [[Meltwater](https://www.meltwater.com/en/suite/consumer-intelligence)](#[meltwater]https:wwwmeltwatercomensuiteconsumer-intelligence) (1 bot)
-- [[Meta](https://developers.facebook.com/docs/sharing/webmasters/web-crawlers/)](#[meta]https:developersfacebookcomdocssharingwebmastersweb-crawlers) (1 bot)
 - [[NICT](https://nict.go.jp)](#[nict]https:nictgojp) (1 bot)
 - [[Panscient](https://panscient.com)](#[panscient]https:panscientcom) (2 bots)
 - [[Perplexity](https://www.perplexity.ai/)](#[perplexity]https:wwwperplexityai) (2 bots)
@@ -185,7 +187,31 @@ However, based on the context provided, I can make an educated guess. Browserbas
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### Claude-Code
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Assistant | `Claude-Code` | Not specified | ai-robots-txt |
+
+**Purpose:** I couldn't find any information about a specific bot named Claude-Code. The provided description appears to be incomplete or not publicly available.
+
+However, based on the context of "AI Coding Agents" and the link to darkvisitors.com, I can make an educated guess:
+
+The purpose of Claude-Code is likely to assist with coding tasks using artificial intelligence (AI). Unfortunately, without more information, it's difficult to provide a more concise or accurate description.
+
+**Impact of Blocking:** Blocking the Claude-Code bot could potentially disrupt users' ability to access AI-powered coding assistance, resulting in delays or difficulties when working on coding projects that rely on AI-driven code completion, suggestions, or other tools. The loss of this functionality could be particularly impactful for developers who frequently use AI-assisted coding tools as part of their workflow.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-05-17*
 
 ---
 
@@ -205,7 +231,7 @@ However, based on the context provided, I can make an educated guess. Browserbas
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -229,6 +255,46 @@ However, based on the context provided, I can make an educated guess. Browserbas
 
 ---
 
+### Code
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Assistant | `Code` | Not specified | ai-robots-txt |
+
+**Purpose:** This is not a standard information bot, but rather a specific agent within the AI Coding Agents platform. The purpose of Code appears to be an automated coding assistance tool, designed to support developers with code-related tasks or projects, although its exact capabilities are not publicly disclosed.
+
+**Impact of Blocking:** Blocking this bot, "Code", may result in the loss of access to automated coding assistance tools and support for specific development projects, potentially hindering developers' productivity and efficiency. The exact impact will depend on how widely Code is used and integrated into the AI Coding Agents platform, but it could lead to frustration and delays for users reliant on its functionality.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-05-17*
+
+---
+
+### Cursor
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Assistant | `Cursor` | Not specified | ai-robots-txt |
+
+**Purpose:** Cursor is an AI-powered coding agent that assists with writing, editing, and understanding code. It aims to provide developers with a tool to enhance their coding experience and improve code quality.
+
+**Impact of Blocking:** Blocking Cursor would eliminate its real-time syntax highlighting, auto-suggested code completions, and interactive code debugging capabilities, significantly hindering developers' ability to write and edit code efficiently. This would result in a substantial loss of productivity, particularly for beginners and experienced developers alike, who rely on Cursor's AI-powered assistance to navigate complex coding tasks.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
+
+---
+
 ### Devin
 
 | Bot Category | User Agent | Verification | Sources |
@@ -245,7 +311,29 @@ However, based on the context provided, I can make an educated guess. Browserbas
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-03-22*
+*Last updated: 2026-09-20*
+
+---
+
+### Google-Gemini-CLI
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Assistant | `Google-Gemini-CLI` | Not specified | ai-robots-txt |
+
+**Purpose:** I couldn't find any information about this specific bot, but based on the provided details, here is a possible description:
+
+The Google-Gemini-CLI bot appears to be a command-line interface (CLI) tool that integrates with AI Coding Agents, likely facilitating interactions with the Gemini AI model and providing a user-friendly interface for its usage.
+
+**Impact of Blocking:** Blocking the Google-Gemini-CLI bot could potentially disrupt users' ability to access the Gemini AI model through a simplified CLI interface, limiting their capacity to interact with the model using pre-defined commands and automating repetitive tasks. This would result in lost functionality for users who rely on this specific interface to engage with the AI model.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-05-17*
 
 ---
 
@@ -285,29 +373,27 @@ However, based on the context provided, I can make an educated guess. Browserbas
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
-### Shap-User
+### Trae
 
 | Bot Category | User Agent | Verification | Sources |
 |--------------|------------|--------------|---------|
-| AI Assistant | `Shap-User` | Not specified | ai-robots-txt |
+| AI Assistant | `Trae` | Not specified | ai-robots-txt |
 
-**Purpose:** I couldn't find any information about the Shap-User bot, but based on its name, I'm going to make an educated guess.
+**Purpose:** I couldn't find any publicly available information about a bot called "Trae" or its purpose, as the description is not publicly available from darkvisitors.com. However, based on the provided URL, I can suggest that Trae might be a custom-built bot created by AI Coding Agents for a specific task or application, but without more information, it's impossible to determine its exact purpose.
 
-The Shap-User bot appears to be a machine learning model designed to interact with users in various tasks, possibly related to image processing or computer vision, given the name "Shap". The purpose of this bot is likely to assist users by providing visual feedback, generating images, or performing other related tasks.
-
-**Impact of Blocking:** Blocking the Shap-User bot could significantly hinder users' ability to access visual feedback for image processing tasks, potentially disrupting their workflow or projects that rely on this feature. Additionally, blocking it could also prevent users from generating images using its capabilities, which may be a critical function in various fields such as art, design, or scientific research.
+**Impact of Blocking:** Blocking the Trae bot could potentially disrupt any interactive functionality or automated processes that rely on it, resulting in lost opportunities for tasks such as automated moderation, content suggestions, or other AI-powered interactions. This loss of functionality would likely manifest as a reduction in the overall quality or efficiency of online experiences reliant on Trae's capabilities.
 
 **Recommendations by Site Type:**
 
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-05-17*
 
 ---
 
@@ -327,95 +413,7 @@ The Shap-User bot appears to be a machine learning model designed to interact wi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
-
----
-
-## AI Coding Agents
-
-### Claude-Code
-
-| Bot Category | User Agent | Verification | Sources |
-|--------------|------------|--------------|---------|
-| AI Coding Agents | `Claude-Code` | Not specified | ai-robots-txt |
-
-**Purpose:** I couldn't find any information about a specific bot named Claude-Code. The provided description appears to be incomplete or not publicly available.
-
-However, based on the context of "AI Coding Agents" and the link to darkvisitors.com, I can make an educated guess:
-
-The purpose of Claude-Code is likely to assist with coding tasks using artificial intelligence (AI). Unfortunately, without more information, it's difficult to provide a more concise or accurate description.
-
-**Impact of Blocking:** Blocking the Claude-Code bot could potentially disrupt users' ability to access AI-powered coding assistance, resulting in delays or difficulties when working on coding projects that rely on AI-driven code completion, suggestions, or other tools. The loss of this functionality could be particularly impactful for developers who frequently use AI-assisted coding tools as part of their workflow.
-
-**Recommendations by Site Type:**
-
-| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
-|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
-
-*Last updated: 2026-05-17*
-
----
-
-### Code
-
-| Bot Category | User Agent | Verification | Sources |
-|--------------|------------|--------------|---------|
-| AI Coding Agents | `Code` | Not specified | ai-robots-txt |
-
-**Purpose:** This is not a standard information bot, but rather a specific agent within the AI Coding Agents platform. The purpose of Code appears to be an automated coding assistance tool, designed to support developers with code-related tasks or projects, although its exact capabilities are not publicly disclosed.
-
-**Impact of Blocking:** Blocking this bot, "Code", may result in the loss of access to automated coding assistance tools and support for specific development projects, potentially hindering developers' productivity and efficiency. The exact impact will depend on how widely Code is used and integrated into the AI Coding Agents platform, but it could lead to frustration and delays for users reliant on its functionality.
-
-**Recommendations by Site Type:**
-
-| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
-|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
-
-*Last updated: 2026-05-17*
-
----
-
-### Google-Gemini-CLI
-
-| Bot Category | User Agent | Verification | Sources |
-|--------------|------------|--------------|---------|
-| AI Coding Agents | `Google-Gemini-CLI` | Not specified | ai-robots-txt |
-
-**Purpose:** I couldn't find any information about this specific bot, but based on the provided details, here is a possible description:
-
-The Google-Gemini-CLI bot appears to be a command-line interface (CLI) tool that integrates with AI Coding Agents, likely facilitating interactions with the Gemini AI model and providing a user-friendly interface for its usage.
-
-**Impact of Blocking:** Blocking the Google-Gemini-CLI bot could potentially disrupt users' ability to access the Gemini AI model through a simplified CLI interface, limiting their capacity to interact with the model using pre-defined commands and automating repetitive tasks. This would result in lost functionality for users who rely on this specific interface to engage with the AI model.
-
-**Recommendations by Site Type:**
-
-| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
-|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
-
-*Last updated: 2026-05-17*
-
----
-
-### Trae
-
-| Bot Category | User Agent | Verification | Sources |
-|--------------|------------|--------------|---------|
-| AI Coding Agents | `Trae` | Not specified | ai-robots-txt |
-
-**Purpose:** I couldn't find any publicly available information about a bot called "Trae" or its purpose, as the description is not publicly available from darkvisitors.com. However, based on the provided URL, I can suggest that Trae might be a custom-built bot created by AI Coding Agents for a specific task or application, but without more information, it's impossible to determine its exact purpose.
-
-**Impact of Blocking:** Blocking the Trae bot could potentially disrupt any interactive functionality or automated processes that rely on it, resulting in lost opportunities for tasks such as automated moderation, content suggestions, or other AI-powered interactions. This loss of functionality would likely manifest as a reduction in the overall quality or efficiency of online experiences reliant on Trae's capabilities.
-
-**Recommendations by Site Type:**
-
-| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
-|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
-
-*Last updated: 2026-05-17*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -423,7 +421,7 @@ The Google-Gemini-CLI bot appears to be a command-line interface (CLI) tool that
 
 | Bot Category | User Agent | Verification | Sources |
 |--------------|------------|--------------|---------|
-| AI Coding Agents | `opencode` | Not specified | ai-robots-txt |
+| AI Assistant | `opencode` | Not specified | ai-robots-txt |
 
 **Purpose:** I couldn't find any information about this specific bot, "opencode". However, based on its name and association with AI Coding Agents, I can make an educated guess.
 
@@ -481,7 +479,7 @@ The AI2Bot-DeepResearchEval is likely a research-focused AI model designed to ev
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -541,7 +539,7 @@ The AI2Bot-DeepResearchEval is likely a research-focused AI model designed to ev
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -584,6 +582,26 @@ The ChatGLM-Spider bot likely exists to provide search capabilities for users, p
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
 *Last updated: 2026-02-01*
+
+---
+
+### Claude
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Crawler | `Claude` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** Claude is an AI-powered crawler designed to retrieve and summarize information from various online sources, generating text summaries of web pages and articles. Its purpose is to assist users in quickly accessing and understanding the content of online content, typically through search engine results or web pages.
+
+**Impact of Blocking:** Blocking Claude would result in the loss of automatic summary generation and text extraction capabilities, making it more difficult for users to quickly scan and understand online content, and potentially hindering accessibility for users with visual impairments or reading difficulties. Visibility of search engine results and web page content would also be affected, as Claude's summaries would no longer be available as a preview or summary option.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -643,7 +661,7 @@ The ChatGLM-Spider bot likely exists to provide search capabilities for users, p
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-02-02*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -723,7 +741,7 @@ The ChatGLM-Spider bot likely exists to provide search capabilities for users, p
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -805,7 +823,7 @@ The Google-Agent bot serves as an AI assistant, likely designed to interact with
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -905,7 +923,7 @@ The Google-Agent bot serves as an AI assistant, likely designed to interact with
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -965,7 +983,7 @@ The Google-Agent bot serves as an AI assistant, likely designed to interact with
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -993,7 +1011,7 @@ The Google-Agent bot serves as an AI assistant, likely designed to interact with
 
 | Bot Category | User Agent | Verification | Sources |
 |--------------|------------|--------------|---------|
-| AI Crawler | `KimiBot` | cloudflare-verified | cloudflare-radar |
+| AI Crawler | `KimiBot` | cloudflare-verified | ai-robots-txt, cloudflare-radar |
 
 **Purpose:** I couldn't find any information about a specific bot named "KimiBot". However, based on the description provided, I can infer that KimiBot is likely a conversational AI bot designed to gather and process information through web crawling, with the purpose of providing information or answering questions.
 
@@ -1005,7 +1023,7 @@ The Google-Agent bot serves as an AI assistant, likely designed to interact with
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1071,26 +1089,6 @@ The LCC bot appears to be an automated agent or search tool designed by AI Searc
 
 ---
 
-### LinkupBot
-
-| Bot Category | User Agent | Verification | Sources |
-|--------------|------------|--------------|---------|
-| AI Crawler | `LinkupBot` | Not specified | ai-robots-txt |
-
-**Purpose:** The LinkupBot is a search engine designed to help users find and connect with other agents or "linkups" in various fields, such as personal networking, professional development, and more. Its purpose is to facilitate connections and opportunities for individuals seeking information, resources, or collaborations.
-
-**Impact of Blocking:** Blocking LinkupBot would likely disrupt users' ability to access a vast network of agents and linkups in various fields, potentially hindering their personal and professional networking efforts, as well as limiting their access to valuable resources, information, and collaboration opportunities. This could result in lost visibility for these connections, making it harder for users to establish meaningful relationships and stay informed about industry developments.
-
-**Recommendations by Site Type:**
-
-| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
-|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
-
-*Last updated: 2026-02-01*
-
----
-
 ### Manus-User
 
 | Bot Category | User Agent | Verification | Sources |
@@ -1127,7 +1125,7 @@ The LCC bot appears to be an automated agent or search tool designed by AI Searc
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1148,6 +1146,26 @@ The LCC bot appears to be an automated agent or search tool designed by AI Searc
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
 *Last updated: 2026-02-01*
+
+---
+
+### Navu
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Crawler | `Navu` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Navu bot is an AI-powered information retrieval tool that crawls and processes data to provide answers to user queries on a wide range of topics. Its primary purpose is to assist users by retrieving relevant information from various sources and presenting it in a concise and organized manner.
+
+**Impact of Blocking:** Blocking the Navu bot would significantly impact users who rely on it for information retrieval, as they would no longer be able to access its concise and organized summaries of information on various topics, potentially hindering their research or personal projects. This would result in a loss of functionality for users who have come to rely on the Navu bot as a trusted source of information.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1247,7 +1265,7 @@ The LCC bot appears to be an automated agent or search tool designed by AI Searc
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1289,7 +1307,7 @@ However, based on the name "Poggio-Citations", it is likely that this bot genera
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1310,6 +1328,28 @@ However, based on the name "Poggio-Citations", it is likely that this bot genera
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
 *Last updated: 2026-02-01*
+
+---
+
+### Shap-User
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Crawler | `Shap-User` | Not specified | ai-robots-txt |
+
+**Purpose:** I couldn't find any information about the Shap-User bot, but based on its name, I'm going to make an educated guess.
+
+The Shap-User bot appears to be a machine learning model designed to interact with users in various tasks, possibly related to image processing or computer vision, given the name "Shap". The purpose of this bot is likely to assist users by providing visual feedback, generating images, or performing other related tasks.
+
+**Impact of Blocking:** Blocking the Shap-User bot could significantly hinder users' ability to access visual feedback for image processing tasks, potentially disrupting their workflow or projects that rely on this feature. Additionally, blocking it could also prevent users from generating images using its capabilities, which may be a critical function in various fields such as art, design, or scientific research.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-06-14*
 
 ---
 
@@ -1469,7 +1509,7 @@ However, based on the name "Poggio-Citations", it is likely that this bot genera
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1579,69 +1619,45 @@ The "laion-huggingface-processor" bot is likely a language processing and machin
 
 ---
 
-## AI Data Providers
+## AI Data Scrapers
 
-### Brightbot
+### Lightpanda
 
 | Bot Category | User Agent | Verification | Sources |
 |--------------|------------|--------------|---------|
-| AI Data Providers | `Brightbot` | Not specified | ai-robots-txt |
+| AI Data Scrapers | `Lightpanda` | Not specified | ai-robots-txt |
 
-**Purpose:** I couldn't find any information about Brightbot, as the description is unavailable. However, I can provide a general interpretation based on the provided details.
+**Purpose:** Lightpanda is a custom-built headless browser designed to facilitate AI and automation tasks, allowing operators to automate web-based interactions and data scraping with increased efficiency. Its purpose is to provide a reliable and scalable tool for data scraping and automation tasks, enabling operators to extract and process data from websites and web applications.
 
-Brightbot appears to be an automated agent or chatbot created by AI Data Providers, possibly for a specific purpose or function, although it is unclear what that purpose is without more information.
-
-**Impact of Blocking:** Blocking Brightbot could significantly hinder users' ability to access information related to the bot's intended function, potentially disrupting their workflow or research process if they were relying on it for data or guidance. By blocking this bot, users may lose access to its automated responses, summaries, or other functionalities that it provides.
+**Impact of Blocking:** Blocking Lightpanda could significantly hinder data scraping and automation tasks, resulting in lost productivity and efficiency for operators who rely on the bot to extract and process data from websites and web applications. Specifically, blocking Lightpanda would render its functionality, such as simulating user interactions, navigating web pages, and scraping data from websites, inaccessible, rendering operators unable to automate tasks that previously relied on its capabilities.
 
 **Recommendations by Site Type:**
 
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+| Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-05-17*
+*Last updated: 2026-09-20*
 
 ---
 
-### HenkBot
+### MistralAI-Training
 
 | Bot Category | User Agent | Verification | Sources |
 |--------------|------------|--------------|---------|
-| AI Data Providers | `HenkBot` | Not specified | ai-robots-txt |
+| AI Data Scrapers | `MistralAI-Training` | Not specified | ai-robots-txt |
 
-**Purpose:** HenkBot is a chatbot designed to provide information and answer questions based on data from AI providers, likely offering assistance in various areas such as technology, education, or research. The purpose of HenkBot is to serve as a resource for users seeking information and insights on a wide range of topics related to AI and its applications.
+**Purpose:** The MistralAI-Training bot is a web crawler designed to collect and build training datasets for artificial intelligence models. It exists to support AI data scrapers in generating high-quality data for training AI models.
 
-**Impact of Blocking:** Blocking HenkBot could significantly impact users who rely on it for quick answers and guidance in various areas, resulting in the loss of visibility into AI-related information and insights that might have been discovered through interactions with the bot. This could limit users' ability to access important knowledge and resources, particularly those in fields such as technology, education, or research that heavily rely on AI-driven information.
+**Impact of Blocking:** Blocking the MistralAI-Training bot would significantly impact the ability of AI data scrapers to generate high-quality training datasets for artificial intelligence models, resulting in a loss of visibility and functionality for scraping and collecting data from the web. This would likely lead to delays or difficulties in training AI models, as data scrapers would no longer have access to the bot's services.
 
 **Recommendations by Site Type:**
 
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
+| Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-05-17*
-
----
-
-### Terra Cotta
-
-| Bot Category | User Agent | Verification | Sources |
-|--------------|------------|--------------|---------|
-| AI Data Providers | `Terra Cotta` | Not specified | ai-robots-txt |
-
-**Purpose:** I couldn't find any information about a bot named Terra Cotta, so I'll provide a neutral response.
-
-Terra Cotta is likely a conversational AI agent designed to generate responses or engage in discussions on a specific topic or set of topics, possibly with a focus on providing helpful or informative answers.
-
-**Impact of Blocking:** Blocking Terra Cotta could potentially limit users' access to helpful information or answers on specific topics, although the exact impact may depend on how widely the bot is used and its popularity among AI data providers. As a conversational AI agent, blocking Terra Cotta might also reduce visibility for topics or questions it was designed to address, making it more difficult for users to find relevant information.
-
-**Recommendations by Site Type:**
-
-| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
-|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
-
-*Last updated: 2026-05-17*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1667,6 +1683,46 @@ Terra Cotta is likely a conversational AI agent designed to generate responses o
 
 ---
 
+### AI Search External
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Search | `AI Search External` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The AI Search External bot is a search engine designed to provide fast and efficient access to external knowledge and information. It exists to assist users in quickly finding relevant information on the internet, utilizing AI-powered search capabilities to improve search results.
+
+**Impact of Blocking:** Blocking the AI Search External bot would significantly impact users' ability to quickly access external knowledge and information on the internet, resulting in lost functionality and visibility of relevant websites and resources. This could also lead to delayed or inaccurate search results, hindering users' ability to complete tasks efficiently.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-09-20*
+
+---
+
+### AIWebIndex
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Search | `AIWebIndex` | Not specified | ai-robots-txt |
+
+**Purpose:** The AIWebIndex bot serves as a content index, extracting and making publicly available readable text from crawled web pages, while also providing attribution and links to the original sources. Its purpose is to provide a controlled and transparent source of text data for AI agents, without training foundation models on crawled content.
+
+**Impact of Blocking:** Blocking the AIWebIndex bot would remove its publicly available index of readable text data, making it more difficult for AI agents to access and utilize this controlled and transparent source of text data. This would particularly impact AI agents that rely on this data for training, such as those used in natural language processing (NLP) and information retrieval applications.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
+
+---
+
 ### Amzn-SearchBot
 
 | Bot Category | User Agent | Verification | Sources |
@@ -1683,7 +1739,7 @@ Terra Cotta is likely a conversational AI agent designed to generate responses o
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1703,7 +1759,7 @@ Terra Cotta is likely a conversational AI agent designed to generate responses o
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1743,7 +1799,29 @@ Terra Cotta is likely a conversational AI agent designed to generate responses o
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### Brightbot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Search | `Brightbot` | Not specified | ai-robots-txt |
+
+**Purpose:** I couldn't find any information about Brightbot, as the description is unavailable. However, I can provide a general interpretation based on the provided details.
+
+Brightbot appears to be an automated agent or chatbot created by AI Data Providers, possibly for a specific purpose or function, although it is unclear what that purpose is without more information.
+
+**Impact of Blocking:** Blocking Brightbot could significantly hinder users' ability to access information related to the bot's intended function, potentially disrupting their workflow or research process if they were relying on it for data or guidance. By blocking this bot, users may lose access to its automated responses, summaries, or other functionalities that it provides.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-05-17*
 
 ---
 
@@ -1763,7 +1841,27 @@ Terra Cotta is likely a conversational AI agent designed to generate responses o
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### CragCrawler
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Search | `CragCrawler` | Not specified | ai-robots-txt |
+
+**Purpose:** CragCrawler is a web scraping bot that extracts data from websites, operated by CragSoftware to provide data engineering and AI web scraping services. Its purpose is to automatically gather data from online sources, likely for clients or customers of CragSoftware.
+
+**Impact of Blocking:** Blocking CragCrawler could significantly reduce the visibility of online data and limit the ability of clients or customers of CragSoftware to access certain web pages, specifically those that are scraped by CragCrawler for data engineering and AI web scraping services. This could lead to reduced functionality for clients, such as decreased access to website data or insights that rely on CragCrawler's scraping capabilities.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1787,6 +1885,66 @@ Terra Cotta is likely a conversational AI agent designed to generate responses o
 
 ---
 
+### ExaSearchBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Search | `ExaSearchBot` | Not specified | ai-robots-txt |
+
+**Purpose:** ExaSearchBot is a web crawler that discovers and indexes public web pages, allowing their content to be found, retrieved, and cited. It exists to provide a way to discover and utilize publicly available content on the web.
+
+**Impact of Blocking:** Blocking ExaSearchBot would significantly hinder the ability to discover and access publicly available content on the web, restricting users' ability to retrieve and cite relevant information from indexed web pages. This would have a practical impact on researchers, students, and content creators who rely on the indexed content for their work, limiting their access to a vast repository of publicly available knowledge.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
+
+---
+
+### HenkBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Search | `HenkBot` | Not specified | ai-robots-txt |
+
+**Purpose:** HenkBot is a chatbot designed to provide information and answer questions based on data from AI providers, likely offering assistance in various areas such as technology, education, or research. The purpose of HenkBot is to serve as a resource for users seeking information and insights on a wide range of topics related to AI and its applications.
+
+**Impact of Blocking:** Blocking HenkBot could significantly impact users who rely on it for quick answers and guidance in various areas, resulting in the loss of visibility into AI-related information and insights that might have been discovered through interactions with the bot. This could limit users' ability to access important knowledge and resources, particularly those in fields such as technology, education, or research that heavily rely on AI-driven information.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-05-17*
+
+---
+
+### Kimi-SearchBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Search | `Kimi-SearchBot` | Not specified | ai-robots-txt |
+
+**Purpose:** Kimi-SearchBot is a search functionality bot that analyzes web pages for relevance and builds an index to power Kimi's search features. It exists to provide a seamless and efficient search experience on the Kimi platform.
+
+**Impact of Blocking:** Blocking Kimi-SearchBot would likely result in a loss of search functionality on the Kimi platform, causing users to experience delays or inaccuracies in their search results, and potentially leading to frustration and a decrease in user engagement. The most noticeable impact would be the loss of a seamless search experience, as users would no longer be able to quickly and efficiently find relevant information within the platform.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
+
+---
+
 ### KlaviyoAIBot
 
 | Bot Category | User Agent | Verification | Sources |
@@ -1807,6 +1965,26 @@ Terra Cotta is likely a conversational AI agent designed to generate responses o
 
 ---
 
+### Mozilla-Tabstack
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Search | `Mozilla-Tabstack` | Not specified | ai-robots-txt |
+
+**Purpose:** The Mozilla-Tabstack bot performs programmatic, AI-driven interactions with web content, allowing it to automate tasks and gather information on the internet. Its purpose is to utilize its capabilities to improve web content and user experience.
+
+**Impact of Blocking:** Blocking the Mozilla-Tabstack bot could significantly hinder the ability of web developers and content creators to automate tasks, gather insights, and improve web content, potentially leading to lost productivity and delayed innovation. Specifically, it could limit the availability of AI-driven tools and services that rely on the bot's capabilities, such as automated testing, content analysis, and optimization.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
+
+---
+
 ### OAI-SearchBot
 
 | Bot Category | User Agent | Verification | Sources |
@@ -1823,7 +2001,47 @@ Terra Cotta is likely a conversational AI agent designed to generate responses o
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### Querit-SearchBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Search | `Querit-SearchBot` | Not specified | ai-robots-txt |
+
+**Purpose:** Querit-SearchBot is a web crawler that indexes web content to provide a search API service, delivering real-time search results. It exists to facilitate efficient and accurate online search capabilities for its users.
+
+**Impact of Blocking:** Blocking the Querit-SearchBot could result in the loss of visibility and search functionality for websites and users who rely on the bot's indexing capabilities, potentially disrupting online services and platforms that integrate the search API service. This could lead to broken links, lost search results, and impaired navigation for users who rely on the bot's real-time search results.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
+
+---
+
+### QueritBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Search | `QueritBot` | Not specified | ai-robots-txt |
+
+**Purpose:** QueritBot is a web crawler that indexes web content to provide a search API for integrating large language models. Its purpose is to power real-time search functionality for applications and services built by Querit and its users.
+
+**Impact of Blocking:** Blocking QueritBot could significantly impact the functionality of applications and services built on top of Querit's search API, causing real-time search functionality to become unavailable, leading to lost productivity and revenue for users. This would result in lost visibility for content indexed by QueritBot, making it difficult for users to find and access the information they need.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1843,7 +2061,51 @@ Terra Cotta is likely a conversational AI agent designed to generate responses o
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### Terra Cotta
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI Search | `Terra Cotta` | Not specified | ai-robots-txt |
+
+**Purpose:** I couldn't find any information about a bot named Terra Cotta, so I'll provide a neutral response.
+
+Terra Cotta is likely a conversational AI agent designed to generate responses or engage in discussions on a specific topic or set of topics, possibly with a focus on providing helpful or informative answers.
+
+**Impact of Blocking:** Blocking Terra Cotta could potentially limit users' access to helpful information or answers on specific topics, although the exact impact may depend on how widely the bot is used and its popularity among AI data providers. As a conversational AI agent, blocking Terra Cotta might also reduce visibility for topics or questions it was designed to address, making it more difficult for users to find relevant information.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-05-17*
+
+---
+
+## AI crawler for ByteDance's Doubao AI assistant.
+
+### DoubaoBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| AI crawler for ByteDance's Doubao AI assistant. | `DoubaoBot` | Not specified | ai-robots-txt |
+
+**Purpose:** DoubaoBot is a web crawler operated by ByteDance that collects web content to feed into the Doubao AI assistant, enabling the assistant to provide more accurate and relevant information. It exists to support the development and functionality of the Doubao AI assistant.
+
+**Impact of Blocking:** Blocking DoubaoBot could result in the loss of relevant web content, potentially affecting the Doubao AI assistant's ability to provide accurate and informed responses to users. This could lead to reduced visibility and utility of the assistant, as it may struggle to retrieve and analyze the necessary information to provide helpful and relevant answers.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1927,7 +2189,27 @@ Terra Cotta is likely a conversational AI agent designed to generate responses o
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### TrustedSite
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Academic Research | `TrustedSite` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The TrustedSite bot is a tool designed by Academic Research to provide fact-checking and verification of information on various online platforms, promoting the dissemination of accurate and reliable content. Its purpose is to assist in maintaining the integrity of academic research and online communities by identifying and mitigating the spread of misinformation.
+
+**Impact of Blocking:** Blocking the TrustedSite bot would significantly impair the accuracy and reliability of online content, as it would prevent users from relying on its fact-checking and verification services, potentially leading to the spread of misinformation. Visibility would be lost for the bot's suggested corrections and verification notes on published articles and online discussions.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1971,7 +2253,7 @@ The kb.dk_bot likely exists to assist with knowledge management and retrieval in
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -1993,7 +2275,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2013,7 +2295,7 @@ Accessibility bots are designed to detect and report web pages or applications t
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2055,7 +2337,7 @@ However, based on the provided information, I can make an educated guess that th
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2075,7 +2357,7 @@ However, based on the provided information, I can make an educated guess that th
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2095,7 +2377,7 @@ However, based on the provided information, I can make an educated guess that th
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2117,7 +2399,7 @@ However, based on the provided information, I can make an educated guess that th
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2137,7 +2419,7 @@ However, based on the provided information, I can make an educated guess that th
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2157,7 +2439,7 @@ However, based on the provided information, I can make an educated guess that th
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2177,7 +2459,7 @@ However, based on the provided information, I can make an educated guess that th
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2197,7 +2479,7 @@ However, based on the provided information, I can make an educated guess that th
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2217,7 +2499,7 @@ However, based on the provided information, I can make an educated guess that th
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2237,7 +2519,7 @@ However, based on the provided information, I can make an educated guess that th
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2257,7 +2539,7 @@ However, based on the provided information, I can make an educated guess that th
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2279,7 +2561,7 @@ The purpose of Google Firebase is to provide a set of cloud-based tools and serv
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2321,7 +2603,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2341,7 +2623,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2361,7 +2643,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2401,7 +2683,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2421,7 +2703,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2429,7 +2711,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 
 | Bot Category | User Agent | Verification | Sources |
 |--------------|------------|--------------|---------|
-| Advertising & Marketing | `OAI-AdsBot` | cloudflare-verified | cloudflare-radar |
+| Advertising & Marketing | `OAI-AdsBot` | cloudflare-verified | ai-robots-txt, cloudflare-radar |
 
 **Purpose:** The OAI-AdsBot is a conversational AI designed to assist with advertising and marketing-related tasks, aiming to provide helpful information and support to users in need. Its purpose is to serve as a resource for advertising professionals and marketers seeking guidance on various aspects of their field.
 
@@ -2441,7 +2723,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2461,7 +2743,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2501,7 +2783,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2521,7 +2803,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2541,7 +2823,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2562,6 +2844,26 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 | Rating | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
 *Last updated: 2026-06-14*
+
+---
+
+### SirdataBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Advertising & Marketing | `SirdataBot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** SirdataBot is an advertising and marketing automation bot that assists with data-driven marketing tasks, such as data analysis, campaign optimization, and lead generation. Its purpose is to help advertisers and marketers make data-informed decisions and improve their overall marketing performance.
+
+**Impact of Blocking:** Blocking SirdataBot would likely disrupt the advertisers and marketers who rely on its automated data analysis and campaign optimization capabilities, leading to lost visibility into campaign performance and potential missed opportunities for data-driven decision making. Specifically, the blocking would impact the bot's ability to provide real-time data analysis and recommendations, hindering the advertisers' and marketers' ability to make informed decisions about campaign optimization and lead generation.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2621,7 +2923,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2641,7 +2943,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2681,7 +2983,7 @@ The purpose of this bot is likely to manage live advertising campaigns for trave
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2703,7 +3005,7 @@ If you could provide more context or clarify what the bot is specifically design
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2723,7 +3025,7 @@ If you could provide more context or clarify what the bot is specifically design
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2745,7 +3047,7 @@ If you could provide more context or clarify what the bot is specifically design
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2765,7 +3067,7 @@ If you could provide more context or clarify what the bot is specifically design
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2785,7 +3087,7 @@ If you could provide more context or clarify what the bot is specifically design
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2805,7 +3107,7 @@ If you could provide more context or clarify what the bot is specifically design
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2825,7 +3127,7 @@ If you could provide more context or clarify what the bot is specifically design
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2865,7 +3167,7 @@ If you could provide more context or clarify what the bot is specifically design
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2887,7 +3189,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2907,7 +3209,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2947,7 +3249,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -2991,7 +3293,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3011,7 +3313,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3031,7 +3333,7 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3140,6 +3442,50 @@ The purpose of the MirrorWebCrawler is to aggregate and gather content from vari
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
 *Last updated: 2026-02-01*
+
+---
+
+## Collects public web content for Alibaba's Qwen (Tongyi Qianwen) large language models.
+
+### QwenBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Collects public web content for Alibaba's Qwen (Tongyi Qianwen) large language models. | `QwenBot` | Not specified | ai-robots-txt |
+
+**Purpose:** QwenBot is a web crawler operated by Alibaba to collect public web content for its Qwen (Tongyi Qianwen) large language models, aiming to improve the models' accuracy and knowledge.
+
+**Impact of Blocking:** Blocking QwenBot would likely restrict access to publicly available web content, resulting in a loss of visibility and data for the Qwen (Tongyi Qianwen) large language models, potentially affecting their ability to learn and improve. This could lead to reduced accuracy and knowledge in the models, making them less effective for various applications such as language translation, question answering, and more.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-09-20*
+
+---
+
+## Collects public web content for Baidu's ERNIE large language models.
+
+### ERNIEBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Collects public web content for Baidu's ERNIE large language models. | `ERNIEBot` | Not specified | ai-robots-txt |
+
+**Purpose:** The ERNIEBot is a web crawler operated by Baidu that collects publicly available web content to train and update its ERNIE large language models. Its purpose is to gather and process vast amounts of public web data for use in natural language processing and machine learning applications.
+
+**Impact of Blocking:** Blocking the ERNIEBot could significantly impact Baidu's ability to train and update its ERNIE large language models, potentially limiting the accuracy and performance of its NLP and machine learning applications, such as its search engine and other AI-powered services. By blocking this bot, users may experience reduced search results and fewer relevant answers to their queries, as the ERNIEBot's collection of public web content is a crucial component of Baidu's search engine functionality.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3296,7 +3642,7 @@ The Bazqux bot is designed to fetch content from various sources and provide use
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3316,7 +3662,7 @@ The Bazqux bot is designed to fetch content from various sources and provide use
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3336,7 +3682,7 @@ The Bazqux bot is designed to fetch content from various sources and provide use
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3356,7 +3702,7 @@ The Bazqux bot is designed to fetch content from various sources and provide use
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3376,7 +3722,7 @@ The Bazqux bot is designed to fetch content from various sources and provide use
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3396,7 +3742,7 @@ The Bazqux bot is designed to fetch content from various sources and provide use
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3416,7 +3762,7 @@ The Bazqux bot is designed to fetch content from various sources and provide use
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3458,7 +3804,7 @@ If you could provide more context or details about the Hatena bot, I'd be happy 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3478,7 +3824,7 @@ If you could provide more context or details about the Hatena bot, I'd be happy 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3498,7 +3844,7 @@ If you could provide more context or details about the Hatena bot, I'd be happy 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3540,7 +3886,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3560,7 +3906,7 @@ The purpose of the Overcast bot is to automate tasks related to feeding pets or 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3585,7 +3931,27 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### dlvr.it Feed Fetcher
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Feed Fetcher | `dlvr.it Feed Fetcher` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The dlvr.it Feed Fetcher is a bot that automatically fetches and updates content from external sources into a dlvr.it account, allowing users to easily manage and share their online content. Its purpose is to streamline content curation and publishing.
+
+**Impact of Blocking:** Blocking the dlvr.it Feed Fetcher would prevent users from automatically fetching and updating content from external sources, resulting in lost visibility for shared content and missed opportunities for automatic content curation and publishing. As a result, users may experience delayed or manual updates to their dlvr.it account, leading to a decrease in content freshness and engagement.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3605,7 +3971,29 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+## Indexes web content for Mistral AI's search, used to answer questions in Le Chat. Per Mistral, not used for model training.
+
+### MistralAI-Index
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Indexes web content for Mistral AI's search, used to answer questions in Le Chat. Per Mistral, not used for model training. | `MistralAI-Index` | Not specified | ai-robots-txt |
+
+**Purpose:** The MistralAI-Index bot is a web content indexing crawler that collects and organizes online content for Mistral AI's search index, enabling the provision of answers through Le Chat. It is used for search purposes only and not for training generative AI models.
+
+**Impact of Blocking:** Blocking the MistralAI-Index bot would prevent it from indexing online content, thereby hindering the ability to answer questions through Le Chat, resulting in a loss of search functionality and visibility for users who rely on this channel. This would also limit the ability to access and retrieve information from Mistral AI's search index, which could have practical implications for users seeking specific knowledge or answers.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3649,7 +4037,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3669,7 +4057,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3689,7 +4077,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3709,7 +4097,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3749,7 +4137,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3769,7 +4157,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3789,7 +4177,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3809,7 +4197,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3849,7 +4237,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3869,7 +4257,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3889,7 +4277,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3909,7 +4297,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3929,7 +4317,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3949,7 +4337,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -3989,7 +4377,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4009,7 +4397,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4029,7 +4417,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4049,7 +4437,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4069,7 +4457,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4089,7 +4477,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4109,7 +4497,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4149,7 +4537,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4169,7 +4557,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4189,7 +4577,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4209,7 +4597,27 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### InstatusBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `InstatusBot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The InstatusBot is a monitoring and analytics bot designed to provide real-time insights and data on system performance, usage, and other relevant metrics, enabling operators to make informed decisions and optimize their operations. Its purpose is to help operators effectively monitor and analyze their systems, improving overall efficiency and performance.
+
+**Impact of Blocking:** Blocking the InstatusBot would significantly impact the operator's ability to gain real-time visibility into system performance and usage metrics, potentially leading to delayed decision-making and reduced operational efficiency. Operators would lose access to critical data and analytics, making it challenging to identify issues, optimize resources, and troubleshoot problems.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4229,7 +4637,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4289,7 +4697,27 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-03-22*
+*Last updated: 2026-09-20*
+
+---
+
+### Marfeel
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `Marfeel` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Marfeel bot is designed to monitor and analyze online news articles, allowing its operator to track and evaluate the performance of various news sources and publications. Its purpose is to provide real-time insights and metrics on online news content, enabling more informed decision-making.
+
+**Impact of Blocking:** Blocking the Marfeel bot would likely result in the loss of real-time metrics and insights on online news content, hindering the operator's ability to track and evaluate the performance of various news sources and publications. This would also mean the operator would lose visibility into metrics such as page views, engagement rates, and user demographics for each news source, making it more challenging to make informed decisions about content and audience.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4329,7 +4757,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4369,7 +4797,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2025-10-01*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4389,7 +4817,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-05-17*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4409,7 +4837,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4429,7 +4857,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4469,7 +4897,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4489,7 +4917,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4509,7 +4937,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4529,7 +4957,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4549,7 +4977,47 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### PerformlineCrawler
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `PerformlineCrawler` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The PerformlineCrawler bot is designed to monitor and analyze data, allowing operators to track performance metrics and identify areas for improvement. Its primary purpose is to provide insights and support informed decision-making.
+
+**Impact of Blocking:** Blocking the PerformlineCrawler bot would result in the loss of visibility into performance metrics, making it difficult for operators to track key indicators and make data-driven decisions. Operators would no longer be able to access real-time insights and analytics, hindering their ability to identify areas for improvement and optimize their operations.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
+
+---
+
+### Ping-Admin
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `Ping-Admin` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Ping-Admin bot is designed to monitor and analyze system performance, alerting administrators to potential issues and providing real-time insights into the health of the system. Its purpose is to ensure the reliability and stability of the system by detecting and addressing potential problems proactively.
+
+**Impact of Blocking:** Blocking the Ping-Admin bot would result in the loss of real-time system performance monitoring and alerts, making it more challenging for administrators to detect and address potential issues promptly, which could lead to system downtime or data loss. Administrators would no longer receive timely alerts and insights, leaving them in the dark about the system's health and increasing the risk of undetected problems.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4569,7 +5037,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4589,7 +5057,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4609,7 +5077,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4629,7 +5097,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4649,7 +5117,27 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### SentiBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `SentiBot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The SentiBot is a monitoring and analytics bot designed to track and analyze sentiment data, allowing operators to make informed decisions based on user feedback and opinions. Its purpose is to provide real-time insights into customer emotions and perceptions, helping businesses improve their products and services.
+
+**Impact of Blocking:** Blocking the SentiBot would significantly impact the ability of operators to access real-time sentiment data, resulting in lost visibility into customer emotions and perceptions. This would hinder their ability to make data-driven decisions and optimize their products and services, potentially leading to a decline in customer satisfaction and loyalty.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4669,7 +5157,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4689,7 +5177,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4709,7 +5197,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4769,7 +5257,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4789,7 +5277,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4809,7 +5297,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4829,7 +5317,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4849,7 +5337,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4869,7 +5357,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4889,7 +5377,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4909,7 +5397,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4929,7 +5417,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4949,7 +5437,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4969,7 +5457,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -4989,7 +5477,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5009,7 +5497,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5109,7 +5597,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5129,7 +5617,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5149,7 +5637,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5169,7 +5657,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5189,7 +5677,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5209,7 +5697,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5229,7 +5717,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5249,7 +5737,7 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5269,7 +5757,27 @@ If you could provide more context or clarify which Protopage bot you are referri
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### qcbot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Monitoring & Analytics | `qcbot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The qcbot is a monitoring and analytics bot designed to continuously monitor and analyze performance metrics, alerting operators to any issues or anomalies. Its purpose is to provide real-time insights and proactive issue detection to ensure optimal system performance and minimize downtime.
+
+**Impact of Blocking:** Blocking the qcbot would result in the loss of real-time performance metrics monitoring and alerts, leaving operators in the dark about system performance issues and anomalies, potentially leading to delayed detection and resolution of problems. As a result, visibility into system performance would be significantly diminished, making it more challenging to identify and address issues proactively.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5333,7 +5841,7 @@ A bot is a software program that automates specific tasks or provides informatio
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5373,7 +5881,7 @@ A bot is a software program that automates specific tasks or provides informatio
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5397,6 +5905,26 @@ A bot is a software program that automates specific tasks or provides informatio
 
 ---
 
+### Picqer WooCommerce API Client
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Other | `Picqer WooCommerce API Client` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Picqer WooCommerce API Client is a bot designed to automate tasks and provide access to the WooCommerce API, allowing users to integrate e-commerce functionality with other tools and services. Its purpose is to simplify the integration process for WooCommerce stores, enabling seamless communication between the store's backend and external applications.
+
+**Impact of Blocking:** If the Picqer WooCommerce API Client is blocked, users would lose access to automated tasks and integration with external applications, such as payment gateways, shipping providers, and social media platforms, which would severely impact the efficiency and scalability of their e-commerce store's operations. Specifically, this would result in lost functionality, including automatic order processing, inventory updates, and product reviews, making it challenging for store owners to manage their online presence.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
+
+---
+
 ### Retool
 
 | Bot Category | User Agent | Verification | Sources |
@@ -5413,7 +5941,7 @@ A bot is a software program that automates specific tasks or provides informatio
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5457,7 +5985,7 @@ If you're referring to the Skroutz ImageBot on the Skroutz platform, it's likely
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5477,7 +6005,7 @@ If you're referring to the Skroutz ImageBot on the Skroutz platform, it's likely
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5499,7 +6027,7 @@ If you're referring to the Skroutz ImageBot on the Skroutz platform, it's likely
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5519,7 +6047,7 @@ If you're referring to the Skroutz ImageBot on the Skroutz platform, it's likely
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5543,6 +6071,26 @@ If you're referring to the Skroutz ImageBot on the Skroutz platform, it's likely
 
 ---
 
+### Diffbot-User
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Page Preview | `Diffbot-User` | Not specified | ai-robots-txt |
+
+**Purpose:** The Diffbot-User bot is a service that provides information to web crawlers, such as Googlebot, to respect the "robots.txt" file and avoid scraping certain URLs. It helps to fulfill a request from a human user browsing a URL using Diffbot software.
+
+**Impact of Blocking:** Blocking the Diffbot-User bot would likely result in the loss of functionality for web crawlers to respect the "robots.txt" file, potentially causing them to scrape certain URLs without user consent. As a result, humans browsing those URLs using Diffbot software may see reduced or no content being displayed, as the bot's request to respect the robots.txt file is no longer being honored.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
+
+---
+
 ### Embedly
 
 | Bot Category | User Agent | Verification | Sources |
@@ -5559,7 +6107,7 @@ If you're referring to the Skroutz ImageBot on the Skroutz platform, it's likely
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5599,7 +6147,7 @@ If you're referring to the Skroutz ImageBot on the Skroutz platform, it's likely
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5623,7 +6171,27 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### GeistHaus-PageFetcher
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Page Preview | `GeistHaus-PageFetcher` | Not specified | ai-robots-txt |
+
+**Purpose:** The GeistHaus-PageFetcher bot is a web crawler designed to fetch web pages, likely for the purpose of data collection or analysis in the development of AI systems for therapy and psychological assessment.
+
+**Impact of Blocking:** Blocking the GeistHaus-PageFetcher bot could result in the loss of functionality and visibility for users who rely on web pages for therapy and psychological assessment, potentially affecting the development and testing of AI systems that use web data. Specifically, this could impact the availability of web pages related to therapy and psychology for researchers and developers, hindering their work and potentially slowing the advancement of AI systems in these fields.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5643,7 +6211,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5663,7 +6231,27 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### GoogleAgent-URLContext
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Page Preview | `GoogleAgent-URLContext` | Not specified | ai-robots-txt |
+
+**Purpose:** The GoogleAgent-URLContext bot is a web fetcher operated by Google that retrieves web content on behalf of Gemini API users, allowing them to access and analyze web pages programmatically. It exists to provide a way for developers to access web page content without having to manually fetch it.
+
+**Impact of Blocking:** Blocking the GoogleAgent-URLContext bot would prevent Gemini API users from accessing and analyzing web page content programmatically, resulting in lost functionality for developers to scrape and understand web pages without manual intervention. This would hinder the ability to extract specific data from web pages, such as search engine results, webpage metadata, or structured data, potentially impacting various use cases, including SEO analysis, content monitoring, and data scraping.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5683,7 +6271,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5703,7 +6291,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5723,7 +6311,27 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### Kimi-User
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Page Preview | `Kimi-User` | Not specified | ai-robots-txt |
+
+**Purpose:** The Kimi-User bot is a web crawler that fetches web content on behalf of users, allowing them to summarize articles or answer questions. It exists to provide users with quick and convenient access to online information.
+
+**Impact of Blocking:** Blocking the Kimi-User bot would likely disrupt the ability of users to summarize articles or answer questions, resulting in lost access to concise and easily digestible online information. This would particularly impact users who rely on the bot's services for research, education, or quick reference, such as students, researchers, or professionals.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5743,7 +6351,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5763,7 +6371,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5803,7 +6411,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-05-03*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5823,7 +6431,7 @@ The FlipboardProxy bot likely exists to assist users in quickly previewing and a
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5865,7 +6473,27 @@ The SlackbotLinkExpanding operator is likely used to expand links in a message o
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### TongyiBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Page Preview | `TongyiBot` | Not specified | ai-robots-txt |
+
+**Purpose:** TongyiBot is a web crawler operated by Alibaba that fetches web content for the Tongyi Qianwen assistant, generating answers through its interactions. Its purpose is to provide information and support for the Tongyi Qianwen assistant and related applications.
+
+**Impact of Blocking:** Blocking TongyiBot would likely result in a significant loss of web scraping functionality for the Tongyi Qianwen assistant and related applications, potentially disrupting access to online content, and reducing the accuracy of generated answers. This could lead to a decrease in the effectiveness of the assistant's functionality, particularly in situations where web-based information is crucial.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5889,6 +6517,26 @@ The SlackbotLinkExpanding operator is likely used to expand links in a message o
 
 ---
 
+### UseAI
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Page Preview | `UseAI` | Not specified | ai-robots-txt |
+
+**Purpose:** The UseAI bot is a web crawler that helps users with various tasks on the Use AI platform, such as researching the web and providing information to users chatting with AI models. Its purpose is to aid users in accessing and utilizing the web's content within the AI workspace.
+
+**Impact of Blocking:** Blocking the UseAI bot would severely impact the functionality of the Use AI platform, particularly for users who rely on its web crawling capabilities to access and utilize online content within the AI workspace. This would result in significant disruptions to users' ability to research the web, access online information, and interact with AI models, ultimately hindering their ability to complete tasks and achieve their objectives.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
+
+---
+
 ### YahooMailProxy
 
 | Bot Category | User Agent | Verification | Sources |
@@ -5907,7 +6555,67 @@ The Page Preview operator is likely used to generate previews of emails sent via
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### YiyanBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Page Preview | `YiyanBot` | Not specified | ai-robots-txt |
+
+**Purpose:** YiyanBot is a web crawler operated by Baidu that fetches web content to power the yiyan.baidu.com assistant and ERNIE-generated answers. Its purpose is to gather and process web data to provide users with relevant information.
+
+**Impact of Blocking:** Blocking YiyanBot could significantly impact the functionality of yiyan.baidu.com, a popular Chinese search engine and assistant, by reducing the availability of ERNIE-generated answers and limiting the breadth of web content that is available to power the assistant's responses. This could lead to a loss of visibility for users seeking information on various topics, potentially hindering their ability to find relevant answers and information.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
+
+---
+
+### amazon-QBusiness
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Page Preview | `amazon-QBusiness` | Not specified | ai-robots-txt |
+
+**Purpose:** The amazon-QBusiness bot is a web crawler that fetches and indexes web content to support Amazon Q Business applications, allowing them to function effectively. Its purpose is to provide a reliable source of web data for these applications.
+
+**Impact of Blocking:** Blocking the amazon-QBusiness bot would impact the visibility of web content on Amazon Q Business applications, potentially disrupting their functionality and causing errors, as the bot relies on web crawling to fetch and index web content. This could lead to issues with search functionality, product information, and other critical features that rely on the bot's web data.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
+
+---
+
+### meta-webindexer
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Page Preview | `meta-webindexer` | cloudflare-verified | ai-robots-txt, cloudflare-radar |
+
+**Purpose:** The meta-webindexer is a web crawler operated by Meta that analyzes online content to enhance the relevance and accuracy of Meta AI search results. It allows Meta to cite and link back to websites in its responses, improving the quality of user experiences.
+
+**Impact of Blocking:** Blocking the meta-webindexer bot could result in loss of visibility for websites that are cited by Meta AI search results, potentially depriving them of increased traffic and credibility. As a consequence, website owners may struggle to attract new users who rely on the indexed content as a reference or source.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5927,7 +6635,7 @@ The Page Preview operator is likely used to generate previews of emails sent via
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5949,7 +6657,7 @@ The Page Preview operator is likely used to generate previews of emails sent via
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5969,7 +6677,7 @@ The Page Preview operator is likely used to generate previews of emails sent via
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -5989,7 +6697,27 @@ The Page Preview operator is likely used to generate previews of emails sent via
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### Cloudflare Web Scanner
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Search Engine Crawler | `Cloudflare Web Scanner` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Cloudflare Web Scanner is a search engine crawler designed to monitor websites for security vulnerabilities and other potential issues, helping Cloudflare to identify and mitigate online threats. It scans the web continuously to provide real-time threat intelligence to Cloudflare customers and protect their websites from cyber threats.
+
+**Impact of Blocking:** Blocking the Cloudflare Web Scanner would likely eliminate the bot's ability to continuously scan websites for security vulnerabilities and provide real-time threat intelligence to Cloudflare customers, resulting in reduced visibility into potential online threats. This would mean that Cloudflare customers would no longer receive timely alerts and recommendations for mitigating cyber threats, potentially leaving their websites more vulnerable to attack.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6009,7 +6737,7 @@ The Page Preview operator is likely used to generate previews of emails sent via
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6033,7 +6761,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6053,7 +6781,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6073,7 +6801,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6093,7 +6821,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6113,7 +6841,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6133,7 +6861,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6153,7 +6881,7 @@ If you have any additional context or clarification about the bot, I'll do my be
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6175,7 +6903,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6195,7 +6923,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6219,6 +6947,26 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 
 ---
 
+### LinkupBot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Search Engine Crawler | `LinkupBot` | cloudflare-verified | ai-robots-txt, cloudflare-radar |
+
+**Purpose:** The LinkupBot is a search engine designed to help users find and connect with other agents or "linkups" in various fields, such as personal networking, professional development, and more. Its purpose is to facilitate connections and opportunities for individuals seeking information, resources, or collaborations.
+
+**Impact of Blocking:** Blocking LinkupBot would likely disrupt users' ability to access a vast network of agents and linkups in various fields, potentially hindering their personal and professional networking efforts, as well as limiting their access to valuable resources, information, and collaboration opportunities. This could result in lost visibility for these connections, making it harder for users to establish meaningful relationships and stay informed about industry developments.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
+
+---
+
 ### MSN
 
 | Bot Category | User Agent | Verification | Sources |
@@ -6235,7 +6983,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6255,7 +7003,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-05-17*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6295,7 +7043,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6315,7 +7063,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6335,7 +7083,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6355,7 +7103,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6435,7 +7183,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6455,7 +7203,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6475,7 +7223,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6495,7 +7243,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6515,7 +7263,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6535,7 +7283,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6577,7 +7325,27 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### Agency Analytics Crawler
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Search Engine Optimization | `Agency Analytics Crawler` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Agency Analytics Crawler is a search engine optimization (SEO) bot designed to continuously monitor and analyze the online presence of agencies, identifying areas of improvement and providing data-driven insights to optimize their digital marketing strategies. Its primary purpose is to help agencies stay competitive and informed about the ever-changing online landscape.
+
+**Impact of Blocking:** Blocking the Agency Analytics Crawler would result in a loss of real-time data and insights into the online presence of agencies, hindering their ability to identify and address changes in the digital landscape and make data-driven decisions to optimize their marketing strategies. This would specifically impact the agencies' ability to track keyword rankings, monitor competitor activity, and analyze website performance metrics, potentially leading to decreased competitiveness and reduced visibility for their clients or services.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6597,7 +7365,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6617,7 +7385,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6637,7 +7405,7 @@ The purpose of a search engine crawler like Google-Flights-Search-Spackle is lik
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6699,7 +7467,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6719,7 +7487,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ❌ Harmful | ❌ Harmful | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6739,7 +7507,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6759,7 +7527,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6779,7 +7547,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6799,7 +7567,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6819,7 +7587,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6859,7 +7627,7 @@ The Barkrowler is a search engine optimization (SEO) tool designed to help websi
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6901,7 +7669,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6921,7 +7689,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6941,7 +7709,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6961,7 +7729,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -6981,7 +7749,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7001,7 +7769,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7021,7 +7789,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7041,7 +7809,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7061,7 +7829,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7081,7 +7849,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7101,7 +7869,7 @@ A traffic management bot is typically used to monitor, analyze, and optimize int
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7123,7 +7891,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7143,7 +7911,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7163,7 +7931,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7207,6 +7975,26 @@ An SEO bot is a software program designed to automate tasks related to search en
 
 ---
 
+### Screpy
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Search Engine Optimization | `Screpy` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** This bot, Screpy, is a Search Engine Optimization (SEO) bot, designed to analyze and improve the search engine rankings of websites. Its primary purpose is to optimize website content, structure, and meta tags to increase visibility, drive more traffic, and improve the overall search engine performance of the websites it targets.
+
+**Impact of Blocking:** Blocking the Screpy bot would likely result in the loss of automated optimization efforts, potentially leading to a decrease in website visibility, reduced search engine rankings, and decreased organic traffic as the website's content and structure would not be continuously improved. This could negatively impact a website's ability to stay competitive in search engine results, particularly for keywords and phrases that require regular updates.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
+
+---
+
 ### SearchAtlas Bot
 
 | Bot Category | User Agent | Verification | Sources |
@@ -7223,7 +8011,27 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### SemrushBotBacklinkAudit
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Search Engine Optimization | `SemrushBotBacklinkAudit` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The SemrushBotBacklinkAudit is a bot designed to scan and analyze backlinks to a website, identifying potential issues and opportunities to improve its search engine ranking. Its purpose is to provide an automated and efficient process for identifying and mitigating backlink-related risks and optimizing website backlink profiles for better SEO.
+
+**Impact of Blocking:** Blocking the SemrushBotBacklinkAudit would significantly impede a website's ability to efficiently identify and mitigate backlink-related risks, resulting in lost visibility in search engine rankings as potential issues and opportunities are not being properly detected and addressed. This would particularly impact websites with a large number of backlinks, as manual backlink audits would become the only option, significantly increasing the risk of missed opportunities and decreased SEO performance.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7243,7 +8051,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7263,7 +8071,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7283,7 +8091,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7303,7 +8111,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7323,7 +8131,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7343,7 +8151,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7363,7 +8171,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7383,7 +8191,7 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7403,11 +8211,31 @@ An SEO bot is a software program designed to automate tasks related to search en
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
 ## Security
+
+### Airwallex Website Scanner
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Security | `Airwallex Website Scanner` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Airwallex Website Scanner bot is a security tool designed to monitor and scan websites for potential vulnerabilities, malware, and security threats, helping to protect Airwallex's online platforms and users. Its primary purpose is to identify and mitigate potential security risks in real-time, ensuring the integrity and safety of Airwallex's digital assets.
+
+**Impact of Blocking:** Blocking the Airwallex Website Scanner bot would significantly impact Airwallex's ability to detect and mitigate security threats in real-time, potentially allowing vulnerabilities and malware to go undetected and unaddressed, thereby compromising the security and integrity of its online platforms. This would result in reduced visibility into potential security risks, making it more challenging for Airwallex to identify and fix issues promptly.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
+
+---
 
 ### Blockaid
 
@@ -7447,7 +8275,7 @@ A security bot like Bushbaby is likely designed to detect and respond to potenti
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7467,7 +8295,7 @@ A security bot like Bushbaby is likely designed to detect and respond to potenti
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7507,7 +8335,7 @@ A security bot like Bushbaby is likely designed to detect and respond to potenti
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7527,7 +8355,7 @@ A security bot like Bushbaby is likely designed to detect and respond to potenti
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7567,7 +8395,7 @@ A security bot like Bushbaby is likely designed to detect and respond to potenti
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7587,7 +8415,7 @@ A security bot like Bushbaby is likely designed to detect and respond to potenti
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ❌ Harmful | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ❌ Harmful | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7607,7 +8435,7 @@ A security bot like Bushbaby is likely designed to detect and respond to potenti
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7627,7 +8455,7 @@ A security bot like Bushbaby is likely designed to detect and respond to potenti
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7647,7 +8475,7 @@ A security bot like Bushbaby is likely designed to detect and respond to potenti
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7667,7 +8495,7 @@ A security bot like Bushbaby is likely designed to detect and respond to potenti
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7687,7 +8515,7 @@ A security bot like Bushbaby is likely designed to detect and respond to potenti
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7709,7 +8537,7 @@ The OKX-dolphin-crawler appears to be a security-focused bot that may be designe
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7733,7 +8561,7 @@ The Probely bot is likely designed for anomaly detection and incident response p
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7777,7 +8605,7 @@ If you're referring to the Qualys bot within this context, it's likely a tool us
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7797,7 +8625,7 @@ If you're referring to the Qualys bot within this context, it's likely a tool us
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7817,7 +8645,7 @@ If you're referring to the Qualys bot within this context, it's likely a tool us
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7837,7 +8665,7 @@ If you're referring to the Qualys bot within this context, it's likely a tool us
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7859,7 +8687,7 @@ A security bot, such as SmarshBot, is designed to detect and respond to potentia
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7879,7 +8707,47 @@ A security bot, such as SmarshBot, is designed to detect and respond to potentia
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### Usercentricsbot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Security | `Usercentricsbot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Usercentricsbot is a security bot designed to monitor and manage user consent and preferences for data sharing and tracking purposes. It exists to ensure compliance with data protection regulations and provide users with control over their personal data.
+
+**Impact of Blocking:** Blocking the Usercentricsbot would result in lost visibility into user consent preferences and data sharing decisions, potentially leading to non-compliance with data protection regulations and reduced transparency for users. Specifically, users would no longer be able to see or withdraw their consent for specific data sharing purposes, and website operators would lose access to user behavior data and analytics.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
+
+---
+
+### WHITEHAT
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Security | `WHITEHAT` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The WHITEHAT bot, operated by the Security team, is designed to identify and report security vulnerabilities in the system. Its primary purpose is to detect and mitigate potential security threats to ensure the organization's digital assets and data remain secure.
+
+**Impact of Blocking:** Blocking the WHITEHAT bot would significantly limit the organization's ability to identify and respond to security vulnerabilities in real-time, potentially allowing undetected threats to remain in the system for an extended period. This could lead to data breaches, compromised systems, and financial losses, as critical security threats would go unreported and unresolved.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7921,7 +8789,7 @@ A security bot, such as SmarshBot, is designed to detect and respond to potentia
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ❌ Harmful | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-05-17*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7943,7 +8811,7 @@ A security bot, such as SmarshBot, is designed to detect and respond to potentia
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -7988,6 +8856,26 @@ The Aranet-SearchBot likely exists for the purpose of providing search functiona
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral |
 
 *Last updated: 2026-04-19*
+
+---
+
+### Reflectionbot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Undocumented AI Agents | `Reflectionbot` | Not specified | ai-robots-txt |
+
+**Purpose:** The Reflectionbot is an undocumented crawler that crawls and scrapes data, its purpose being to gather information for AI model development by linking back to Reflection, a company that builds AI models.
+
+**Impact of Blocking:** Blocking the Reflectionbot would prevent the undocumented AI agents from gathering data and linking back to Reflection, effectively reducing the company's ability to develop and improve its AI models, potentially hindering its ability to provide accurate and relevant information to users. This could result in lost visibility and functionality for users seeking information related to AI model development and the Reflection company.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8053,7 +8941,7 @@ If you have more context or details about the Adyen bot, I'd be happy to try and
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8095,7 +8983,7 @@ A webhook is a programmatic interface that enables an app to push notifications 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8115,7 +9003,7 @@ A webhook is a programmatic interface that enables an app to push notifications 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8135,7 +9023,7 @@ A webhook is a programmatic interface that enables an app to push notifications 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8155,7 +9043,51 @@ A webhook is a programmatic interface that enables an app to push notifications 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
+
+---
+
+### Fastcron
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Webhooks | `Fastcron` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** The Fastcron bot serves as an operator for Webhooks, likely automating tasks or sending notifications through webhooks, a technology that enables real-time communication between web applications.
+
+**Impact of Blocking:** Blocking Fastcron would likely disrupt the automation and notification workflows of the Webhooks system, resulting in the loss of real-time task notifications, automated responses, or trigger events, leading to potential errors, missed deadlines, or delayed system updates. This could also impact the visibility of important updates, changes, or status updates, making it harder for users to stay informed about the status of their workflows.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
+
+---
+
+### GitHub-Hookshot
+
+| Bot Category | User Agent | Verification | Sources |
+|--------------|------------|--------------|---------|
+| Webhooks | `GitHub-Hookshot` | cloudflare-verified | cloudflare-radar |
+
+**Purpose:** I couldn't find any information on the specific bot "GitHub-Hookshot". It's possible that it's a custom or private bot, or it may not exist at all.
+
+However, based on the context of the name "GitHub-Hookshot" and the fact that it's an operator for Webhooks, I can make an educated guess:
+
+GitHub-Hookshot is a hypothetical bot that likely enables automated tasks or notifications via GitHub webhooks, allowing users to integrate GitHub events with external services or applications.
+
+**Impact of Blocking:** Blocking GitHub-Hookshot would likely prevent users from receiving automated notifications and triggering external tasks in response to specific GitHub events, such as pull request merges or repository updates, resulting in lost automation and potentially missed business opportunities or security alerts. This could lead to delayed responses to changes in the GitHub repository, compromising the integrity of the workflow or process.
+
+**Recommendations by Site Type:**
+
+| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable |
+
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8175,7 +9107,7 @@ A webhook is a programmatic interface that enables an app to push notifications 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8195,7 +9127,7 @@ A webhook is a programmatic interface that enables an app to push notifications 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8215,7 +9147,7 @@ A webhook is a programmatic interface that enables an app to push notifications 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8235,7 +9167,7 @@ A webhook is a programmatic interface that enables an app to push notifications 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8255,7 +9187,7 @@ A webhook is a programmatic interface that enables an app to push notifications 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8275,7 +9207,7 @@ A webhook is a programmatic interface that enables an app to push notifications 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8295,7 +9227,7 @@ A webhook is a programmatic interface that enables an app to push notifications 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8315,7 +9247,7 @@ A webhook is a programmatic interface that enables an app to push notifications 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8377,7 +9309,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8397,7 +9329,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8417,7 +9349,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8437,7 +9369,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8457,7 +9389,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8477,7 +9409,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8497,7 +9429,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ❌ Harmful | ❌ Harmful | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8517,7 +9449,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8537,7 +9469,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8557,7 +9489,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ✅ Beneficial | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8577,7 +9509,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -8945,7 +9877,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
@@ -9076,28 +10008,6 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 | Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ➖ Not Applicable |
-
-*Last updated: 2026-02-01*
-
----
-
-## [Meta](https://developers.facebook.com/docs/sharing/webmasters/web-crawlers/)
-
-### meta-webindexer
-
-| Bot Category | User Agent | Verification | Sources |
-|--------------|------------|--------------|---------|
-| [Meta](https://developers.facebook.com/docs/sharing/webmasters/web-crawlers/) | `meta-webindexer` | Not specified | ai-robots-txt |
-
-**Purpose:** The meta-webindexer is a web crawler operated by Meta that analyzes online content to enhance the relevance and accuracy of Meta AI search results. It allows Meta to cite and link back to websites in its responses, improving the quality of user experiences.
-
-**Impact of Blocking:** Blocking the meta-webindexer bot could result in loss of visibility for websites that are cited by Meta AI search results, potentially depriving them of increased traffic and credibility. As a consequence, website owners may struggle to attract new users who rely on the indexed content as a reference or source.
-
-**Recommendations by Site Type:**
-
-| Category | Ecommerce | News | Media | Blog | Saas | Corporate | Documentation | Social | Portfolio | Government |
-|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| Rating | ➖ Not Applicable | ⚪ Neutral | ⚪ Neutral | ✅ Beneficial | ❌ Harmful | ⚪ Neutral | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ❌ Harmful |
 
 *Last updated: 2026-02-01*
 
@@ -9249,7 +10159,7 @@ The purpose of a bot like Shopify-Captain-Hook is to automate tasks and respond 
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
 | Rating | ➖ Not Applicable | ➖ Not Applicable | ➖ Not Applicable | ✅ Beneficial | ✅ Beneficial | ⚪ Neutral | ⚪ Neutral | ➖ Not Applicable | ✅ Beneficial | ⚪ Neutral |
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-09-20*
 
 ---
 
